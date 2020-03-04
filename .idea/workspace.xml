@@ -11,7 +11,57 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5460e259-bb55-43d6-bcc1-8285b460cc16" name="Default Changelist" comment="" />
+    <list default="true" id="5460e259-bb55-43d6-bcc1-8285b460cc16" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/GameObjects/Obstacles/SpriteWalls.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GameObjects/Obstacles/SpriteWalls.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Defs.h" beforeDir="false" afterPath="$PROJECT_DIR$/Defs.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Game.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game.h" beforeDir="false" afterPath="$PROJECT_DIR$/Game.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Interface.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Interface.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Interface.h" beforeDir="false" afterPath="$PROJECT_DIR$/Interface.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CMakeDetermineCompilerABI_C.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CompilerIdC/a.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CompilerIdC/a.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CompilerIdCXX/a.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CompilerIdCXX/a.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/NomProjet.dir/DependInfo.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/NomProjet.dir/build.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/NomProjet.dir/cmake_clean.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/NomProjet.dir/depend.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/NomProjet.dir/flags.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/NomProjet.dir/link.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/NomProjet.dir/linklibs.rsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/NomProjet.dir/objects1.rsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/NomProjet.dir/progress.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pinball.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pinball.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pinball.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pinball.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pinball.dir/Game.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pinball.dir/Game.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pinball.dir/GameObjects/Ball.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pinball.dir/GameObjects/Ball.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pinball.dir/GameObjects/Flipper.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pinball.dir/GameObjects/Flipper.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pinball.dir/GameObjects/Obstacles/Wall.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pinball.dir/GameObjects/Obstacles/Wall.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pinball.dir/Interface.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pinball.dir/Interface.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pinball.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pinball.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pinball.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pinball.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pinball.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pinball.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pinball.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pinball.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pinball.dir/includes_CXX.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pinball.dir/includes_CXX.rsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pinball.dir/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pinball.dir/main.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pinball.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pinball.dir/objects.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pinball.dir/objects1.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pinball.dir/objects1.rsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pinball.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pinball.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Pinball.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Pinball.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Pinball.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Pinball.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,6 +71,9 @@
     <option name="formatViaClangd" value="false" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1YI4pzzj2yB4WNShg5aKSJNnLre" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -37,7 +90,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RunManager">
     <configuration name="Pinball" type="CMakeRunConfiguration" factoryName="Application" WORKING_DIR="file://$PROJECT_DIR$" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Pinball" TARGET_NAME="Pinball" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Pinball" RUN_TARGET_NAME="Pinball">
@@ -65,6 +118,7 @@
       <workItem from="1582662138321" duration="3810000" />
       <workItem from="1582870100130" duration="10462000" />
       <workItem from="1582899360718" duration="34000" />
+      <workItem from="1583342799706" duration="6618000" />
     </task>
     <servers />
   </component>
@@ -72,18 +126,22 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582877876752">
+    <state x="382" y="212" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583345562574">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1582877876752" />
+    <state x="382" y="212" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583345562574" />
     <state x="839" y="273" key="#xdebugger.XInspectDialog" timestamp="1582878901313">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="839" y="273" key="#xdebugger.XInspectDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1582878901313" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1582899390833">
+    <state x="574" y="110" key="CommitChangelistDialog2" timestamp="1583349676954">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1582899390833" />
+    <state x="574" y="110" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1583349676954" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1583343194303">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1583343194303" />
     <state x="598" y="531" width="938" height="348" key="GridCell.Tab.-1.bottom" timestamp="1582876012827">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -100,38 +158,38 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="598" y="531" width="938" height="348" key="GridCell.Tab.-1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1582876012827" />
-    <state width="938" height="348" key="GridCell.Tab.0.bottom" timestamp="1582889608319">
+    <state width="938" height="282" key="GridCell.Tab.0.bottom" timestamp="1583349485738">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="348" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1582889608319" />
-    <state width="938" height="348" key="GridCell.Tab.0.center" timestamp="1582889608319">
+    <state width="938" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1583349485738" />
+    <state width="938" height="282" key="GridCell.Tab.0.center" timestamp="1583349485738">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="348" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1582889608319" />
-    <state width="938" height="348" key="GridCell.Tab.0.left" timestamp="1582889608319">
+    <state width="938" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1583349485738" />
+    <state width="938" height="282" key="GridCell.Tab.0.left" timestamp="1583349485738">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="348" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1582889608319" />
-    <state width="938" height="348" key="GridCell.Tab.0.right" timestamp="1582889608319">
+    <state width="938" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1583349485738" />
+    <state width="938" height="282" key="GridCell.Tab.0.right" timestamp="1583349485738">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="348" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1582889608319" />
-    <state x="1011" y="720" width="938" height="348" key="GridCell.Tab.1.bottom" timestamp="1582889608319">
+    <state width="938" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1583349485738" />
+    <state x="1011" y="720" width="938" height="348" key="GridCell.Tab.1.bottom" timestamp="1583349253356">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1011" y="720" width="938" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1582889608319" />
-    <state x="1011" y="720" width="938" height="348" key="GridCell.Tab.1.center" timestamp="1582889608319">
+    <state x="1011" y="720" width="938" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1583349253356" />
+    <state x="1011" y="720" width="938" height="348" key="GridCell.Tab.1.center" timestamp="1583349253356">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1011" y="720" width="938" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1582889608319" />
-    <state x="1011" y="720" width="938" height="348" key="GridCell.Tab.1.left" timestamp="1582889608319">
+    <state x="1011" y="720" width="938" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1583349253356" />
+    <state x="1011" y="720" width="938" height="348" key="GridCell.Tab.1.left" timestamp="1583349253356">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1011" y="720" width="938" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1582889608319" />
-    <state x="1011" y="720" width="938" height="348" key="GridCell.Tab.1.right" timestamp="1582889608319">
+    <state x="1011" y="720" width="938" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1583349253356" />
+    <state x="1011" y="720" width="938" height="348" key="GridCell.Tab.1.right" timestamp="1583349253356">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1011" y="720" width="938" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1582889608319" />
+    <state x="1011" y="720" width="938" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1583349253356" />
     <state x="598" y="531" width="909" height="320" key="GridCell.Tab.2.bottom" timestamp="1582875872642">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -148,10 +206,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="598" y="531" width="909" height="320" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1582875872642" />
-    <state x="461" y="162" key="SettingsEditor" timestamp="1582875965863">
+    <state x="461" y="162" key="SettingsEditor" timestamp="1583343197563">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1582875965863" />
+    <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1583343197563" />
     <state x="656" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1582899366192">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -180,5 +238,16 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1582625271297" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Game.cpp</url>
+          <line>62</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

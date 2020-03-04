@@ -11,6 +11,7 @@ using namespace std;
 #include "GameObjects/Ball.h"
 #include "GameObjects/Obstacles/Wall.h"
 #include "GameObjects/Flipper.h"
+#include "GameObjects/Obstacles/SpriteWalls.h"
 
 // Represents a game, keeps track of everything relevant to the game and delegates the tasks to their proper objects
 class Game
@@ -23,8 +24,9 @@ private:
     Ball ball;  // The ball (obviously :D)
     Flipper leftFlipper, rightFlipper;  // The right and left flippers
     Wall leftWall, rightWall;  // This line should be replaced by an array of obstacles
+    SpriteWalls wall=SpriteWalls("Assets/Sprites/WallOutside.png",{0,0});
+    sf::Sprite sprite=wall.GetSprite();
 public:
-    sf::Sprite sprite;
     Game();
     void readInterfaceInput();
     void simulate();

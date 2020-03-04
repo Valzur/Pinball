@@ -1,5 +1,6 @@
 #include "Interface.h"
 
+
 Interface::Interface()
 {
     sf::ContextSettings settings;
@@ -118,3 +119,11 @@ void Interface::drawWall(float position)
             };
     window.draw(line, 2, sf::Lines);
 }
+
+void Interface::drawNewWall(sf::Sprite sprite) {
+    window.draw(sprite);
+}
+
+
+
+

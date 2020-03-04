@@ -47,10 +47,10 @@ RM = "D:\CLion 2019.3.3\bin\cmake\win\bin\cmake.exe" -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "D:\Zewail City\Year 3 Spring\C++\Project\Pinball"
+CMAKE_SOURCE_DIR = "D:\Zewail City\Year 3 Spring\C++\Project\Repository\Pinball"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "D:\Zewail City\Year 3 Spring\C++\Project\Pinball\cmake-build-debug"
+CMAKE_BINARY_DIR = "D:\Zewail City\Year 3 Spring\C++\Project\Repository\Pinball\cmake-build-debug"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -79,9 +79,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "D:\Zewail City\Year 3 Spring\C++\Project\Pinball\cmake-build-debug\CMakeFiles" "D:\Zewail City\Year 3 Spring\C++\Project\Pinball\cmake-build-debug\CMakeFiles\progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start "D:\Zewail City\Year 3 Spring\C++\Project\Repository\Pinball\cmake-build-debug\CMakeFiles" "D:\Zewail City\Year 3 Spring\C++\Project\Repository\Pinball\cmake-build-debug\CMakeFiles\progress.marks"
 	$(MAKE) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "D:\Zewail City\Year 3 Spring\C++\Project\Pinball\cmake-build-debug\CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "D:\Zewail City\Year 3 Spring\C++\Project\Repository\Pinball\cmake-build-debug\CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
@@ -203,6 +203,33 @@ GameObjects/Flipper.cpp.s:
 	$(MAKE) -f CMakeFiles\Pinball.dir\build.make CMakeFiles/Pinball.dir/GameObjects/Flipper.cpp.s
 .PHONY : GameObjects/Flipper.cpp.s
 
+GameObjects/Obstacles/SpriteWalls.obj: GameObjects/Obstacles/SpriteWalls.cpp.obj
+
+.PHONY : GameObjects/Obstacles/SpriteWalls.obj
+
+# target to build an object file
+GameObjects/Obstacles/SpriteWalls.cpp.obj:
+	$(MAKE) -f CMakeFiles\Pinball.dir\build.make CMakeFiles/Pinball.dir/GameObjects/Obstacles/SpriteWalls.cpp.obj
+.PHONY : GameObjects/Obstacles/SpriteWalls.cpp.obj
+
+GameObjects/Obstacles/SpriteWalls.i: GameObjects/Obstacles/SpriteWalls.cpp.i
+
+.PHONY : GameObjects/Obstacles/SpriteWalls.i
+
+# target to preprocess a source file
+GameObjects/Obstacles/SpriteWalls.cpp.i:
+	$(MAKE) -f CMakeFiles\Pinball.dir\build.make CMakeFiles/Pinball.dir/GameObjects/Obstacles/SpriteWalls.cpp.i
+.PHONY : GameObjects/Obstacles/SpriteWalls.cpp.i
+
+GameObjects/Obstacles/SpriteWalls.s: GameObjects/Obstacles/SpriteWalls.cpp.s
+
+.PHONY : GameObjects/Obstacles/SpriteWalls.s
+
+# target to generate assembly for a file
+GameObjects/Obstacles/SpriteWalls.cpp.s:
+	$(MAKE) -f CMakeFiles\Pinball.dir\build.make CMakeFiles/Pinball.dir/GameObjects/Obstacles/SpriteWalls.cpp.s
+.PHONY : GameObjects/Obstacles/SpriteWalls.cpp.s
+
 GameObjects/Obstacles/Wall.obj: GameObjects/Obstacles/Wall.cpp.obj
 
 .PHONY : GameObjects/Obstacles/Wall.obj
@@ -302,6 +329,9 @@ help:
 	@echo ... GameObjects/Flipper.obj
 	@echo ... GameObjects/Flipper.i
 	@echo ... GameObjects/Flipper.s
+	@echo ... GameObjects/Obstacles/SpriteWalls.obj
+	@echo ... GameObjects/Obstacles/SpriteWalls.i
+	@echo ... GameObjects/Obstacles/SpriteWalls.s
 	@echo ... GameObjects/Obstacles/Wall.obj
 	@echo ... GameObjects/Obstacles/Wall.i
 	@echo ... GameObjects/Obstacles/Wall.s

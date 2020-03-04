@@ -59,6 +59,8 @@ void Game::updateInterfaceOutput()
     leftWall.draw(interface);
     rightWall.draw(interface);
 
+    //Actual boundaries
+    interface.drawNewWall(sprite);
 
     //End Here
 

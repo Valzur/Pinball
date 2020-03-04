@@ -21,8 +21,8 @@ struct Vector2D  // Represents a 2D vector
 enum FlipperType { LEFT, RIGHT };
 
 // Should be replaced by a config file!
-#define GAME_WIDTH 700
-#define GAME_HEIGHT 750
+#define GAME_WIDTH 720
+#define GAME_HEIGHT 1000
 #define BALL_RADIUS 10
 #define INITIAL_CENTER {150, 20}
 #define INITIAL_VELOCITY {-500, 0}
