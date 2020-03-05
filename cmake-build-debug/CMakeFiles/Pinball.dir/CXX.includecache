@@ -702,10 +702,6 @@ D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Flipper.
 GameObjects/Obstacles/SpriteWalls.h
 D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/SpriteWalls.h
 
-D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Ball.cpp
-Ball.h
-D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Ball.h
-
 D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Ball.h
 Drawable.h
 D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Drawable.h
@@ -717,10 +713,6 @@ D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Ball.h
 D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Drawable.h
 ../Interface.h
 D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Interface.h
-
-D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Flipper.cpp
-Flipper.h
-D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Flipper.h
 
 D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Flipper.h
 Drawable.h
@@ -734,29 +726,15 @@ D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Drawable
 ../Collidable.h
 D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Collidable.h
 
-D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/SpriteWalls.cpp
-SpriteWalls.h
-D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/SpriteWalls.h
-
 D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/SpriteWalls.h
 iostream
 -
 Obstacle.h
 D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/Obstacle.h
 
-D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/Wall.cpp
-Wall.h
-D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/Wall.h
-cmath
--
-
 D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/Wall.h
 Obstacle.h
 D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/Obstacle.h
-
-D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Interface.cpp
-Interface.h
-D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Interface.h
 
 D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Interface.h
 SFML/Window.hpp
@@ -765,10 +743,4 @@ SFML/Graphics.hpp
 -
 Defs.h
 D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Defs.h
-
-D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/main.cpp
-Game.h
-D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Game.h
-iostream
--
 

@@ -61,6 +61,8 @@ void Game::updateInterfaceOutput()
 
     //Actual boundaries
     interface.drawNewWall(sprite);
+    interface.drawBumper({GAME_WIDTH/3,GAME_HEIGHT/2},70);
+    interface.drawBumper({2*GAME_WIDTH/3,GAME_HEIGHT/2},70);
 
     //End Here
 

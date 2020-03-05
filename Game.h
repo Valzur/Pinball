@@ -24,8 +24,9 @@ private:
     Ball ball;  // The ball (obviously :D)
     Flipper leftFlipper, rightFlipper;  // The right and left flippers
     Wall leftWall, rightWall;  // This line should be replaced by an array of obstacles
-    SpriteWalls wall=SpriteWalls("Assets/Sprites/WallOutside.png",{0,0});
-    sf::Sprite sprite=wall.GetSprite();
+    SpriteWalls walloutsite=SpriteWalls("Assets/Sprites - Test/WallOutside.png",{-74,-70});
+    sf::Sprite sprite=walloutsite.GetSprite();
+
 public:
     Game();
     void readInterfaceInput();

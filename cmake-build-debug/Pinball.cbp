@@ -113,6 +113,12 @@
 		<Unit filename="D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Flipper.h">
 			<Option target="Pinball"/>
 		</Unit>
+		<Unit filename="D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/Bumper.cpp">
+			<Option target="Pinball"/>
+		</Unit>
+		<Unit filename="D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/Bumper.h">
+			<Option target="Pinball"/>
+		</Unit>
 		<Unit filename="D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/Obstacle.h">
 			<Option target="Pinball"/>
 		</Unit>

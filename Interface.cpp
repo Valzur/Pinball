@@ -124,6 +124,22 @@ void Interface::drawNewWall(sf::Sprite sprite) {
     window.draw(sprite);
 }
 
+void Interface::drawBumper(Vector2D center, float radius) {
+    sf::CircleShape circle(radius);
+    sf::CircleShape circle1(radius/2);
+    circle.setOrigin(radius, radius);
+    circle1.setOrigin(radius/2,radius/2);
+    circle.setOutlineThickness(3*outlineThickness);
+    circle1.setOutlineThickness(2*outlineThickness);
+    circle.setOutlineColor(sf::Color::Black);
+    circle1.setOutlineColor(sf::Color::Blue);
+    //circle.setFillColor(ballFillColor);
+    circle.setPosition(center.x, center.y);
+    circle1.setPosition(center.x,center.y);
+    window.draw(circle);
+    window.draw(circle1);
+}
+
 
 
 
