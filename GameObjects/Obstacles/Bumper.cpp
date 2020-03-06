@@ -11,7 +11,8 @@ Vector2D Bumper::collidewith(Ball &ball, float collision_time) {
     Vector2D acc={ball.getCenter().x-position.x,ball.getCenter().y-position.y};
     R=pow((pow(acc.x,2)+pow(acc.y,2)),0.5);
     if(R<=(ball.getRadius()+radius)){
-        acc=acc/R*ball.getVelocity()/collision_time;
+        acc={-ball.getVelocity().y+position.y,ball.getVelocity().x-position.y};
+        acc={static_cast<float>(25.0*acc.x), static_cast<float>(25.0*acc.y)};
         return acc;
     }else{
         return {0,0};

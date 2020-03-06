@@ -4,7 +4,7 @@
 Interface::Interface()
 {
     sf::ContextSettings settings;
-    settings.antialiasingLevel = 16;  // Remove this line if the game was too laggy
+    settings.antialiasingLevel = 8;  // Remove this line if the game was too laggy
     window.create(sf::VideoMode(GAME_WIDTH, GAME_HEIGHT), "Pinball", sf::Style::Titlebar, settings);
     window.setVerticalSyncEnabled(true);
 }
@@ -110,14 +110,23 @@ void Interface::drawFlipper(FlipperType type, Vector2D center, float length, flo
     window.draw(bottomLine);
 }
 
-void Interface::drawWall(float position)
+void Interface::drawWall(float position, bool isVertical)
 {
-    sf::Vertex line[] =
-            {
-                    sf::Vertex(sf::Vector2f(position, 0), outlineColor),
-                    sf::Vertex(sf::Vector2f(position, GAME_HEIGHT), outlineColor)
-            };
-    window.draw(line, 2, sf::Lines);
+    if(isVertical) {
+        sf::Vertex line[] =
+                {
+                        sf::Vertex(sf::Vector2f(position, 0), outlineColor),
+                        sf::Vertex(sf::Vector2f(position, GAME_HEIGHT), outlineColor)
+                };
+        window.draw(line, 2, sf::Lines);
+    }else{
+        sf::Vertex line[] =
+                {
+                        sf::Vertex(sf::Vector2f(0, position), outlineColor),
+                        sf::Vertex(sf::Vector2f(GAME_WIDTH, position), outlineColor)
+                };
+        window.draw(line, 2, sf::Lines);
+    }
 }
 
 void Interface::drawNewWall(sf::Sprite sprite) {

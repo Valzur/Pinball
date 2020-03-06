@@ -6,6 +6,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Pinball.dir/GameObjects/Obstacles/SpriteWalls.cpp.obj"
   "CMakeFiles/Pinball.dir/GameObjects/Obstacles/Wall.cpp.obj"
   "CMakeFiles/Pinball.dir/Interface.cpp.obj"
+  "CMakeFiles/Pinball.dir/Utility/PixelPerfectCollision.cpp.obj"
   "CMakeFiles/Pinball.dir/main.cpp.obj"
   "Pinball.exe"
   "Pinball.exe.manifest"

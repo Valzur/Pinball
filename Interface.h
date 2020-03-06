@@ -35,7 +35,7 @@ public:
 
     void drawBall(Vector2D center, float radius);  // Draws a ball
     void drawFlipper(FlipperType type, Vector2D center, float length, float angle, float majorRadius, float minor_radius);  // Draws a flipper
-    void drawWall(float position);  // Draws a vertical wall
+    void drawWall(float position,bool isVertical);  // Draws a vertical wall
     void drawNewWall(sf::Sprite sprite);
     void drawBumper(Vector2D center, float radius);
     void drawFPS();

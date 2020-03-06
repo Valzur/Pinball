@@ -311,6 +311,33 @@ Interface.cpp.s:
 	$(MAKE) -f CMakeFiles\Pinball.dir\build.make CMakeFiles/Pinball.dir/Interface.cpp.s
 .PHONY : Interface.cpp.s
 
+Utility/PixelPerfectCollision.obj: Utility/PixelPerfectCollision.cpp.obj
+
+.PHONY : Utility/PixelPerfectCollision.obj
+
+# target to build an object file
+Utility/PixelPerfectCollision.cpp.obj:
+	$(MAKE) -f CMakeFiles\Pinball.dir\build.make CMakeFiles/Pinball.dir/Utility/PixelPerfectCollision.cpp.obj
+.PHONY : Utility/PixelPerfectCollision.cpp.obj
+
+Utility/PixelPerfectCollision.i: Utility/PixelPerfectCollision.cpp.i
+
+.PHONY : Utility/PixelPerfectCollision.i
+
+# target to preprocess a source file
+Utility/PixelPerfectCollision.cpp.i:
+	$(MAKE) -f CMakeFiles\Pinball.dir\build.make CMakeFiles/Pinball.dir/Utility/PixelPerfectCollision.cpp.i
+.PHONY : Utility/PixelPerfectCollision.cpp.i
+
+Utility/PixelPerfectCollision.s: Utility/PixelPerfectCollision.cpp.s
+
+.PHONY : Utility/PixelPerfectCollision.s
+
+# target to generate assembly for a file
+Utility/PixelPerfectCollision.cpp.s:
+	$(MAKE) -f CMakeFiles\Pinball.dir\build.make CMakeFiles/Pinball.dir/Utility/PixelPerfectCollision.cpp.s
+.PHONY : Utility/PixelPerfectCollision.cpp.s
+
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -368,6 +395,9 @@ help:
 	@echo ... Interface.obj
 	@echo ... Interface.i
 	@echo ... Interface.s
+	@echo ... Utility/PixelPerfectCollision.obj
+	@echo ... Utility/PixelPerfectCollision.i
+	@echo ... Utility/PixelPerfectCollision.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

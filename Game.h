@@ -24,7 +24,7 @@ private:
 
     Ball ball;  // The ball (obviously :D)
     Flipper leftFlipper, rightFlipper;  // The right and left flippers
-    Wall leftWall, rightWall;  // This line should be replaced by an array of obstacles
+    Wall leftWall, rightWall,upperWall;  // This line should be replaced by an array of obstacles
     Bumper bumper1, bumper2;
     SpriteWalls walloutsite=SpriteWalls("Assets/Sprites - Test/WallOutside.png",{-74,-70});
     sf::Sprite sprite=walloutsite.GetSprite();
