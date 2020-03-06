@@ -4,7 +4,7 @@
 Interface::Interface()
 {
     sf::ContextSettings settings;
-    settings.antialiasingLevel = 8;  // Remove this line if the game was too laggy
+    settings.antialiasingLevel = 16;  // Remove this line if the game was too laggy
     window.create(sf::VideoMode(GAME_WIDTH, GAME_HEIGHT), "Pinball", sf::Style::Titlebar, settings);
     window.setVerticalSyncEnabled(true);
 }
@@ -138,6 +138,23 @@ void Interface::drawBumper(Vector2D center, float radius) {
     circle1.setPosition(center.x,center.y);
     window.draw(circle);
     window.draw(circle1);
+}
+
+void Interface::drawFPS() {
+    if(!font.loadFromFile("Assets/Fonts/BebasNeue-Regular.ttf")){
+        cout<< "Can't load font! "<< endl;
+    }
+
+    text.setFont(font);
+    text.setString(FPS);
+    text.setCharacterSize(24);
+    text.setFillColor(sf::Color::Green);
+    text.setPosition(0,0);
+    window.draw(text);
+}
+
+void Interface::setFPS(string fps) {
+    FPS=fps;
 }
 
 

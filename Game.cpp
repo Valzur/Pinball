@@ -25,7 +25,25 @@ void Game::simulate()
     last_frame = this_frame;
     float delta_time = time_span.count();  // Delta time in seconds
 
+    switch(left){
+        case 1:
+            leftFlipper.RotateFlipper(-FLIPPERS_ANGLE_EXTENDED,delta_time);
+            break;
+        case 0:
+            leftFlipper.RotateFlipper(-FLIPPERS_ANGLE_NORMAL,delta_time);
+            break;
+    }
+    switch(right){
+        case 1:
+            rightFlipper.RotateFlipper(FLIPPERS_ANGLE_EXTENDED,delta_time);
+            break;
+        case 0:
+            rightFlipper.RotateFlipper(FLIPPERS_ANGLE_NORMAL,delta_time);
+            break;
+    }
 
+    //Update fps
+    interface.setFPS("FPS: " + to_string(1.0/delta_time));
 
     Vector2D resultant_acceleration = {0, GRAVITY};  // Starting with gravity as the first acceleration contributer
     resultant_acceleration += bumper1.collidewith(ball,delta_time);
@@ -38,25 +56,12 @@ void Game::simulate()
 void Game::updateInterfaceOutput()
 {
     interface.clear();
-    switch(left){
-        case 1:
-            leftFlipper.RotateFlipper(-50);
-            break;
-        case 0:
-            leftFlipper.RotateFlipper(30);
-            break;
-    }
-    switch(right){
-        case 1:
-            rightFlipper.RotateFlipper(50);
-            break;
-        case 0:
-            rightFlipper.RotateFlipper(-30);
-            break;
-    }
+
     leftFlipper.draw(interface);
     rightFlipper.draw(interface);
 
+    //FPS UPDATE
+    interface.drawFPS();
 
     // The following two lines be replaced with a loop over collidable obstacles
     leftWall.draw(interface);

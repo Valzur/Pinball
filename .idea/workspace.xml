@@ -12,20 +12,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5460e259-bb55-43d6-bcc1-8285b460cc16" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Fonts/BebasNeue-Regular.ttf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Defs.h" beforeDir="false" afterPath="$PROJECT_DIR$/Defs.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Game.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Game.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game.h" beforeDir="false" afterPath="$PROJECT_DIR$/Game.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameObjects/Obstacles/Bumper.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/GameObjects/Obstacles/Bumper.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameObjects/Obstacles/Bumper.h" beforeDir="false" afterPath="$PROJECT_DIR$/GameObjects/Obstacles/Bumper.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameObjects/Flipper.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/GameObjects/Flipper.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameObjects/Flipper.h" beforeDir="false" afterPath="$PROJECT_DIR$/GameObjects/Flipper.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Interface.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Interface.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Interface.h" beforeDir="false" afterPath="$PROJECT_DIR$/Interface.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pinball.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pinball.dir/CXX.includecache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pinball.dir/Game.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pinball.dir/Game.cpp.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pinball.dir/GameObjects/Ball.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pinball.dir/GameObjects/Ball.cpp.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pinball.dir/GameObjects/Flipper.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pinball.dir/GameObjects/Flipper.cpp.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pinball.dir/GameObjects/Obstacles/Wall.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pinball.dir/GameObjects/Obstacles/Wall.cpp.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pinball.dir/Interface.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pinball.dir/Interface.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pinball.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pinball.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pinball.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pinball.dir/depend.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pinball.dir/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pinball.dir/main.cpp.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pinball.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pinball.dir/objects.a" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Pinball.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Pinball.exe" afterDir="false" />
@@ -91,7 +91,7 @@
       <workItem from="1582870100130" duration="10462000" />
       <workItem from="1582899360718" duration="34000" />
       <workItem from="1583342799706" duration="6961000" />
-      <workItem from="1583429281735" duration="10868000" />
+      <workItem from="1583429281735" duration="16877000" />
     </task>
     <task id="LOCAL-00001" summary="Created a prototype Sprite wall class that is drawable.">
       <created>1583349718172</created>
@@ -107,7 +107,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583435269584</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="- Readjusted Window resolution&#10;- Readjusted outer wall size and drew it correctly&#10;- Added bumper class and drew 2 bumpers in the middle&#10;- Bumpers collision fully works">
+      <created>1583476602628</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1583476602628</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -117,7 +124,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Created a prototype Sprite wall class that is drawable." />
     <MESSAGE value="- Readjusted Window resolution&#10;- Readjusted outer wall size and drew it correctly&#10;- Added bumper class and drew 2 bumpers in the middle" />
-    <option name="LAST_COMMIT_MESSAGE" value="- Readjusted Window resolution&#10;- Readjusted outer wall size and drew it correctly&#10;- Added bumper class and drew 2 bumpers in the middle" />
+    <MESSAGE value="- Readjusted Window resolution&#10;- Readjusted outer wall size and drew it correctly&#10;- Added bumper class and drew 2 bumpers in the middle&#10;- Bumpers collision fully works" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Readjusted Window resolution&#10;- Readjusted outer wall size and drew it correctly&#10;- Added bumper class and drew 2 bumpers in the middle&#10;- Bumpers collision fully works" />
   </component>
   <component name="WindowStateProjectService">
     <state x="382" y="212" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583345562574">
@@ -128,10 +136,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="839" y="273" key="#xdebugger.XInspectDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1582878901313" />
-    <state x="574" y="110" key="CommitChangelistDialog2" timestamp="1583435265757">
+    <state x="574" y="110" key="CommitChangelistDialog2" timestamp="1583476599531">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="574" y="110" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1583435265757" />
+    <state x="574" y="110" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1583476599531" />
     <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1583343194303">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -152,22 +160,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="598" y="531" width="938" height="348" key="GridCell.Tab.-1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1582876012827" />
-    <state width="938" height="282" key="GridCell.Tab.0.bottom" timestamp="1583476548249">
+    <state width="938" height="282" key="GridCell.Tab.0.bottom" timestamp="1583484664519">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1583476548249" />
-    <state width="938" height="282" key="GridCell.Tab.0.center" timestamp="1583476548249">
+    <state width="938" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1583484664519" />
+    <state width="938" height="282" key="GridCell.Tab.0.center" timestamp="1583484664519">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1583476548249" />
-    <state width="938" height="282" key="GridCell.Tab.0.left" timestamp="1583476548249">
+    <state width="938" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1583484664519" />
+    <state width="938" height="282" key="GridCell.Tab.0.left" timestamp="1583484664519">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1583476548249" />
-    <state width="938" height="282" key="GridCell.Tab.0.right" timestamp="1583476548249">
+    <state width="938" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1583484664519" />
+    <state width="938" height="282" key="GridCell.Tab.0.right" timestamp="1583484664519">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1583476548249" />
+    <state width="938" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1583484664519" />
     <state x="1011" y="720" width="938" height="348" key="GridCell.Tab.1.bottom" timestamp="1583476226834">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

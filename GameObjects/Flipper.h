@@ -3,6 +3,8 @@
 #include "Drawable.h"
 #include "Collidable.h"
 
+using namespace std;
+
 // Represents a (controllable) flipper
 class Flipper: public Drawable, public Collidable
 {
@@ -13,6 +15,7 @@ private:
     float angle;  // Angle of rotation
     float majorRadius;  // The radius of the rotation end
     float minorRadius;  // The radius of the other end
+    float ImpulseMultiplier;
 
 public:
     // The angle should probably be removed from the constructor after adding the controls
@@ -20,5 +23,5 @@ public:
 
     Vector2D collideWith(Ball & ball, float collision_time) override;
     void draw(Interface & interface) override;
-    void RotateFlipper(float a);
+    void RotateFlipper(float a, float time);
 };
