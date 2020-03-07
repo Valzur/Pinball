@@ -3,6 +3,7 @@
 #include <iostream>
 #include "Obstacle.h"
 #include <cmath>
+#include "../Manager.h"
 
 using namespace std;
 
@@ -16,5 +17,5 @@ public:
     Vector2D GetPosition();
     float GetRadius();
 
-    Vector2D collidewith(Ball& ball, float collision_time);
+    Vector2D collidewith(Ball& ball, float collision_time, Manager & manager);
 };

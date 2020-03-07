@@ -13,6 +13,7 @@ using namespace std;
 #include "GameObjects/Flipper.h"
 #include "GameObjects/Obstacles/SpriteWalls.h"
 #include "GameObjects/Obstacles/Bumper.h"
+#include "GameObjects/Manager.h"
 
 // Represents a game, keeps track of everything relevant to the game and delegates the tasks to their proper objects
 class Game
@@ -21,6 +22,9 @@ private:
     high_resolution_clock::time_point last_frame;  // Time point of the last rendered frame
     Interface interface;  // An object representing the game interface
     bool exit, left, right;  // Flags about the user's current controls
+    bool Lost=false;
+
+    Manager manager;
 
     Ball ball;  // The ball (obviously :D)
     Flipper leftFlipper, rightFlipper;  // The right and left flippers
@@ -34,4 +38,5 @@ public:
     void simulate();
     void updateInterfaceOutput();
     bool exited();
+    void GameOver(bool lost);
 };

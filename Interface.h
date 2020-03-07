@@ -39,4 +39,5 @@ public:
     void drawNewWall(sf::Sprite sprite);
     void drawBumper(Vector2D center, float radius);
     void drawFPS();
+    void drawText(string Fontpath,string Text, int FontSize, sf::Color color, Vector2D position);
 };

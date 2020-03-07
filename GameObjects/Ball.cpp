@@ -28,3 +28,11 @@ void Ball::draw (Interface & interface)
 {
     interface.drawBall(center, radius);
 }
+
+void Ball::setCenter(Vector2D pos) {
+    center=pos;
+}
+
+void Ball::setVelocity(Vector2D vel) {
+    velocity=vel;
+}

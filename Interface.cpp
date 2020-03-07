@@ -4,7 +4,7 @@
 Interface::Interface()
 {
     sf::ContextSettings settings;
-    settings.antialiasingLevel = 8;  // Remove this line if the game was too laggy
+    settings.antialiasingLevel = 16;  // Remove this line if the game was too laggy
     window.create(sf::VideoMode(GAME_WIDTH, GAME_HEIGHT), "Pinball", sf::Style::Titlebar, settings);
     window.setVerticalSyncEnabled(true);
 }
@@ -164,6 +164,19 @@ void Interface::drawFPS() {
 
 void Interface::setFPS(string fps) {
     FPS=fps;
+}
+
+void Interface::drawText(string Fontpath, string Text, int FontSize, sf::Color color, Vector2D position) {
+    if(!font.loadFromFile(Fontpath)){
+        cout<< "Can't load font! "<< endl;
+    }
+    text.setFont(font);
+    text.setString(Text);
+    sf::FloatRect bounds=text.getLocalBounds();
+    text.setCharacterSize(FontSize);
+    text.setFillColor(color);
+    text.setPosition(position.x-bounds.width/2,position.y);
+    window.draw(text);
 }
 
 

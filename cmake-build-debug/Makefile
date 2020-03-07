@@ -203,6 +203,33 @@ GameObjects/Flipper.cpp.s:
 	$(MAKE) -f CMakeFiles\Pinball.dir\build.make CMakeFiles/Pinball.dir/GameObjects/Flipper.cpp.s
 .PHONY : GameObjects/Flipper.cpp.s
 
+GameObjects/Manager.obj: GameObjects/Manager.cpp.obj
+
+.PHONY : GameObjects/Manager.obj
+
+# target to build an object file
+GameObjects/Manager.cpp.obj:
+	$(MAKE) -f CMakeFiles\Pinball.dir\build.make CMakeFiles/Pinball.dir/GameObjects/Manager.cpp.obj
+.PHONY : GameObjects/Manager.cpp.obj
+
+GameObjects/Manager.i: GameObjects/Manager.cpp.i
+
+.PHONY : GameObjects/Manager.i
+
+# target to preprocess a source file
+GameObjects/Manager.cpp.i:
+	$(MAKE) -f CMakeFiles\Pinball.dir\build.make CMakeFiles/Pinball.dir/GameObjects/Manager.cpp.i
+.PHONY : GameObjects/Manager.cpp.i
+
+GameObjects/Manager.s: GameObjects/Manager.cpp.s
+
+.PHONY : GameObjects/Manager.s
+
+# target to generate assembly for a file
+GameObjects/Manager.cpp.s:
+	$(MAKE) -f CMakeFiles\Pinball.dir\build.make CMakeFiles/Pinball.dir/GameObjects/Manager.cpp.s
+.PHONY : GameObjects/Manager.cpp.s
+
 GameObjects/Obstacles/Bumper.obj: GameObjects/Obstacles/Bumper.cpp.obj
 
 .PHONY : GameObjects/Obstacles/Bumper.obj
@@ -383,6 +410,9 @@ help:
 	@echo ... GameObjects/Flipper.obj
 	@echo ... GameObjects/Flipper.i
 	@echo ... GameObjects/Flipper.s
+	@echo ... GameObjects/Manager.obj
+	@echo ... GameObjects/Manager.i
+	@echo ... GameObjects/Manager.s
 	@echo ... GameObjects/Obstacles/Bumper.obj
 	@echo ... GameObjects/Obstacles/Bumper.i
 	@echo ... GameObjects/Obstacles/Bumper.s
