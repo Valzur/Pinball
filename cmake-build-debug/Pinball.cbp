@@ -24,8 +24,16 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add option="-DOV_EXCLUDE_STATIC_CALLBACKS"/>
+					<Add option="-DFLAC__NO_DLL"/>
 					<Add option="-DSFML_STATIC"/>
+					<Add directory="D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/libs/libogg-1.3.4/include"/>
+					<Add directory="D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/libs/libogg-1.3.4"/>
+					<Add directory="D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/libs/flac-1.3.2/include"/>
+					<Add directory="D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/liboggz-1.1.1/include"/>
+					<Add directory="D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/libs/freetype-2.10.0/include"/>
 					<Add directory="D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/libs/SFML-2.5.1/lib"/>
+					<Add directory="D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/libs/SFML-2.5.1/bin"/>
 					<Add directory="D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/libs/SFML-2.5.1/include"/>
 					<Add directory="D:/CLion 2019.3.3/MINGW/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
 					<Add directory="D:/CLion 2019.3.3/MINGW/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
@@ -48,8 +56,16 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add option="-DOV_EXCLUDE_STATIC_CALLBACKS"/>
+					<Add option="-DFLAC__NO_DLL"/>
 					<Add option="-DSFML_STATIC"/>
+					<Add directory="D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/libs/libogg-1.3.4/include"/>
+					<Add directory="D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/libs/libogg-1.3.4"/>
+					<Add directory="D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/libs/flac-1.3.2/include"/>
+					<Add directory="D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/liboggz-1.1.1/include"/>
+					<Add directory="D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/libs/freetype-2.10.0/include"/>
 					<Add directory="D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/libs/SFML-2.5.1/lib"/>
+					<Add directory="D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/libs/SFML-2.5.1/bin"/>
 					<Add directory="D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/libs/SFML-2.5.1/include"/>
 					<Add directory="D:/CLion 2019.3.3/MINGW/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
 					<Add directory="D:/CLion 2019.3.3/MINGW/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
@@ -144,6 +160,12 @@
 			<Option target="Pinball"/>
 		</Unit>
 		<Unit filename="D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Interface.h">
+			<Option target="Pinball"/>
+		</Unit>
+		<Unit filename="D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Utility/AudioManager.cpp">
+			<Option target="Pinball"/>
+		</Unit>
+		<Unit filename="D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Utility/AudioManager.h">
 			<Option target="Pinball"/>
 		</Unit>
 		<Unit filename="D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Utility/PixelPerfectCollision.cpp">

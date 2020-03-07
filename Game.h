@@ -14,6 +14,7 @@ using namespace std;
 #include "GameObjects/Obstacles/SpriteWalls.h"
 #include "GameObjects/Obstacles/Bumper.h"
 #include "GameObjects/Manager.h"
+#include "Utility/AudioManager.h"
 
 // Represents a game, keeps track of everything relevant to the game and delegates the tasks to their proper objects
 class Game
@@ -24,6 +25,7 @@ private:
     bool exit, left, right;  // Flags about the user's current controls
     bool Lost=false;
 
+    AudioManager audioManager;
     Manager manager;
 
     Ball ball;  // The ball (obviously :D)

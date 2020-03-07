@@ -338,6 +338,33 @@ Interface.cpp.s:
 	$(MAKE) -f CMakeFiles\Pinball.dir\build.make CMakeFiles/Pinball.dir/Interface.cpp.s
 .PHONY : Interface.cpp.s
 
+Utility/AudioManager.obj: Utility/AudioManager.cpp.obj
+
+.PHONY : Utility/AudioManager.obj
+
+# target to build an object file
+Utility/AudioManager.cpp.obj:
+	$(MAKE) -f CMakeFiles\Pinball.dir\build.make CMakeFiles/Pinball.dir/Utility/AudioManager.cpp.obj
+.PHONY : Utility/AudioManager.cpp.obj
+
+Utility/AudioManager.i: Utility/AudioManager.cpp.i
+
+.PHONY : Utility/AudioManager.i
+
+# target to preprocess a source file
+Utility/AudioManager.cpp.i:
+	$(MAKE) -f CMakeFiles\Pinball.dir\build.make CMakeFiles/Pinball.dir/Utility/AudioManager.cpp.i
+.PHONY : Utility/AudioManager.cpp.i
+
+Utility/AudioManager.s: Utility/AudioManager.cpp.s
+
+.PHONY : Utility/AudioManager.s
+
+# target to generate assembly for a file
+Utility/AudioManager.cpp.s:
+	$(MAKE) -f CMakeFiles\Pinball.dir\build.make CMakeFiles/Pinball.dir/Utility/AudioManager.cpp.s
+.PHONY : Utility/AudioManager.cpp.s
+
 Utility/PixelPerfectCollision.obj: Utility/PixelPerfectCollision.cpp.obj
 
 .PHONY : Utility/PixelPerfectCollision.obj
@@ -425,6 +452,9 @@ help:
 	@echo ... Interface.obj
 	@echo ... Interface.i
 	@echo ... Interface.s
+	@echo ... Utility/AudioManager.obj
+	@echo ... Utility/AudioManager.i
+	@echo ... Utility/AudioManager.s
 	@echo ... Utility/PixelPerfectCollision.obj
 	@echo ... Utility/PixelPerfectCollision.i
 	@echo ... Utility/PixelPerfectCollision.s

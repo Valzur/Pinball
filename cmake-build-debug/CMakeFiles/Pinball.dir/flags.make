@@ -4,7 +4,7 @@
 # compile CXX with D:/CLion 2019.3.3/MINGW/mingw32/bin/g++.exe
 CXX_FLAGS = -g   -std=gnu++14
 
-CXX_DEFINES = -DSFML_STATIC
+CXX_DEFINES = -DFLAC__NO_DLL -DOV_EXCLUDE_STATIC_CALLBACKS -DSFML_STATIC
 
 CXX_INCLUDES = @CMakeFiles/Pinball.dir/includes_CXX.rsp
 
