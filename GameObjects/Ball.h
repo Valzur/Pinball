@@ -17,6 +17,9 @@ public:
     Vector2D getCenter() const;
     Vector2D getVelocity() const;
 
+    void setCenter(Vector2D pos);
+    void setVelocity(Vector2D vel);
+
     void move (Vector2D acceleration, float time);  // Simulates the ball's motion under uniform acceleration for a period of time
 
     void draw (Interface & interface) override;

@@ -2,8 +2,10 @@
 
 #include <SFML/Window.hpp>
 #include <SFML/Graphics.hpp>
-
 #include "Defs.h"
+#include <iostream>
+
+using namespace std;
 
 // Represents the game interface
 // This class is the ONLY one that interacts with the user
@@ -12,6 +14,9 @@
 class Interface
 {
 private:
+    string FPS;
+    sf::Font font;
+    sf::Text text;
     sf::RenderWindow window;  // Represents the game window
     const sf::Color  // Colors used for drawing (can change the whole theme of the game)
         backgroundColor = sf::Color::White,
@@ -23,11 +28,16 @@ private:
 public:
     Interface();  // Constructor
     void getControls(bool & exit, bool & left, bool & right);  // Detects the buttons pressed
+    void setFPS(string fps);
 
     void clear();  // Clears the frame (first step in rendering a new frame)
     void display();  // Displays the frame (last step in rendering a new frame)
 
     void drawBall(Vector2D center, float radius);  // Draws a ball
     void drawFlipper(FlipperType type, Vector2D center, float length, float angle, float majorRadius, float minor_radius);  // Draws a flipper
-    void drawWall(float position);  // Draws a vertical wall
+    void drawWall(float position,bool isVertical);  // Draws a vertical wall
+    void drawNewWall(sf::Sprite sprite);
+    void drawBumper(Vector2D center, float radius);
+    void drawFPS();
+    void drawText(string Fontpath,string Text, int FontSize, sf::Color color, Vector2D position);
 };

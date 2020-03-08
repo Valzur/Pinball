@@ -1,11 +1,13 @@
 #include "Interface.h"
 
+
 Interface::Interface()
 {
     sf::ContextSettings settings;
     settings.antialiasingLevel = 8;  // Remove this line if the game was too laggy
     window.create(sf::VideoMode(GAME_WIDTH, GAME_HEIGHT), "Pinball", sf::Style::Titlebar, settings);
-    window.setVerticalSyncEnabled(true);
+    window.setVerticalSyncEnabled(false);
+    window.setFramerateLimit(0);
 }
 
 void Interface::getControls(bool & exit, bool & left, bool & right)
@@ -51,7 +53,7 @@ void Interface::drawFlipper(FlipperType type, Vector2D center, float length, flo
     majorCircleOutline.setPosition(center.x, center.y);
     window.draw(majorCircleOutline);
 
-    // Draw the minor circle outline
+    // Draw the minor circle outline000000000000000000000000000000000000
     sf::CircleShape minorCircleOutline(minorRadius);
     minorCircleOutline.setOutlineThickness(outlineThickness);
     minorCircleOutline.setOutlineColor(outlineColor);
@@ -109,12 +111,75 @@ void Interface::drawFlipper(FlipperType type, Vector2D center, float length, flo
     window.draw(bottomLine);
 }
 
-void Interface::drawWall(float position)
+void Interface::drawWall(float position, bool isVertical)
 {
-    sf::Vertex line[] =
-            {
-                    sf::Vertex(sf::Vector2f(position, 0), outlineColor),
-                    sf::Vertex(sf::Vector2f(position, GAME_HEIGHT), outlineColor)
-            };
-    window.draw(line, 2, sf::Lines);
+    if(isVertical) {
+        sf::Vertex line[] =
+                {
+                        sf::Vertex(sf::Vector2f(position, 0), outlineColor),
+                        sf::Vertex(sf::Vector2f(position, GAME_HEIGHT), outlineColor)
+                };
+        window.draw(line, 2, sf::Lines);
+    }else{
+        sf::Vertex line[] =
+                {
+                        sf::Vertex(sf::Vector2f(0, position), outlineColor),
+                        sf::Vertex(sf::Vector2f(GAME_WIDTH, position), outlineColor)
+                };
+        window.draw(line, 2, sf::Lines);
+    }
 }
+
+void Interface::drawNewWall(sf::Sprite sprite) {
+    window.draw(sprite);
+}
+
+void Interface::drawBumper(Vector2D center, float radius) {
+    sf::CircleShape circle(radius);
+    sf::CircleShape circle1(radius/2);
+    circle.setOrigin(radius, radius);
+    circle1.setOrigin(radius/2,radius/2);
+    circle.setOutlineThickness(3*outlineThickness);
+    circle1.setOutlineThickness(2*outlineThickness);
+    circle.setOutlineColor(sf::Color::Black);
+    circle1.setOutlineColor(sf::Color::Blue);
+    //circle.setFillColor(ballFillColor);
+    circle.setPosition(center.x, center.y);
+    circle1.setPosition(center.x,center.y);
+    window.draw(circle);
+    window.draw(circle1);
+}
+
+void Interface::drawFPS() {
+    if(!font.loadFromFile("Assets/Fonts/BebasNeue-Regular.ttf")){
+        cout<< "Can't load font! "<< endl;
+    }
+
+    text.setFont(font);
+    text.setString(FPS);
+    text.setCharacterSize(24);
+    text.setFillColor(sf::Color::Green);
+    text.setPosition(0,0);
+    window.draw(text);
+}
+
+void Interface::setFPS(string fps) {
+    FPS=fps;
+}
+
+void Interface::drawText(string Fontpath, string Text, int FontSize, sf::Color color, Vector2D position) {
+    if(!font.loadFromFile(Fontpath)){
+        cout<< "Can't load font! "<< endl;
+    }
+    text.setFont(font);
+    text.setString(Text);
+    sf::FloatRect bounds=text.getLocalBounds();
+    text.setCharacterSize(FontSize);
+    text.setFillColor(color);
+    text.setPosition(position.x-bounds.width/2,position.y);
+    window.draw(text);
+}
+
+
+
+

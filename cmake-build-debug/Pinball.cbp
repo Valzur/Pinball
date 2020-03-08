@@ -8,148 +8,194 @@
 		<Option virtualFolders="CMake Files\;CMake Files\libs\;CMake Files\libs\SFML-2.5.1\;CMake Files\libs\SFML-2.5.1\lib\;CMake Files\libs\SFML-2.5.1\lib\cmake\;CMake Files\libs\SFML-2.5.1\lib\cmake\SFML\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="D:/Zewail City/Year 3 Spring/C++/Project/Pinball/cmake-build-debug"/>
+				<Option working_dir="F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="D:/CLion 2019.3.3/MINGW/mingw32/bin/mingw32-make.exe -f &quot;D:/Zewail City/Year 3 Spring/C++/Project/Pinball/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="D:/CLion 2019.3.3/MINGW/mingw32/bin/mingw32-make.exe -f &quot;D:/Zewail City/Year 3 Spring/C++/Project/Pinball/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/CLion 2019.3.3/MINGW/mingw32/bin/mingw32-make.exe -f &quot;D:/Zewail City/Year 3 Spring/C++/Project/Pinball/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/CLion 2019.3.3/MINGW/mingw32/bin/mingw32-make.exe -f &quot;D:/Zewail City/Year 3 Spring/C++/Project/Pinball/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="F:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="F:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="F:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="F:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Pinball">
-				<Option output="D:/Zewail City/Year 3 Spring/C++/Project/Pinball/cmake-build-debug/Pinball.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/Zewail City/Year 3 Spring/C++/Project/Pinball/cmake-build-debug"/>
+				<Option output="F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/cmake-build-debug/Pinball.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add option="-DOV_EXCLUDE_STATIC_CALLBACKS"/>
+					<Add option="-DFLAC__NO_DLL"/>
 					<Add option="-DSFML_STATIC"/>
-					<Add directory="D:/Zewail City/Year 3 Spring/C++/Project/Pinball/libs/SFML-2.5.1/lib"/>
-					<Add directory="D:/Zewail City/Year 3 Spring/C++/Project/Pinball/libs/SFML-2.5.1/include"/>
-					<Add directory="D:/CLion 2019.3.3/MINGW/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
-					<Add directory="D:/CLion 2019.3.3/MINGW/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
-					<Add directory="D:/CLion 2019.3.3/MINGW/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
-					<Add directory="D:/CLion 2019.3.3/MINGW/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
-					<Add directory="D:/CLion 2019.3.3/MINGW/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
-					<Add directory="D:/CLion 2019.3.3/MINGW/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
+					<Add directory="F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/libs/libogg-1.3.4/include"/>
+					<Add directory="F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/libs/libogg-1.3.4"/>
+					<Add directory="F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/libs/flac-1.3.2/include"/>
+					<Add directory="F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/liboggz-1.1.1/include"/>
+					<Add directory="F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/libs/freetype-2.10.0/include"/>
+					<Add directory="F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/libs/SFML-2.5.1/lib"/>
+					<Add directory="F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/libs/SFML-2.5.1/bin"/>
+					<Add directory="F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/libs/SFML-2.5.1/include"/>
+					<Add directory="F:/MinGW/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="F:/MinGW/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
+					<Add directory="F:/MinGW/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="F:/MinGW/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
+					<Add directory="F:/MinGW/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="F:/MinGW/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="D:/CLion 2019.3.3/MINGW/mingw32/bin/mingw32-make.exe -f &quot;D:/Zewail City/Year 3 Spring/C++/Project/Pinball/cmake-build-debug/Makefile&quot;  VERBOSE=1 Pinball"/>
-					<CompileFile command="D:/CLion 2019.3.3/MINGW/mingw32/bin/mingw32-make.exe -f &quot;D:/Zewail City/Year 3 Spring/C++/Project/Pinball/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/CLion 2019.3.3/MINGW/mingw32/bin/mingw32-make.exe -f &quot;D:/Zewail City/Year 3 Spring/C++/Project/Pinball/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/CLion 2019.3.3/MINGW/mingw32/bin/mingw32-make.exe -f &quot;D:/Zewail City/Year 3 Spring/C++/Project/Pinball/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="F:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/cmake-build-debug/Makefile&quot;  VERBOSE=1 Pinball"/>
+					<CompileFile command="F:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="F:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="F:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Pinball/fast">
-				<Option output="D:/Zewail City/Year 3 Spring/C++/Project/Pinball/cmake-build-debug/Pinball.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/Zewail City/Year 3 Spring/C++/Project/Pinball/cmake-build-debug"/>
+				<Option output="F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/cmake-build-debug/Pinball.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add option="-DOV_EXCLUDE_STATIC_CALLBACKS"/>
+					<Add option="-DFLAC__NO_DLL"/>
 					<Add option="-DSFML_STATIC"/>
-					<Add directory="D:/Zewail City/Year 3 Spring/C++/Project/Pinball/libs/SFML-2.5.1/lib"/>
-					<Add directory="D:/Zewail City/Year 3 Spring/C++/Project/Pinball/libs/SFML-2.5.1/include"/>
-					<Add directory="D:/CLion 2019.3.3/MINGW/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
-					<Add directory="D:/CLion 2019.3.3/MINGW/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
-					<Add directory="D:/CLion 2019.3.3/MINGW/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
-					<Add directory="D:/CLion 2019.3.3/MINGW/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
-					<Add directory="D:/CLion 2019.3.3/MINGW/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
-					<Add directory="D:/CLion 2019.3.3/MINGW/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
+					<Add directory="F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/libs/libogg-1.3.4/include"/>
+					<Add directory="F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/libs/libogg-1.3.4"/>
+					<Add directory="F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/libs/flac-1.3.2/include"/>
+					<Add directory="F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/liboggz-1.1.1/include"/>
+					<Add directory="F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/libs/freetype-2.10.0/include"/>
+					<Add directory="F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/libs/SFML-2.5.1/lib"/>
+					<Add directory="F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/libs/SFML-2.5.1/bin"/>
+					<Add directory="F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/libs/SFML-2.5.1/include"/>
+					<Add directory="F:/MinGW/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="F:/MinGW/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
+					<Add directory="F:/MinGW/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="F:/MinGW/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
+					<Add directory="F:/MinGW/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="F:/MinGW/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="D:/CLion 2019.3.3/MINGW/mingw32/bin/mingw32-make.exe -f &quot;D:/Zewail City/Year 3 Spring/C++/Project/Pinball/cmake-build-debug/Makefile&quot;  VERBOSE=1 Pinball/fast"/>
-					<CompileFile command="D:/CLion 2019.3.3/MINGW/mingw32/bin/mingw32-make.exe -f &quot;D:/Zewail City/Year 3 Spring/C++/Project/Pinball/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/CLion 2019.3.3/MINGW/mingw32/bin/mingw32-make.exe -f &quot;D:/Zewail City/Year 3 Spring/C++/Project/Pinball/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/CLion 2019.3.3/MINGW/mingw32/bin/mingw32-make.exe -f &quot;D:/Zewail City/Year 3 Spring/C++/Project/Pinball/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="F:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/cmake-build-debug/Makefile&quot;  VERBOSE=1 Pinball/fast"/>
+					<CompileFile command="F:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="F:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="F:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="D:/Zewail City/Year 3 Spring/C++/Project/Pinball/cmake-build-debug"/>
+				<Option working_dir="F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="D:/CLion 2019.3.3/MINGW/mingw32/bin/mingw32-make.exe -f &quot;D:/Zewail City/Year 3 Spring/C++/Project/Pinball/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="D:/CLion 2019.3.3/MINGW/mingw32/bin/mingw32-make.exe -f &quot;D:/Zewail City/Year 3 Spring/C++/Project/Pinball/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/CLion 2019.3.3/MINGW/mingw32/bin/mingw32-make.exe -f &quot;D:/Zewail City/Year 3 Spring/C++/Project/Pinball/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/CLion 2019.3.3/MINGW/mingw32/bin/mingw32-make.exe -f &quot;D:/Zewail City/Year 3 Spring/C++/Project/Pinball/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="F:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="F:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="F:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="F:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="D:/Zewail City/Year 3 Spring/C++/Project/Pinball/cmake-build-debug"/>
+				<Option working_dir="F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="D:/CLion 2019.3.3/MINGW/mingw32/bin/mingw32-make.exe -f &quot;D:/Zewail City/Year 3 Spring/C++/Project/Pinball/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="D:/CLion 2019.3.3/MINGW/mingw32/bin/mingw32-make.exe -f &quot;D:/Zewail City/Year 3 Spring/C++/Project/Pinball/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/CLion 2019.3.3/MINGW/mingw32/bin/mingw32-make.exe -f &quot;D:/Zewail City/Year 3 Spring/C++/Project/Pinball/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/CLion 2019.3.3/MINGW/mingw32/bin/mingw32-make.exe -f &quot;D:/Zewail City/Year 3 Spring/C++/Project/Pinball/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="F:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="F:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="F:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="F:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="D:/Zewail City/Year 3 Spring/C++/Project/Pinball/Defs.h">
+		<Unit filename="F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Defs.h">
 			<Option target="Pinball"/>
 		</Unit>
-		<Unit filename="D:/Zewail City/Year 3 Spring/C++/Project/Pinball/Game.cpp">
+		<Unit filename="F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Game.cpp">
 			<Option target="Pinball"/>
 		</Unit>
-		<Unit filename="D:/Zewail City/Year 3 Spring/C++/Project/Pinball/Game.h">
+		<Unit filename="F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Game.h">
 			<Option target="Pinball"/>
 		</Unit>
-		<Unit filename="D:/Zewail City/Year 3 Spring/C++/Project/Pinball/GameObjects/Ball.cpp">
+		<Unit filename="F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Ball.cpp">
 			<Option target="Pinball"/>
 		</Unit>
-		<Unit filename="D:/Zewail City/Year 3 Spring/C++/Project/Pinball/GameObjects/Ball.h">
+		<Unit filename="F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Ball.h">
 			<Option target="Pinball"/>
 		</Unit>
-		<Unit filename="D:/Zewail City/Year 3 Spring/C++/Project/Pinball/GameObjects/Collidable.h">
+		<Unit filename="F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Collidable.h">
 			<Option target="Pinball"/>
 		</Unit>
-		<Unit filename="D:/Zewail City/Year 3 Spring/C++/Project/Pinball/GameObjects/Drawable.h">
+		<Unit filename="F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Drawable.h">
 			<Option target="Pinball"/>
 		</Unit>
-		<Unit filename="D:/Zewail City/Year 3 Spring/C++/Project/Pinball/GameObjects/Flipper.cpp">
+		<Unit filename="F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Flipper.cpp">
 			<Option target="Pinball"/>
 		</Unit>
-		<Unit filename="D:/Zewail City/Year 3 Spring/C++/Project/Pinball/GameObjects/Flipper.h">
+		<Unit filename="F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Flipper.h">
 			<Option target="Pinball"/>
 		</Unit>
-		<Unit filename="D:/Zewail City/Year 3 Spring/C++/Project/Pinball/GameObjects/Obstacles/Obstacle.h">
+		<Unit filename="F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Manager.cpp">
 			<Option target="Pinball"/>
 		</Unit>
-		<Unit filename="D:/Zewail City/Year 3 Spring/C++/Project/Pinball/GameObjects/Obstacles/Wall.cpp">
+		<Unit filename="F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Manager.h">
 			<Option target="Pinball"/>
 		</Unit>
-		<Unit filename="D:/Zewail City/Year 3 Spring/C++/Project/Pinball/GameObjects/Obstacles/Wall.h">
+		<Unit filename="F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/Bumper.cpp">
 			<Option target="Pinball"/>
 		</Unit>
-		<Unit filename="D:/Zewail City/Year 3 Spring/C++/Project/Pinball/Interface.cpp">
+		<Unit filename="F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/Bumper.h">
 			<Option target="Pinball"/>
 		</Unit>
-		<Unit filename="D:/Zewail City/Year 3 Spring/C++/Project/Pinball/Interface.h">
+		<Unit filename="F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/Obstacle.h">
 			<Option target="Pinball"/>
 		</Unit>
-		<Unit filename="D:/Zewail City/Year 3 Spring/C++/Project/Pinball/main.cpp">
+		<Unit filename="F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/SpriteWalls.cpp">
 			<Option target="Pinball"/>
 		</Unit>
-		<Unit filename="D:/Zewail City/Year 3 Spring/C++/Project/Pinball/CMakeLists.txt">
+		<Unit filename="F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/SpriteWalls.h">
+			<Option target="Pinball"/>
+		</Unit>
+		<Unit filename="F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/Wall.cpp">
+			<Option target="Pinball"/>
+		</Unit>
+		<Unit filename="F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/Wall.h">
+			<Option target="Pinball"/>
+		</Unit>
+		<Unit filename="F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Interface.cpp">
+			<Option target="Pinball"/>
+		</Unit>
+		<Unit filename="F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Interface.h">
+			<Option target="Pinball"/>
+		</Unit>
+		<Unit filename="F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Utility/AudioManager.cpp">
+			<Option target="Pinball"/>
+		</Unit>
+		<Unit filename="F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Utility/AudioManager.h">
+			<Option target="Pinball"/>
+		</Unit>
+		<Unit filename="F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Utility/PixelPerfectCollision.cpp">
+			<Option target="Pinball"/>
+		</Unit>
+		<Unit filename="F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Utility/PixelPerfectCollision.h">
+			<Option target="Pinball"/>
+		</Unit>
+		<Unit filename="F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/main.cpp">
+			<Option target="Pinball"/>
+		</Unit>
+		<Unit filename="F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="D:/Zewail City/Year 3 Spring/C++/Project/Pinball/libs/SFML-2.5.1/lib/cmake/SFML/SFMLConfig.cmake">
+		<Unit filename="F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/libs/SFML-2.5.1/lib/cmake/SFML/SFMLConfig.cmake">
 			<Option virtualFolder="CMake Files\libs\SFML-2.5.1\lib\cmake\SFML\"/>
 		</Unit>
-		<Unit filename="D:/Zewail City/Year 3 Spring/C++/Project/Pinball/libs/SFML-2.5.1/lib/cmake/SFML/SFMLConfigDependencies.cmake">
+		<Unit filename="F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/libs/SFML-2.5.1/lib/cmake/SFML/SFMLConfigDependencies.cmake">
 			<Option virtualFolder="CMake Files\libs\SFML-2.5.1\lib\cmake\SFML\"/>
 		</Unit>
-		<Unit filename="D:/Zewail City/Year 3 Spring/C++/Project/Pinball/libs/SFML-2.5.1/lib/cmake/SFML/SFMLConfigVersion.cmake">
+		<Unit filename="F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/libs/SFML-2.5.1/lib/cmake/SFML/SFMLConfigVersion.cmake">
 			<Option virtualFolder="CMake Files\libs\SFML-2.5.1\lib\cmake\SFML\"/>
 		</Unit>
-		<Unit filename="D:/Zewail City/Year 3 Spring/C++/Project/Pinball/libs/SFML-2.5.1/lib/cmake/SFML/SFMLStaticTargets-debug.cmake">
+		<Unit filename="F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/libs/SFML-2.5.1/lib/cmake/SFML/SFMLStaticTargets-debug.cmake">
 			<Option virtualFolder="CMake Files\libs\SFML-2.5.1\lib\cmake\SFML\"/>
 		</Unit>
-		<Unit filename="D:/Zewail City/Year 3 Spring/C++/Project/Pinball/libs/SFML-2.5.1/lib/cmake/SFML/SFMLStaticTargets-release.cmake">
+		<Unit filename="F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/libs/SFML-2.5.1/lib/cmake/SFML/SFMLStaticTargets-release.cmake">
 			<Option virtualFolder="CMake Files\libs\SFML-2.5.1\lib\cmake\SFML\"/>
 		</Unit>
-		<Unit filename="D:/Zewail City/Year 3 Spring/C++/Project/Pinball/libs/SFML-2.5.1/lib/cmake/SFML/SFMLStaticTargets.cmake">
+		<Unit filename="F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/libs/SFML-2.5.1/lib/cmake/SFML/SFMLStaticTargets.cmake">
 			<Option virtualFolder="CMake Files\libs\SFML-2.5.1\lib\cmake\SFML\"/>
 		</Unit>
 	</Project>

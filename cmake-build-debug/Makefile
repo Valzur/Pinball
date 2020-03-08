@@ -38,19 +38,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "D:\CLion 2019.3.3\bin\cmake\win\bin\cmake.exe"
+CMAKE_COMMAND = "F:\CLion 2019.3.3\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "D:\CLion 2019.3.3\bin\cmake\win\bin\cmake.exe" -E remove -f
+RM = "F:\CLion 2019.3.3\bin\cmake\win\bin\cmake.exe" -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "D:\Zewail City\Year 3 Spring\C++\Project\Pinball"
+CMAKE_SOURCE_DIR = "F:\Zewail City\Year 3 Spring\C++\Project\Repository\Pinball"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "D:\Zewail City\Year 3 Spring\C++\Project\Pinball\cmake-build-debug"
+CMAKE_BINARY_DIR = "F:\Zewail City\Year 3 Spring\C++\Project\Repository\Pinball\cmake-build-debug"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -58,7 +58,7 @@ CMAKE_BINARY_DIR = "D:\Zewail City\Year 3 Spring\C++\Project\Pinball\cmake-build
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	"D:\CLion 2019.3.3\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
+	"F:\CLion 2019.3.3\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -69,7 +69,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	"D:\CLion 2019.3.3\bin\cmake\win\bin\cmake.exe" -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	"F:\CLion 2019.3.3\bin\cmake\win\bin\cmake.exe" -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -79,9 +79,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "D:\Zewail City\Year 3 Spring\C++\Project\Pinball\cmake-build-debug\CMakeFiles" "D:\Zewail City\Year 3 Spring\C++\Project\Pinball\cmake-build-debug\CMakeFiles\progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start "F:\Zewail City\Year 3 Spring\C++\Project\Repository\Pinball\cmake-build-debug\CMakeFiles" "F:\Zewail City\Year 3 Spring\C++\Project\Repository\Pinball\cmake-build-debug\CMakeFiles\progress.marks"
 	$(MAKE) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "D:\Zewail City\Year 3 Spring\C++\Project\Pinball\cmake-build-debug\CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "F:\Zewail City\Year 3 Spring\C++\Project\Repository\Pinball\cmake-build-debug\CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
@@ -203,6 +203,87 @@ GameObjects/Flipper.cpp.s:
 	$(MAKE) -f CMakeFiles\Pinball.dir\build.make CMakeFiles/Pinball.dir/GameObjects/Flipper.cpp.s
 .PHONY : GameObjects/Flipper.cpp.s
 
+GameObjects/Manager.obj: GameObjects/Manager.cpp.obj
+
+.PHONY : GameObjects/Manager.obj
+
+# target to build an object file
+GameObjects/Manager.cpp.obj:
+	$(MAKE) -f CMakeFiles\Pinball.dir\build.make CMakeFiles/Pinball.dir/GameObjects/Manager.cpp.obj
+.PHONY : GameObjects/Manager.cpp.obj
+
+GameObjects/Manager.i: GameObjects/Manager.cpp.i
+
+.PHONY : GameObjects/Manager.i
+
+# target to preprocess a source file
+GameObjects/Manager.cpp.i:
+	$(MAKE) -f CMakeFiles\Pinball.dir\build.make CMakeFiles/Pinball.dir/GameObjects/Manager.cpp.i
+.PHONY : GameObjects/Manager.cpp.i
+
+GameObjects/Manager.s: GameObjects/Manager.cpp.s
+
+.PHONY : GameObjects/Manager.s
+
+# target to generate assembly for a file
+GameObjects/Manager.cpp.s:
+	$(MAKE) -f CMakeFiles\Pinball.dir\build.make CMakeFiles/Pinball.dir/GameObjects/Manager.cpp.s
+.PHONY : GameObjects/Manager.cpp.s
+
+GameObjects/Obstacles/Bumper.obj: GameObjects/Obstacles/Bumper.cpp.obj
+
+.PHONY : GameObjects/Obstacles/Bumper.obj
+
+# target to build an object file
+GameObjects/Obstacles/Bumper.cpp.obj:
+	$(MAKE) -f CMakeFiles\Pinball.dir\build.make CMakeFiles/Pinball.dir/GameObjects/Obstacles/Bumper.cpp.obj
+.PHONY : GameObjects/Obstacles/Bumper.cpp.obj
+
+GameObjects/Obstacles/Bumper.i: GameObjects/Obstacles/Bumper.cpp.i
+
+.PHONY : GameObjects/Obstacles/Bumper.i
+
+# target to preprocess a source file
+GameObjects/Obstacles/Bumper.cpp.i:
+	$(MAKE) -f CMakeFiles\Pinball.dir\build.make CMakeFiles/Pinball.dir/GameObjects/Obstacles/Bumper.cpp.i
+.PHONY : GameObjects/Obstacles/Bumper.cpp.i
+
+GameObjects/Obstacles/Bumper.s: GameObjects/Obstacles/Bumper.cpp.s
+
+.PHONY : GameObjects/Obstacles/Bumper.s
+
+# target to generate assembly for a file
+GameObjects/Obstacles/Bumper.cpp.s:
+	$(MAKE) -f CMakeFiles\Pinball.dir\build.make CMakeFiles/Pinball.dir/GameObjects/Obstacles/Bumper.cpp.s
+.PHONY : GameObjects/Obstacles/Bumper.cpp.s
+
+GameObjects/Obstacles/SpriteWalls.obj: GameObjects/Obstacles/SpriteWalls.cpp.obj
+
+.PHONY : GameObjects/Obstacles/SpriteWalls.obj
+
+# target to build an object file
+GameObjects/Obstacles/SpriteWalls.cpp.obj:
+	$(MAKE) -f CMakeFiles\Pinball.dir\build.make CMakeFiles/Pinball.dir/GameObjects/Obstacles/SpriteWalls.cpp.obj
+.PHONY : GameObjects/Obstacles/SpriteWalls.cpp.obj
+
+GameObjects/Obstacles/SpriteWalls.i: GameObjects/Obstacles/SpriteWalls.cpp.i
+
+.PHONY : GameObjects/Obstacles/SpriteWalls.i
+
+# target to preprocess a source file
+GameObjects/Obstacles/SpriteWalls.cpp.i:
+	$(MAKE) -f CMakeFiles\Pinball.dir\build.make CMakeFiles/Pinball.dir/GameObjects/Obstacles/SpriteWalls.cpp.i
+.PHONY : GameObjects/Obstacles/SpriteWalls.cpp.i
+
+GameObjects/Obstacles/SpriteWalls.s: GameObjects/Obstacles/SpriteWalls.cpp.s
+
+.PHONY : GameObjects/Obstacles/SpriteWalls.s
+
+# target to generate assembly for a file
+GameObjects/Obstacles/SpriteWalls.cpp.s:
+	$(MAKE) -f CMakeFiles\Pinball.dir\build.make CMakeFiles/Pinball.dir/GameObjects/Obstacles/SpriteWalls.cpp.s
+.PHONY : GameObjects/Obstacles/SpriteWalls.cpp.s
+
 GameObjects/Obstacles/Wall.obj: GameObjects/Obstacles/Wall.cpp.obj
 
 .PHONY : GameObjects/Obstacles/Wall.obj
@@ -257,6 +338,60 @@ Interface.cpp.s:
 	$(MAKE) -f CMakeFiles\Pinball.dir\build.make CMakeFiles/Pinball.dir/Interface.cpp.s
 .PHONY : Interface.cpp.s
 
+Utility/AudioManager.obj: Utility/AudioManager.cpp.obj
+
+.PHONY : Utility/AudioManager.obj
+
+# target to build an object file
+Utility/AudioManager.cpp.obj:
+	$(MAKE) -f CMakeFiles\Pinball.dir\build.make CMakeFiles/Pinball.dir/Utility/AudioManager.cpp.obj
+.PHONY : Utility/AudioManager.cpp.obj
+
+Utility/AudioManager.i: Utility/AudioManager.cpp.i
+
+.PHONY : Utility/AudioManager.i
+
+# target to preprocess a source file
+Utility/AudioManager.cpp.i:
+	$(MAKE) -f CMakeFiles\Pinball.dir\build.make CMakeFiles/Pinball.dir/Utility/AudioManager.cpp.i
+.PHONY : Utility/AudioManager.cpp.i
+
+Utility/AudioManager.s: Utility/AudioManager.cpp.s
+
+.PHONY : Utility/AudioManager.s
+
+# target to generate assembly for a file
+Utility/AudioManager.cpp.s:
+	$(MAKE) -f CMakeFiles\Pinball.dir\build.make CMakeFiles/Pinball.dir/Utility/AudioManager.cpp.s
+.PHONY : Utility/AudioManager.cpp.s
+
+Utility/PixelPerfectCollision.obj: Utility/PixelPerfectCollision.cpp.obj
+
+.PHONY : Utility/PixelPerfectCollision.obj
+
+# target to build an object file
+Utility/PixelPerfectCollision.cpp.obj:
+	$(MAKE) -f CMakeFiles\Pinball.dir\build.make CMakeFiles/Pinball.dir/Utility/PixelPerfectCollision.cpp.obj
+.PHONY : Utility/PixelPerfectCollision.cpp.obj
+
+Utility/PixelPerfectCollision.i: Utility/PixelPerfectCollision.cpp.i
+
+.PHONY : Utility/PixelPerfectCollision.i
+
+# target to preprocess a source file
+Utility/PixelPerfectCollision.cpp.i:
+	$(MAKE) -f CMakeFiles\Pinball.dir\build.make CMakeFiles/Pinball.dir/Utility/PixelPerfectCollision.cpp.i
+.PHONY : Utility/PixelPerfectCollision.cpp.i
+
+Utility/PixelPerfectCollision.s: Utility/PixelPerfectCollision.cpp.s
+
+.PHONY : Utility/PixelPerfectCollision.s
+
+# target to generate assembly for a file
+Utility/PixelPerfectCollision.cpp.s:
+	$(MAKE) -f CMakeFiles\Pinball.dir\build.make CMakeFiles/Pinball.dir/Utility/PixelPerfectCollision.cpp.s
+.PHONY : Utility/PixelPerfectCollision.cpp.s
+
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -302,12 +437,27 @@ help:
 	@echo ... GameObjects/Flipper.obj
 	@echo ... GameObjects/Flipper.i
 	@echo ... GameObjects/Flipper.s
+	@echo ... GameObjects/Manager.obj
+	@echo ... GameObjects/Manager.i
+	@echo ... GameObjects/Manager.s
+	@echo ... GameObjects/Obstacles/Bumper.obj
+	@echo ... GameObjects/Obstacles/Bumper.i
+	@echo ... GameObjects/Obstacles/Bumper.s
+	@echo ... GameObjects/Obstacles/SpriteWalls.obj
+	@echo ... GameObjects/Obstacles/SpriteWalls.i
+	@echo ... GameObjects/Obstacles/SpriteWalls.s
 	@echo ... GameObjects/Obstacles/Wall.obj
 	@echo ... GameObjects/Obstacles/Wall.i
 	@echo ... GameObjects/Obstacles/Wall.s
 	@echo ... Interface.obj
 	@echo ... Interface.i
 	@echo ... Interface.s
+	@echo ... Utility/AudioManager.obj
+	@echo ... Utility/AudioManager.i
+	@echo ... Utility/AudioManager.s
+	@echo ... Utility/PixelPerfectCollision.obj
+	@echo ... Utility/PixelPerfectCollision.i
+	@echo ... Utility/PixelPerfectCollision.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
