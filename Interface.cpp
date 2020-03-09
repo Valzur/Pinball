@@ -10,10 +10,11 @@ Interface::Interface()
     window.setFramerateLimit(0);
 }
 
-void Interface::getControls(bool & exit, bool & left, bool & right)
+void Interface::getControls(bool & exit, bool & left, bool & right, bool & space)
 {
     sf::Event event;
     while (window.pollEvent(event));
+    space = sf::Keyboard::isKeyPressed(sf::Keyboard::Space);
     exit = sf::Keyboard::isKeyPressed(sf::Keyboard::Escape);
     left = sf::Keyboard::isKeyPressed(sf::Keyboard::Left);
     right = sf::Keyboard::isKeyPressed(sf::Keyboard::Right);

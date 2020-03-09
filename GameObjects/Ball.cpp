@@ -1,6 +1,8 @@
 #include "Ball.h"
 
-Ball::Ball(Vector2D center, Vector2D velocity): center(center), velocity(velocity) {}
+Ball::Ball(Vector2D center, Vector2D velocity): center(center), velocity(velocity) {
+    isActive=false;
+}
 
 float Ball::getRadius() const
 {
@@ -18,10 +20,11 @@ Vector2D Ball::getVelocity() const
 }
 
 void Ball::move(Vector2D acceleration, float time)
-{
-    // Kinematic equations for planar motion of a particle
-    velocity += acceleration * time;
-    center += velocity * time - acceleration * time * time * 0.5;
+{   if(isActive) {
+        // Kinematic equations for planar motion of a particle
+        velocity += acceleration * time;
+        center += velocity * time - acceleration * time * time * 0.5;
+    }
 }
 
 void Ball::draw (Interface & interface)
@@ -35,4 +38,12 @@ void Ball::setCenter(Vector2D pos) {
 
 void Ball::setVelocity(Vector2D vel) {
     velocity=vel;
+}
+
+void Ball::Activate() {
+    isActive=true;
+}
+
+void Ball::deActivate() {
+    isActive=false;
 }

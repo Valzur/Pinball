@@ -5,7 +5,9 @@ Flipper::Flipper(FlipperType type, Vector2D center, float length, float angle, f
 
 Vector2D Flipper::collideWith(Ball & ball, float collision_time)
 {
+    //Failed attempt
 
+    /*
     Vector2D acc={0,0};
     Vector2D unitAcc;
     double speed=pow((pow(ball.getVelocity().x,2)+pow(ball.getVelocity().y,2)),0.5);
@@ -28,6 +30,10 @@ Vector2D Flipper::collideWith(Ball & ball, float collision_time)
     }
 
     return acc;
+     */
+
+    //Elliptic Collision detection
+
 }
 
 void Flipper::draw(Interface & interface)

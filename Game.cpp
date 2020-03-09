@@ -10,12 +10,12 @@ Game::Game(): leftFlipper(LEFT, Vector2D { GAME_WIDTH / 2.0f - (FLIPPER_LENGTH +
               leftWall(1,true), rightWall(GAME_WIDTH, true),upperWall(1, false) // This line should be removed,
 {
     last_frame = high_resolution_clock::now();
-    exit = left = right = false;
+    exit = left = right =space = false;
 }
 
 void Game::readInterfaceInput()
 {
-    interface.getControls(exit, left, right);
+    interface.getControls(exit, left, right,space);
 }
 
 void Game::simulate()
@@ -45,6 +45,9 @@ void Game::simulate()
 
     //Update fps
     interface.setFPS("FPS: " + to_string(1.0/delta_time));
+
+    if(space)
+        ball.Activate();
 
     //Test
     rightFlipper.collideWith(ball,delta_time);

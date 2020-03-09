@@ -6,6 +6,7 @@
 class Ball: public Drawable
 {
 private:
+    bool isActive;
     float radius = BALL_RADIUS;  // Radius of the ball
     Vector2D center;  // The instantaneous center of the ball
     Vector2D velocity;  // The instantaneous velocity of the ball
@@ -19,6 +20,9 @@ public:
 
     void setCenter(Vector2D pos);
     void setVelocity(Vector2D vel);
+
+    void deActivate();
+    void Activate();
 
     void move (Vector2D acceleration, float time);  // Simulates the ball's motion under uniform acceleration for a period of time
 
