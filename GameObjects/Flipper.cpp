@@ -5,11 +5,6 @@ Flipper::Flipper(FlipperType type, Vector2D center, float length, float angle, f
 
 Vector2D Flipper::collideWith(Ball & ball, float collision_time)
 {
-<<<<<<< HEAD
-    Vector2D acc={ImpulseMultiplier,ImpulseMultiplier};
-
-    return acc;
-=======
     //Failed attempt
 
     /*
@@ -39,7 +34,6 @@ Vector2D Flipper::collideWith(Ball & ball, float collision_time)
 
     //Elliptic Collision detection
 
->>>>>>> master
 }
 
 void Flipper::draw(Interface & interface)

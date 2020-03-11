@@ -27,11 +27,7 @@ private:
 
 public:
     Interface();  // Constructor
-<<<<<<< HEAD
-    void getControls(bool & exit, bool & left, bool & right);  // Detects the buttons pressed
-=======
     void getControls(bool & exit, bool & left, bool & right, bool & space);  // Detects the buttons pressed
->>>>>>> master
     void setFPS(string fps);
 
     void clear();  // Clears the frame (first step in rendering a new frame)

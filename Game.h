@@ -22,11 +22,7 @@ class Game
 private:
     high_resolution_clock::time_point last_frame;  // Time point of the last rendered frame
     Interface interface;  // An object representing the game interface
-<<<<<<< HEAD
-    bool exit, left, right;  // Flags about the user's current controls
-=======
     bool exit, left, right,space;  // Flags about the user's current controls
->>>>>>> master
     bool Lost=false;
 
     AudioManager audioManager;

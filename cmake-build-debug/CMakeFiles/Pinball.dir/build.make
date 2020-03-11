@@ -33,26 +33,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "F:\CLion 2019.3.3\bin\cmake\win\bin\cmake.exe"
+CMAKE_COMMAND = "D:\CLion 2019.3.3\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "F:\CLion 2019.3.3\bin\cmake\win\bin\cmake.exe" -E remove -f
+RM = "D:\CLion 2019.3.3\bin\cmake\win\bin\cmake.exe" -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-<<<<<<< HEAD
 CMAKE_SOURCE_DIR = "D:\Zewail City\Year 3 Spring\C++\Project\Repository\Pinball"
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = "D:\Zewail City\Year 3 Spring\C++\Project\Repository\Pinball\cmake-build-debug"
-=======
-CMAKE_SOURCE_DIR = "F:\Zewail City\Year 3 Spring\C++\Project\Repository\Pinball"
-
-# The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "F:\Zewail City\Year 3 Spring\C++\Project\Repository\Pinball\cmake-build-debug"
->>>>>>> master
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Pinball.dir/depend.make
@@ -66,7 +59,6 @@ include CMakeFiles/Pinball.dir/flags.make
 CMakeFiles/Pinball.dir/main.cpp.obj: CMakeFiles/Pinball.dir/flags.make
 CMakeFiles/Pinball.dir/main.cpp.obj: CMakeFiles/Pinball.dir/includes_CXX.rsp
 CMakeFiles/Pinball.dir/main.cpp.obj: ../main.cpp
-<<<<<<< HEAD
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Zewail City\Year 3 Spring\C++\Project\Repository\Pinball\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Pinball.dir/main.cpp.obj"
 	"D:\CLion 2019.3.3\MINGW\mingw32\bin\g++.exe"  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Pinball.dir\main.cpp.obj -c "D:\Zewail City\Year 3 Spring\C++\Project\Repository\Pinball\main.cpp"
 
@@ -77,23 +69,10 @@ CMakeFiles/Pinball.dir/main.cpp.i: cmake_force
 CMakeFiles/Pinball.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Pinball.dir/main.cpp.s"
 	"D:\CLion 2019.3.3\MINGW\mingw32\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Zewail City\Year 3 Spring\C++\Project\Repository\Pinball\main.cpp" -o CMakeFiles\Pinball.dir\main.cpp.s
-=======
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="F:\Zewail City\Year 3 Spring\C++\Project\Repository\Pinball\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Pinball.dir/main.cpp.obj"
-	F:\MinGW\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Pinball.dir\main.cpp.obj -c "F:\Zewail City\Year 3 Spring\C++\Project\Repository\Pinball\main.cpp"
-
-CMakeFiles/Pinball.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Pinball.dir/main.cpp.i"
-	F:\MinGW\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "F:\Zewail City\Year 3 Spring\C++\Project\Repository\Pinball\main.cpp" > CMakeFiles\Pinball.dir\main.cpp.i
-
-CMakeFiles/Pinball.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Pinball.dir/main.cpp.s"
-	F:\MinGW\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "F:\Zewail City\Year 3 Spring\C++\Project\Repository\Pinball\main.cpp" -o CMakeFiles\Pinball.dir\main.cpp.s
->>>>>>> master
 
 CMakeFiles/Pinball.dir/Game.cpp.obj: CMakeFiles/Pinball.dir/flags.make
 CMakeFiles/Pinball.dir/Game.cpp.obj: CMakeFiles/Pinball.dir/includes_CXX.rsp
 CMakeFiles/Pinball.dir/Game.cpp.obj: ../Game.cpp
-<<<<<<< HEAD
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Zewail City\Year 3 Spring\C++\Project\Repository\Pinball\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Pinball.dir/Game.cpp.obj"
 	"D:\CLion 2019.3.3\MINGW\mingw32\bin\g++.exe"  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Pinball.dir\Game.cpp.obj -c "D:\Zewail City\Year 3 Spring\C++\Project\Repository\Pinball\Game.cpp"
 
@@ -104,23 +83,10 @@ CMakeFiles/Pinball.dir/Game.cpp.i: cmake_force
 CMakeFiles/Pinball.dir/Game.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Pinball.dir/Game.cpp.s"
 	"D:\CLion 2019.3.3\MINGW\mingw32\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Zewail City\Year 3 Spring\C++\Project\Repository\Pinball\Game.cpp" -o CMakeFiles\Pinball.dir\Game.cpp.s
-=======
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="F:\Zewail City\Year 3 Spring\C++\Project\Repository\Pinball\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Pinball.dir/Game.cpp.obj"
-	F:\MinGW\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Pinball.dir\Game.cpp.obj -c "F:\Zewail City\Year 3 Spring\C++\Project\Repository\Pinball\Game.cpp"
-
-CMakeFiles/Pinball.dir/Game.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Pinball.dir/Game.cpp.i"
-	F:\MinGW\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "F:\Zewail City\Year 3 Spring\C++\Project\Repository\Pinball\Game.cpp" > CMakeFiles\Pinball.dir\Game.cpp.i
-
-CMakeFiles/Pinball.dir/Game.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Pinball.dir/Game.cpp.s"
-	F:\MinGW\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "F:\Zewail City\Year 3 Spring\C++\Project\Repository\Pinball\Game.cpp" -o CMakeFiles\Pinball.dir\Game.cpp.s
->>>>>>> master
 
 CMakeFiles/Pinball.dir/Interface.cpp.obj: CMakeFiles/Pinball.dir/flags.make
 CMakeFiles/Pinball.dir/Interface.cpp.obj: CMakeFiles/Pinball.dir/includes_CXX.rsp
 CMakeFiles/Pinball.dir/Interface.cpp.obj: ../Interface.cpp
-<<<<<<< HEAD
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Zewail City\Year 3 Spring\C++\Project\Repository\Pinball\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Pinball.dir/Interface.cpp.obj"
 	"D:\CLion 2019.3.3\MINGW\mingw32\bin\g++.exe"  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Pinball.dir\Interface.cpp.obj -c "D:\Zewail City\Year 3 Spring\C++\Project\Repository\Pinball\Interface.cpp"
 
@@ -131,23 +97,10 @@ CMakeFiles/Pinball.dir/Interface.cpp.i: cmake_force
 CMakeFiles/Pinball.dir/Interface.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Pinball.dir/Interface.cpp.s"
 	"D:\CLion 2019.3.3\MINGW\mingw32\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Zewail City\Year 3 Spring\C++\Project\Repository\Pinball\Interface.cpp" -o CMakeFiles\Pinball.dir\Interface.cpp.s
-=======
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="F:\Zewail City\Year 3 Spring\C++\Project\Repository\Pinball\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Pinball.dir/Interface.cpp.obj"
-	F:\MinGW\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Pinball.dir\Interface.cpp.obj -c "F:\Zewail City\Year 3 Spring\C++\Project\Repository\Pinball\Interface.cpp"
-
-CMakeFiles/Pinball.dir/Interface.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Pinball.dir/Interface.cpp.i"
-	F:\MinGW\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "F:\Zewail City\Year 3 Spring\C++\Project\Repository\Pinball\Interface.cpp" > CMakeFiles\Pinball.dir\Interface.cpp.i
-
-CMakeFiles/Pinball.dir/Interface.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Pinball.dir/Interface.cpp.s"
-	F:\MinGW\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "F:\Zewail City\Year 3 Spring\C++\Project\Repository\Pinball\Interface.cpp" -o CMakeFiles\Pinball.dir\Interface.cpp.s
->>>>>>> master
 
 CMakeFiles/Pinball.dir/GameObjects/Ball.cpp.obj: CMakeFiles/Pinball.dir/flags.make
 CMakeFiles/Pinball.dir/GameObjects/Ball.cpp.obj: CMakeFiles/Pinball.dir/includes_CXX.rsp
 CMakeFiles/Pinball.dir/GameObjects/Ball.cpp.obj: ../GameObjects/Ball.cpp
-<<<<<<< HEAD
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Zewail City\Year 3 Spring\C++\Project\Repository\Pinball\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Pinball.dir/GameObjects/Ball.cpp.obj"
 	"D:\CLion 2019.3.3\MINGW\mingw32\bin\g++.exe"  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Pinball.dir\GameObjects\Ball.cpp.obj -c "D:\Zewail City\Year 3 Spring\C++\Project\Repository\Pinball\GameObjects\Ball.cpp"
 
@@ -158,23 +111,10 @@ CMakeFiles/Pinball.dir/GameObjects/Ball.cpp.i: cmake_force
 CMakeFiles/Pinball.dir/GameObjects/Ball.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Pinball.dir/GameObjects/Ball.cpp.s"
 	"D:\CLion 2019.3.3\MINGW\mingw32\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Zewail City\Year 3 Spring\C++\Project\Repository\Pinball\GameObjects\Ball.cpp" -o CMakeFiles\Pinball.dir\GameObjects\Ball.cpp.s
-=======
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="F:\Zewail City\Year 3 Spring\C++\Project\Repository\Pinball\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Pinball.dir/GameObjects/Ball.cpp.obj"
-	F:\MinGW\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Pinball.dir\GameObjects\Ball.cpp.obj -c "F:\Zewail City\Year 3 Spring\C++\Project\Repository\Pinball\GameObjects\Ball.cpp"
-
-CMakeFiles/Pinball.dir/GameObjects/Ball.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Pinball.dir/GameObjects/Ball.cpp.i"
-	F:\MinGW\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "F:\Zewail City\Year 3 Spring\C++\Project\Repository\Pinball\GameObjects\Ball.cpp" > CMakeFiles\Pinball.dir\GameObjects\Ball.cpp.i
-
-CMakeFiles/Pinball.dir/GameObjects/Ball.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Pinball.dir/GameObjects/Ball.cpp.s"
-	F:\MinGW\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "F:\Zewail City\Year 3 Spring\C++\Project\Repository\Pinball\GameObjects\Ball.cpp" -o CMakeFiles\Pinball.dir\GameObjects\Ball.cpp.s
->>>>>>> master
 
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/Wall.cpp.obj: CMakeFiles/Pinball.dir/flags.make
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/Wall.cpp.obj: CMakeFiles/Pinball.dir/includes_CXX.rsp
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/Wall.cpp.obj: ../GameObjects/Obstacles/Wall.cpp
-<<<<<<< HEAD
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Zewail City\Year 3 Spring\C++\Project\Repository\Pinball\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Pinball.dir/GameObjects/Obstacles/Wall.cpp.obj"
 	"D:\CLion 2019.3.3\MINGW\mingw32\bin\g++.exe"  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Pinball.dir\GameObjects\Obstacles\Wall.cpp.obj -c "D:\Zewail City\Year 3 Spring\C++\Project\Repository\Pinball\GameObjects\Obstacles\Wall.cpp"
 
@@ -185,23 +125,10 @@ CMakeFiles/Pinball.dir/GameObjects/Obstacles/Wall.cpp.i: cmake_force
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/Wall.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Pinball.dir/GameObjects/Obstacles/Wall.cpp.s"
 	"D:\CLion 2019.3.3\MINGW\mingw32\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Zewail City\Year 3 Spring\C++\Project\Repository\Pinball\GameObjects\Obstacles\Wall.cpp" -o CMakeFiles\Pinball.dir\GameObjects\Obstacles\Wall.cpp.s
-=======
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="F:\Zewail City\Year 3 Spring\C++\Project\Repository\Pinball\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Pinball.dir/GameObjects/Obstacles/Wall.cpp.obj"
-	F:\MinGW\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Pinball.dir\GameObjects\Obstacles\Wall.cpp.obj -c "F:\Zewail City\Year 3 Spring\C++\Project\Repository\Pinball\GameObjects\Obstacles\Wall.cpp"
-
-CMakeFiles/Pinball.dir/GameObjects/Obstacles/Wall.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Pinball.dir/GameObjects/Obstacles/Wall.cpp.i"
-	F:\MinGW\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "F:\Zewail City\Year 3 Spring\C++\Project\Repository\Pinball\GameObjects\Obstacles\Wall.cpp" > CMakeFiles\Pinball.dir\GameObjects\Obstacles\Wall.cpp.i
-
-CMakeFiles/Pinball.dir/GameObjects/Obstacles/Wall.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Pinball.dir/GameObjects/Obstacles/Wall.cpp.s"
-	F:\MinGW\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "F:\Zewail City\Year 3 Spring\C++\Project\Repository\Pinball\GameObjects\Obstacles\Wall.cpp" -o CMakeFiles\Pinball.dir\GameObjects\Obstacles\Wall.cpp.s
->>>>>>> master
 
 CMakeFiles/Pinball.dir/GameObjects/Flipper.cpp.obj: CMakeFiles/Pinball.dir/flags.make
 CMakeFiles/Pinball.dir/GameObjects/Flipper.cpp.obj: CMakeFiles/Pinball.dir/includes_CXX.rsp
 CMakeFiles/Pinball.dir/GameObjects/Flipper.cpp.obj: ../GameObjects/Flipper.cpp
-<<<<<<< HEAD
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Zewail City\Year 3 Spring\C++\Project\Repository\Pinball\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Pinball.dir/GameObjects/Flipper.cpp.obj"
 	"D:\CLion 2019.3.3\MINGW\mingw32\bin\g++.exe"  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Pinball.dir\GameObjects\Flipper.cpp.obj -c "D:\Zewail City\Year 3 Spring\C++\Project\Repository\Pinball\GameObjects\Flipper.cpp"
 
@@ -212,23 +139,10 @@ CMakeFiles/Pinball.dir/GameObjects/Flipper.cpp.i: cmake_force
 CMakeFiles/Pinball.dir/GameObjects/Flipper.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Pinball.dir/GameObjects/Flipper.cpp.s"
 	"D:\CLion 2019.3.3\MINGW\mingw32\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Zewail City\Year 3 Spring\C++\Project\Repository\Pinball\GameObjects\Flipper.cpp" -o CMakeFiles\Pinball.dir\GameObjects\Flipper.cpp.s
-=======
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="F:\Zewail City\Year 3 Spring\C++\Project\Repository\Pinball\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Pinball.dir/GameObjects/Flipper.cpp.obj"
-	F:\MinGW\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Pinball.dir\GameObjects\Flipper.cpp.obj -c "F:\Zewail City\Year 3 Spring\C++\Project\Repository\Pinball\GameObjects\Flipper.cpp"
-
-CMakeFiles/Pinball.dir/GameObjects/Flipper.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Pinball.dir/GameObjects/Flipper.cpp.i"
-	F:\MinGW\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "F:\Zewail City\Year 3 Spring\C++\Project\Repository\Pinball\GameObjects\Flipper.cpp" > CMakeFiles\Pinball.dir\GameObjects\Flipper.cpp.i
-
-CMakeFiles/Pinball.dir/GameObjects/Flipper.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Pinball.dir/GameObjects/Flipper.cpp.s"
-	F:\MinGW\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "F:\Zewail City\Year 3 Spring\C++\Project\Repository\Pinball\GameObjects\Flipper.cpp" -o CMakeFiles\Pinball.dir\GameObjects\Flipper.cpp.s
->>>>>>> master
 
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/SpriteWalls.cpp.obj: CMakeFiles/Pinball.dir/flags.make
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/SpriteWalls.cpp.obj: CMakeFiles/Pinball.dir/includes_CXX.rsp
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/SpriteWalls.cpp.obj: ../GameObjects/Obstacles/SpriteWalls.cpp
-<<<<<<< HEAD
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Zewail City\Year 3 Spring\C++\Project\Repository\Pinball\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Pinball.dir/GameObjects/Obstacles/SpriteWalls.cpp.obj"
 	"D:\CLion 2019.3.3\MINGW\mingw32\bin\g++.exe"  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Pinball.dir\GameObjects\Obstacles\SpriteWalls.cpp.obj -c "D:\Zewail City\Year 3 Spring\C++\Project\Repository\Pinball\GameObjects\Obstacles\SpriteWalls.cpp"
 
@@ -239,23 +153,10 @@ CMakeFiles/Pinball.dir/GameObjects/Obstacles/SpriteWalls.cpp.i: cmake_force
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/SpriteWalls.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Pinball.dir/GameObjects/Obstacles/SpriteWalls.cpp.s"
 	"D:\CLion 2019.3.3\MINGW\mingw32\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Zewail City\Year 3 Spring\C++\Project\Repository\Pinball\GameObjects\Obstacles\SpriteWalls.cpp" -o CMakeFiles\Pinball.dir\GameObjects\Obstacles\SpriteWalls.cpp.s
-=======
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="F:\Zewail City\Year 3 Spring\C++\Project\Repository\Pinball\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Pinball.dir/GameObjects/Obstacles/SpriteWalls.cpp.obj"
-	F:\MinGW\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Pinball.dir\GameObjects\Obstacles\SpriteWalls.cpp.obj -c "F:\Zewail City\Year 3 Spring\C++\Project\Repository\Pinball\GameObjects\Obstacles\SpriteWalls.cpp"
-
-CMakeFiles/Pinball.dir/GameObjects/Obstacles/SpriteWalls.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Pinball.dir/GameObjects/Obstacles/SpriteWalls.cpp.i"
-	F:\MinGW\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "F:\Zewail City\Year 3 Spring\C++\Project\Repository\Pinball\GameObjects\Obstacles\SpriteWalls.cpp" > CMakeFiles\Pinball.dir\GameObjects\Obstacles\SpriteWalls.cpp.i
-
-CMakeFiles/Pinball.dir/GameObjects/Obstacles/SpriteWalls.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Pinball.dir/GameObjects/Obstacles/SpriteWalls.cpp.s"
-	F:\MinGW\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "F:\Zewail City\Year 3 Spring\C++\Project\Repository\Pinball\GameObjects\Obstacles\SpriteWalls.cpp" -o CMakeFiles\Pinball.dir\GameObjects\Obstacles\SpriteWalls.cpp.s
->>>>>>> master
 
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/Bumper.cpp.obj: CMakeFiles/Pinball.dir/flags.make
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/Bumper.cpp.obj: CMakeFiles/Pinball.dir/includes_CXX.rsp
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/Bumper.cpp.obj: ../GameObjects/Obstacles/Bumper.cpp
-<<<<<<< HEAD
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Zewail City\Year 3 Spring\C++\Project\Repository\Pinball\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Pinball.dir/GameObjects/Obstacles/Bumper.cpp.obj"
 	"D:\CLion 2019.3.3\MINGW\mingw32\bin\g++.exe"  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Pinball.dir\GameObjects\Obstacles\Bumper.cpp.obj -c "D:\Zewail City\Year 3 Spring\C++\Project\Repository\Pinball\GameObjects\Obstacles\Bumper.cpp"
 
@@ -266,23 +167,10 @@ CMakeFiles/Pinball.dir/GameObjects/Obstacles/Bumper.cpp.i: cmake_force
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/Bumper.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Pinball.dir/GameObjects/Obstacles/Bumper.cpp.s"
 	"D:\CLion 2019.3.3\MINGW\mingw32\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Zewail City\Year 3 Spring\C++\Project\Repository\Pinball\GameObjects\Obstacles\Bumper.cpp" -o CMakeFiles\Pinball.dir\GameObjects\Obstacles\Bumper.cpp.s
-=======
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="F:\Zewail City\Year 3 Spring\C++\Project\Repository\Pinball\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Pinball.dir/GameObjects/Obstacles/Bumper.cpp.obj"
-	F:\MinGW\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Pinball.dir\GameObjects\Obstacles\Bumper.cpp.obj -c "F:\Zewail City\Year 3 Spring\C++\Project\Repository\Pinball\GameObjects\Obstacles\Bumper.cpp"
-
-CMakeFiles/Pinball.dir/GameObjects/Obstacles/Bumper.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Pinball.dir/GameObjects/Obstacles/Bumper.cpp.i"
-	F:\MinGW\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "F:\Zewail City\Year 3 Spring\C++\Project\Repository\Pinball\GameObjects\Obstacles\Bumper.cpp" > CMakeFiles\Pinball.dir\GameObjects\Obstacles\Bumper.cpp.i
-
-CMakeFiles/Pinball.dir/GameObjects/Obstacles/Bumper.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Pinball.dir/GameObjects/Obstacles/Bumper.cpp.s"
-	F:\MinGW\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "F:\Zewail City\Year 3 Spring\C++\Project\Repository\Pinball\GameObjects\Obstacles\Bumper.cpp" -o CMakeFiles\Pinball.dir\GameObjects\Obstacles\Bumper.cpp.s
->>>>>>> master
 
 CMakeFiles/Pinball.dir/Utility/PixelPerfectCollision.cpp.obj: CMakeFiles/Pinball.dir/flags.make
 CMakeFiles/Pinball.dir/Utility/PixelPerfectCollision.cpp.obj: CMakeFiles/Pinball.dir/includes_CXX.rsp
 CMakeFiles/Pinball.dir/Utility/PixelPerfectCollision.cpp.obj: ../Utility/PixelPerfectCollision.cpp
-<<<<<<< HEAD
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Zewail City\Year 3 Spring\C++\Project\Repository\Pinball\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Pinball.dir/Utility/PixelPerfectCollision.cpp.obj"
 	"D:\CLion 2019.3.3\MINGW\mingw32\bin\g++.exe"  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Pinball.dir\Utility\PixelPerfectCollision.cpp.obj -c "D:\Zewail City\Year 3 Spring\C++\Project\Repository\Pinball\Utility\PixelPerfectCollision.cpp"
 
@@ -293,23 +181,10 @@ CMakeFiles/Pinball.dir/Utility/PixelPerfectCollision.cpp.i: cmake_force
 CMakeFiles/Pinball.dir/Utility/PixelPerfectCollision.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Pinball.dir/Utility/PixelPerfectCollision.cpp.s"
 	"D:\CLion 2019.3.3\MINGW\mingw32\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Zewail City\Year 3 Spring\C++\Project\Repository\Pinball\Utility\PixelPerfectCollision.cpp" -o CMakeFiles\Pinball.dir\Utility\PixelPerfectCollision.cpp.s
-=======
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="F:\Zewail City\Year 3 Spring\C++\Project\Repository\Pinball\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Pinball.dir/Utility/PixelPerfectCollision.cpp.obj"
-	F:\MinGW\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Pinball.dir\Utility\PixelPerfectCollision.cpp.obj -c "F:\Zewail City\Year 3 Spring\C++\Project\Repository\Pinball\Utility\PixelPerfectCollision.cpp"
-
-CMakeFiles/Pinball.dir/Utility/PixelPerfectCollision.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Pinball.dir/Utility/PixelPerfectCollision.cpp.i"
-	F:\MinGW\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "F:\Zewail City\Year 3 Spring\C++\Project\Repository\Pinball\Utility\PixelPerfectCollision.cpp" > CMakeFiles\Pinball.dir\Utility\PixelPerfectCollision.cpp.i
-
-CMakeFiles/Pinball.dir/Utility/PixelPerfectCollision.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Pinball.dir/Utility/PixelPerfectCollision.cpp.s"
-	F:\MinGW\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "F:\Zewail City\Year 3 Spring\C++\Project\Repository\Pinball\Utility\PixelPerfectCollision.cpp" -o CMakeFiles\Pinball.dir\Utility\PixelPerfectCollision.cpp.s
->>>>>>> master
 
 CMakeFiles/Pinball.dir/GameObjects/Manager.cpp.obj: CMakeFiles/Pinball.dir/flags.make
 CMakeFiles/Pinball.dir/GameObjects/Manager.cpp.obj: CMakeFiles/Pinball.dir/includes_CXX.rsp
 CMakeFiles/Pinball.dir/GameObjects/Manager.cpp.obj: ../GameObjects/Manager.cpp
-<<<<<<< HEAD
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Zewail City\Year 3 Spring\C++\Project\Repository\Pinball\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Pinball.dir/GameObjects/Manager.cpp.obj"
 	"D:\CLion 2019.3.3\MINGW\mingw32\bin\g++.exe"  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Pinball.dir\GameObjects\Manager.cpp.obj -c "D:\Zewail City\Year 3 Spring\C++\Project\Repository\Pinball\GameObjects\Manager.cpp"
 
@@ -320,23 +195,10 @@ CMakeFiles/Pinball.dir/GameObjects/Manager.cpp.i: cmake_force
 CMakeFiles/Pinball.dir/GameObjects/Manager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Pinball.dir/GameObjects/Manager.cpp.s"
 	"D:\CLion 2019.3.3\MINGW\mingw32\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Zewail City\Year 3 Spring\C++\Project\Repository\Pinball\GameObjects\Manager.cpp" -o CMakeFiles\Pinball.dir\GameObjects\Manager.cpp.s
-=======
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="F:\Zewail City\Year 3 Spring\C++\Project\Repository\Pinball\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Pinball.dir/GameObjects/Manager.cpp.obj"
-	F:\MinGW\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Pinball.dir\GameObjects\Manager.cpp.obj -c "F:\Zewail City\Year 3 Spring\C++\Project\Repository\Pinball\GameObjects\Manager.cpp"
-
-CMakeFiles/Pinball.dir/GameObjects/Manager.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Pinball.dir/GameObjects/Manager.cpp.i"
-	F:\MinGW\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "F:\Zewail City\Year 3 Spring\C++\Project\Repository\Pinball\GameObjects\Manager.cpp" > CMakeFiles\Pinball.dir\GameObjects\Manager.cpp.i
-
-CMakeFiles/Pinball.dir/GameObjects/Manager.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Pinball.dir/GameObjects/Manager.cpp.s"
-	F:\MinGW\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "F:\Zewail City\Year 3 Spring\C++\Project\Repository\Pinball\GameObjects\Manager.cpp" -o CMakeFiles\Pinball.dir\GameObjects\Manager.cpp.s
->>>>>>> master
 
 CMakeFiles/Pinball.dir/Utility/AudioManager.cpp.obj: CMakeFiles/Pinball.dir/flags.make
 CMakeFiles/Pinball.dir/Utility/AudioManager.cpp.obj: CMakeFiles/Pinball.dir/includes_CXX.rsp
 CMakeFiles/Pinball.dir/Utility/AudioManager.cpp.obj: ../Utility/AudioManager.cpp
-<<<<<<< HEAD
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Zewail City\Year 3 Spring\C++\Project\Repository\Pinball\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/Pinball.dir/Utility/AudioManager.cpp.obj"
 	"D:\CLion 2019.3.3\MINGW\mingw32\bin\g++.exe"  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Pinball.dir\Utility\AudioManager.cpp.obj -c "D:\Zewail City\Year 3 Spring\C++\Project\Repository\Pinball\Utility\AudioManager.cpp"
 
@@ -347,18 +209,6 @@ CMakeFiles/Pinball.dir/Utility/AudioManager.cpp.i: cmake_force
 CMakeFiles/Pinball.dir/Utility/AudioManager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Pinball.dir/Utility/AudioManager.cpp.s"
 	"D:\CLion 2019.3.3\MINGW\mingw32\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Zewail City\Year 3 Spring\C++\Project\Repository\Pinball\Utility\AudioManager.cpp" -o CMakeFiles\Pinball.dir\Utility\AudioManager.cpp.s
-=======
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="F:\Zewail City\Year 3 Spring\C++\Project\Repository\Pinball\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/Pinball.dir/Utility/AudioManager.cpp.obj"
-	F:\MinGW\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Pinball.dir\Utility\AudioManager.cpp.obj -c "F:\Zewail City\Year 3 Spring\C++\Project\Repository\Pinball\Utility\AudioManager.cpp"
-
-CMakeFiles/Pinball.dir/Utility/AudioManager.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Pinball.dir/Utility/AudioManager.cpp.i"
-	F:\MinGW\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "F:\Zewail City\Year 3 Spring\C++\Project\Repository\Pinball\Utility\AudioManager.cpp" > CMakeFiles\Pinball.dir\Utility\AudioManager.cpp.i
-
-CMakeFiles/Pinball.dir/Utility/AudioManager.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Pinball.dir/Utility/AudioManager.cpp.s"
-	F:\MinGW\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "F:\Zewail City\Year 3 Spring\C++\Project\Repository\Pinball\Utility\AudioManager.cpp" -o CMakeFiles\Pinball.dir\Utility\AudioManager.cpp.s
->>>>>>> master
 
 # Object files for target Pinball
 Pinball_OBJECTS = \
@@ -403,11 +253,7 @@ Pinball.exe: ../libs/SFML-2.5.1/lib/libfreetype.a
 Pinball.exe: CMakeFiles/Pinball.dir/linklibs.rsp
 Pinball.exe: CMakeFiles/Pinball.dir/objects1.rsp
 Pinball.exe: CMakeFiles/Pinball.dir/link.txt
-<<<<<<< HEAD
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="D:\Zewail City\Year 3 Spring\C++\Project\Repository\Pinball\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable Pinball.exe"
-=======
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="F:\Zewail City\Year 3 Spring\C++\Project\Repository\Pinball\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable Pinball.exe"
->>>>>>> master
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Pinball.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -420,10 +266,6 @@ CMakeFiles/Pinball.dir/clean:
 .PHONY : CMakeFiles/Pinball.dir/clean
 
 CMakeFiles/Pinball.dir/depend:
-<<<<<<< HEAD
 	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "D:\Zewail City\Year 3 Spring\C++\Project\Repository\Pinball" "D:\Zewail City\Year 3 Spring\C++\Project\Repository\Pinball" "D:\Zewail City\Year 3 Spring\C++\Project\Repository\Pinball\cmake-build-debug" "D:\Zewail City\Year 3 Spring\C++\Project\Repository\Pinball\cmake-build-debug" "D:\Zewail City\Year 3 Spring\C++\Project\Repository\Pinball\cmake-build-debug\CMakeFiles\Pinball.dir\DependInfo.cmake" --color=$(COLOR)
-=======
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "F:\Zewail City\Year 3 Spring\C++\Project\Repository\Pinball" "F:\Zewail City\Year 3 Spring\C++\Project\Repository\Pinball" "F:\Zewail City\Year 3 Spring\C++\Project\Repository\Pinball\cmake-build-debug" "F:\Zewail City\Year 3 Spring\C++\Project\Repository\Pinball\cmake-build-debug" "F:\Zewail City\Year 3 Spring\C++\Project\Repository\Pinball\cmake-build-debug\CMakeFiles\Pinball.dir\DependInfo.cmake" --color=$(COLOR)
->>>>>>> master
 .PHONY : CMakeFiles/Pinball.dir/depend
 

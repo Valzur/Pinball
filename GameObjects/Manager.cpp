@@ -43,10 +43,7 @@ void Manager::ValueUpdate(Ball & ball, bool & IsLost) {
 
     }
     if(ball.getCenter().y>GAME_HEIGHT){
-<<<<<<< HEAD
-=======
         ball.deActivate();
->>>>>>> master
         ball.setCenter(INITIAL_CENTER);
         ball.setVelocity(INITIAL_VELOCITY);
         if (lives>0) {

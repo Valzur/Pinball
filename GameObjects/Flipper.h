@@ -7,8 +7,6 @@
 
 using namespace std;
 
-using namespace std;
-
 // Represents a (controllable) flipper
 class Flipper: public Drawable, public Collidable
 {

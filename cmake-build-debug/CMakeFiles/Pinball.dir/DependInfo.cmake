@@ -4,7 +4,6 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-<<<<<<< HEAD
   "D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Game.cpp" "D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/cmake-build-debug/CMakeFiles/Pinball.dir/Game.cpp.obj"
   "D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Ball.cpp" "D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/cmake-build-debug/CMakeFiles/Pinball.dir/GameObjects/Ball.cpp.obj"
   "D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Flipper.cpp" "D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/cmake-build-debug/CMakeFiles/Pinball.dir/GameObjects/Flipper.cpp.obj"
@@ -16,19 +15,6 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Utility/AudioManager.cpp" "D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/cmake-build-debug/CMakeFiles/Pinball.dir/Utility/AudioManager.cpp.obj"
   "D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Utility/PixelPerfectCollision.cpp" "D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/cmake-build-debug/CMakeFiles/Pinball.dir/Utility/PixelPerfectCollision.cpp.obj"
   "D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/main.cpp" "D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/cmake-build-debug/CMakeFiles/Pinball.dir/main.cpp.obj"
-=======
-  "F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Game.cpp" "F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/cmake-build-debug/CMakeFiles/Pinball.dir/Game.cpp.obj"
-  "F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Ball.cpp" "F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/cmake-build-debug/CMakeFiles/Pinball.dir/GameObjects/Ball.cpp.obj"
-  "F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Flipper.cpp" "F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/cmake-build-debug/CMakeFiles/Pinball.dir/GameObjects/Flipper.cpp.obj"
-  "F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Manager.cpp" "F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/cmake-build-debug/CMakeFiles/Pinball.dir/GameObjects/Manager.cpp.obj"
-  "F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/Bumper.cpp" "F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/cmake-build-debug/CMakeFiles/Pinball.dir/GameObjects/Obstacles/Bumper.cpp.obj"
-  "F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/SpriteWalls.cpp" "F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/cmake-build-debug/CMakeFiles/Pinball.dir/GameObjects/Obstacles/SpriteWalls.cpp.obj"
-  "F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/Wall.cpp" "F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/cmake-build-debug/CMakeFiles/Pinball.dir/GameObjects/Obstacles/Wall.cpp.obj"
-  "F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Interface.cpp" "F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/cmake-build-debug/CMakeFiles/Pinball.dir/Interface.cpp.obj"
-  "F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Utility/AudioManager.cpp" "F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/cmake-build-debug/CMakeFiles/Pinball.dir/Utility/AudioManager.cpp.obj"
-  "F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Utility/PixelPerfectCollision.cpp" "F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/cmake-build-debug/CMakeFiles/Pinball.dir/Utility/PixelPerfectCollision.cpp.obj"
-  "F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/main.cpp" "F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/cmake-build-debug/CMakeFiles/Pinball.dir/main.cpp.obj"
->>>>>>> master
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

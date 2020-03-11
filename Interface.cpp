@@ -4,7 +4,7 @@
 Interface::Interface()
 {
     sf::ContextSettings settings;
-    settings.antialiasingLevel = 16;  // Remove this line if the game was too laggy
+    settings.antialiasingLevel = 8;  // Remove this line if the game was too laggy
     window.create(sf::VideoMode(GAME_WIDTH, GAME_HEIGHT), "Pinball", sf::Style::Titlebar, settings);
     window.setVerticalSyncEnabled(false);
     window.setFramerateLimit(0);

@@ -39,8 +39,6 @@ void Ball::setCenter(Vector2D pos) {
 void Ball::setVelocity(Vector2D vel) {
     velocity=vel;
 }
-<<<<<<< HEAD
-=======
 
 void Ball::Activate() {
     isActive=true;
@@ -49,4 +47,3 @@ void Ball::Activate() {
 void Ball::deActivate() {
     isActive=false;
 }
->>>>>>> master

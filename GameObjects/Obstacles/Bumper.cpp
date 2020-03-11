@@ -7,14 +7,9 @@ float Bumper::GetRadius() {
 }
 
 Vector2D Bumper::collidewith(Ball &ball, float collision_time, Manager & manager) {
-<<<<<<< HEAD
-    float actualRadius,Modificationfactor,Acc;
-    Vector2D ModifiedRadiusPos;
-=======
     float actualRadius,Modificationfactor,Acc,velocity;
     Vector2D ModifiedRadiusPos;
     velocity=pow((pow(ball.getVelocity().x,2)+pow(ball.getVelocity().y,2)),0.5);
->>>>>>> master
     Vector2D acc={ball.getCenter().x-position.x,ball.getCenter().y-position.y};
     actualRadius=pow((pow(acc.x,2)+pow(acc.y,2)),0.5);
     if(actualRadius<=(ball.getRadius()+radius)){
@@ -26,13 +21,9 @@ Vector2D Bumper::collidewith(Ball &ball, float collision_time, Manager & manager
 
         //Calculating response
         acc={-ball.getVelocity().y+position.y,ball.getVelocity().x-position.y};
-<<<<<<< HEAD
-        acc={static_cast<float>(1.5*Acc*acc.x), static_cast<float>(1.5*Acc*acc.y)};
-=======
         acc={static_cast<float>(1.0*Acc*acc.x), static_cast<float>(1.0*Acc*acc.y)};
         //acc=acc/(pow((pow(acc.x,2)+pow(acc.y,2)),0.5));
         //acc=acc*velocity*5.0;
->>>>>>> master
 
         //Add score
         manager.addScore(50);
