@@ -53,16 +53,7 @@ void Game::simulate()
     rightFlipper.collideWith(ball,delta_time);
     leftFlipper.collideWith(ball,delta_time);
 
-    /*
-    Vector2D resultant_acceleration = {0, GRAVITY};  // Starting with gravity as the first acceleration contributer
-    resultant_acceleration += bumper1.collidewith(ball,delta_time,manager);
-    resultant_acceleration += bumper2.collidewith(ball,delta_time,manager);
-    resultant_acceleration += leftWall.collideWith(ball, delta_time);
-    resultant_acceleration += rightWall.collideWith(ball, delta_time);
-    resultant_acceleration += upperWall.collideWith(ball,delta_time);
-    ball.move(resultant_acceleration, delta_time);
-    manager.ValueUpdate(ball, Lost);
-     */
+
     //Ball Collision
     DoBallCollision(ball,delta_time,0);
     DoBallCollision(captive1,delta_time,1);
@@ -148,5 +139,3 @@ void Game::DoBallCollision(Ball & inball,float delta_time,int isMain) {
     inball.move(resultant_acceleration, delta_time);
     manager.ValueUpdate(inball, Lost);
 }
-
-

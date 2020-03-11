@@ -13,8 +13,10 @@
   <component name="ChangeListManager">
     <list default="true" id="5460e259-bb55-43d6-bcc1-8285b460cc16" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pinball.dir/GameObjects/Manager.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pinball.dir/GameObjects/Manager.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pinball.dir/Utility/PixelPerfectCollision.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pinball.dir/Utility/PixelPerfectCollision.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Game.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pinball.dir/Game.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pinball.dir/Game.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pinball.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pinball.dir/objects.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Pinball.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Pinball.exe" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +90,7 @@
       <workItem from="1583682193816" duration="1033000" />
       <workItem from="1583744428167" duration="35000" />
       <workItem from="1583744543963" duration="1551000" />
-      <workItem from="1583950140485" duration="3715000" />
+      <workItem from="1583950140485" duration="3978000" />
     </task>
     <task id="LOCAL-00001" summary="Created a prototype Sprite wall class that is drawable.">
       <created>1583349718172</created>
@@ -216,22 +218,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="598" y="531" width="938" height="348" key="GridCell.Tab.-1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1582876012827" />
-    <state width="945" height="277" key="GridCell.Tab.0.bottom" timestamp="1583953721994">
+    <state width="945" height="277" key="GridCell.Tab.0.bottom" timestamp="1583954121329">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="945" height="277" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1583953721994" />
-    <state width="945" height="277" key="GridCell.Tab.0.center" timestamp="1583953721994">
+    <state width="945" height="277" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1583954121329" />
+    <state width="945" height="277" key="GridCell.Tab.0.center" timestamp="1583954121329">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="945" height="277" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1583953721994" />
-    <state width="945" height="277" key="GridCell.Tab.0.left" timestamp="1583953721994">
+    <state width="945" height="277" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1583954121329" />
+    <state width="945" height="277" key="GridCell.Tab.0.left" timestamp="1583954121329">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="945" height="277" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1583953721994" />
-    <state width="945" height="277" key="GridCell.Tab.0.right" timestamp="1583953721994">
+    <state width="945" height="277" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1583954121329" />
+    <state width="945" height="277" key="GridCell.Tab.0.right" timestamp="1583954121329">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="945" height="277" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1583953721994" />
+    <state width="945" height="277" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1583954121329" />
     <state x="1011" y="720" width="931" height="348" key="GridCell.Tab.1.bottom" timestamp="1583952794844">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -304,16 +306,5 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1583434595345" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/Game.cpp</url>
-          <line>66</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
