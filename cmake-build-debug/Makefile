@@ -122,6 +122,33 @@ Pinball/fast:
 	$(MAKE) -f CMakeFiles\Pinball.dir\build.make CMakeFiles/Pinball.dir/build
 .PHONY : Pinball/fast
 
+Defs.obj: Defs.cpp.obj
+
+.PHONY : Defs.obj
+
+# target to build an object file
+Defs.cpp.obj:
+	$(MAKE) -f CMakeFiles\Pinball.dir\build.make CMakeFiles/Pinball.dir/Defs.cpp.obj
+.PHONY : Defs.cpp.obj
+
+Defs.i: Defs.cpp.i
+
+.PHONY : Defs.i
+
+# target to preprocess a source file
+Defs.cpp.i:
+	$(MAKE) -f CMakeFiles\Pinball.dir\build.make CMakeFiles/Pinball.dir/Defs.cpp.i
+.PHONY : Defs.cpp.i
+
+Defs.s: Defs.cpp.s
+
+.PHONY : Defs.s
+
+# target to generate assembly for a file
+Defs.cpp.s:
+	$(MAKE) -f CMakeFiles\Pinball.dir\build.make CMakeFiles/Pinball.dir/Defs.cpp.s
+.PHONY : Defs.cpp.s
+
 Game.obj: Game.cpp.obj
 
 .PHONY : Game.obj
@@ -428,6 +455,9 @@ help:
 	@echo ... Pinball
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... Defs.obj
+	@echo ... Defs.i
+	@echo ... Defs.s
 	@echo ... Game.obj
 	@echo ... Game.i
 	@echo ... Game.s

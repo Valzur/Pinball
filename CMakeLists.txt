@@ -25,7 +25,7 @@ add_executable(Pinball main.cpp Game.cpp Game.h Interface.cpp Interface.h
         GameObjects/Flipper.cpp GameObjects/Flipper.h GameObjects/Obstacles/SpriteWalls.cpp
         GameObjects/Obstacles/SpriteWalls.h GameObjects/Obstacles/Bumper.cpp GameObjects/Obstacles/Bumper.h
         Utility/PixelPerfectCollision.cpp Utility/PixelPerfectCollision.h GameObjects/Manager.cpp
-        GameObjects/Manager.h Utility/AudioManager.cpp Utility/AudioManager.h)
+        GameObjects/Manager.h Utility/AudioManager.cpp Utility/AudioManager.h Defs.cpp)
 
 target_link_libraries(Pinball OpenAL Vorbis FLAC)
 

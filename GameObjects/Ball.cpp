@@ -1,7 +1,8 @@
 #include "Ball.h"
 
-Ball::Ball(Vector2D center, Vector2D velocity): center(center), velocity(velocity) {
+Ball::Ball(Vector2D center, Vector2D velocity,bool Main): center(center), velocity(velocity) {
     isActive=false;
+    isMain=Main;
 }
 
 float Ball::getRadius() const
@@ -46,4 +47,21 @@ void Ball::Activate() {
 
 void Ball::deActivate() {
     isActive=false;
+}
+
+Vector2D Ball::BallToBallCollision(Ball ball) {
+    Vector2D acc={0,0};
+    Vector2D dir;
+    if(VectorDistance(ball.getCenter(),center)<=radius+ball.getRadius()){
+        //Break Captivity
+        if(!isMain & !isActive)
+            Activate();
+
+        //Readjust balls
+        dir=VectorDirection(center,ball.getCenter());
+        setCenter(center+dir*VectorNorm(center - ball.getCenter()));
+        //Acceleration measurement
+        acc=ball.getVelocity();
+    }
+    return acc;
 }

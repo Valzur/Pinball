@@ -1,5 +1,7 @@
 #pragma once
 
+#include <cmath>
+
 struct Vector2D  // Represents a 2D vector
 {
     float x = 0;  // The first coordinate
@@ -18,14 +20,17 @@ struct Vector2D  // Represents a 2D vector
     Vector2D & operator-=(const Vector2D & v) { x -= v.x; y -= v.y; return *this; }  // Element-wise subtraction
 };
 
+double VectorDistance(Vector2D vector1,Vector2D vector2);
+double VectorNorm(Vector2D vector);
+Vector2D VectorDirection(Vector2D vector1,Vector2D vector2);
 enum FlipperType { LEFT, RIGHT };
 
 // Should be replaced by a config file!
 #define GAME_WIDTH 720
 #define GAME_HEIGHT 1000
 #define BALL_RADIUS 10
-#define INITIAL_CENTER {400, 400}
-#define INITIAL_VELOCITY {-700, 500}
+#define INITIAL_CENTER {600, 400}
+#define INITIAL_VELOCITY {-900, 600}
 #define FLIPPER_MAJOR_RADIUS 10
 #define FLIPPER_MINOR_RADIUS 5
 #define FLIPPER_LENGTH 50

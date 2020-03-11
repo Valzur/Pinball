@@ -31,14 +31,14 @@ void Manager::Updategame(Interface & interface) {
 void Manager::ValueUpdate(Ball & ball, bool & IsLost) {
     //Makes sure ball doesn't glitch outside.
     //Detects lives deduction.
-    if(ball.getCenter().x<0| ball.getCenter().y<0 |ball.getCenter().x>GAME_WIDTH ) {
-        if(ball.getCenter().x<0)
+    if(ball.getCenter().x<ball.getRadius()| ball.getCenter().y<ball.getRadius() |ball.getCenter().x>GAME_WIDTH-ball.getRadius() ) {
+        if(ball.getCenter().x<ball.getRadius())
             ball.setCenter({0 + ball.getRadius(), ball.getCenter().y});
 
-        if(ball.getCenter().y<0)
+        if(ball.getCenter().y<ball.getRadius())
             ball.setCenter({ball.getCenter().x, 0+ball.getRadius()});
 
-        if(ball.getCenter().x>GAME_WIDTH)
+        if(ball.getCenter().x>GAME_WIDTH-ball.getRadius())
             ball.setCenter({GAME_WIDTH-ball.getRadius(), ball.getCenter().y});
 
     }

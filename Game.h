@@ -28,7 +28,7 @@ private:
     AudioManager audioManager;
     Manager manager;
 
-    Ball ball;  // The ball (obviously :D)
+    Ball ball, captive1,captive2;  // The ball (obviously :D)
     Flipper leftFlipper, rightFlipper;  // The right and left flippers
     Wall leftWall, rightWall,upperWall;  // This line should be replaced by an array of obstacles
     Bumper bumper1, bumper2;
@@ -41,4 +41,6 @@ public:
     void updateInterfaceOutput();
     bool exited();
     void GameOver(bool lost);
+
+    void DoBallCollision(Ball & inball,float delta_time,int isMain);
 };

@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/Pinball.dir/Defs.cpp.obj"
   "CMakeFiles/Pinball.dir/Game.cpp.obj"
   "CMakeFiles/Pinball.dir/GameObjects/Ball.cpp.obj"
   "CMakeFiles/Pinball.dir/GameObjects/Flipper.cpp.obj"
