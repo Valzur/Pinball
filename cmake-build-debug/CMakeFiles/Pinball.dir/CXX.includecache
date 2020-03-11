@@ -370,9 +370,124 @@ D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Utility/AudioManager
 AudioManager.h
 D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Utility/AudioManager.h
 
+<<<<<<< HEAD
 D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Utility/AudioManager.h
 iostream
 -
 SFML/Audio.hpp
+=======
+../libs/SFML-2.5.1/include/SFML/Window/Export.hpp
+SFML/Config.hpp
+-
+
+../libs/SFML-2.5.1/include/SFML/Window/GlResource.hpp
+SFML/Window/Export.hpp
+-
+SFML/System/NonCopyable.hpp
+-
+
+../libs/SFML-2.5.1/include/SFML/Window/Joystick.hpp
+SFML/Window/Export.hpp
+-
+SFML/System/String.hpp
+-
+
+../libs/SFML-2.5.1/include/SFML/Window/Keyboard.hpp
+SFML/Window/Export.hpp
+-
+
+../libs/SFML-2.5.1/include/SFML/Window/Mouse.hpp
+SFML/Window/Export.hpp
+-
+SFML/System/Vector2.hpp
+-
+
+../libs/SFML-2.5.1/include/SFML/Window/Sensor.hpp
+SFML/Window/Export.hpp
+-
+SFML/System/Vector3.hpp
+-
+SFML/System/Time.hpp
+-
+
+../libs/SFML-2.5.1/include/SFML/Window/Touch.hpp
+SFML/Window/Export.hpp
+-
+SFML/System/Vector2.hpp
+-
+
+../libs/SFML-2.5.1/include/SFML/Window/VideoMode.hpp
+SFML/Window/Export.hpp
+-
+vector
+-
+
+../libs/SFML-2.5.1/include/SFML/Window/Window.hpp
+SFML/Window/ContextSettings.hpp
+-
+SFML/Window/Cursor.hpp
+-
+SFML/Window/Export.hpp
+-
+SFML/Window/GlResource.hpp
+-
+SFML/Window/VideoMode.hpp
+-
+SFML/Window/WindowHandle.hpp
+-
+SFML/Window/WindowStyle.hpp
+-
+SFML/System/Clock.hpp
+-
+SFML/System/NonCopyable.hpp
+-
+SFML/System/String.hpp
+-
+SFML/System/Vector2.hpp
+-
+
+../libs/SFML-2.5.1/include/SFML/Window/WindowHandle.hpp
+SFML/Config.hpp
+-
+
+../libs/SFML-2.5.1/include/SFML/Window/WindowStyle.hpp
+
+F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Defs.h
+
+F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Ball.h
+Drawable.h
+F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Drawable.h
+
+F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Collidable.h
+Ball.h
+F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Ball.h
+
+F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Drawable.h
+../Interface.h
+F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Interface.h
+
+F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Flipper.cpp
+Flipper.h
+F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Flipper.h
+
+F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Flipper.h
+Drawable.h
+F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Drawable.h
+Collidable.h
+F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Collidable.h
+cmath
+-
+../Defs.h
+F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Defs.h
+
+F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Interface.h
+SFML/Window.hpp
+-
+SFML/Graphics.hpp
+-
+Defs.h
+F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Defs.h
+iostream
+>>>>>>> master
 -
 

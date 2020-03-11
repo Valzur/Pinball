@@ -2,6 +2,10 @@
 
 #include "Drawable.h"
 #include "Collidable.h"
+#include <cmath>
+#include "../Defs.h"
+
+using namespace std;
 
 using namespace std;
 

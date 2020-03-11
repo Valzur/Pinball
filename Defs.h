@@ -25,7 +25,11 @@ enum FlipperType { LEFT, RIGHT };
 #define GAME_HEIGHT 1000
 #define BALL_RADIUS 10
 #define INITIAL_CENTER {400, 400}
+<<<<<<< HEAD
 #define INITIAL_VELOCITY {-700, 300}
+=======
+#define INITIAL_VELOCITY {-700, 500}
+>>>>>>> master
 #define FLIPPER_MAJOR_RADIUS 10
 #define FLIPPER_MINOR_RADIUS 5
 #define FLIPPER_LENGTH 50

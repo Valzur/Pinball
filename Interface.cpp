@@ -6,13 +6,15 @@ Interface::Interface()
     sf::ContextSettings settings;
     settings.antialiasingLevel = 16;  // Remove this line if the game was too laggy
     window.create(sf::VideoMode(GAME_WIDTH, GAME_HEIGHT), "Pinball", sf::Style::Titlebar, settings);
-    window.setVerticalSyncEnabled(true);
+    window.setVerticalSyncEnabled(false);
+    window.setFramerateLimit(0);
 }
 
-void Interface::getControls(bool & exit, bool & left, bool & right)
+void Interface::getControls(bool & exit, bool & left, bool & right, bool & space)
 {
     sf::Event event;
     while (window.pollEvent(event));
+    space = sf::Keyboard::isKeyPressed(sf::Keyboard::Space);
     exit = sf::Keyboard::isKeyPressed(sf::Keyboard::Escape);
     left = sf::Keyboard::isKeyPressed(sf::Keyboard::Left);
     right = sf::Keyboard::isKeyPressed(sf::Keyboard::Right);
@@ -52,7 +54,7 @@ void Interface::drawFlipper(FlipperType type, Vector2D center, float length, flo
     majorCircleOutline.setPosition(center.x, center.y);
     window.draw(majorCircleOutline);
 
-    // Draw the minor circle outline
+    // Draw the minor circle outline000000000000000000000000000000000000
     sf::CircleShape minorCircleOutline(minorRadius);
     minorCircleOutline.setOutlineThickness(outlineThickness);
     minorCircleOutline.setOutlineColor(outlineColor);

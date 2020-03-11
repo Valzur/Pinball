@@ -93,6 +93,7 @@ CMakeFiles/Pinball.dir/Game.cpp.obj
  ../libs/SFML-2.5.1/include/SFML/Window/Window.hpp
  ../libs/SFML-2.5.1/include/SFML/Window/WindowHandle.hpp
  ../libs/SFML-2.5.1/include/SFML/Window/WindowStyle.hpp
+<<<<<<< HEAD
  D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Defs.h
  D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Game.cpp
  D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Game.h
@@ -107,6 +108,22 @@ CMakeFiles/Pinball.dir/Game.cpp.obj
  D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/Wall.h
  D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Interface.h
  D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Utility/AudioManager.h
+=======
+ F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Defs.h
+ F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Game.cpp
+ F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Game.h
+ F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Ball.h
+ F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Collidable.h
+ F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Drawable.h
+ F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Flipper.h
+ F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Manager.h
+ F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/Bumper.h
+ F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/Obstacle.h
+ F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/SpriteWalls.h
+ F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/Wall.h
+ F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Interface.h
+ F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Utility/AudioManager.h
+>>>>>>> master
 CMakeFiles/Pinball.dir/GameObjects/Ball.cpp.obj
  ../libs/SFML-2.5.1/include/SFML/Config.hpp
  ../libs/SFML-2.5.1/include/SFML/Graphics.hpp
@@ -182,11 +199,19 @@ CMakeFiles/Pinball.dir/GameObjects/Ball.cpp.obj
  ../libs/SFML-2.5.1/include/SFML/Window/Window.hpp
  ../libs/SFML-2.5.1/include/SFML/Window/WindowHandle.hpp
  ../libs/SFML-2.5.1/include/SFML/Window/WindowStyle.hpp
+<<<<<<< HEAD
  D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Defs.h
  D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Ball.cpp
  D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Ball.h
  D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Drawable.h
  D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Interface.h
+=======
+ F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Defs.h
+ F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Ball.cpp
+ F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Ball.h
+ F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Drawable.h
+ F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Interface.h
+>>>>>>> master
 CMakeFiles/Pinball.dir/GameObjects/Flipper.cpp.obj
  ../libs/SFML-2.5.1/include/SFML/Config.hpp
  ../libs/SFML-2.5.1/include/SFML/Graphics.hpp
@@ -262,6 +287,7 @@ CMakeFiles/Pinball.dir/GameObjects/Flipper.cpp.obj
  ../libs/SFML-2.5.1/include/SFML/Window/Window.hpp
  ../libs/SFML-2.5.1/include/SFML/Window/WindowHandle.hpp
  ../libs/SFML-2.5.1/include/SFML/Window/WindowStyle.hpp
+<<<<<<< HEAD
  D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Defs.h
  D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Ball.h
  D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Collidable.h
@@ -269,6 +295,15 @@ CMakeFiles/Pinball.dir/GameObjects/Flipper.cpp.obj
  D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Flipper.cpp
  D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Flipper.h
  D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Interface.h
+=======
+ F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Defs.h
+ F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Ball.h
+ F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Collidable.h
+ F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Drawable.h
+ F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Flipper.cpp
+ F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Flipper.h
+ F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Interface.h
+>>>>>>> master
 CMakeFiles/Pinball.dir/GameObjects/Manager.cpp.obj
  ../libs/SFML-2.5.1/include/SFML/Config.hpp
  ../libs/SFML-2.5.1/include/SFML/Graphics.hpp
@@ -344,12 +379,21 @@ CMakeFiles/Pinball.dir/GameObjects/Manager.cpp.obj
  ../libs/SFML-2.5.1/include/SFML/Window/Window.hpp
  ../libs/SFML-2.5.1/include/SFML/Window/WindowHandle.hpp
  ../libs/SFML-2.5.1/include/SFML/Window/WindowStyle.hpp
+<<<<<<< HEAD
  D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Defs.h
  D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Ball.h
  D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Drawable.h
  D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Manager.cpp
  D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Manager.h
  D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Interface.h
+=======
+ F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Defs.h
+ F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Ball.h
+ F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Drawable.h
+ F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Manager.cpp
+ F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Manager.h
+ F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Interface.h
+>>>>>>> master
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/Bumper.cpp.obj
  ../libs/SFML-2.5.1/include/SFML/Config.hpp
  ../libs/SFML-2.5.1/include/SFML/Graphics.hpp
@@ -425,6 +469,7 @@ CMakeFiles/Pinball.dir/GameObjects/Obstacles/Bumper.cpp.obj
  ../libs/SFML-2.5.1/include/SFML/Window/Window.hpp
  ../libs/SFML-2.5.1/include/SFML/Window/WindowHandle.hpp
  ../libs/SFML-2.5.1/include/SFML/Window/WindowStyle.hpp
+<<<<<<< HEAD
  D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Defs.h
  D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Ball.h
  D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Collidable.h
@@ -434,6 +479,17 @@ CMakeFiles/Pinball.dir/GameObjects/Obstacles/Bumper.cpp.obj
  D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/Bumper.h
  D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/Obstacle.h
  D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Interface.h
+=======
+ F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Defs.h
+ F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Ball.h
+ F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Collidable.h
+ F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Drawable.h
+ F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Manager.h
+ F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/Bumper.cpp
+ F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/Bumper.h
+ F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/Obstacle.h
+ F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Interface.h
+>>>>>>> master
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/SpriteWalls.cpp.obj
  ../libs/SFML-2.5.1/include/SFML/Config.hpp
  ../libs/SFML-2.5.1/include/SFML/Graphics.hpp
@@ -509,6 +565,7 @@ CMakeFiles/Pinball.dir/GameObjects/Obstacles/SpriteWalls.cpp.obj
  ../libs/SFML-2.5.1/include/SFML/Window/Window.hpp
  ../libs/SFML-2.5.1/include/SFML/Window/WindowHandle.hpp
  ../libs/SFML-2.5.1/include/SFML/Window/WindowStyle.hpp
+<<<<<<< HEAD
  D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Defs.h
  D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Ball.h
  D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Collidable.h
@@ -517,6 +574,16 @@ CMakeFiles/Pinball.dir/GameObjects/Obstacles/SpriteWalls.cpp.obj
  D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/SpriteWalls.cpp
  D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/SpriteWalls.h
  D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Interface.h
+=======
+ F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Defs.h
+ F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Ball.h
+ F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Collidable.h
+ F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Drawable.h
+ F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/Obstacle.h
+ F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/SpriteWalls.cpp
+ F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/SpriteWalls.h
+ F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Interface.h
+>>>>>>> master
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/Wall.cpp.obj
  ../libs/SFML-2.5.1/include/SFML/Config.hpp
  ../libs/SFML-2.5.1/include/SFML/Graphics.hpp
@@ -592,6 +659,7 @@ CMakeFiles/Pinball.dir/GameObjects/Obstacles/Wall.cpp.obj
  ../libs/SFML-2.5.1/include/SFML/Window/Window.hpp
  ../libs/SFML-2.5.1/include/SFML/Window/WindowHandle.hpp
  ../libs/SFML-2.5.1/include/SFML/Window/WindowStyle.hpp
+<<<<<<< HEAD
  D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Defs.h
  D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Ball.h
  D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Collidable.h
@@ -600,6 +668,16 @@ CMakeFiles/Pinball.dir/GameObjects/Obstacles/Wall.cpp.obj
  D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/Wall.cpp
  D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/Wall.h
  D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Interface.h
+=======
+ F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Defs.h
+ F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Ball.h
+ F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Collidable.h
+ F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Drawable.h
+ F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/Obstacle.h
+ F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/Wall.cpp
+ F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/Wall.h
+ F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Interface.h
+>>>>>>> master
 CMakeFiles/Pinball.dir/Interface.cpp.obj
  ../libs/SFML-2.5.1/include/SFML/Config.hpp
  ../libs/SFML-2.5.1/include/SFML/Graphics.hpp
@@ -675,9 +753,15 @@ CMakeFiles/Pinball.dir/Interface.cpp.obj
  ../libs/SFML-2.5.1/include/SFML/Window/Window.hpp
  ../libs/SFML-2.5.1/include/SFML/Window/WindowHandle.hpp
  ../libs/SFML-2.5.1/include/SFML/Window/WindowStyle.hpp
+<<<<<<< HEAD
  D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Defs.h
  D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Interface.cpp
  D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Interface.h
+=======
+ F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Defs.h
+ F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Interface.cpp
+ F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Interface.h
+>>>>>>> master
 CMakeFiles/Pinball.dir/Utility/AudioManager.cpp.obj
  ../libs/SFML-2.5.1/include/SFML/Audio.hpp
  ../libs/SFML-2.5.1/include/SFML/Audio/AlResource.hpp
@@ -722,8 +806,13 @@ CMakeFiles/Pinball.dir/Utility/AudioManager.cpp.obj
  ../libs/SFML-2.5.1/include/SFML/System/Vector2.inl
  ../libs/SFML-2.5.1/include/SFML/System/Vector3.hpp
  ../libs/SFML-2.5.1/include/SFML/System/Vector3.inl
+<<<<<<< HEAD
  D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Utility/AudioManager.cpp
  D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Utility/AudioManager.h
+=======
+ F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Utility/AudioManager.cpp
+ F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Utility/AudioManager.h
+>>>>>>> master
 CMakeFiles/Pinball.dir/Utility/PixelPerfectCollision.cpp.obj
  ../libs/SFML-2.5.1/include/SFML/Config.hpp
  ../libs/SFML-2.5.1/include/SFML/Graphics.hpp
@@ -799,12 +888,21 @@ CMakeFiles/Pinball.dir/Utility/PixelPerfectCollision.cpp.obj
  ../libs/SFML-2.5.1/include/SFML/Window/Window.hpp
  ../libs/SFML-2.5.1/include/SFML/Window/WindowHandle.hpp
  ../libs/SFML-2.5.1/include/SFML/Window/WindowStyle.hpp
+<<<<<<< HEAD
  D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Defs.h
  D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Ball.h
  D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Drawable.h
  D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Interface.h
  D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Utility/PixelPerfectCollision.cpp
  D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Utility/PixelPerfectCollision.h
+=======
+ F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Defs.h
+ F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Ball.h
+ F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Drawable.h
+ F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Interface.h
+ F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Utility/PixelPerfectCollision.cpp
+ F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Utility/PixelPerfectCollision.h
+>>>>>>> master
 CMakeFiles/Pinball.dir/main.cpp.obj
  ../libs/SFML-2.5.1/include/SFML/Audio.hpp
  ../libs/SFML-2.5.1/include/SFML/Audio/AlResource.hpp
@@ -897,6 +995,7 @@ CMakeFiles/Pinball.dir/main.cpp.obj
  ../libs/SFML-2.5.1/include/SFML/Window/Window.hpp
  ../libs/SFML-2.5.1/include/SFML/Window/WindowHandle.hpp
  ../libs/SFML-2.5.1/include/SFML/Window/WindowStyle.hpp
+<<<<<<< HEAD
  D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Defs.h
  D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Game.h
  D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Ball.h
@@ -911,3 +1010,19 @@ CMakeFiles/Pinball.dir/main.cpp.obj
  D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Interface.h
  D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Utility/AudioManager.h
  D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/main.cpp
+=======
+ F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Defs.h
+ F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Game.h
+ F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Ball.h
+ F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Collidable.h
+ F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Drawable.h
+ F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Flipper.h
+ F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Manager.h
+ F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/Bumper.h
+ F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/Obstacle.h
+ F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/SpriteWalls.h
+ F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/Wall.h
+ F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Interface.h
+ F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Utility/AudioManager.h
+ F:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/main.cpp
+>>>>>>> master

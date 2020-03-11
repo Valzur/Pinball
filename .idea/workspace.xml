@@ -12,6 +12,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5460e259-bb55-43d6-bcc1-8285b460cc16" name="Default Changelist" comment="">
+<<<<<<< HEAD
       <change afterPath="$PROJECT_DIR$/Audio/NEFFEX - Dangerous [Copyright Free].ogg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Audio/NEFFEX.flac" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Audio/Wall_hit.wav" afterDir="false" />
@@ -1407,6 +1408,16 @@
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Pinball.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Pinball.cbp" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Game.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game.h" beforeDir="false" afterPath="$PROJECT_DIR$/Game.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameObjects/Ball.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/GameObjects/Ball.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameObjects/Ball.h" beforeDir="false" afterPath="$PROJECT_DIR$/GameObjects/Ball.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameObjects/Flipper.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/GameObjects/Flipper.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Interface.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Interface.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Interface.h" beforeDir="false" afterPath="$PROJECT_DIR$/Interface.h" afterDir="false" />
+>>>>>>> master
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Pinball.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Pinball.exe" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -1476,6 +1487,14 @@
       <workItem from="1583429281735" duration="25722000" />
       <workItem from="1583554610674" duration="11249000" />
       <workItem from="1583586390667" duration="15206000" />
+<<<<<<< HEAD
+=======
+      <workItem from="1583656459949" duration="994000" />
+      <workItem from="1583657694534" duration="8064000" />
+      <workItem from="1583682193816" duration="1033000" />
+      <workItem from="1583744428167" duration="35000" />
+      <workItem from="1583744543963" duration="1551000" />
+>>>>>>> master
     </task>
     <task id="LOCAL-00001" summary="Created a prototype Sprite wall class that is drawable.">
       <created>1583349718172</created>
@@ -1519,7 +1538,18 @@
       <option name="project" value="LOCAL" />
       <updated>1583566288739</updated>
     </task>
+<<<<<<< HEAD
     <option name="localTasksCounter" value="7" />
+=======
+    <task id="LOCAL-00007" summary="- Prototype for flippers, not working yet">
+      <created>1583682708417</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1583682708417</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
+>>>>>>> master
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1535,7 +1565,12 @@
     <MESSAGE value="- Readjusted Window resolution&#10;- Readjusted outer wall size and drew it correctly&#10;- Added bumper class and drew 2 bumpers in the middle&#10;- Bumpers collision fully works&#10;- Implemented FPS counter for Debug puposes ;)&#10;- Modified Bumper collision&#10;- Added support for upper wall&#10;- Modified bumper collision 2.0 (Had a bug that is now fixed)&#10;- Add Manager Class; implemented lives, and score&#10;- End game screen&#10;- Fixed a bug that caused ball to fly off-screen&#10;- Implemented a function that writes text in Interface.h" />
     <MESSAGE value="- AudioManager class implemented&#10;- Audio is not working" />
     <MESSAGE value="- AudioManager class implemented&#10;- Updated Libraries&#10;- Audio is not working" />
+<<<<<<< HEAD
     <option name="LAST_COMMIT_MESSAGE" value="- AudioManager class implemented&#10;- Updated Libraries&#10;- Audio is not working" />
+=======
+    <MESSAGE value="- Prototype for flippers, not working yet" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Prototype for flippers, not working yet" />
+>>>>>>> master
   </component>
   <component name="WindowStateProjectService">
     <state x="0" y="357" key="#Deployment" timestamp="1583594871870">
@@ -1543,17 +1578,27 @@
     </state>
     <state x="0" y="357" key="#Deployment/0.0.1920.1040@0.0.1920.1040" timestamp="1583594871870" />
     <state x="679" y="241" key="#Pinball" timestamp="1583595201469">
+<<<<<<< HEAD
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="679" y="241" key="#Pinball/0.0.1920.1040@0.0.1920.1040" timestamp="1583595201469" />
     <state x="556" y="210" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583595470932">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
+=======
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="679" y="241" key="#Pinball/0.0.1920.1040@0.0.1920.1040" timestamp="1583595201469" />
+    <state x="556" y="210" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583595470932">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+>>>>>>> master
     <state x="556" y="210" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583595470932" />
     <state x="839" y="273" key="#xdebugger.XInspectDialog" timestamp="1582878901313">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="839" y="273" key="#xdebugger.XInspectDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1582878901313" />
+<<<<<<< HEAD
     <state x="359" y="0" key="CommitChangelistDialog2" timestamp="1583602384885">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -1565,6 +1610,19 @@
     <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1583595519647">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
+=======
+    <state x="359" y="0" key="CommitChangelistDialog2" timestamp="1583682692853">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="359" y="0" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1583682692853" />
+    <state x="607" y="417" key="EnvironmentVariablesDialog" timestamp="1583594942155">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="607" y="417" key="EnvironmentVariablesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583594942155" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1583595519647">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+>>>>>>> master
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1583595519647" />
     <state x="598" y="531" width="938" height="348" key="GridCell.Tab.-1.bottom" timestamp="1582876012827">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -1582,6 +1640,7 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="598" y="531" width="938" height="348" key="GridCell.Tab.-1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1582876012827" />
+<<<<<<< HEAD
     <state width="945" height="277" key="GridCell.Tab.0.bottom" timestamp="1583602027583">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -1614,6 +1673,40 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1011" y="720" width="931" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1583600007265" />
+=======
+    <state width="938" height="282" key="GridCell.Tab.0.bottom" timestamp="1583746302136">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="938" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1583746302136" />
+    <state width="938" height="282" key="GridCell.Tab.0.center" timestamp="1583746302135">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="938" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1583746302135" />
+    <state width="938" height="282" key="GridCell.Tab.0.left" timestamp="1583746302135">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="938" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1583746302135" />
+    <state width="938" height="282" key="GridCell.Tab.0.right" timestamp="1583746302135">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="938" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1583746302135" />
+    <state x="1011" y="720" width="938" height="348" key="GridCell.Tab.1.bottom" timestamp="1583666495232">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1011" y="720" width="938" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1583666495232" />
+    <state x="1011" y="720" width="938" height="348" key="GridCell.Tab.1.center" timestamp="1583666495232">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1011" y="720" width="938" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1583666495232" />
+    <state x="1011" y="720" width="938" height="348" key="GridCell.Tab.1.left" timestamp="1583666495232">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1011" y="720" width="938" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1583666495232" />
+    <state x="1011" y="720" width="938" height="348" key="GridCell.Tab.1.right" timestamp="1583666495232">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1011" y="720" width="938" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1583666495232" />
+>>>>>>> master
     <state x="598" y="531" width="909" height="320" key="GridCell.Tab.2.bottom" timestamp="1582875872642">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -1630,18 +1723,32 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="598" y="531" width="909" height="320" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1582875872642" />
+<<<<<<< HEAD
     <state x="873" y="268" key="SettingsEditor" timestamp="1583595528063">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="873" y="268" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1583595528063" />
+=======
+    <state x="873" y="268" key="SettingsEditor" timestamp="1583656628406">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="873" y="268" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1583656628406" />
+>>>>>>> master
     <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1583349724236">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1583349724236" />
+<<<<<<< HEAD
     <state x="656" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1583586397885">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="656" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583586397885" />
+=======
+    <state x="656" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1583744634558">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="656" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583744634558" />
+>>>>>>> master
     <state x="769" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1583595769931">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
