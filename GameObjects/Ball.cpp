@@ -1,8 +1,9 @@
 #include "Ball.h"
 
-Ball::Ball(Vector2D center, Vector2D velocity,bool Main): center(center), velocity(velocity) {
+Ball::Ball(Vector2D center, Vector2D velocity,bool Main): InitialPosition(center), velocity(velocity) {
     isActive=false;
     isMain=Main;
+    setCenter(InitialPosition);
 }
 
 float Ball::getRadius() const
@@ -64,4 +65,10 @@ Vector2D Ball::BallToBallCollision(Ball ball) {
         acc=ball.getVelocity();
     }
     return acc;
+}
+
+void Ball::Reset() {
+    deActivate();
+    setCenter(InitialPosition);
+    setVelocity(INITIAL_VELOCITY);
 }

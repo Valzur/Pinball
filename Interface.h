@@ -25,6 +25,11 @@ private:
         flipperFillColor = sf::Color::White;
     const float outlineThickness = -2.0f;  // Negative sign means inwards
 
+    bool Loaded= false;
+    sf::Texture texture;
+    sf::Sprite sprite;
+
+
 public:
     Interface();  // Constructor
     void getControls(bool & exit, bool & left, bool & right, bool & space);  // Detects the buttons pressed

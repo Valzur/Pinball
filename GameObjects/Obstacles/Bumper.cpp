@@ -7,42 +7,81 @@ float Bumper::GetRadius() {
 }
 
 Vector2D Bumper::collidewith(Ball &ball, float collision_time, Manager & manager) {
-    float actualRadius,Modificationfactor,Acc,velocity;
-    Vector2D ModifiedRadiusPos;
-    velocity=pow((pow(ball.getVelocity().x,2)+pow(ball.getVelocity().y,2)),0.5);
-    Vector2D acc={ball.getCenter().x-position.x,ball.getCenter().y-position.y};
-    actualRadius=pow((pow(acc.x,2)+pow(acc.y,2)),0.5);
-    if(actualRadius<=(ball.getRadius()+radius)){
-        //Adjusting position if ball goes inside the bumper
-        Acc=pow((pow(acc.x,2)+pow(acc.y,2)),0.5);
-        Modificationfactor = ball.getRadius()+radius-actualRadius;
-        ModifiedRadiusPos={Modificationfactor*acc.x/Acc,Modificationfactor*acc.y/Acc};
-        ModifiedRadiusPos+=ball.getCenter();
+    switch(type) {
+        case Pop:
+        {
+            float actualRadius, Modificationfactor, Acc, velocity;
+            Vector2D ModifiedRadiusPos;
+            velocity = VectorNorm(ball.getVelocity());
+            Vector2D acc = ball.getCenter()-position;
+            actualRadius = VectorNorm(acc);
+            if (actualRadius <= (ball.getRadius() + radius)) {
 
-        //Calculating response
-        acc={-ball.getVelocity().y+position.y,ball.getVelocity().x-position.y};
-        acc={static_cast<float>(1.0*Acc*acc.x), static_cast<float>(1.0*Acc*acc.y)};
-        //acc=acc/(pow((pow(acc.x,2)+pow(acc.y,2)),0.5));
-        //acc=acc*velocity*5.0;
+                //Adjusting position if ball goes inside the bumper
+                Modificationfactor = ball.getRadius() + radius - actualRadius;
+                ModifiedRadiusPos = acc*Modificationfactor;
+                ModifiedRadiusPos += ball.getCenter();
 
-        //Add score
-        manager.addScore(50);
+                //Calculating response
+                acc = {-ball.getVelocity().y + position.y, ball.getVelocity().x - position.y};
+                Acc=VectorNorm(acc);
+                acc = acc /Acc;
+                acc= acc*velocity/collision_time;
 
-        //Debug
-        //cout << "Actual radius is: " << radius + ball.getRadius() << endl;
-        //cout << "Modified radius is: " << pow((pow(ModifiedRadiusPos.x-position.x,2)+pow(ModifiedRadiusPos.y-position.y,2)),0.5)<< endl;
+                //Add score
+                manager.addScore(50);
 
-        //Returning values
-        ball.setCenter(ModifiedRadiusPos);
-        return acc;
-    }else{
-        return {0,0};
+                //Returning values
+                ball.setCenter(ModifiedRadiusPos);
+                return acc;
+            } else {
+                return {0, 0};
+            }
+            break;
+        }
+        case Thrust:
+        {
+            float actualRadius, Modificationfactor, Acc, velocity;
+            Vector2D ModifiedRadiusPos;
+            velocity = pow((pow(ball.getVelocity().x, 2) + pow(ball.getVelocity().y, 2)), 0.5);
+            Vector2D acc = {ball.getCenter().x - position.x, ball.getCenter().y - position.y};
+            actualRadius = pow((pow(acc.x, 2) + pow(acc.y, 2)), 0.5);
+            if (actualRadius <= (ball.getRadius() + radius)) {
+
+                //Adjusting position if ball goes inside the bumper
+                Acc = pow((pow(acc.x, 2) + pow(acc.y, 2)), 0.5);
+                Modificationfactor = ball.getRadius() + radius - actualRadius;
+                ModifiedRadiusPos = {Modificationfactor * acc.x / Acc, Modificationfactor * acc.y / Acc};
+                ModifiedRadiusPos += ball.getCenter();
+
+                //Calculating response
+                acc = {-ball.getVelocity().y + position.y, ball.getVelocity().x - position.y};
+                acc = acc * Acc;
+
+                //Add score
+                manager.addScore(50);
+
+                //Returning values
+                ball.setCenter(ModifiedRadiusPos);
+                return acc;
+            } else {
+                return {0, 0};
+            }
+            break;
+        }
+
+        case Vibranium:
+        {
+            break;
+        }
+
     }
 }
 
-Bumper::Bumper(Vector2D pos, int rad) {
+Bumper::Bumper(Vector2D pos, int rad,BumperType Type=BumperType(Pop)) {
     position=pos;
     radius=rad;
+    type=Type;
 }
 
 Vector2D Bumper::GetPosition() {

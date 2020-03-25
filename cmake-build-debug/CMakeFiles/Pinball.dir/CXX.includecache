@@ -884,6 +884,10 @@ D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Manager.
 Utility/AudioManager.h
 D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Utility/AudioManager.h
 
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Ball.cpp
+Ball.h
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Ball.h
+
 D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Ball.h
 Drawable.h
 D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Drawable.h
@@ -895,6 +899,10 @@ D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Ball.h
 D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Drawable.h
 ../Interface.h
 D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Interface.h
+
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Flipper.cpp
+Flipper.h
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Flipper.h
 
 D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Flipper.h
 Drawable.h
@@ -906,6 +914,10 @@ cmath
 ../Defs.h
 D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Defs.h
 
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Manager.cpp
+Manager.h
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Manager.h
+
 D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Manager.h
 iostream
 -
@@ -913,6 +925,10 @@ iostream
 D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Interface.h
 Ball.h
 D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Ball.h
+
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/Bumper.cpp
+Bumper.h
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/Bumper.h
 
 D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/Bumper.h
 iostream
@@ -923,6 +939,8 @@ cmath
 -
 ../Manager.h
 D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Manager.h
+../../Defs.h
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Defs.h
 
 D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/Obstacle.h
 ../Drawable.h
@@ -930,15 +948,29 @@ D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Drawable
 ../Collidable.h
 D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Collidable.h
 
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/SpriteWalls.cpp
+SpriteWalls.h
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/SpriteWalls.h
+
 D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/SpriteWalls.h
 iostream
 -
 Obstacle.h
 D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/Obstacle.h
 
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/Wall.cpp
+Wall.h
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/Wall.h
+cmath
+-
+
 D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/Wall.h
 Obstacle.h
 D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/Obstacle.h
+
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Interface.cpp
+Interface.h
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Interface.h
 
 D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Interface.h
 SFML/Window.hpp
@@ -950,9 +982,29 @@ D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Defs.h
 iostream
 -
 
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Utility/AudioManager.cpp
+AudioManager.h
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Utility/AudioManager.h
+
 D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Utility/AudioManager.h
 iostream
 -
 SFML/Audio.hpp
+-
+
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Utility/PixelPerfectCollision.cpp
+PixelPerfectCollision.h
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Utility/PixelPerfectCollision.h
+
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Utility/PixelPerfectCollision.h
+../GameObjects/Ball.h
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Ball.h
+cmath
+-
+
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/main.cpp
+Game.h
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Game.h
+iostream
 -
 

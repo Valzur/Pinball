@@ -21,7 +21,6 @@ AudioManager::AudioManager(bool Playmusic, const string& AudioPath) {
 
     if(Playmusic) {
         PlayMusic(AudioPath);
-        PlaySound(AudioPath);
     }
 
 }

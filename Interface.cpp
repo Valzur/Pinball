@@ -39,6 +39,21 @@ void Interface::drawBall(Vector2D center, float radius)
     circle.setFillColor(ballFillColor);
     circle.setPosition(center.x, center.y);
     window.draw(circle);
+
+    //Graphics b2a w kda
+    if(!Loaded) {
+        if (!texture.loadFromFile("Assets/Sprites/pokeball.png")) {
+            // error...
+            cout << "Error!" << endl;
+        }
+        Loaded= true;
+    }
+    sprite.setTexture(texture);
+    sprite.setPosition(center.x-radius,center.y-radius);
+    sprite.setScale(0.01,0.01);
+    window.draw(sprite);
+
+
 }
 
 void Interface::drawFlipper(FlipperType type, Vector2D center, float length, float angle, float majorRadius, float minorRadius)
@@ -144,7 +159,7 @@ void Interface::drawBumper(Vector2D center, float radius) {
     circle1.setOutlineThickness(2*outlineThickness);
     circle.setOutlineColor(sf::Color::Black);
     circle1.setOutlineColor(sf::Color::Blue);
-    //circle.setFillColor(ballFillColor);
+    circle.setFillColor(ballFillColor);
     circle.setPosition(center.x, center.y);
     circle1.setPosition(center.x,center.y);
     window.draw(circle);

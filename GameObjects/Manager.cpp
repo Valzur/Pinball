@@ -32,20 +32,13 @@ void Manager::ValueUpdate(Ball & ball, bool & IsLost) {
     //Makes sure ball doesn't glitch outside.
     //Detects lives deduction.
     if(ball.getCenter().x<ball.getRadius()| ball.getCenter().y<ball.getRadius() |ball.getCenter().x>GAME_WIDTH-ball.getRadius() ) {
-        if(ball.getCenter().x<ball.getRadius())
-            ball.setCenter({0 + ball.getRadius(), ball.getCenter().y});
 
         if(ball.getCenter().y<ball.getRadius())
             ball.setCenter({ball.getCenter().x, 0+ball.getRadius()});
 
-        if(ball.getCenter().x>GAME_WIDTH-ball.getRadius())
-            ball.setCenter({GAME_WIDTH-ball.getRadius(), ball.getCenter().y});
-
     }
     if(ball.getCenter().y>GAME_HEIGHT){
-        ball.deActivate();
-        ball.setCenter(INITIAL_CENTER);
-        ball.setVelocity(INITIAL_VELOCITY);
+        ball.Reset();
         if (lives>0) {
             lives--;
         }else{

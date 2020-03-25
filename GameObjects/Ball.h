@@ -6,6 +6,7 @@
 class Ball: public Drawable
 {
 private:
+    const Vector2D InitialPosition;
     bool isActive,isMain;
     float radius = BALL_RADIUS;  // Radius of the ball
     Vector2D center;  // The instantaneous center of the ball
@@ -23,6 +24,7 @@ public:
 
     void deActivate();
     void Activate();
+    void Reset();
 
     Vector2D BallToBallCollision(Ball ball);
 
