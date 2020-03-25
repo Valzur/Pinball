@@ -64,6 +64,9 @@ void Game::updateInterfaceOutput()
 {
     interface.clear();
     if(!Lost) {
+        //Load things
+        if(!Loaded)
+            interface.LoadGraphics();
 
         leftFlipper.draw(interface);
         rightFlipper.draw(interface);
@@ -88,6 +91,9 @@ void Game::updateInterfaceOutput()
         ball.draw(interface);
         captive1.draw(interface);
         captive2.draw(interface);
+
+        if(!Loaded)
+            Loaded=true;
     }else{
         manager.EndGame(interface);
     }

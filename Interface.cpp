@@ -41,17 +41,10 @@ void Interface::drawBall(Vector2D center, float radius)
     window.draw(circle);
 
     //Graphics b2a w kda
-    if(!Loaded) {
-        if (!texture.loadFromFile("Assets/Sprites/pokeball.png")) {
-            // error...
-            cout << "Error!" << endl;
-        }
-        Loaded= true;
-    }
-    sprite.setTexture(texture);
-    sprite.setPosition(center.x-radius,center.y-radius);
-    sprite.setScale(0.01,0.01);
-    window.draw(sprite);
+    Ballsprite.setTexture(Balltexture);
+    Ballsprite.setPosition(center.x-radius,center.y-radius);
+    Ballsprite.setScale(0.01,0.01);
+    window.draw(Ballsprite);
 
 
 }
@@ -152,18 +145,18 @@ void Interface::drawNewWall(sf::Sprite sprite) {
 
 void Interface::drawBumper(Vector2D center, float radius) {
     sf::CircleShape circle(radius);
-    sf::CircleShape circle1(radius/2);
     circle.setOrigin(radius, radius);
-    circle1.setOrigin(radius/2,radius/2);
-    circle.setOutlineThickness(3*outlineThickness);
-    circle1.setOutlineThickness(2*outlineThickness);
-    circle.setOutlineColor(sf::Color::Black);
-    circle1.setOutlineColor(sf::Color::Blue);
+    circle.setOutlineThickness(1.5*outlineThickness);
+    circle.setOutlineColor(sf::Color::Magenta);
     circle.setFillColor(ballFillColor);
     circle.setPosition(center.x, center.y);
-    circle1.setPosition(center.x,center.y);
     window.draw(circle);
-    window.draw(circle1);
+
+    //Sprite draw
+    Bumpersprite.setTexture(Bumpertexture);
+    Bumpersprite.setPosition(center.x-(radius/2)-15,center.y-(radius/2)-15);
+    Bumpersprite.setScale(2,2);
+    window.draw(Bumpersprite);
 }
 
 void Interface::drawFPS() {
@@ -194,6 +187,20 @@ void Interface::drawText(string Fontpath, string Text, int FontSize, sf::Color c
     text.setFillColor(color);
     text.setPosition(position.x-bounds.width/2,position.y);
     window.draw(text);
+}
+
+void Interface::LoadGraphics() {
+    //Loading Ball sprite
+    if (!Balltexture.loadFromFile("Assets/Sprites/pokeball.png")) {
+        // error...
+        cout << "Error loading pokeball!" << endl;
+    }
+
+    //Loading Bumper sprite
+    if(!Bumpertexture.loadFromFile("Assets/Sprites/PokeBumper.png")){
+        cout << "Error loading Bumper sprite!" <<  endl;
+    }
+
 }
 
 

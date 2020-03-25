@@ -25,6 +25,8 @@ private:
     bool exit, left, right,space;  // Flags about the user's current controls
     bool Lost=false;
 
+    bool Loaded= false;
+
     AudioManager audioManager;
     Manager manager;
 

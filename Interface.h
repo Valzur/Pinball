@@ -25,10 +25,12 @@ private:
         flipperFillColor = sf::Color::White;
     const float outlineThickness = -2.0f;  // Negative sign means inwards
 
-    bool Loaded= false;
-    sf::Texture texture;
-    sf::Sprite sprite;
+    //Sprites and textures
+    sf::Texture Balltexture;
+    sf::Sprite Ballsprite;
 
+    sf::Texture Bumpertexture;
+    sf::Sprite Bumpersprite;
 
 public:
     Interface();  // Constructor
@@ -45,4 +47,6 @@ public:
     void drawBumper(Vector2D center, float radius);
     void drawFPS();
     void drawText(string Fontpath,string Text, int FontSize, sf::Color color, Vector2D position);
+
+    void LoadGraphics();
 };
