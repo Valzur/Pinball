@@ -27,5 +27,7 @@ void Configurable::ReadBalls(string TextPath) {
                 pBalls[i] = new Ball(center, velocity, false);
             }
         }
+    }else{
+        cout << "Error, unable to read Balls file!" << endl;
     }
 }
