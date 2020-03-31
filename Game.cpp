@@ -67,7 +67,16 @@ void Game::updateInterfaceOutput()
         //Load things
         if(!Loaded)
             interface.LoadGraphics();
-
+       interface.loadBackground();
+        interface.loadExternalFrame(1,-10.0f);
+        interface.loadExternalFrame(1,10.0f);
+        interface.loadExternalFrame(0,10.0f);
+        interface.loadInternalFrame(0,20);
+        interface.loadInternalFrame(1,20);
+        interface.loadInternalFrame(1,-20);
+//        interface.loadExternalFrame(1,GAME_WIDTH+10.0f);
+        interface.drawSpeedBoasterLeft();
+        interface.drawSpeedBoasterRight();
         leftFlipper.draw(interface);
         rightFlipper.draw(interface);
 

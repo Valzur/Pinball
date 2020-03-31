@@ -146,8 +146,16 @@ void Interface::drawNewWall(sf::Sprite sprite) {
 void Interface::drawBumper(Vector2D center, float radius) {
     sf::CircleShape circle(radius);
     circle.setOrigin(radius, radius);
+<<<<<<< Updated upstream
     circle.setOutlineThickness(1.5*outlineThickness);
     circle.setOutlineColor(sf::Color::Magenta);
+=======
+    circle1.setOrigin(radius/2,radius/2);
+    circle.setOutlineThickness(3*outlineThickness);
+    circle1.setOutlineThickness(2*outlineThickness);
+    circle.setOutlineColor(sf::Color::Black);
+    circle1.setOutlineColor(sf::Color::Blue);
+>>>>>>> Stashed changes
     circle.setFillColor(ballFillColor);
     circle.setPosition(center.x, center.y);
     window.draw(circle);
@@ -203,6 +211,119 @@ void Interface::LoadGraphics() {
 
 }
 
+
+
+void Interface::loadBackground()
+{
+
+sf::Texture texture;
+if(!texture.loadFromFile("background.png"))
+
+{
+    cout<<"failed to load background"<<endl;
+}
+ sf::Sprite spriteBackground;
+spriteBackground.setTexture(texture);
+window.draw(spriteBackground);
+
+
+
+}
+
+
+
+//Draw external frame
+
+
+void Interface::loadExternalFrame(bool isVertical,float Position)
+{
+
+
+//        sf::Texture texture;
+//        texture.loadFromFile("Frame.png");
+//        i++;
+
+        if (isVertical) {
+            sf::RectangleShape externalFrame(sf::Vector2f(Position, GAME_HEIGHT));
+            externalFrame.setFillColor(sf::Color::Magenta);
+            if (Position < 0) {
+                externalFrame.setPosition(GAME_WIDTH, 0.0f);
+            }
+//            externalFrame.setTexture(&texture);
+            window.draw(externalFrame);
+        } else {
+            sf::RectangleShape externalFrame(sf::Vector2f(GAME_WIDTH, Position));
+            externalFrame.setFillColor(sf::Color::Magenta);
+//            externalFrame.setTexture(&texture);
+            window.draw(externalFrame);
+        }
+    }
+////    externalFrame.setOrigin(50.0,50.0);
+////    sf::Texture externalFrameTexture;
+////    externalFrameTexture.loadFromFile("image.png");
+////    externalFrame.setTexture(&externalFrameTexture);
+//    window.draw(externalFrame);
+
+
+
+//Draw internal frame
+
+
+void Interface::loadInternalFrame(bool is45,float Diameter)
+{
+//    sf::Texture texture;
+//    texture.loadFromFile("Frame.png");
+if(is45)
+{
+    sf::RectangleShape line(sf::Vector2f(400.f, 5.f));
+    line.rotate(45.f);
+    line.setPosition(10.f, GAME_HEIGHT * 0.75);
+    line.setFillColor(sf::Color::Magenta);
+//    line.setTexture(&texture);
+
+    if(Diameter<0)
+    {
+        line.rotate(90.f);
+        line.setPosition(GAME_WIDTH-36.f, GAME_HEIGHT * 0.75);
+        line.setFillColor(sf::Color::Magenta);
+    }
+    window.draw(line);
+}
+else
+    {
+        sf::RectangleShape internalFrame(sf::Vector2f(10.f, GAME_HEIGHT));
+        internalFrame.setFillColor(sf::Color::Magenta);
+        internalFrame.setPosition(GAME_WIDTH-20-Diameter,400.0f);
+//        internalFrame.setTexture(&texture);
+        window.draw(internalFrame);
+    window.draw(internalFrame);
+}
+
+}
+
+void Interface::drawSpeedBoasterLeft() {
+
+    sf::ConvexShape SpeedBoaster;
+    SpeedBoaster.setPointCount(3);
+    SpeedBoaster.setPoint(0,sf::Vector2f (25,735.0));
+    SpeedBoaster.setPoint(1,sf::Vector2f (130,850));
+    SpeedBoaster.setPoint(2,sf::Vector2f (25,600));
+    SpeedBoaster.setFillColor(sf::Color::Cyan);
+    window.draw(SpeedBoaster);
+
+
+}
+
+void Interface::drawSpeedBoasterRight()
+{
+    sf::ConvexShape SpeedBoaster;
+    SpeedBoaster.setPointCount(3);
+    SpeedBoaster.setPoint(0,sf::Vector2f (GAME_WIDTH-30-25,735.0));
+    SpeedBoaster.setPoint(1,sf::Vector2f (GAME_WIDTH-30-130,850));
+    SpeedBoaster.setPoint(2,sf::Vector2f (GAME_WIDTH-30-25,600));
+    SpeedBoaster.setFillColor(sf::Color::Cyan);
+    window.draw(SpeedBoaster);
+}
 
 
 

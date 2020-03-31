@@ -50,3 +50,12 @@ public:
 
     void LoadGraphics();
 };
+ void loadBackground();
+    void externalframe();
+
+    void loadExternalFrame(bool isVertical, float Position);
+
+
+    void loadInternalFrame(bool is45,float Diameter);
+    void drawSpeedBoasterLeft();
+    void drawSpeedBoasterRight();

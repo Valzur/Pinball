@@ -6,6 +6,7 @@
 
 #IncludeRegexTransform: 
 
+<<<<<<< Updated upstream
 ../libs/SFML-2.5.1/include/SFML/Config.hpp
 TargetConditionals.h
 ../libs/SFML-2.5.1/include/SFML/TargetConditionals.h
@@ -675,22 +676,174 @@ SFML/Config.hpp
 -
 
 ../libs/SFML-2.5.1/include/SFML/Window/WindowStyle.hpp
+=======
+/home/anon/Desktop/Spring20/C++/Pinball Clone Final/Pinball/Defs.cpp
+Defs.h
+/home/anon/Desktop/Spring20/C++/Pinball Clone Final/Pinball/Defs.h
+>>>>>>> Stashed changes
 
-D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Defs.h
+/home/anon/Desktop/Spring20/C++/Pinball Clone Final/Pinball/Defs.h
 cmath
 -
 
+<<<<<<< Updated upstream
 D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Interface.cpp
 Interface.h
 D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Interface.h
+=======
+/home/anon/Desktop/Spring20/C++/Pinball Clone Final/Pinball/Game.cpp
+iostream
+-
+Game.h
+/home/anon/Desktop/Spring20/C++/Pinball Clone Final/Pinball/Game.h
 
-D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Interface.h
+/home/anon/Desktop/Spring20/C++/Pinball Clone Final/Pinball/Game.h
+chrono
+-
+string
+-
+Interface.h
+/home/anon/Desktop/Spring20/C++/Pinball Clone Final/Pinball/Interface.h
+Defs.h
+/home/anon/Desktop/Spring20/C++/Pinball Clone Final/Pinball/Defs.h
+GameObjects/Ball.h
+/home/anon/Desktop/Spring20/C++/Pinball Clone Final/Pinball/GameObjects/Ball.h
+GameObjects/Obstacles/Wall.h
+/home/anon/Desktop/Spring20/C++/Pinball Clone Final/Pinball/GameObjects/Obstacles/Wall.h
+GameObjects/Flipper.h
+/home/anon/Desktop/Spring20/C++/Pinball Clone Final/Pinball/GameObjects/Flipper.h
+GameObjects/Obstacles/SpriteWalls.h
+/home/anon/Desktop/Spring20/C++/Pinball Clone Final/Pinball/GameObjects/Obstacles/SpriteWalls.h
+GameObjects/Obstacles/Bumper.h
+/home/anon/Desktop/Spring20/C++/Pinball Clone Final/Pinball/GameObjects/Obstacles/Bumper.h
+GameObjects/Manager.h
+/home/anon/Desktop/Spring20/C++/Pinball Clone Final/Pinball/GameObjects/Manager.h
+Utility/AudioManager.h
+/home/anon/Desktop/Spring20/C++/Pinball Clone Final/Pinball/Utility/AudioManager.h
+
+/home/anon/Desktop/Spring20/C++/Pinball Clone Final/Pinball/GameObjects/Ball.cpp
+Ball.h
+/home/anon/Desktop/Spring20/C++/Pinball Clone Final/Pinball/GameObjects/Ball.h
+
+/home/anon/Desktop/Spring20/C++/Pinball Clone Final/Pinball/GameObjects/Ball.h
+Drawable.h
+/home/anon/Desktop/Spring20/C++/Pinball Clone Final/Pinball/GameObjects/Drawable.h
+
+/home/anon/Desktop/Spring20/C++/Pinball Clone Final/Pinball/GameObjects/Collidable.h
+Ball.h
+/home/anon/Desktop/Spring20/C++/Pinball Clone Final/Pinball/GameObjects/Ball.h
+
+/home/anon/Desktop/Spring20/C++/Pinball Clone Final/Pinball/GameObjects/Drawable.h
+../Interface.h
+/home/anon/Desktop/Spring20/C++/Pinball Clone Final/Pinball/Interface.h
+
+/home/anon/Desktop/Spring20/C++/Pinball Clone Final/Pinball/GameObjects/Flipper.cpp
+Flipper.h
+/home/anon/Desktop/Spring20/C++/Pinball Clone Final/Pinball/GameObjects/Flipper.h
+
+/home/anon/Desktop/Spring20/C++/Pinball Clone Final/Pinball/GameObjects/Flipper.h
+Drawable.h
+/home/anon/Desktop/Spring20/C++/Pinball Clone Final/Pinball/GameObjects/Drawable.h
+Collidable.h
+/home/anon/Desktop/Spring20/C++/Pinball Clone Final/Pinball/GameObjects/Collidable.h
+cmath
+-
+../Defs.h
+/home/anon/Desktop/Spring20/C++/Pinball Clone Final/Pinball/Defs.h
+
+/home/anon/Desktop/Spring20/C++/Pinball Clone Final/Pinball/GameObjects/Manager.cpp
+Manager.h
+/home/anon/Desktop/Spring20/C++/Pinball Clone Final/Pinball/GameObjects/Manager.h
+
+/home/anon/Desktop/Spring20/C++/Pinball Clone Final/Pinball/GameObjects/Manager.h
+iostream
+-
+../Interface.h
+/home/anon/Desktop/Spring20/C++/Pinball Clone Final/Pinball/Interface.h
+Ball.h
+/home/anon/Desktop/Spring20/C++/Pinball Clone Final/Pinball/GameObjects/Ball.h
+
+/home/anon/Desktop/Spring20/C++/Pinball Clone Final/Pinball/GameObjects/Obstacles/Bumper.cpp
+Bumper.h
+/home/anon/Desktop/Spring20/C++/Pinball Clone Final/Pinball/GameObjects/Obstacles/Bumper.h
+
+/home/anon/Desktop/Spring20/C++/Pinball Clone Final/Pinball/GameObjects/Obstacles/Bumper.h
+iostream
+-
+Obstacle.h
+/home/anon/Desktop/Spring20/C++/Pinball Clone Final/Pinball/GameObjects/Obstacles/Obstacle.h
+cmath
+-
+../Manager.h
+/home/anon/Desktop/Spring20/C++/Pinball Clone Final/Pinball/GameObjects/Manager.h
+
+/home/anon/Desktop/Spring20/C++/Pinball Clone Final/Pinball/GameObjects/Obstacles/Obstacle.h
+../Drawable.h
+/home/anon/Desktop/Spring20/C++/Pinball Clone Final/Pinball/GameObjects/Drawable.h
+../Collidable.h
+/home/anon/Desktop/Spring20/C++/Pinball Clone Final/Pinball/GameObjects/Collidable.h
+
+/home/anon/Desktop/Spring20/C++/Pinball Clone Final/Pinball/GameObjects/Obstacles/SpriteWalls.cpp
+SpriteWalls.h
+/home/anon/Desktop/Spring20/C++/Pinball Clone Final/Pinball/GameObjects/Obstacles/SpriteWalls.h
+
+/home/anon/Desktop/Spring20/C++/Pinball Clone Final/Pinball/GameObjects/Obstacles/SpriteWalls.h
+iostream
+-
+Obstacle.h
+/home/anon/Desktop/Spring20/C++/Pinball Clone Final/Pinball/GameObjects/Obstacles/Obstacle.h
+
+/home/anon/Desktop/Spring20/C++/Pinball Clone Final/Pinball/GameObjects/Obstacles/Wall.cpp
+Wall.h
+/home/anon/Desktop/Spring20/C++/Pinball Clone Final/Pinball/GameObjects/Obstacles/Wall.h
+cmath
+-
+
+/home/anon/Desktop/Spring20/C++/Pinball Clone Final/Pinball/GameObjects/Obstacles/Wall.h
+Obstacle.h
+/home/anon/Desktop/Spring20/C++/Pinball Clone Final/Pinball/GameObjects/Obstacles/Obstacle.h
+>>>>>>> Stashed changes
+
+/home/anon/Desktop/Spring20/C++/Pinball Clone Final/Pinball/Interface.cpp
+Interface.h
+/home/anon/Desktop/Spring20/C++/Pinball Clone Final/Pinball/Interface.h
+
+/home/anon/Desktop/Spring20/C++/Pinball Clone Final/Pinball/Interface.h
 SFML/Window.hpp
 -
 SFML/Graphics.hpp
 -
 Defs.h
-D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Defs.h
+/home/anon/Desktop/Spring20/C++/Pinball Clone Final/Pinball/Defs.h
 iostream
 -
 
+<<<<<<< Updated upstream
+=======
+/home/anon/Desktop/Spring20/C++/Pinball Clone Final/Pinball/Utility/AudioManager.cpp
+AudioManager.h
+/home/anon/Desktop/Spring20/C++/Pinball Clone Final/Pinball/Utility/AudioManager.h
+
+/home/anon/Desktop/Spring20/C++/Pinball Clone Final/Pinball/Utility/AudioManager.h
+iostream
+-
+SFML/Audio.hpp
+-
+
+/home/anon/Desktop/Spring20/C++/Pinball Clone Final/Pinball/Utility/PixelPerfectCollision.cpp
+PixelPerfectCollision.h
+/home/anon/Desktop/Spring20/C++/Pinball Clone Final/Pinball/Utility/PixelPerfectCollision.h
+
+/home/anon/Desktop/Spring20/C++/Pinball Clone Final/Pinball/Utility/PixelPerfectCollision.h
+../GameObjects/Ball.h
+/home/anon/Desktop/Spring20/C++/Pinball Clone Final/Pinball/GameObjects/Ball.h
+cmath
+-
+
+/home/anon/Desktop/Spring20/C++/Pinball Clone Final/Pinball/main.cpp
+Game.h
+/home/anon/Desktop/Spring20/C++/Pinball Clone Final/Pinball/Game.h
+iostream
+-
+
+>>>>>>> Stashed changes
