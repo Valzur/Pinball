@@ -392,6 +392,33 @@ Utility/AudioManager.cpp.s:
 	$(MAKE) -f CMakeFiles\Pinball.dir\build.make CMakeFiles/Pinball.dir/Utility/AudioManager.cpp.s
 .PHONY : Utility/AudioManager.cpp.s
 
+Utility/Configurable.obj: Utility/Configurable.cpp.obj
+
+.PHONY : Utility/Configurable.obj
+
+# target to build an object file
+Utility/Configurable.cpp.obj:
+	$(MAKE) -f CMakeFiles\Pinball.dir\build.make CMakeFiles/Pinball.dir/Utility/Configurable.cpp.obj
+.PHONY : Utility/Configurable.cpp.obj
+
+Utility/Configurable.i: Utility/Configurable.cpp.i
+
+.PHONY : Utility/Configurable.i
+
+# target to preprocess a source file
+Utility/Configurable.cpp.i:
+	$(MAKE) -f CMakeFiles\Pinball.dir\build.make CMakeFiles/Pinball.dir/Utility/Configurable.cpp.i
+.PHONY : Utility/Configurable.cpp.i
+
+Utility/Configurable.s: Utility/Configurable.cpp.s
+
+.PHONY : Utility/Configurable.s
+
+# target to generate assembly for a file
+Utility/Configurable.cpp.s:
+	$(MAKE) -f CMakeFiles\Pinball.dir\build.make CMakeFiles/Pinball.dir/Utility/Configurable.cpp.s
+.PHONY : Utility/Configurable.cpp.s
+
 Utility/PixelPerfectCollision.obj: Utility/PixelPerfectCollision.cpp.obj
 
 .PHONY : Utility/PixelPerfectCollision.obj
@@ -418,6 +445,33 @@ Utility/PixelPerfectCollision.s: Utility/PixelPerfectCollision.cpp.s
 Utility/PixelPerfectCollision.cpp.s:
 	$(MAKE) -f CMakeFiles\Pinball.dir\build.make CMakeFiles/Pinball.dir/Utility/PixelPerfectCollision.cpp.s
 .PHONY : Utility/PixelPerfectCollision.cpp.s
+
+Utility/PreGame.obj: Utility/PreGame.cpp.obj
+
+.PHONY : Utility/PreGame.obj
+
+# target to build an object file
+Utility/PreGame.cpp.obj:
+	$(MAKE) -f CMakeFiles\Pinball.dir\build.make CMakeFiles/Pinball.dir/Utility/PreGame.cpp.obj
+.PHONY : Utility/PreGame.cpp.obj
+
+Utility/PreGame.i: Utility/PreGame.cpp.i
+
+.PHONY : Utility/PreGame.i
+
+# target to preprocess a source file
+Utility/PreGame.cpp.i:
+	$(MAKE) -f CMakeFiles\Pinball.dir\build.make CMakeFiles/Pinball.dir/Utility/PreGame.cpp.i
+.PHONY : Utility/PreGame.cpp.i
+
+Utility/PreGame.s: Utility/PreGame.cpp.s
+
+.PHONY : Utility/PreGame.s
+
+# target to generate assembly for a file
+Utility/PreGame.cpp.s:
+	$(MAKE) -f CMakeFiles\Pinball.dir\build.make CMakeFiles/Pinball.dir/Utility/PreGame.cpp.s
+.PHONY : Utility/PreGame.cpp.s
 
 main.obj: main.cpp.obj
 
@@ -485,9 +539,15 @@ help:
 	@echo ... Utility/AudioManager.obj
 	@echo ... Utility/AudioManager.i
 	@echo ... Utility/AudioManager.s
+	@echo ... Utility/Configurable.obj
+	@echo ... Utility/Configurable.i
+	@echo ... Utility/Configurable.s
 	@echo ... Utility/PixelPerfectCollision.obj
 	@echo ... Utility/PixelPerfectCollision.i
 	@echo ... Utility/PixelPerfectCollision.s
+	@echo ... Utility/PreGame.obj
+	@echo ... Utility/PreGame.i
+	@echo ... Utility/PreGame.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

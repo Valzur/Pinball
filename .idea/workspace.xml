@@ -11,25 +11,28 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5460e259-bb55-43d6-bcc1-8285b460cc16" name="Default Changelist" comment="- Bumper graphics :'D">
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/PokeBumper.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/heartgold-soulsilver.png" afterDir="false" />
+    <list default="true" id="5460e259-bb55-43d6-bcc1-8285b460cc16" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Configurations/Balls.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Utility/Configurable.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Utility/Configurable.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Utility/PreGame.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Utility/PreGame.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Game.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game.h" beforeDir="false" afterPath="$PROJECT_DIR$/Game.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Interface.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Interface.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Interface.h" beforeDir="false" afterPath="$PROJECT_DIR$/Interface.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pinball.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pinball.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pinball.dir/Game.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pinball.dir/Game.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pinball.dir/GameObjects/Ball.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pinball.dir/GameObjects/Ball.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pinball.dir/GameObjects/Flipper.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pinball.dir/GameObjects/Flipper.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pinball.dir/GameObjects/Manager.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pinball.dir/GameObjects/Manager.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pinball.dir/GameObjects/Obstacles/Bumper.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pinball.dir/GameObjects/Obstacles/Bumper.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pinball.dir/GameObjects/Obstacles/Wall.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pinball.dir/GameObjects/Obstacles/Wall.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pinball.dir/Interface.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pinball.dir/Interface.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pinball.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pinball.dir/DependInfo.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pinball.dir/Utility/AudioManager.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pinball.dir/Utility/AudioManager.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pinball.dir/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pinball.dir/main.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pinball.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pinball.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pinball.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pinball.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pinball.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pinball.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pinball.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pinball.dir/depend.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pinball.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pinball.dir/objects.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pinball.dir/objects1.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pinball.dir/objects1.rsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pinball.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Pinball.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Pinball.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Pinball.cbp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Pinball.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Pinball.exe" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,6 +46,7 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="MERGE" />
   </component>
   <component name="ProjectId" id="1YI4pzzj2yB4WNShg5aKSJNnLre" />
   <component name="ProjectLevelVcsManager">
@@ -110,7 +114,18 @@
       <workItem from="1584160596159" duration="9376000" />
       <workItem from="1584987501358" duration="4767000" />
       <workItem from="1585119625024" duration="840000" />
-      <workItem from="1585121515155" duration="1645000" />
+      <workItem from="1585121515155" duration="2043000" />
+      <workItem from="1585225081049" duration="279000" />
+      <workItem from="1585225409026" duration="222000" />
+      <workItem from="1585301899063" duration="4041000" />
+      <workItem from="1585313996752" duration="690000" />
+      <workItem from="1585316817107" duration="260000" />
+      <workItem from="1585559175677" duration="638000" />
+      <workItem from="1585569661471" duration="5950000" />
+      <workItem from="1585640255267" duration="90000" />
+      <workItem from="1585656151659" duration="4471000" />
+      <workItem from="1585684524970" duration="2535000" />
+      <workItem from="1585687450847" duration="2938000" />
     </task>
     <task id="LOCAL-00001" summary="Created a prototype Sprite wall class that is drawable.">
       <created>1583349718172</created>
@@ -189,7 +204,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585119975672</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="- Bumper graphics :'D">
+      <created>1585123194630</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1585123194630</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -234,18 +256,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="839" y="273" key="#xdebugger.XInspectDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1582878901313" />
-    <state x="359" y="0" key="CommitChangelistDialog2" timestamp="1585123160236">
+    <state x="359" y="0" key="CommitChangelistDialog2" timestamp="1585123189200">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="359" y="0" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1585123160236" />
+    <state x="359" y="0" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1585123189200" />
     <state x="607" y="417" key="EnvironmentVariablesDialog" timestamp="1583594942155">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="607" y="417" key="EnvironmentVariablesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583594942155" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1584016434851">
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1585640342822">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1584016434851" />
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1585640342822" />
     <state x="598" y="531" width="938" height="348" key="GridCell.Tab.-1.bottom" timestamp="1582876012827">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -262,22 +284,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="598" y="531" width="938" height="348" key="GridCell.Tab.-1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1582876012827" />
-    <state width="1126" height="277" key="GridCell.Tab.0.bottom" timestamp="1585123084420">
+    <state width="938" height="276" key="GridCell.Tab.0.bottom" timestamp="1585663316909">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1126" height="277" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1585123084420" />
-    <state width="1126" height="277" key="GridCell.Tab.0.center" timestamp="1585123084420">
+    <state width="938" height="276" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1585663316909" />
+    <state width="938" height="276" key="GridCell.Tab.0.center" timestamp="1585663316909">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1126" height="277" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1585123084420" />
-    <state width="1126" height="277" key="GridCell.Tab.0.left" timestamp="1585123084420">
+    <state width="938" height="276" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1585663316909" />
+    <state width="938" height="276" key="GridCell.Tab.0.left" timestamp="1585663316909">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1126" height="277" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1585123084420" />
-    <state width="1126" height="277" key="GridCell.Tab.0.right" timestamp="1585123084420">
+    <state width="938" height="276" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1585663316909" />
+    <state width="938" height="276" key="GridCell.Tab.0.right" timestamp="1585663316909">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1126" height="277" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1585123084420" />
+    <state width="938" height="276" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1585663316909" />
     <state x="1011" y="720" width="931" height="348" key="GridCell.Tab.1.bottom" timestamp="1584201888010">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -314,18 +336,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="873" y="268" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1583656628406" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1585119985457">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1585123197133">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1585119985457" />
-    <state x="656" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1585121517871">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1585123197133" />
+    <state x="656" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1585684527145">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="656" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585121517871" />
-    <state x="769" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1583595769931">
+    <state x="656" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585684527145" />
+    <state x="769" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1585690425202">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="769" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1583595769931" />
+    <state x="769" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1585690425202" />
     <state x="598" y="531" width="925" height="387" key="dock-window-1" timestamp="1582875920769">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -346,9 +368,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="701" y="163" key="refactoring.ChangeSignatureDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1582876753616" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1584183569629">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1585685366695">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1584183569629" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1585685366695" />
   </component>
 </project>

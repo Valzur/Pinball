@@ -808,6 +808,9 @@ CMakeFiles/Pinball.dir/Utility/PixelPerfectCollision.cpp.obj
  D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Interface.h
  D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Utility/PixelPerfectCollision.cpp
  D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Utility/PixelPerfectCollision.h
+CMakeFiles/Pinball.dir/Utility/PreGame.cpp.obj
+ D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Utility/PreGame.cpp
+ D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Utility/PreGame.h
 CMakeFiles/Pinball.dir/main.cpp.obj
  ../libs/SFML-2.5.1/include/SFML/Audio.hpp
  ../libs/SFML-2.5.1/include/SFML/Audio/AlResource.hpp

@@ -224,6 +224,34 @@ CMakeFiles/Pinball.dir/Defs.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Pinball.dir/Defs.cpp.s"
 	"D:\CLion 2019.3.3\MINGW\mingw32\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Zewail City\Year 3 Spring\C++\Project\Repository\Pinball\Defs.cpp" -o CMakeFiles\Pinball.dir\Defs.cpp.s
 
+CMakeFiles/Pinball.dir/Utility/PreGame.cpp.obj: CMakeFiles/Pinball.dir/flags.make
+CMakeFiles/Pinball.dir/Utility/PreGame.cpp.obj: CMakeFiles/Pinball.dir/includes_CXX.rsp
+CMakeFiles/Pinball.dir/Utility/PreGame.cpp.obj: ../Utility/PreGame.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Zewail City\Year 3 Spring\C++\Project\Repository\Pinball\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/Pinball.dir/Utility/PreGame.cpp.obj"
+	"D:\CLion 2019.3.3\MINGW\mingw32\bin\g++.exe"  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Pinball.dir\Utility\PreGame.cpp.obj -c "D:\Zewail City\Year 3 Spring\C++\Project\Repository\Pinball\Utility\PreGame.cpp"
+
+CMakeFiles/Pinball.dir/Utility/PreGame.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Pinball.dir/Utility/PreGame.cpp.i"
+	"D:\CLion 2019.3.3\MINGW\mingw32\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Zewail City\Year 3 Spring\C++\Project\Repository\Pinball\Utility\PreGame.cpp" > CMakeFiles\Pinball.dir\Utility\PreGame.cpp.i
+
+CMakeFiles/Pinball.dir/Utility/PreGame.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Pinball.dir/Utility/PreGame.cpp.s"
+	"D:\CLion 2019.3.3\MINGW\mingw32\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Zewail City\Year 3 Spring\C++\Project\Repository\Pinball\Utility\PreGame.cpp" -o CMakeFiles\Pinball.dir\Utility\PreGame.cpp.s
+
+CMakeFiles/Pinball.dir/Utility/Configurable.cpp.obj: CMakeFiles/Pinball.dir/flags.make
+CMakeFiles/Pinball.dir/Utility/Configurable.cpp.obj: CMakeFiles/Pinball.dir/includes_CXX.rsp
+CMakeFiles/Pinball.dir/Utility/Configurable.cpp.obj: ../Utility/Configurable.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Zewail City\Year 3 Spring\C++\Project\Repository\Pinball\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/Pinball.dir/Utility/Configurable.cpp.obj"
+	"D:\CLion 2019.3.3\MINGW\mingw32\bin\g++.exe"  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Pinball.dir\Utility\Configurable.cpp.obj -c "D:\Zewail City\Year 3 Spring\C++\Project\Repository\Pinball\Utility\Configurable.cpp"
+
+CMakeFiles/Pinball.dir/Utility/Configurable.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Pinball.dir/Utility/Configurable.cpp.i"
+	"D:\CLion 2019.3.3\MINGW\mingw32\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Zewail City\Year 3 Spring\C++\Project\Repository\Pinball\Utility\Configurable.cpp" > CMakeFiles\Pinball.dir\Utility\Configurable.cpp.i
+
+CMakeFiles/Pinball.dir/Utility/Configurable.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Pinball.dir/Utility/Configurable.cpp.s"
+	"D:\CLion 2019.3.3\MINGW\mingw32\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Zewail City\Year 3 Spring\C++\Project\Repository\Pinball\Utility\Configurable.cpp" -o CMakeFiles\Pinball.dir\Utility\Configurable.cpp.s
+
 # Object files for target Pinball
 Pinball_OBJECTS = \
 "CMakeFiles/Pinball.dir/main.cpp.obj" \
@@ -237,7 +265,9 @@ Pinball_OBJECTS = \
 "CMakeFiles/Pinball.dir/Utility/PixelPerfectCollision.cpp.obj" \
 "CMakeFiles/Pinball.dir/GameObjects/Manager.cpp.obj" \
 "CMakeFiles/Pinball.dir/Utility/AudioManager.cpp.obj" \
-"CMakeFiles/Pinball.dir/Defs.cpp.obj"
+"CMakeFiles/Pinball.dir/Defs.cpp.obj" \
+"CMakeFiles/Pinball.dir/Utility/PreGame.cpp.obj" \
+"CMakeFiles/Pinball.dir/Utility/Configurable.cpp.obj"
 
 # External object files for target Pinball
 Pinball_EXTERNAL_OBJECTS =
@@ -254,6 +284,8 @@ Pinball.exe: CMakeFiles/Pinball.dir/Utility/PixelPerfectCollision.cpp.obj
 Pinball.exe: CMakeFiles/Pinball.dir/GameObjects/Manager.cpp.obj
 Pinball.exe: CMakeFiles/Pinball.dir/Utility/AudioManager.cpp.obj
 Pinball.exe: CMakeFiles/Pinball.dir/Defs.cpp.obj
+Pinball.exe: CMakeFiles/Pinball.dir/Utility/PreGame.cpp.obj
+Pinball.exe: CMakeFiles/Pinball.dir/Utility/Configurable.cpp.obj
 Pinball.exe: CMakeFiles/Pinball.dir/build.make
 Pinball.exe: ../libs/SFML-2.5.1/lib/libsfml-audio-s-d.a
 Pinball.exe: ../libs/SFML-2.5.1/lib/libsfml-graphics-s-d.a
@@ -269,7 +301,7 @@ Pinball.exe: ../libs/SFML-2.5.1/lib/libfreetype.a
 Pinball.exe: CMakeFiles/Pinball.dir/linklibs.rsp
 Pinball.exe: CMakeFiles/Pinball.dir/objects1.rsp
 Pinball.exe: CMakeFiles/Pinball.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="D:\Zewail City\Year 3 Spring\C++\Project\Repository\Pinball\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable Pinball.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="D:\Zewail City\Year 3 Spring\C++\Project\Repository\Pinball\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX executable Pinball.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Pinball.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -808,6 +808,9 @@ CMakeFiles/Pinball.dir/Utility/PixelPerfectCollision.cpp.obj: ../Interface.h
 CMakeFiles/Pinball.dir/Utility/PixelPerfectCollision.cpp.obj: ../Utility/PixelPerfectCollision.cpp
 CMakeFiles/Pinball.dir/Utility/PixelPerfectCollision.cpp.obj: ../Utility/PixelPerfectCollision.h
 
+CMakeFiles/Pinball.dir/Utility/PreGame.cpp.obj: ../Utility/PreGame.cpp
+CMakeFiles/Pinball.dir/Utility/PreGame.cpp.obj: ../Utility/PreGame.h
+
 CMakeFiles/Pinball.dir/main.cpp.obj: ../libs/SFML-2.5.1/include/SFML/Audio.hpp
 CMakeFiles/Pinball.dir/main.cpp.obj: ../libs/SFML-2.5.1/include/SFML/Audio/AlResource.hpp
 CMakeFiles/Pinball.dir/main.cpp.obj: ../libs/SFML-2.5.1/include/SFML/Audio/Export.hpp
