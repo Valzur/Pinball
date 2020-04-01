@@ -1,0 +1,5 @@
+2
+Center: 240 500
+Radius: 70
+Center: 480 500
+Radius: 70

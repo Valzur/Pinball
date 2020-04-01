@@ -9,7 +9,6 @@ private:
     float position;  // The horizontal position of the wall
     bool collidedLastFrame;  // Whether or not the last frame was a collision (to prevent flapping)
     bool isVertical;
-
 public:
     explicit Wall(float position,bool vertical);
     void draw(Interface & interface) override;

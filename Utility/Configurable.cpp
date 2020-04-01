@@ -40,39 +40,44 @@ void Configurable::DrawBalls(Interface &interface) {
 
 void Configurable::ReadFlippers(string TextPath) {
     file.open(TextPath);
-    file >> FlippersNo;
-    pFlippers=new Flipper*[FlippersNo];
+    if(file.is_open()){
+        file >> FlippersNo;
+        pFlippers=new Flipper*[FlippersNo];
 
-    for (int i = 0; i <FlippersNo; i++) {
-        Vector2D Center;
-        string Flippertype, Trash;
-        float length, angle, MajorRadius, MinorRadius;
-        file >> Trash;
-        file >> Flippertype;
-        file >> Trash;
-        file >> Center.x;
-        file >> Center.y;
-        file >> Trash;
-        file >> length;
-        file >> Trash;
-        file >> angle;
-        file >> Trash;
-        file >> MajorRadius;
-        file >> Trash;
-        file >> MinorRadius;
-        //Phew, i hope i get no errors after all of this.
-        if(Flippertype=="RIGHT") {
-            pFlippers[i]=new Flipper(FlipperType::RIGHT,Center,length,angle,MajorRadius,MinorRadius);
-        } else if (Flippertype=="LEFT"){
-            pFlippers[i]=new Flipper(FlipperType::LEFT,Center,length,angle,MajorRadius,MinorRadius);
+        for (int i = 0; i <FlippersNo; i++) {
+            Vector2D Center;
+            string Flippertype, Trash;
+            float length, angle, MajorRadius, MinorRadius;
+            file >> Trash;
+            file >> Flippertype;
+            file >> Trash;
+            file >> Center.x;
+            file >> Center.y;
+            file >> Trash;
+            file >> length;
+            file >> Trash;
+            file >> angle;
+            file >> Trash;
+            file >> MajorRadius;
+            file >> Trash;
+            file >> MinorRadius;
+            //Phew, i hope i get no errors after all of this.
+            if(Flippertype=="RIGHT") {
+                pFlippers[i]=new Flipper(FlipperType::RIGHT,Center,length,angle,MajorRadius,MinorRadius);
+            } else if (Flippertype=="LEFT"){
+                pFlippers[i]=new Flipper(FlipperType::LEFT,Center,length,angle,MajorRadius,MinorRadius);
+            }
+            file.close();
         }
+    }else{
+        cout << "Error, Unable to read Flippers file!" << endl;
     }
 }
 
 void Configurable::DrawEverything(Interface & interface) {
     DrawBalls(interface);
     DrawFlippers(interface);
-    DrawBumpers(interface);
+    DrawPopBumpers(interface);
     DrawWalls(interface);
 }
 
@@ -90,7 +95,7 @@ void Configurable::LoadEverything() {
     Progress++;
     ReadFlippers("../Configurations/Flippers.txt");
     Progress++;
-    ReadBumpers("../Configurations/Bumpers.txt");
+    ReadPopBumpers("../Configurations/PopBumpers.txt");
     Progress++;
     ReadWalls("../Configurations/Walls.txt");
     Progress++;
@@ -102,7 +107,7 @@ void Configurable::LoadEverything() {
 
 void Configurable::Collision(Ball &ball, float collision_time) {
     FlippersCollision(ball, collision_time,*pManager);
-    BumpersCollision(ball, collision_time,*pManager);
+    PopBumpersCollision(ball, collision_time,*pManager);
     BallsCollision(ball,collision_time,*pManager);
     WallsCollision(ball, collision_time,*pManager);
 }
@@ -113,9 +118,9 @@ void Configurable::FlippersCollision(Ball &ball, float collision_time, Manager &
     }
 }
 
-void Configurable::BumpersCollision(Ball &ball, float collision_time, Manager &manager) {
-    for (int i = 0; i <BumpersNo; i++) {
-        Acceleration+=pBumpers[i]->collideWith(ball,collision_time,manager);
+void Configurable::PopBumpersCollision(Ball &ball, float collision_time, Manager &manager) {
+    for (int i = 0; i <PopBumpersNo; i++) {
+        Acceleration+=pPopBumpers[i]->collideWith(ball,collision_time,manager);
     }
 }
 
@@ -131,7 +136,27 @@ void Configurable::WallsCollision(Ball &ball, float collision_time, Manager &man
     }
 }
 
-void Configurable::ReadBumpers(string TextPath) {
+void Configurable::ReadPopBumpers(string TextPath) {
+    file.open(TextPath);
+    if(file.is_open()){
+        Vector2D center;
+        float radius;
+        string Trash;
+        file >> PopBumpersNo;
+        pPopBumpers=new PopBumper*[PopBumpersNo];
+
+        for (int i = 0; i <PopBumpersNo; i++) {
+            file >> Trash;
+            file >> center.x;
+            file >> center.y;
+            file >> Trash;
+            file >> radius;
+
+            pPopBumpers[i]=new PopBumper(center,radius);
+        }
+    }else{
+        cout << "Error, unable to read PopBumpers file!" << endl;
+    }
 
 }
 
@@ -151,6 +176,8 @@ void Configurable::DrawWalls(Interface &interface) {
 
 }
 
-void Configurable::DrawBumpers(Interface &interface) {
-
+void Configurable::DrawPopBumpers(Interface &interface) {
+    for (int i = 0; i <PopBumpersNo; i++) {
+        pPopBumpers[i]->draw(interface);
+    }
 }

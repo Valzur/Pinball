@@ -284,6 +284,33 @@ GameObjects/Obstacles/Bumper.cpp.s:
 	$(MAKE) -f CMakeFiles\Pinball.dir\build.make CMakeFiles/Pinball.dir/GameObjects/Obstacles/Bumper.cpp.s
 .PHONY : GameObjects/Obstacles/Bumper.cpp.s
 
+GameObjects/Obstacles/PopBumper.obj: GameObjects/Obstacles/PopBumper.cpp.obj
+
+.PHONY : GameObjects/Obstacles/PopBumper.obj
+
+# target to build an object file
+GameObjects/Obstacles/PopBumper.cpp.obj:
+	$(MAKE) -f CMakeFiles\Pinball.dir\build.make CMakeFiles/Pinball.dir/GameObjects/Obstacles/PopBumper.cpp.obj
+.PHONY : GameObjects/Obstacles/PopBumper.cpp.obj
+
+GameObjects/Obstacles/PopBumper.i: GameObjects/Obstacles/PopBumper.cpp.i
+
+.PHONY : GameObjects/Obstacles/PopBumper.i
+
+# target to preprocess a source file
+GameObjects/Obstacles/PopBumper.cpp.i:
+	$(MAKE) -f CMakeFiles\Pinball.dir\build.make CMakeFiles/Pinball.dir/GameObjects/Obstacles/PopBumper.cpp.i
+.PHONY : GameObjects/Obstacles/PopBumper.cpp.i
+
+GameObjects/Obstacles/PopBumper.s: GameObjects/Obstacles/PopBumper.cpp.s
+
+.PHONY : GameObjects/Obstacles/PopBumper.s
+
+# target to generate assembly for a file
+GameObjects/Obstacles/PopBumper.cpp.s:
+	$(MAKE) -f CMakeFiles\Pinball.dir\build.make CMakeFiles/Pinball.dir/GameObjects/Obstacles/PopBumper.cpp.s
+.PHONY : GameObjects/Obstacles/PopBumper.cpp.s
+
 GameObjects/Obstacles/SpriteWalls.obj: GameObjects/Obstacles/SpriteWalls.cpp.obj
 
 .PHONY : GameObjects/Obstacles/SpriteWalls.obj
@@ -527,6 +554,9 @@ help:
 	@echo ... GameObjects/Obstacles/Bumper.obj
 	@echo ... GameObjects/Obstacles/Bumper.i
 	@echo ... GameObjects/Obstacles/Bumper.s
+	@echo ... GameObjects/Obstacles/PopBumper.obj
+	@echo ... GameObjects/Obstacles/PopBumper.i
+	@echo ... GameObjects/Obstacles/PopBumper.s
 	@echo ... GameObjects/Obstacles/SpriteWalls.obj
 	@echo ... GameObjects/Obstacles/SpriteWalls.i
 	@echo ... GameObjects/Obstacles/SpriteWalls.s

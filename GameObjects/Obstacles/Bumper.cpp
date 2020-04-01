@@ -7,40 +7,34 @@ float Bumper::GetRadius() {
 }
 
 Vector2D Bumper::collideWith(Ball &ball, float collision_time, Manager & manager) {
-    switch(type) {
-        case Pop:
-        {
-            float actualRadius, Modificationfactor, Acc, velocity;
-            Vector2D ModifiedRadiusPos;
-            velocity = VectorNorm(ball.getVelocity());
-            Vector2D acc = ball.getCenter()-position;
-            actualRadius = VectorNorm(acc);
-            if (actualRadius <= (ball.getRadius() + radius)) {
+    float actualRadius, Modificationfactor, Acc, velocity;
+    Vector2D ModifiedRadiusPos;
+    velocity = VectorNorm(ball.getVelocity());
+    Vector2D acc = ball.getCenter()-position;
+    actualRadius = VectorNorm(acc);
+    if (actualRadius <= (ball.getRadius() + radius)) {
 
-                //Adjusting position if ball goes inside the bumper
-                Modificationfactor = ball.getRadius() + radius - actualRadius;
-                ModifiedRadiusPos = acc*Modificationfactor;
-                ModifiedRadiusPos += ball.getCenter();
+        //Adjusting position if ball goes inside the bumper
+        Modificationfactor = ball.getRadius() + radius - actualRadius;
+        ModifiedRadiusPos = acc*Modificationfactor;
+        ModifiedRadiusPos += ball.getCenter();
 
-                //Calculating response
-                acc = {-ball.getVelocity().y + position.y, ball.getVelocity().x - position.y};
-                Acc=VectorNorm(acc);
-                acc = acc /Acc;
-                acc= acc*velocity/collision_time;
+        //Calculating response
+        acc = {-ball.getVelocity().y + position.y, ball.getVelocity().x - position.y};
+        Acc=VectorNorm(acc);
+        acc = acc /Acc;
+        acc= acc*velocity/collision_time;
 
-                //Add score
-                manager.addScore(50);
-
-                //Returning values
-                ball.setCenter(ModifiedRadiusPos);
-                return acc;
-            } else {
-                return {0, 0};
-            }
-            break;
-        }
-        case Thrust:
-        {
+        //Add score
+        manager.addScore(50);
+        //Returning values
+        ball.setCenter(ModifiedRadiusPos);
+        return acc;
+    } else {
+        return {0, 0};
+    }
+            //Copy everything for the thrust bumper.
+            /*
             float actualRadius, Modificationfactor, Acc, velocity;
             Vector2D ModifiedRadiusPos;
             velocity = pow((pow(ball.getVelocity().x, 2) + pow(ball.getVelocity().y, 2)), 0.5);
@@ -67,21 +61,12 @@ Vector2D Bumper::collideWith(Ball &ball, float collision_time, Manager & manager
             } else {
                 return {0, 0};
             }
-            break;
-        }
-
-        case Vibranium:
-        {
-            break;
-        }
-
-    }
+            */
 }
 
-Bumper::Bumper(Vector2D pos, int rad,BumperType Type=BumperType(Pop)) {
+Bumper::Bumper(Vector2D pos, float rad) {
     position=pos;
     radius=rad;
-    type=Type;
 }
 
 Vector2D Bumper::GetPosition() {

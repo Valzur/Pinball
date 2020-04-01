@@ -8,20 +8,13 @@
 
 using namespace std;
 
-enum BumperType{
-    Pop,
-    Thrust,
-    Vibranium
-};
-
 class Bumper : public Obstacle{
 private:
     Vector2D position;
     float radius;
-    BumperType type;
 public:
 
-    Bumper(Vector2D pos, int rad,BumperType Type);
+    Bumper(Vector2D pos, float rad);
 
     Vector2D GetPosition();
     float GetRadius();
