@@ -130,3 +130,27 @@ void Configurable::WallsCollision(Ball &ball, float collision_time, Manager &man
         Acceleration+=pWalls[i]->collideWith(ball,collision_time,manager);
     }
 }
+
+void Configurable::ReadBumpers(string TextPath) {
+
+}
+
+void Configurable::ReadWalls(string TextPath) {
+
+}
+
+void Configurable::ReadManager(string TextPath) {
+
+}
+
+void Configurable::ReadAudioManager(string TextPath) {
+
+}
+
+void Configurable::DrawWalls(Interface &interface) {
+
+}
+
+void Configurable::DrawBumpers(Interface &interface) {
+
+}
