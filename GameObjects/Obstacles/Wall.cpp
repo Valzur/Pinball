@@ -12,7 +12,7 @@ void Wall::draw(Interface & interface)
     interface.drawWall(position,isVertical);
 }
 
-Vector2D Wall::collideWith(Ball & ball, float collision_time)
+Vector2D Wall::collideWith(Ball & ball, float collision_time, Manager & manager)
 {
     if(isVertical) {
         if (!collidedLastFrame && abs(position - ball.getCenter().x) < ball.getRadius()) {

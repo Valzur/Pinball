@@ -23,9 +23,9 @@ void Manager::Updategame(Interface & interface) {
     livesText="Lives: " + to_string(lives);
 
     //Update Score
-    interface.drawText("Assets/Fonts/BebasNeue-Regular.ttf",scoreText,42,sf::Color::Blue,{GAME_WIDTH/2,0});
+    interface.drawText(scoreText,42,sf::Color::Blue,{GAME_WIDTH/2,0});
     //Update Lives
-    interface.drawText("Assets/Fonts/BebasNeue-Regular.ttf",livesText,42,sf::Color::Green,{GAME_WIDTH-140,0});
+    interface.drawText(livesText,42,sf::Color::Green,{GAME_WIDTH-140,0});
 }
 
 void Manager::ValueUpdate(Ball & ball, bool & IsLost) {
@@ -49,7 +49,7 @@ void Manager::ValueUpdate(Ball & ball, bool & IsLost) {
 
 void Manager::EndGame(Interface & interface) {
     // You lost text
-    interface.drawText("Assets/Fonts/BebasNeue-Regular.ttf","YOU LOST", 72, sf::Color::Red,{GAME_WIDTH/2,GAME_HEIGHT/2-200});
+    interface.drawText("YOU LOST", 72, sf::Color::Red,{GAME_WIDTH/2,GAME_HEIGHT/2-200});
     //Final score text
-    interface.drawText("Assets/Fonts/BebasNeue-Regular.ttf",scoreText, 72, sf::Color::Cyan,{GAME_WIDTH/2,GAME_HEIGHT/2});
+    interface.drawText(scoreText, 72, sf::Color::Cyan,{GAME_WIDTH/2,GAME_HEIGHT/2});
 }

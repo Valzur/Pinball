@@ -3,7 +3,7 @@
 Flipper::Flipper(FlipperType type, Vector2D center, float length, float angle, float majorRadius, float minorRadius):
     type(type), center(center), length(length), angle(angle), majorRadius(majorRadius), minorRadius(minorRadius) {}
 
-Vector2D Flipper::collideWith(Ball & ball, float collision_time)
+Vector2D Flipper::collideWith(Ball & ball, float collision_time, Manager & manager)
 {
     //Failed attempt
 

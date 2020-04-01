@@ -1,18 +1,88 @@
-/snap/clion/103/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" "/home/anon/Desktop/Spring20/C++/Pinball Clone Final/Pinball"
--- The C compiler identification is GNU 5.4.0
--- The CXX compiler identification is GNU 5.4.0
--- Check for working C compiler: /usr/bin/cc
--- Check for working C compiler: /usr/bin/cc -- works
+"D:\CLion 2019.3.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" "D:\Zewail City\Year 3 Spring\C++\Project\Repository\Pinball"
+-- The C compiler identification is GNU 8.1.0
+-- The CXX compiler identification is GNU 8.1.0
+-- Check for working C compiler: D:/CLion 2019.3.3/MINGW/mingw32/bin/gcc.exe
+-- Check for working C compiler: D:/CLion 2019.3.3/MINGW/mingw32/bin/gcc.exe -- works
 -- Detecting C compiler ABI info
 -- Detecting C compiler ABI info - done
 -- Detecting C compile features
 -- Detecting C compile features - done
--- Check for working CXX compiler: /usr/bin/c++
--- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Check for working CXX compiler: D:/CLion 2019.3.3/MINGW/mingw32/bin/g++.exe
+-- Check for working CXX compiler: D:/CLion 2019.3.3/MINGW/mingw32/bin/g++.exe -- works
 -- Detecting CXX compiler ABI info
 -- Detecting CXX compiler ABI info - done
 -- Detecting CXX compile features
 -- Detecting CXX compile features - done
+-- Found SFML 2.5.1 in D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/libs/SFML-2.5.1/lib/cmake/SFML
+-- Could NOT find Freetype (missing: FREETYPE_LIBRARY FREETYPE_INCLUDE_DIRS) 
+CMake Warning at CMakeLists.txt:14 (find_package):
+  By not providing "FindOgg.cmake" in CMAKE_MODULE_PATH this project has
+  asked CMake to find a package configuration file provided by "Ogg", but
+  CMake did not find one.
+
+  Could not find a package configuration file provided by "Ogg" (requested
+  version 1.3.4) with any of the following names:
+
+    OggConfig.cmake
+    ogg-config.cmake
+
+  Add the installation prefix of "Ogg" to CMAKE_PREFIX_PATH or set "Ogg_DIR"
+  to a directory containing one of the above files.  If "Ogg" provides a
+  separate development package or SDK, be sure it has been installed.
+
+
+CMake Warning at CMakeLists.txt:15 (find_package):
+  By not providing "FindFLAC.cmake" in CMAKE_MODULE_PATH this project has
+  asked CMake to find a package configuration file provided by "FLAC", but
+  CMake did not find one.
+
+  Could not find a package configuration file provided by "FLAC" (requested
+  version 1.3.2) with any of the following names:
+
+    FLACConfig.cmake
+    flac-config.cmake
+
+  Add the installation prefix of "FLAC" to CMAKE_PREFIX_PATH or set
+  "FLAC_DIR" to a directory containing one of the above files.  If "FLAC"
+  provides a separate development package or SDK, be sure it has been
+  installed.
+
+
+-- Found SFML 2.5.1 in D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/libs/SFML-2.5.1/lib/cmake/SFML
+-- Could NOT find Freetype (missing: FREETYPE_LIBRARY FREETYPE_INCLUDE_DIRS) 
+CMake Warning at CMakeLists.txt:30 (find_package):
+  By not providing "FindOgg.cmake" in CMAKE_MODULE_PATH this project has
+  asked CMake to find a package configuration file provided by "Ogg", but
+  CMake did not find one.
+
+  Could not find a package configuration file provided by "Ogg" (requested
+  version 1.3.4) with any of the following names:
+
+    OggConfig.cmake
+    ogg-config.cmake
+
+  Add the installation prefix of "Ogg" to CMAKE_PREFIX_PATH or set "Ogg_DIR"
+  to a directory containing one of the above files.  If "Ogg" provides a
+  separate development package or SDK, be sure it has been installed.
+
+
+CMake Warning at CMakeLists.txt:31 (find_package):
+  By not providing "FindFLAC.cmake" in CMAKE_MODULE_PATH this project has
+  asked CMake to find a package configuration file provided by "FLAC", but
+  CMake did not find one.
+
+  Could not find a package configuration file provided by "FLAC" (requested
+  version 1.3.2) with any of the following names:
+
+    FLACConfig.cmake
+    flac-config.cmake
+
+  Add the installation prefix of "FLAC" to CMAKE_PREFIX_PATH or set
+  "FLAC_DIR" to a directory containing one of the above files.  If "FLAC"
+  provides a separate development package or SDK, be sure it has been
+  installed.
+
+
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/anon/Desktop/Spring20/C++/Pinball Clone Final/Pinball/cmake-build-debug
+-- Build files have been written to: D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/cmake-build-debug

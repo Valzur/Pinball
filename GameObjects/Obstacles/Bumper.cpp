@@ -6,7 +6,7 @@ float Bumper::GetRadius() {
     return radius;
 }
 
-Vector2D Bumper::collidewith(Ball &ball, float collision_time, Manager & manager) {
+Vector2D Bumper::collideWith(Ball &ball, float collision_time, Manager & manager) {
     switch(type) {
         case Pop:
         {
@@ -86,6 +86,10 @@ Bumper::Bumper(Vector2D pos, int rad,BumperType Type=BumperType(Pop)) {
 
 Vector2D Bumper::GetPosition() {
     return position;
+}
+
+void Bumper::draw(Interface &interface) {
+    interface.drawBumper(position,radius);
 }
 
 

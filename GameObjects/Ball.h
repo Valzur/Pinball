@@ -3,7 +3,7 @@
 #include "Drawable.h"
 
 // Represents the ball (the single most important object in a Pinball game!)
-class Ball: public Drawable
+class Ball: public Drawn
 {
 private:
     const Vector2D InitialPosition;

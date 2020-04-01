@@ -4,7 +4,7 @@
 #include "Obstacle.h"
 using namespace std;
 
-class SpriteWalls {
+class SpriteWalls: public Obstacle {
 private:
     sf::Texture texture;
     Vector2D position;
@@ -17,6 +17,8 @@ public:
     void LoadTexture(string path);
     void SetPosition(Vector2D pos);
     sf::Sprite GetSprite();
+    void draw(Interface & interface) override=0;
+    Vector2D collideWith(Ball & ball, float collision_time, Manager & manager) override=0;
 
 };
 

@@ -8,7 +8,7 @@
 using namespace std;
 
 // Represents a (controllable) flipper
-class Flipper: public Drawable, public Collidable
+class Flipper: public Drawn, public Collidable
 {
 private:
     FlipperType type;  // Left or right flipper
@@ -23,7 +23,7 @@ public:
     // The angle should probably be removed from the constructor after adding the controls
     Flipper(FlipperType type, Vector2D center, float length, float angle, float majorRadius, float minorRadius);
 
-    Vector2D collideWith(Ball & ball, float collision_time) override;
+    Vector2D collideWith(Ball & ball, float collision_time, Manager & manager) override;
     void draw(Interface & interface) override;
     void RotateFlipper(float a, float time);
 };

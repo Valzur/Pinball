@@ -146,16 +146,9 @@ void Interface::drawNewWall(sf::Sprite sprite) {
 void Interface::drawBumper(Vector2D center, float radius) {
     sf::CircleShape circle(radius);
     circle.setOrigin(radius, radius);
-<<<<<<< Updated upstream
     circle.setOutlineThickness(1.5*outlineThickness);
     circle.setOutlineColor(sf::Color::Magenta);
-=======
-    circle1.setOrigin(radius/2,radius/2);
-    circle.setOutlineThickness(3*outlineThickness);
-    circle1.setOutlineThickness(2*outlineThickness);
-    circle.setOutlineColor(sf::Color::Black);
-    circle1.setOutlineColor(sf::Color::Blue);
->>>>>>> Stashed changes
+
     circle.setFillColor(ballFillColor);
     circle.setPosition(center.x, center.y);
     window.draw(circle);
@@ -168,11 +161,6 @@ void Interface::drawBumper(Vector2D center, float radius) {
 }
 
 void Interface::drawFPS() {
-    if(!font.loadFromFile("Assets/Fonts/BebasNeue-Regular.ttf")){
-        cout<< "Can't load font! "<< endl;
-    }
-
-    text.setFont(font);
     text.setString(FPS);
     text.setCharacterSize(24);
     text.setFillColor(sf::Color::Green);
@@ -184,10 +172,8 @@ void Interface::setFPS(string fps) {
     FPS=fps;
 }
 
-void Interface::drawText(string Fontpath, string Text, int FontSize, sf::Color color, Vector2D position) {
-    if(!font.loadFromFile(Fontpath)){
-        cout<< "Can't load font! "<< endl;
-    }
+void Interface::drawText(string Text, int FontSize, sf::Color color, Vector2D position) {
+
     text.setFont(font);
     text.setString(Text);
     sf::FloatRect bounds=text.getLocalBounds();
@@ -198,76 +184,57 @@ void Interface::drawText(string Fontpath, string Text, int FontSize, sf::Color c
 }
 
 void Interface::LoadGraphics() {
+    //Load Fonts
+    if(!font.loadFromFile("../Assets/Fonts/BebasNeue-Regular.ttf")){
+        cout<< "Can't load font! "<< endl;
+    }else{
+        FPSText.setFont(font);
+    }
+
     //Loading Ball sprite
-    if (!Balltexture.loadFromFile("Assets/Sprites/pokeball.png")) {
+    if (!Balltexture.loadFromFile("../Assets/Sprites/pokeball.png")) {
         // error...
         cout << "Error loading pokeball!" << endl;
+    }else{
+        Ballsprite.setTexture(Balltexture);
     }
 
     //Loading Bumper sprite
-    if(!Bumpertexture.loadFromFile("Assets/Sprites/PokeBumper.png")){
+    if(!Bumpertexture.loadFromFile("../Assets/Sprites/PokeBumper.png")){
         cout << "Error loading Bumper sprite!" <<  endl;
+    }else{
+        Bumpersprite.setTexture(Bumpertexture);
     }
 
-}
-
-
-
-void Interface::loadBackground()
-{
-
-sf::Texture texture;
-if(!texture.loadFromFile("background.png"))
-
-{
-    cout<<"failed to load background"<<endl;
-}
- sf::Sprite spriteBackground;
-spriteBackground.setTexture(texture);
-window.draw(spriteBackground);
-
-
+    //background sprite
+    if(!backgroundTexture.loadFromFile("../Assets/background.png")){
+        cout << "Error loading Bumper sprite!" <<  endl;
+    }else{
+        backgroundSprite.setTexture(backgroundTexture);
+    }
 
 }
 
 
 
 //Draw external frame
-
-
 void Interface::loadExternalFrame(bool isVertical,float Position)
 {
-
-
-//        sf::Texture texture;
-//        texture.loadFromFile("Frame.png");
-//        i++;
-
         if (isVertical) {
             sf::RectangleShape externalFrame(sf::Vector2f(Position, GAME_HEIGHT));
             externalFrame.setFillColor(sf::Color::Magenta);
             if (Position < 0) {
                 externalFrame.setPosition(GAME_WIDTH, 0.0f);
             }
-//            externalFrame.setTexture(&texture);
+//          externalFrame.setTexture(&texture);
             window.draw(externalFrame);
         } else {
             sf::RectangleShape externalFrame(sf::Vector2f(GAME_WIDTH, Position));
             externalFrame.setFillColor(sf::Color::Magenta);
-//            externalFrame.setTexture(&texture);
+//          externalFrame.setTexture(&texture);
             window.draw(externalFrame);
         }
-    }
-////    externalFrame.setOrigin(50.0,50.0);
-////    sf::Texture externalFrameTexture;
-////    externalFrameTexture.loadFromFile("image.png");
-////    externalFrame.setTexture(&externalFrameTexture);
-//    window.draw(externalFrame);
-
-
-
-//Draw internal frame
-
+}
 
 void Interface::loadInternalFrame(bool is45,float Diameter)
 {
@@ -302,7 +269,6 @@ else
 }
 
 void Interface::drawSpeedBoasterLeft() {
-
     sf::ConvexShape SpeedBoaster;
     SpeedBoaster.setPointCount(3);
     SpeedBoaster.setPoint(0,sf::Vector2f (25,735.0));
@@ -310,8 +276,6 @@ void Interface::drawSpeedBoasterLeft() {
     SpeedBoaster.setPoint(2,sf::Vector2f (25,600));
     SpeedBoaster.setFillColor(sf::Color::Cyan);
     window.draw(SpeedBoaster);
-
-
 }
 
 void Interface::drawSpeedBoasterRight()
@@ -323,6 +287,10 @@ void Interface::drawSpeedBoasterRight()
     SpeedBoaster.setPoint(2,sf::Vector2f (GAME_WIDTH-30-25,600));
     SpeedBoaster.setFillColor(sf::Color::Cyan);
     window.draw(SpeedBoaster);
+}
+
+void Interface::drawBackground() {
+    window.draw(backgroundSprite);
 }
 
 

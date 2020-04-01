@@ -50,8 +50,8 @@ void Game::simulate()
         ball.Activate();
 
     //Test
-    rightFlipper.collideWith(ball,delta_time);
-    leftFlipper.collideWith(ball,delta_time);
+    rightFlipper.collideWith(ball,delta_time, manager);
+    leftFlipper.collideWith(ball,delta_time, manager);
 
 
     //Ball Collision
@@ -67,7 +67,8 @@ void Game::updateInterfaceOutput()
         //Load things
         if(!Loaded)
             interface.LoadGraphics();
-       interface.loadBackground();
+
+        interface.drawBackground();
         interface.loadExternalFrame(1,-10.0f);
         interface.loadExternalFrame(1,10.0f);
         interface.loadExternalFrame(0,10.0f);
@@ -123,8 +124,8 @@ void Game::DoBallCollision(Ball & inball,float delta_time,int isMain) {
     Vector2D resultant_acceleration = {0, GRAVITY};  // Starting with gravity as the first acceleration contributer
 
     //Bumpers
-    resultant_acceleration += bumper1.collidewith(inball,delta_time,manager);
-    resultant_acceleration += bumper2.collidewith(inball,delta_time,manager);
+    resultant_acceleration += bumper1.collideWith(inball,delta_time,manager);
+    resultant_acceleration += bumper2.collideWith(inball,delta_time,manager);
     //Other balls
     switch (isMain){
         case 0:
@@ -144,9 +145,9 @@ void Game::DoBallCollision(Ball & inball,float delta_time,int isMain) {
             break;
     }
     //Walls
-    resultant_acceleration += leftWall.collideWith(inball, delta_time);
-    resultant_acceleration += rightWall.collideWith(inball, delta_time);
-    resultant_acceleration += upperWall.collideWith(inball,delta_time);
+    resultant_acceleration += leftWall.collideWith(inball, delta_time, manager);
+    resultant_acceleration += rightWall.collideWith(inball, delta_time, manager);
+    resultant_acceleration += upperWall.collideWith(inball,delta_time, manager);
 
     //Debug
     resultant_acceleration=resultant_acceleration;

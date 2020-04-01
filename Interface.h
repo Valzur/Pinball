@@ -15,8 +15,11 @@ class Interface
 {
 private:
     string FPS;
+    //Fonts and Texts
     sf::Font font;
     sf::Text text;
+    sf::Text FPSText;
+
     sf::RenderWindow window;  // Represents the game window
     const sf::Color  // Colors used for drawing (can change the whole theme of the game)
         backgroundColor = sf::Color::White,
@@ -32,6 +35,9 @@ private:
     sf::Texture Bumpertexture;
     sf::Sprite Bumpersprite;
 
+    sf::Texture backgroundTexture;
+    sf::Sprite backgroundSprite;
+
 public:
     Interface();  // Constructor
     void getControls(bool & exit, bool & left, bool & right, bool & space);  // Detects the buttons pressed
@@ -46,11 +52,10 @@ public:
     void drawNewWall(sf::Sprite sprite);
     void drawBumper(Vector2D center, float radius);
     void drawFPS();
-    void drawText(string Fontpath,string Text, int FontSize, sf::Color color, Vector2D position);
+    void drawText(string Text, int FontSize, sf::Color color, Vector2D position);
 
     void LoadGraphics();
-};
- void loadBackground();
+    void drawBackground();
     void externalframe();
 
     void loadExternalFrame(bool isVertical, float Position);
@@ -59,3 +64,4 @@ public:
     void loadInternalFrame(bool is45,float Diameter);
     void drawSpeedBoasterLeft();
     void drawSpeedBoasterRight();
+};

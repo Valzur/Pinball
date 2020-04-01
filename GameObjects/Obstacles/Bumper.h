@@ -14,7 +14,7 @@ enum BumperType{
     Vibranium
 };
 
-class Bumper {
+class Bumper : public Obstacle{
 private:
     Vector2D position;
     float radius;
@@ -26,5 +26,6 @@ public:
     Vector2D GetPosition();
     float GetRadius();
 
-    Vector2D collidewith(Ball& ball, float collision_time, Manager & manager);
+    Vector2D collideWith(Ball& ball, float collision_time, Manager & manager) override;
+    void draw(Interface & interface) override;
 };

@@ -11,7 +11,7 @@ void AudioManager::PlaySound(const string& AudioPath) {
 }
 
 void AudioManager::PlayMusic(const string&) {
-    if (!music.openFromFile("Audio/NEFFEX - Dangerous [Copyright Free].ogg"))
+    if (!music.openFromFile("../Audio/NEFFEX - Dangerous [Copyright Free].ogg"))
         cout << "Error, Can't load music file!" << endl;
     music.play();
     music.setLoop(true);

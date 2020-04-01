@@ -13,7 +13,7 @@ private:
 public:
     explicit Wall(float position,bool vertical);
     void draw(Interface & interface) override;
-    Vector2D collideWith(Ball & ball, float collision_time) override;
+    Vector2D collideWith(Ball & ball, float collision_time, Manager & manager) override;
 };
 
 
