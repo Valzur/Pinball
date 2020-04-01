@@ -1,0 +1,13 @@
+2
+FlipperType: LEFT
+Center: 285 950
+Length: 50
+Angle: 30
+MajorRadius: 10
+MinorRadius: 5
+FlipperType: RIGHT
+Center: 435 950
+Length: 50
+Angle: -30
+MajorRadius: 10
+MinorRadius: 5

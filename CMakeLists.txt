@@ -3,7 +3,6 @@ project(Pinball)
 
 set(CMAKE_CXX_STANDARD 14)
 
-
 set(SFML_STATIC_LIBRARIES TRUE)
 set(SFML_DIR "libs/SFML-2.5.1/lib/cmake/SFML")
 set(FREETYPE_DIR "libs/freetype-2.10.0/include")

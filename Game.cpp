@@ -65,9 +65,10 @@ void Game::updateInterfaceOutput()
     interface.clear();
     if(!Lost) {
         //Load things
-        if(!Loaded)
+        if(!Loaded) {
+            AllObjects.LoadEverything();
             interface.LoadGraphics();
-
+        }
         interface.drawBackground();
         interface.loadExternalFrame(1,-10.0f);
         interface.loadExternalFrame(1,10.0f);
@@ -98,9 +99,11 @@ void Game::updateInterfaceOutput()
 
         //End Here
         //Draw all balls
-        ball.draw(interface);
-        captive1.draw(interface);
-        captive2.draw(interface);
+        //ball.draw(interface);
+        //captive1.draw(interface);
+        //captive2.draw(interface);
+        AllObjects.DrawBalls(interface);
+
 
         if(!Loaded)
             Loaded=true;

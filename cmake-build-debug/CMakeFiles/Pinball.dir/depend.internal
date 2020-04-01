@@ -110,6 +110,7 @@ CMakeFiles/Pinball.dir/Game.cpp.obj
  D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/Wall.h
  D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Interface.h
  D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Utility/AudioManager.h
+ D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Utility/Configurable.h
 CMakeFiles/Pinball.dir/GameObjects/Ball.cpp.obj
  ../libs/SFML-2.5.1/include/SFML/Config.hpp
  ../libs/SFML-2.5.1/include/SFML/Graphics.hpp
@@ -1127,4 +1128,5 @@ CMakeFiles/Pinball.dir/main.cpp.obj
  D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/Wall.h
  D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Interface.h
  D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Utility/AudioManager.h
+ D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Utility/Configurable.h
  D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/main.cpp

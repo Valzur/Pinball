@@ -15,6 +15,7 @@ using namespace std;
 #include "GameObjects/Obstacles/Bumper.h"
 #include "GameObjects/Manager.h"
 #include "Utility/AudioManager.h"
+#include "Utility/Configurable.h"
 
 // Represents a game, keeps track of everything relevant to the game and delegates the tasks to their proper objects
 class Game
@@ -29,6 +30,9 @@ private:
 
     AudioManager audioManager;
     Manager manager;
+
+    //Yarab teshta8al
+    Configurable AllObjects;
 
     Ball ball, captive1,captive2;  // The ball (obviously :D)
     Flipper leftFlipper, rightFlipper;  // The right and left flippers

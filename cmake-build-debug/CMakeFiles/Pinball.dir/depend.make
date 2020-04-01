@@ -109,6 +109,7 @@ CMakeFiles/Pinball.dir/Game.cpp.obj: ../GameObjects/Obstacles/SpriteWalls.h
 CMakeFiles/Pinball.dir/Game.cpp.obj: ../GameObjects/Obstacles/Wall.h
 CMakeFiles/Pinball.dir/Game.cpp.obj: ../Interface.h
 CMakeFiles/Pinball.dir/Game.cpp.obj: ../Utility/AudioManager.h
+CMakeFiles/Pinball.dir/Game.cpp.obj: ../Utility/Configurable.h
 
 CMakeFiles/Pinball.dir/GameObjects/Ball.cpp.obj: ../libs/SFML-2.5.1/include/SFML/Config.hpp
 CMakeFiles/Pinball.dir/GameObjects/Ball.cpp.obj: ../libs/SFML-2.5.1/include/SFML/Graphics.hpp
@@ -1126,5 +1127,6 @@ CMakeFiles/Pinball.dir/main.cpp.obj: ../GameObjects/Obstacles/SpriteWalls.h
 CMakeFiles/Pinball.dir/main.cpp.obj: ../GameObjects/Obstacles/Wall.h
 CMakeFiles/Pinball.dir/main.cpp.obj: ../Interface.h
 CMakeFiles/Pinball.dir/main.cpp.obj: ../Utility/AudioManager.h
+CMakeFiles/Pinball.dir/main.cpp.obj: ../Utility/Configurable.h
 CMakeFiles/Pinball.dir/main.cpp.obj: ../main.cpp
 

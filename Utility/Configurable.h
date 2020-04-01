@@ -12,6 +12,8 @@ using namespace std;
 class Configurable {
 private:
     fstream file;
+    int BallsNo,BumpersNo,WallsNo,FlippersNo,Progress,Total;
+    Vector2D Acceleration={0,0};
 public:
     //Pointers to everything in the game
     Ball **pBalls;
@@ -19,8 +21,8 @@ public:
     Bumper **pBumpers;
     Wall **pWalls;
     //Those only need one instance.
-    Manager *Manager;
-    AudioManager *audioManager;
+    Manager *pManager;
+    AudioManager *pAudioManager;
 
     //Reading Functions
     void ReadBalls(string TextPath);
@@ -30,8 +32,21 @@ public:
     void ReadManager(string TextPath);
     void ReadAudioManager(string TextPath);
 
-    //Read everything once (returns progress out of 100)
-    float Load();
+    //Drawing Functions
+    void DrawBalls(Interface & interface);
+    void DrawFlippers(Interface & interface);
+    void DrawWalls(Interface & interface);
+    void DrawBumpers(Interface & interface);
+
+    //Collision Functions
+    void FlippersCollision(Ball & ball, float collision_time, Manager & manager);
+    void BumpersCollision(Ball & ball, float collision_time, Manager & manager);
+    void BallsCollision(Ball & ball, float collision_time, Manager & manager);
+    void WallsCollision(Ball & ball, float collision_time, Manager & manager);
+
+    //Read and draw everything once (returns progress out of 100)
+    void LoadEverything();
+    void DrawEverything(Interface & interface);
+    void Collision(Ball & ball, float collision_time);
 
 };
-
