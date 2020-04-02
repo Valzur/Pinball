@@ -26,12 +26,12 @@ public:
     AudioManager *pAudioManager;
 
     //Reading Functions
-    void ReadBalls(string TextPath);
-    void ReadFlippers(string TextPath);
-    void ReadPopBumpers(string TextPath);
+    void ReadBalls(const string& TextPath);
+    void ReadFlippers(const string& TextPath);
+    void ReadPopBumpers(const string& TextPath);
     void ReadWalls(string TextPath);
-    void ReadManager(string TextPath);
-    void ReadAudioManager(string TextPath);
+    void ReadManager(const string& TextPath);
+    void ReadAudioManager(const string& TextPath);
 
     //Drawing Functions
     void DrawBalls(Interface & interface);

@@ -50,21 +50,25 @@ void Ball::deActivate() {
     isActive=false;
 }
 
-Vector2D Ball::BallToBallCollision(Ball ball) {
-    Vector2D acc={0,0};
-    Vector2D dir;
-    if(VectorDistance(ball.getCenter(),center)<=radius+ball.getRadius()){
-        //Break Captivity
-        if(!isMain & !isActive)
-            Activate();
+Vector2D Ball::BallToBallCollision(const Ball& ball) {
+    if(ball.getCenter().x==center.x & ball.getCenter().y == center.y){
+        return {0,0};
+    }else {
+        Vector2D acc = {0, 0};
+        Vector2D dir;
+        if (VectorDistance(ball.getCenter(), center) <= radius + ball.getRadius()) {
+            //Break Captivity
+            if (!isMain & !isActive)
+                Activate();
 
-        //Readjust balls
-        dir=VectorDirection(center,ball.getCenter());
-        setCenter(center+dir*VectorNorm(center - ball.getCenter()));
-        //Acceleration measurement
-        acc=ball.getVelocity();
+            //Readjust balls
+            dir = VectorDirection(center, ball.getCenter());
+            setCenter(center + dir * VectorNorm(center - ball.getCenter()));
+            //Acceleration measurement
+            acc = ball.getVelocity();
+        }
+        return acc;
     }
-    return acc;
 }
 
 void Ball::Reset() {

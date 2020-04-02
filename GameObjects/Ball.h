@@ -26,7 +26,7 @@ public:
     void Activate();
     void Reset();
 
-    Vector2D BallToBallCollision(Ball ball);
+    Vector2D BallToBallCollision(const Ball& ball);
 
     void move (Vector2D acceleration, float time);  // Simulates the ball's motion under uniform acceleration for a period of time
 

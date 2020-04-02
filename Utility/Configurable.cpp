@@ -1,6 +1,6 @@
 #include "Configurable.h"
 
-void Configurable::ReadBalls(string TextPath) {
+void Configurable::ReadBalls(const string& TextPath) {
     Vector2D velocity, center;
     string IsMain, Trash;
     file.open(TextPath);
@@ -32,13 +32,7 @@ void Configurable::ReadBalls(string TextPath) {
     }
 }
 
-void Configurable::DrawBalls(Interface &interface) {
-    for (int i = 0; i <BallsNo; i++) {
-        pBalls[i]->draw(interface);
-    }
-}
-
-void Configurable::ReadFlippers(string TextPath) {
+void Configurable::ReadFlippers(const string& TextPath) {
     file.open(TextPath);
     if(file.is_open()){
         file >> FlippersNo;
@@ -74,11 +68,74 @@ void Configurable::ReadFlippers(string TextPath) {
     }
 }
 
-void Configurable::DrawEverything(Interface & interface) {
-    DrawBalls(interface);
-    DrawFlippers(interface);
-    DrawPopBumpers(interface);
-    DrawWalls(interface);
+void Configurable::ReadAudioManager(const string& TextPath) {
+    file.open(TextPath);
+    if (file.is_open()){
+        string Trash,PlayMusic,AudioPath;
+        file >> Trash;
+        file >> PlayMusic;
+        file >> Trash;
+        file >> AudioPath;
+        if(PlayMusic=="YES"){
+            pAudioManager=new AudioManager(true,AudioPath);
+        }else if(PlayMusic=="NO"){
+            pAudioManager=new AudioManager(false,AudioPath);
+        }
+
+    }else{
+        cout << "Unable to read AudioManager!" << endl;
+    }
+}
+
+void Configurable::ReadPopBumpers(const string& TextPath) {
+    file.open(TextPath);
+    if(file.is_open()){
+        Vector2D center;
+        float radius;
+        string Trash;
+        file >> PopBumpersNo;
+        pPopBumpers=new PopBumper*[PopBumpersNo];
+
+        for (int i = 0; i <PopBumpersNo; i++) {
+            file >> Trash;
+            file >> center.x;
+            file >> center.y;
+            file >> Trash;
+            file >> radius;
+
+            pPopBumpers[i]=new PopBumper(center,radius);
+        }
+    }else{
+        cout << "Error, unable to read PopBumpers file!" << endl;
+    }
+
+}
+
+void Configurable::ReadManager(const string& TextPath) {
+    file.open(TextPath);
+    if(file.is_open()){
+        string Trash;
+        int lives, score;
+        file >> Trash;
+        file >> lives;
+        file >> Trash;
+        file >> score;
+        pManager=new Manager(score,lives);
+        file.close();
+    }else{
+        cout << "Unable to read Manager!" << endl;
+    };
+}
+
+void Configurable::ReadWalls(string TextPath) {
+
+}
+
+//Drawing every object
+void Configurable::DrawBalls(Interface &interface) {
+    for (int i = 0; i <BallsNo; i++) {
+        pBalls[i]->draw(interface);
+    }
 }
 
 void Configurable::DrawFlippers(Interface &interface) {
@@ -87,31 +144,17 @@ void Configurable::DrawFlippers(Interface &interface) {
     }
 }
 
-void Configurable::LoadEverything() {
-    //Update the total value with the number of functions.
-    Progress=0;
-    Total=6;
-    ReadBalls("../Configurations/Balls.txt");
-    Progress++;
-    ReadFlippers("../Configurations/Flippers.txt");
-    Progress++;
-    ReadPopBumpers("../Configurations/PopBumpers.txt");
-    Progress++;
-    ReadWalls("../Configurations/Walls.txt");
-    Progress++;
-    ReadAudioManager("../Configurations/AudioManager.txt");
-    Progress++;
-    ReadManager("../Configurations/Manager.txt");
-    Progress++;
+void Configurable::DrawPopBumpers(Interface &interface) {
+    for (int i = 0; i <PopBumpersNo; i++) {
+        pPopBumpers[i]->draw(interface);
+    }
 }
 
-void Configurable::Collision(Ball &ball, float collision_time) {
-    FlippersCollision(ball, collision_time,*pManager);
-    PopBumpersCollision(ball, collision_time,*pManager);
-    BallsCollision(ball,collision_time,*pManager);
-    WallsCollision(ball, collision_time,*pManager);
+void Configurable::DrawWalls(Interface &interface) {
+
 }
 
+//Collision
 void Configurable::FlippersCollision(Ball &ball, float collision_time, Manager &manager) {
     for (int i = 0; i <FlippersNo; i++) {
         Acceleration+=pFlippers[i]->collideWith(ball,collision_time,manager);
@@ -136,48 +179,35 @@ void Configurable::WallsCollision(Ball &ball, float collision_time, Manager &man
     }
 }
 
-void Configurable::ReadPopBumpers(string TextPath) {
-    file.open(TextPath);
-    if(file.is_open()){
-        Vector2D center;
-        float radius;
-        string Trash;
-        file >> PopBumpersNo;
-        pPopBumpers=new PopBumper*[PopBumpersNo];
-
-        for (int i = 0; i <PopBumpersNo; i++) {
-            file >> Trash;
-            file >> center.x;
-            file >> center.y;
-            file >> Trash;
-            file >> radius;
-
-            pPopBumpers[i]=new PopBumper(center,radius);
-        }
-    }else{
-        cout << "Error, unable to read PopBumpers file!" << endl;
-    }
-
+//Simplifications :')
+void Configurable::LoadEverything() {
+    //Update the total value with the number of functions.
+    Progress=0;
+    Total=6;
+    ReadBalls("../Configurations/Balls.txt");
+    Progress++;
+    ReadFlippers("../Configurations/Flippers.txt");
+    Progress++;
+    ReadPopBumpers("../Configurations/PopBumpers.txt");
+    Progress++;
+    ReadWalls("../Configurations/Walls.txt");
+    Progress++;
+    ReadAudioManager("../Configurations/AudioManager.txt");
+    Progress++;
+    ReadManager("../Configurations/Manager.txt");
+    Progress++;
 }
 
-void Configurable::ReadWalls(string TextPath) {
-
+void Configurable::DrawEverything(Interface & interface) {
+    DrawBalls(interface);
+    DrawFlippers(interface);
+    DrawPopBumpers(interface);
+    DrawWalls(interface);
 }
 
-void Configurable::ReadManager(string TextPath) {
-
-}
-
-void Configurable::ReadAudioManager(string TextPath) {
-
-}
-
-void Configurable::DrawWalls(Interface &interface) {
-
-}
-
-void Configurable::DrawPopBumpers(Interface &interface) {
-    for (int i = 0; i <PopBumpersNo; i++) {
-        pPopBumpers[i]->draw(interface);
-    }
+void Configurable::Collision(Ball &ball, float collision_time) {
+    FlippersCollision(ball, collision_time,*pManager);
+    PopBumpersCollision(ball, collision_time,*pManager);
+    BallsCollision(ball,collision_time,*pManager);
+    WallsCollision(ball, collision_time,*pManager);
 }

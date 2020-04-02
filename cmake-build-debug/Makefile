@@ -473,6 +473,33 @@ Utility/PixelPerfectCollision.cpp.s:
 	$(MAKE) -f CMakeFiles\Pinball.dir\build.make CMakeFiles/Pinball.dir/Utility/PixelPerfectCollision.cpp.s
 .PHONY : Utility/PixelPerfectCollision.cpp.s
 
+Utility/PostProcessing.obj: Utility/PostProcessing.cpp.obj
+
+.PHONY : Utility/PostProcessing.obj
+
+# target to build an object file
+Utility/PostProcessing.cpp.obj:
+	$(MAKE) -f CMakeFiles\Pinball.dir\build.make CMakeFiles/Pinball.dir/Utility/PostProcessing.cpp.obj
+.PHONY : Utility/PostProcessing.cpp.obj
+
+Utility/PostProcessing.i: Utility/PostProcessing.cpp.i
+
+.PHONY : Utility/PostProcessing.i
+
+# target to preprocess a source file
+Utility/PostProcessing.cpp.i:
+	$(MAKE) -f CMakeFiles\Pinball.dir\build.make CMakeFiles/Pinball.dir/Utility/PostProcessing.cpp.i
+.PHONY : Utility/PostProcessing.cpp.i
+
+Utility/PostProcessing.s: Utility/PostProcessing.cpp.s
+
+.PHONY : Utility/PostProcessing.s
+
+# target to generate assembly for a file
+Utility/PostProcessing.cpp.s:
+	$(MAKE) -f CMakeFiles\Pinball.dir\build.make CMakeFiles/Pinball.dir/Utility/PostProcessing.cpp.s
+.PHONY : Utility/PostProcessing.cpp.s
+
 Utility/PreGame.obj: Utility/PreGame.cpp.obj
 
 .PHONY : Utility/PreGame.obj
@@ -575,6 +602,9 @@ help:
 	@echo ... Utility/PixelPerfectCollision.obj
 	@echo ... Utility/PixelPerfectCollision.i
 	@echo ... Utility/PixelPerfectCollision.s
+	@echo ... Utility/PostProcessing.obj
+	@echo ... Utility/PostProcessing.i
+	@echo ... Utility/PostProcessing.s
 	@echo ... Utility/PreGame.obj
 	@echo ... Utility/PreGame.i
 	@echo ... Utility/PreGame.s

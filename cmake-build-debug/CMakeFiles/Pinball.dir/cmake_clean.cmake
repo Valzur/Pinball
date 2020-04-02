@@ -12,6 +12,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Pinball.dir/Utility/AudioManager.cpp.obj"
   "CMakeFiles/Pinball.dir/Utility/Configurable.cpp.obj"
   "CMakeFiles/Pinball.dir/Utility/PixelPerfectCollision.cpp.obj"
+  "CMakeFiles/Pinball.dir/Utility/PostProcessing.cpp.obj"
   "CMakeFiles/Pinball.dir/Utility/PreGame.cpp.obj"
   "CMakeFiles/Pinball.dir/main.cpp.obj"
   "Pinball.exe"

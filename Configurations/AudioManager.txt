@@ -1,0 +1,2 @@
+PlayMusic: YES
+AudioPath: ../Audio/NEFFEX.flac
