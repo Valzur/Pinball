@@ -274,6 +274,7 @@ CMakeFiles/Pinball.dir/GameObjects/Flipper.cpp.obj
  D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Flipper.cpp
  D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Flipper.h
  D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Manager.h
+ D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/Obstacle.h
  D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Interface.h
 CMakeFiles/Pinball.dir/GameObjects/Manager.cpp.obj
  ../libs/SFML-2.5.1/include/SFML/Config.hpp
@@ -1004,6 +1005,28 @@ CMakeFiles/Pinball.dir/Utility/PixelPerfectCollision.cpp.obj
  D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Interface.h
  D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Utility/PixelPerfectCollision.cpp
  D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Utility/PixelPerfectCollision.h
+CMakeFiles/Pinball.dir/Utility/PostProcessing.cpp.obj
+ ../libs/SFML-2.5.1/include/SFML/Config.hpp
+ ../libs/SFML-2.5.1/include/SFML/Graphics/Color.hpp
+ ../libs/SFML-2.5.1/include/SFML/Graphics/Export.hpp
+ ../libs/SFML-2.5.1/include/SFML/Graphics/Glsl.hpp
+ ../libs/SFML-2.5.1/include/SFML/Graphics/Glsl.inl
+ ../libs/SFML-2.5.1/include/SFML/Graphics/Image.hpp
+ ../libs/SFML-2.5.1/include/SFML/Graphics/Rect.hpp
+ ../libs/SFML-2.5.1/include/SFML/Graphics/Rect.inl
+ ../libs/SFML-2.5.1/include/SFML/Graphics/Shader.hpp
+ ../libs/SFML-2.5.1/include/SFML/Graphics/Texture.hpp
+ ../libs/SFML-2.5.1/include/SFML/Graphics/Transform.hpp
+ ../libs/SFML-2.5.1/include/SFML/System/Export.hpp
+ ../libs/SFML-2.5.1/include/SFML/System/NonCopyable.hpp
+ ../libs/SFML-2.5.1/include/SFML/System/Vector2.hpp
+ ../libs/SFML-2.5.1/include/SFML/System/Vector2.inl
+ ../libs/SFML-2.5.1/include/SFML/System/Vector3.hpp
+ ../libs/SFML-2.5.1/include/SFML/System/Vector3.inl
+ ../libs/SFML-2.5.1/include/SFML/Window/Export.hpp
+ ../libs/SFML-2.5.1/include/SFML/Window/GlResource.hpp
+ D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Utility/PostProcessing.cpp
+ D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Utility/PostProcessing.h
 CMakeFiles/Pinball.dir/Utility/PreGame.cpp.obj
  ../libs/SFML-2.5.1/include/SFML/Audio.hpp
  ../libs/SFML-2.5.1/include/SFML/Audio/AlResource.hpp

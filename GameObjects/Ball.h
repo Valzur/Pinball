@@ -6,13 +6,13 @@
 class Ball: public Drawn
 {
 private:
-    const Vector2D InitialPosition;
+    const Vector2D InitialPosition,InitialVelocity;
     bool isActive,isMain;
-    float radius = BALL_RADIUS;  // Radius of the ball
+    const float radius;  // Radius of the ball
     Vector2D center;  // The instantaneous center of the ball
     Vector2D velocity;  // The instantaneous velocity of the ball
 public:
-    explicit Ball(Vector2D center = INITIAL_CENTER, Vector2D velocity = INITIAL_VELOCITY,bool Main =true);  // Constructor
+    explicit Ball(Vector2D center = INITIAL_CENTER,float radius=10, Vector2D velocity = INITIAL_VELOCITY,bool Main =true);  // Constructor
 
     // Accessors
     float getRadius() const;

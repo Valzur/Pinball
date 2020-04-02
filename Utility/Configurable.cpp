@@ -1,10 +1,12 @@
 #include "Configurable.h"
 
 void Configurable::ReadBalls(const string& TextPath) {
-    Vector2D velocity, center;
-    string IsMain, Trash;
+
     file.open(TextPath);
     if (file.is_open()) {
+        Vector2D velocity, center;
+        string IsMain, Trash;
+        float radius;
         file >> BallsNo;
         pBalls = new Ball *[BallsNo];
 
@@ -13,7 +15,10 @@ void Configurable::ReadBalls(const string& TextPath) {
             file >> Trash;
             file >> center.x;
             file >> center.y;
-            //Velocity second
+            //Radius second
+            file >> Trash;
+            file >> radius;
+            //Velocity third
             file >> Trash;
             file >> velocity.x;
             file >> velocity.y;
@@ -21,9 +26,9 @@ void Configurable::ReadBalls(const string& TextPath) {
             file >> Trash;
             file >> IsMain;
             if (IsMain == "YES") {
-                pBalls[i] = new Ball(center, velocity, true);
+                pBalls[i] = new Ball( center, radius, velocity, true);
             } else if (IsMain == "NO") {
-                pBalls[i] = new Ball(center, velocity, false);
+                pBalls[i] = new Ball( center, radius, velocity, false);
             }
         }
         file.close();
@@ -41,7 +46,7 @@ void Configurable::ReadFlippers(const string& TextPath) {
         for (int i = 0; i <FlippersNo; i++) {
             Vector2D Center;
             string Flippertype, Trash;
-            float length, angle, MajorRadius, MinorRadius;
+            float length, angle, MajorRadius, MinorRadius,NormalAngle,ExtendedAngle,Velocity;
             file >> Trash;
             file >> Flippertype;
             file >> Trash;
@@ -55,11 +60,17 @@ void Configurable::ReadFlippers(const string& TextPath) {
             file >> MajorRadius;
             file >> Trash;
             file >> MinorRadius;
+            file >> Trash;
+            file >> NormalAngle;
+            file >> Trash;
+            file >> ExtendedAngle;
+            file >> Trash;
+            file >> Velocity;
             //Phew, i hope i get no errors after all of this.
             if(Flippertype=="RIGHT") {
-                pFlippers[i]=new Flipper(FlipperType::RIGHT,Center,length,angle,MajorRadius,MinorRadius);
+                pFlippers[i]=new Flipper(FlipperType::RIGHT,Center,length,angle,MajorRadius,MinorRadius,NormalAngle,ExtendedAngle,Velocity);
             } else if (Flippertype=="LEFT"){
-                pFlippers[i]=new Flipper(FlipperType::LEFT,Center,length,angle,MajorRadius,MinorRadius);
+                pFlippers[i]=new Flipper(FlipperType::LEFT,Center,length,angle,MajorRadius,MinorRadius,NormalAngle,ExtendedAngle,Velocity);
             }
             file.close();
         }
@@ -210,4 +221,10 @@ void Configurable::Collision(Ball &ball, float collision_time) {
     PopBumpersCollision(ball, collision_time,*pManager);
     BallsCollision(ball,collision_time,*pManager);
     WallsCollision(ball, collision_time,*pManager);
+}
+
+void Configurable::FlippersMotion(bool left, bool right, float delta_time) {
+    for (int i = 0; i <FlippersNo; i++) {
+        pFlippers[i]->MoveFlipper(left, right, delta_time);
+    }
 }

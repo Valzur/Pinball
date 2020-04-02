@@ -273,6 +273,7 @@ CMakeFiles/Pinball.dir/GameObjects/Flipper.cpp.obj: ../GameObjects/Drawable.h
 CMakeFiles/Pinball.dir/GameObjects/Flipper.cpp.obj: ../GameObjects/Flipper.cpp
 CMakeFiles/Pinball.dir/GameObjects/Flipper.cpp.obj: ../GameObjects/Flipper.h
 CMakeFiles/Pinball.dir/GameObjects/Flipper.cpp.obj: ../GameObjects/Manager.h
+CMakeFiles/Pinball.dir/GameObjects/Flipper.cpp.obj: ../GameObjects/Obstacles/Obstacle.h
 CMakeFiles/Pinball.dir/GameObjects/Flipper.cpp.obj: ../Interface.h
 
 CMakeFiles/Pinball.dir/GameObjects/Manager.cpp.obj: ../libs/SFML-2.5.1/include/SFML/Config.hpp
@@ -1003,6 +1004,28 @@ CMakeFiles/Pinball.dir/Utility/PixelPerfectCollision.cpp.obj: ../GameObjects/Dra
 CMakeFiles/Pinball.dir/Utility/PixelPerfectCollision.cpp.obj: ../Interface.h
 CMakeFiles/Pinball.dir/Utility/PixelPerfectCollision.cpp.obj: ../Utility/PixelPerfectCollision.cpp
 CMakeFiles/Pinball.dir/Utility/PixelPerfectCollision.cpp.obj: ../Utility/PixelPerfectCollision.h
+
+CMakeFiles/Pinball.dir/Utility/PostProcessing.cpp.obj: ../libs/SFML-2.5.1/include/SFML/Config.hpp
+CMakeFiles/Pinball.dir/Utility/PostProcessing.cpp.obj: ../libs/SFML-2.5.1/include/SFML/Graphics/Color.hpp
+CMakeFiles/Pinball.dir/Utility/PostProcessing.cpp.obj: ../libs/SFML-2.5.1/include/SFML/Graphics/Export.hpp
+CMakeFiles/Pinball.dir/Utility/PostProcessing.cpp.obj: ../libs/SFML-2.5.1/include/SFML/Graphics/Glsl.hpp
+CMakeFiles/Pinball.dir/Utility/PostProcessing.cpp.obj: ../libs/SFML-2.5.1/include/SFML/Graphics/Glsl.inl
+CMakeFiles/Pinball.dir/Utility/PostProcessing.cpp.obj: ../libs/SFML-2.5.1/include/SFML/Graphics/Image.hpp
+CMakeFiles/Pinball.dir/Utility/PostProcessing.cpp.obj: ../libs/SFML-2.5.1/include/SFML/Graphics/Rect.hpp
+CMakeFiles/Pinball.dir/Utility/PostProcessing.cpp.obj: ../libs/SFML-2.5.1/include/SFML/Graphics/Rect.inl
+CMakeFiles/Pinball.dir/Utility/PostProcessing.cpp.obj: ../libs/SFML-2.5.1/include/SFML/Graphics/Shader.hpp
+CMakeFiles/Pinball.dir/Utility/PostProcessing.cpp.obj: ../libs/SFML-2.5.1/include/SFML/Graphics/Texture.hpp
+CMakeFiles/Pinball.dir/Utility/PostProcessing.cpp.obj: ../libs/SFML-2.5.1/include/SFML/Graphics/Transform.hpp
+CMakeFiles/Pinball.dir/Utility/PostProcessing.cpp.obj: ../libs/SFML-2.5.1/include/SFML/System/Export.hpp
+CMakeFiles/Pinball.dir/Utility/PostProcessing.cpp.obj: ../libs/SFML-2.5.1/include/SFML/System/NonCopyable.hpp
+CMakeFiles/Pinball.dir/Utility/PostProcessing.cpp.obj: ../libs/SFML-2.5.1/include/SFML/System/Vector2.hpp
+CMakeFiles/Pinball.dir/Utility/PostProcessing.cpp.obj: ../libs/SFML-2.5.1/include/SFML/System/Vector2.inl
+CMakeFiles/Pinball.dir/Utility/PostProcessing.cpp.obj: ../libs/SFML-2.5.1/include/SFML/System/Vector3.hpp
+CMakeFiles/Pinball.dir/Utility/PostProcessing.cpp.obj: ../libs/SFML-2.5.1/include/SFML/System/Vector3.inl
+CMakeFiles/Pinball.dir/Utility/PostProcessing.cpp.obj: ../libs/SFML-2.5.1/include/SFML/Window/Export.hpp
+CMakeFiles/Pinball.dir/Utility/PostProcessing.cpp.obj: ../libs/SFML-2.5.1/include/SFML/Window/GlResource.hpp
+CMakeFiles/Pinball.dir/Utility/PostProcessing.cpp.obj: ../Utility/PostProcessing.cpp
+CMakeFiles/Pinball.dir/Utility/PostProcessing.cpp.obj: ../Utility/PostProcessing.h
 
 CMakeFiles/Pinball.dir/Utility/PreGame.cpp.obj: ../libs/SFML-2.5.1/include/SFML/Audio.hpp
 CMakeFiles/Pinball.dir/Utility/PreGame.cpp.obj: ../libs/SFML-2.5.1/include/SFML/Audio/AlResource.hpp

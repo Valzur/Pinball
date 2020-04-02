@@ -9,5 +9,5 @@ void PopBumper::draw(Interface &interface) {
 }
 
 Vector2D PopBumper::collideWith(Ball &ball, float collision_time, Manager &manager) {
-    Bumper::collideWith(ball, collision_time, manager);
+    return Bumper::collideWith(ball, collision_time, manager);
 }

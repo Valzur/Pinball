@@ -1,6 +1,6 @@
 #include "Ball.h"
 
-Ball::Ball(Vector2D center, Vector2D velocity,bool Main): InitialPosition(center), velocity(velocity) {
+Ball::Ball(Vector2D center,float radius, Vector2D velocity,bool Main): InitialPosition(center), velocity(velocity),InitialVelocity(velocity),radius(radius) {
     isActive=false;
     isMain=Main;
     setCenter(InitialPosition);
@@ -74,5 +74,5 @@ Vector2D Ball::BallToBallCollision(const Ball& ball) {
 void Ball::Reset() {
     deActivate();
     setCenter(InitialPosition);
-    setVelocity(INITIAL_VELOCITY);
+    setVelocity(InitialVelocity);
 }

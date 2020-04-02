@@ -1,12 +1,11 @@
 #include "Flipper.h"
 
-Flipper::Flipper(FlipperType type, Vector2D center, float length, float angle, float majorRadius, float minorRadius):
-    type(type), center(center), length(length), angle(angle), majorRadius(majorRadius), minorRadius(minorRadius) {}
+Flipper::Flipper(FlipperType type, Vector2D center, float length, float angle, float majorRadius, float minorRadius, float NormalAngle, float ExtendedAngle,float Velocity):
+    type(type), center(center), length(length), angle(angle), majorRadius(majorRadius), minorRadius(minorRadius),NormalAngle(NormalAngle),ExtendedAngle(ExtendedAngle), Velocity(Velocity){}
 
 Vector2D Flipper::collideWith(Ball & ball, float collision_time, Manager & manager)
 {
     //Failed attempt
-
     /*
     Vector2D acc={0,0};
     Vector2D unitAcc;
@@ -33,7 +32,7 @@ Vector2D Flipper::collideWith(Ball & ball, float collision_time, Manager & manag
      */
 
     //Elliptic Collision detection
-
+    return{0,0};
 }
 
 void Flipper::draw(Interface & interface)
@@ -44,10 +43,10 @@ void Flipper::draw(Interface & interface)
 void Flipper::RotateFlipper(float a, float time){
     if(a>0){
         if(angle<0.7*a) {
-            angle += time * FLIPPERS_ROTATE_VELOCITY;
+            angle += time * Velocity;
             ImpulseMultiplier=1.5;
         }else if(angle>a/0.7){
-            angle -= time * FLIPPERS_ROTATE_VELOCITY;
+            angle -= time * Velocity;
             ImpulseMultiplier=1.5;
         }else{
             angle=a;
@@ -55,10 +54,10 @@ void Flipper::RotateFlipper(float a, float time){
         }
     }else{
         if(angle<a/0.7) {
-            angle += time * FLIPPERS_ROTATE_VELOCITY;
+            angle += time * Velocity;
             ImpulseMultiplier=1.5;
         }else if(angle>a*0.7){
-            angle -= time * FLIPPERS_ROTATE_VELOCITY;
+            angle -= time * Velocity;
             ImpulseMultiplier=1.5;
         }else{
             angle=a;
@@ -66,4 +65,26 @@ void Flipper::RotateFlipper(float a, float time){
         }
     }
 
+}
+
+void Flipper::MoveFlipper(bool left, bool right, float delta_time) {
+    //A little finicky, but its cleaner :')
+    switch(type) {
+        //Left
+        //If clicked
+        case FlipperType(LEFT):
+            if (left) {
+                RotateFlipper(-ExtendedAngle, delta_time);
+            } else {
+                RotateFlipper(-NormalAngle, delta_time);
+            }
+            break;
+        case FlipperType(RIGHT):
+            if (right) {
+                RotateFlipper(ExtendedAngle, delta_time);
+            } else {
+                RotateFlipper(NormalAngle, delta_time);
+            }
+            break;
+    }
 }

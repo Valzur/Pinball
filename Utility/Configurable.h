@@ -45,6 +45,8 @@ public:
     void BallsCollision(Ball & ball, float collision_time, Manager & manager);
     void WallsCollision(Ball & ball, float collision_time, Manager & manager);
 
+    //Moving flippers
+    void FlippersMotion(bool left, bool right, float delta_time);
     //Read and draw everything once (returns progress out of 100)
     void LoadEverything();
     void DrawEverything(Interface & interface);
