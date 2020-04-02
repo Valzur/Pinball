@@ -1,6 +1,6 @@
 #include "Ball.h"
 
-Ball::Ball(Vector2D center, Vector2D velocity,bool Main): InitialPosition(center), velocity(velocity) {
+Ball::Ball(Vector2D center,float radius, Vector2D velocity,bool Main): InitialPosition(center), velocity(velocity),InitialVelocity(velocity),radius(radius) {
     isActive=false;
     isMain=Main;
     setCenter(InitialPosition);
@@ -42,33 +42,42 @@ void Ball::setVelocity(Vector2D vel) {
     velocity=vel;
 }
 
-void Ball::Activate() {
-    isActive=true;
+void Ball::Activate(bool & space) {
+    if(space & isMain)
+        isActive=true;
 }
 
 void Ball::deActivate() {
     isActive=false;
 }
 
-Vector2D Ball::BallToBallCollision(Ball ball) {
-    Vector2D acc={0,0};
-    Vector2D dir;
-    if(VectorDistance(ball.getCenter(),center)<=radius+ball.getRadius()){
-        //Break Captivity
-        if(!isMain & !isActive)
-            Activate();
+Vector2D Ball::BallToBallCollision(const Ball& ball) {
+    if(ball.getCenter().x==center.x & ball.getCenter().y == center.y){
+        return {0,0};
+    }else {
+        Vector2D acc = {0, 0};
+        Vector2D dir;
+        if (VectorDistance(ball.getCenter(), center) <= radius + ball.getRadius()) {
+            //Break Captivity
+            if (!isMain & !isActive)
+                isActive=true;
 
-        //Readjust balls
-        dir=VectorDirection(center,ball.getCenter());
-        setCenter(center+dir*VectorNorm(center - ball.getCenter()));
-        //Acceleration measurement
-        acc=ball.getVelocity();
+            //Readjust balls
+            dir = VectorDirection(center, ball.getCenter());
+            setCenter(center + dir * VectorNorm(center - ball.getCenter()));
+            //Acceleration measurement
+            acc = ball.getVelocity();
+        }
+        return acc;
     }
-    return acc;
 }
 
 void Ball::Reset() {
     deActivate();
     setCenter(InitialPosition);
-    setVelocity(INITIAL_VELOCITY);
+    setVelocity(InitialVelocity);
+}
+
+bool Ball::getisMain() const {
+    return isMain;
 }

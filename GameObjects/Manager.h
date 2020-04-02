@@ -13,6 +13,7 @@ private:
     string livesText;
 public:
     Manager();
+    Manager(int Score, int lives);
 
     void addScore(int score);
     void deductLives(int Lives);

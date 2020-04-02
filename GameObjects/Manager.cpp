@@ -53,3 +53,8 @@ void Manager::EndGame(Interface & interface) {
     //Final score text
     interface.drawText(scoreText, 72, sf::Color::Cyan,{GAME_WIDTH/2,GAME_HEIGHT/2});
 }
+
+Manager::Manager(int Score, int lives) {
+    this->Score=Score;
+    this->lives=lives;
+}

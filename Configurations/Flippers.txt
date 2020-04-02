@@ -5,9 +5,15 @@ Length: 50
 Angle: 30
 MajorRadius: 10
 MinorRadius: 5
+NormalAngle: -30
+ExtendedAngle: 50
+Velocity: 1000
 FlipperType: RIGHT
 Center: 435 950
 Length: 50
 Angle: -30
 MajorRadius: 10
 MinorRadius: 5
+NormalAngle: -30
+ExtendedAngle: 50
+Velocity: 1000
