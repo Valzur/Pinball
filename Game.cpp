@@ -20,12 +20,24 @@ void Game::readInterfaceInput()
 
 void Game::simulate()
 {
+    //Load everything :"D
+    if(!Loaded) {
+        AllObjects.LoadEverything();
+        interface.LoadGraphics();
+    }
     // Measuring time elapsed in-between frames
     high_resolution_clock::time_point this_frame = high_resolution_clock::now();
     duration<float> time_span = duration_cast<duration<float>>(this_frame - last_frame);
     last_frame = this_frame;
     float delta_time = time_span.count();  // Delta time in seconds
 
+    //Under testing m8!
+    AllObjects.FlippersMotion(left, right, delta_time);
+    AllObjects.ActivateBalls(space);
+    AllObjects.Collision(delta_time);
+
+
+    /*
     switch(left){
         case 1:
             leftFlipper.RotateFlipper(-FLIPPERS_ANGLE_EXTENDED,delta_time);
@@ -42,33 +54,32 @@ void Game::simulate()
             rightFlipper.RotateFlipper(FLIPPERS_ANGLE_NORMAL,delta_time);
             break;
     }
-
+    */
     //Update fps
     interface.setFPS("FPS: " + to_string(1.0/delta_time));
-
-    if(space)
-        ball.Activate();
+    /*
+    ball.Activate(space);
 
     //Test
     rightFlipper.collideWith(ball,delta_time, manager);
     leftFlipper.collideWith(ball,delta_time, manager);
 
-
     //Ball Collision
     DoBallCollision(ball,delta_time,0);
     DoBallCollision(captive1,delta_time,1);
     DoBallCollision(captive2,delta_time,2);
+    */
+    if(!Loaded)
+        Loaded=true;
 }
 
 void Game::updateInterfaceOutput()
 {
     interface.clear();
+
     if(!Lost) {
+
         //Load things
-        if(!Loaded) {
-            AllObjects.LoadEverything();
-            interface.LoadGraphics();
-        }
         interface.drawBackground();
         interface.loadExternalFrame(1,-10.0f);
         interface.loadExternalFrame(1,10.0f);
@@ -79,12 +90,20 @@ void Game::updateInterfaceOutput()
 //        interface.loadExternalFrame(1,GAME_WIDTH+10.0f);
         interface.drawSpeedBoasterLeft();
         interface.drawSpeedBoasterRight();
+        /*
         leftFlipper.draw(interface);
         rightFlipper.draw(interface);
-
+        */
         //FPS UPDATE
         interface.drawFPS();
 
+        //Testing!!\\
+        AllObjects.pManager->Updategame(interface);
+        AllObjects.DrawEverything(interface);
+        //                                         \\
+
+
+        /*
         //Game state
         manager.Updategame(interface);
 
@@ -102,13 +121,13 @@ void Game::updateInterfaceOutput()
         //ball.draw(interface);
         //captive1.draw(interface);
         //captive2.draw(interface);
-        AllObjects.DrawBalls(interface);
+        */
 
 
-        if(!Loaded)
-            Loaded=true;
+
     }else{
-        manager.EndGame(interface);
+        //manager.EndGame(interface);
+        AllObjects.pManager->EndGame(interface);
     }
         interface.display();
 }

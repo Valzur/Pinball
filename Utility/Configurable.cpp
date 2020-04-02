@@ -8,6 +8,7 @@ void Configurable::ReadBalls(const string& TextPath) {
         string IsMain, Trash;
         float radius;
         file >> BallsNo;
+        pAcceleration=new Vector2D[3];
         pBalls = new Ball *[BallsNo];
 
         for (int i = 0; i < BallsNo; ++i) {
@@ -72,8 +73,8 @@ void Configurable::ReadFlippers(const string& TextPath) {
             } else if (Flippertype=="LEFT"){
                 pFlippers[i]=new Flipper(FlipperType::LEFT,Center,length,angle,MajorRadius,MinorRadius,NormalAngle,ExtendedAngle,Velocity);
             }
-            file.close();
         }
+        file.close();
     }else{
         cout << "Error, Unable to read Flippers file!" << endl;
     }
@@ -92,7 +93,7 @@ void Configurable::ReadAudioManager(const string& TextPath) {
         }else if(PlayMusic=="NO"){
             pAudioManager=new AudioManager(false,AudioPath);
         }
-
+        file.close();
     }else{
         cout << "Unable to read AudioManager!" << endl;
     }
@@ -116,6 +117,7 @@ void Configurable::ReadPopBumpers(const string& TextPath) {
 
             pPopBumpers[i]=new PopBumper(center,radius);
         }
+        file.close();
     }else{
         cout << "Error, unable to read PopBumpers file!" << endl;
     }
@@ -166,28 +168,33 @@ void Configurable::DrawWalls(Interface &interface) {
 }
 
 //Collision
-void Configurable::FlippersCollision(Ball &ball, float collision_time, Manager &manager) {
+Vector2D Configurable::FlippersCollision(Ball &ball, float collision_time, Manager &manager) {
+    Vector2D Acceleration={0,0};
     for (int i = 0; i <FlippersNo; i++) {
         Acceleration+=pFlippers[i]->collideWith(ball,collision_time,manager);
     }
 }
 
-void Configurable::PopBumpersCollision(Ball &ball, float collision_time, Manager &manager) {
+Vector2D Configurable::PopBumpersCollision(Ball &ball, float collision_time, Manager &manager) {
+    Vector2D Acceleration={0,0};
     for (int i = 0; i <PopBumpersNo; i++) {
         Acceleration+=pPopBumpers[i]->collideWith(ball,collision_time,manager);
     }
 }
 
-void Configurable::BallsCollision(Ball &ball, float collision_time, Manager &manager) {
+Vector2D Configurable::BallsCollision(Ball &ball, float collision_time, Manager &manager) {
+    Vector2D Acceleration={0,0};
     for (int i = 0; i <BallsNo; i++) {
         Acceleration+=pBalls[i]->BallToBallCollision(ball);
     }
 }
 
-void Configurable::WallsCollision(Ball &ball, float collision_time, Manager &manager) {
+Vector2D Configurable::WallsCollision(Ball &ball, float collision_time, Manager &manager) {
+    Vector2D Acceleration={0,0};
     for (int i = 0; i <WallsNo; i++) {
         Acceleration+=pWalls[i]->collideWith(ball,collision_time,manager);
     }
+    return Acceleration;
 }
 
 //Simplifications :')
@@ -216,15 +223,26 @@ void Configurable::DrawEverything(Interface & interface) {
     DrawWalls(interface);
 }
 
-void Configurable::Collision(Ball &ball, float collision_time) {
-    FlippersCollision(ball, collision_time,*pManager);
-    PopBumpersCollision(ball, collision_time,*pManager);
-    BallsCollision(ball,collision_time,*pManager);
-    WallsCollision(ball, collision_time,*pManager);
+void Configurable::Collision(float collision_time) {
+    for (int i = 0; i <BallsNo; i++) {
+        pAcceleration[i]=FlippersCollision(*pBalls[i], collision_time,*pManager);
+        pAcceleration[i]=PopBumpersCollision(*pBalls[i], collision_time,*pManager);
+        pAcceleration[i]=BallsCollision(*pBalls[i],collision_time,*pManager);
+        //pAcceleration[i]=WallsCollision(*pBalls[i], collision_time,*pManager);
+        //Move balls.
+        pBalls[i]->move(pAcceleration[i],collision_time);
+    }
 }
 
 void Configurable::FlippersMotion(bool left, bool right, float delta_time) {
     for (int i = 0; i <FlippersNo; i++) {
         pFlippers[i]->MoveFlipper(left, right, delta_time);
+    }
+}
+
+void Configurable::ActivateBalls(bool space) {
+    for (int i = 0; i <BallsNo ;i++) {
+        if(pBalls[i]->getisMain())
+            pBalls[i]->Activate(space);
     }
 }

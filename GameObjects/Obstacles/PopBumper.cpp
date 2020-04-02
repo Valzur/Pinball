@@ -1,8 +1,6 @@
 #include "PopBumper.h"
 
-PopBumper::PopBumper(Vector2D pos, float rad) : Bumper(pos, rad) {
-
-}
+PopBumper::PopBumper(Vector2D pos, float rad) : Bumper(pos, rad) {}
 
 void PopBumper::draw(Interface &interface) {
     Bumper::draw(interface);
