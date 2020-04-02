@@ -42,8 +42,9 @@ void Ball::setVelocity(Vector2D vel) {
     velocity=vel;
 }
 
-void Ball::Activate() {
-    isActive=true;
+void Ball::Activate(bool & space) {
+    if(space & isMain)
+        isActive=true;
 }
 
 void Ball::deActivate() {
@@ -59,7 +60,7 @@ Vector2D Ball::BallToBallCollision(const Ball& ball) {
         if (VectorDistance(ball.getCenter(), center) <= radius + ball.getRadius()) {
             //Break Captivity
             if (!isMain & !isActive)
-                Activate();
+                isActive=true;
 
             //Readjust balls
             dir = VectorDirection(center, ball.getCenter());
@@ -75,4 +76,8 @@ void Ball::Reset() {
     deActivate();
     setCenter(InitialPosition);
     setVelocity(InitialVelocity);
+}
+
+bool Ball::getisMain() const {
+    return isMain;
 }

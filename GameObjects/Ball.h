@@ -18,12 +18,13 @@ public:
     float getRadius() const;
     Vector2D getCenter() const;
     Vector2D getVelocity() const;
+    bool getisMain() const;
 
     void setCenter(Vector2D pos);
     void setVelocity(Vector2D vel);
 
     void deActivate();
-    void Activate();
+    void Activate(bool & space);
     void Reset();
 
     Vector2D BallToBallCollision(const Ball& ball);
