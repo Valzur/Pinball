@@ -1,0 +1,7 @@
+is45: 1
+LineXCoordinate: 400.0
+isLeft: 0
+LineYCoordinate: 5.0
+InclinationAngle: 45.0
+setPositionX: 10.0
+setPositionYRation: 0.75

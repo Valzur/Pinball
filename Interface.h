@@ -56,12 +56,12 @@ public:
 
     void LoadGraphics();
     void drawBackground();
-    void externalframe();
+
 
     void loadExternalFrame(bool isVertical, float Position);
 
 
-    void loadInternalFrame(bool is45,float Diameter);
+    void loadInternalFrame(bool is45,bool isLeft,float Diameter, float LineXCoordinate, float LineYCoordinate, float InclinationAngle, float setPositionX,float setPositionYRation);
     void drawSpeedBoasterLeft();
     void drawSpeedBoasterRight();
 };

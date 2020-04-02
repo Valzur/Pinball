@@ -163,7 +163,7 @@ void Interface::drawBumper(Vector2D center, float radius) {
 void Interface::drawFPS() {
     text.setString(FPS);
     text.setCharacterSize(24);
-    text.setFillColor(sf::Color::Green);
+    text.setColor(sf::Color::Green);
     text.setPosition(0,0);
     window.draw(text);
 }
@@ -178,7 +178,7 @@ void Interface::drawText(string Text, int FontSize, sf::Color color, Vector2D po
     text.setString(Text);
     sf::FloatRect bounds=text.getLocalBounds();
     text.setCharacterSize(FontSize);
-    text.setFillColor(color);
+    text.setColor(color);
     text.setPosition(position.x-bounds.width/2,position.y);
     window.draw(text);
 }
@@ -236,22 +236,22 @@ void Interface::loadExternalFrame(bool isVertical,float Position)
         }
 }
 
-void Interface::loadInternalFrame(bool is45,float Diameter)
+void Interface::loadInternalFrame(bool is45,bool isLeft,float Diameter, float LineXCoordinate, float LineYCoordinate, float InclinationAngle, float setPositionX,float setPositionYRation)
 {
 //    sf::Texture texture;
 //    texture.loadFromFile("Frame.png");
 if(is45)
 {
-    sf::RectangleShape line(sf::Vector2f(400.f, 5.f));
-    line.rotate(45.f);
-    line.setPosition(10.f, GAME_HEIGHT * 0.75);
+    sf::RectangleShape line(sf::Vector2f(LineXCoordinate, LineYCoordinate));
+    line.rotate(InclinationAngle);
+    line.setPosition(setPositionX, GAME_HEIGHT * setPositionYRation);
     line.setFillColor(sf::Color::Magenta);
 //    line.setTexture(&texture);
 
-    if(Diameter<0)
+    if(!isLeft)
     {
-        line.rotate(90.f);
-        line.setPosition(GAME_WIDTH-36.f, GAME_HEIGHT * 0.75);
+        line.rotate(2*InclinationAngle);
+        line.setPosition(GAME_WIDTH-36.f, GAME_HEIGHT * setPositionYRation);
         line.setFillColor(sf::Color::Magenta);
     }
     window.draw(line);
