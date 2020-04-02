@@ -13,6 +13,7 @@ using namespace std;
 #include "GameObjects/Flipper.h"
 #include "GameObjects/Obstacles/SpriteWalls.h"
 #include "GameObjects/Obstacles/Bumper.h"
+#include "GameObjects/Obstacles/InternalFrames.h"
 #include "GameObjects/Manager.h"
 #include "Utility/AudioManager.h"
 #include "Utility/Configurable.h"
