@@ -7,7 +7,7 @@ class Ball: public Drawn
 {
 private:
     const Vector2D InitialPosition,InitialVelocity;
-    bool isActive,isMain;
+    bool isActive,isMain,isUsedPortal=false;
     const float radius;  // Radius of the ball
     Vector2D center;  // The instantaneous center of the ball
     Vector2D velocity;  // The instantaneous velocity of the ball
@@ -19,7 +19,9 @@ public:
     Vector2D getCenter() const;
     Vector2D getVelocity() const;
     bool getisMain() const;
+    bool getIsUsedPortal() const;
 
+    void setUsedPortal(bool Used);
     void setCenter(Vector2D pos);
     void setVelocity(Vector2D vel);
 

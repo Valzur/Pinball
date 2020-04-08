@@ -163,7 +163,7 @@ void Interface::drawBumper(Vector2D center, float radius) {
 void Interface::drawFPS() {
     text.setString(FPS);
     text.setCharacterSize(24);
-    text.setColor(sf::Color::Green);
+    text.setFillColor(sf::Color::Green);
     text.setPosition(0,0);
     window.draw(text);
 }
@@ -178,7 +178,7 @@ void Interface::drawText(string Text, int FontSize, sf::Color color, Vector2D po
     text.setString(Text);
     sf::FloatRect bounds=text.getLocalBounds();
     text.setCharacterSize(FontSize);
-    text.setColor(color);
+    text.setFillColor(color);
     text.setPosition(position.x-bounds.width/2,position.y);
     window.draw(text);
 }
@@ -211,6 +211,13 @@ void Interface::LoadGraphics() {
         cout << "Error loading Bumper sprite!" <<  endl;
     }else{
         backgroundSprite.setTexture(backgroundTexture);
+    }
+
+    //Portal Sprite
+    if(!PortalTexture.loadFromFile("../Assets/Sprites/Portal.png")){
+        cout<< "Can't load Portal sprite! "<< endl;
+    }else{
+        PortalSprite.setTexture(PortalTexture);
     }
 
 }
@@ -291,6 +298,31 @@ void Interface::drawSpeedBoasterRight()
 
 void Interface::drawBackground() {
     window.draw(backgroundSprite);
+}
+
+void Interface::drawPortals(Vector2D Pos1, Vector2D Pos2,double radius) {
+    sf::CircleShape circle1(radius),circle2(radius);
+    circle1.setOrigin(0, 0);
+    circle1.setOutlineThickness(outlineThickness);
+    circle1.setOutlineColor(sf::Color::Magenta);
+
+    circle2.setOrigin(0,0);
+    circle2.setOutlineThickness(outlineThickness);
+    circle2.setOutlineColor(sf::Color::Magenta);
+
+    circle1.setPosition(Pos1.x,Pos1.y);
+    circle2.setPosition(Pos2.x,Pos2.y);
+    window.draw(circle2);
+    window.draw(circle1);
+
+    //Sprite
+    PortalSprite.setPosition(Pos1.x,Pos1.y);
+    PortalSprite.setScale(0.1,0.1);
+    window.draw(PortalSprite);
+
+    PortalSprite.setPosition(Pos2.x,Pos2.y);
+    PortalSprite.setScale(0.1,0.1);
+    window.draw(PortalSprite);
 }
 
 

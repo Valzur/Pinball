@@ -173,6 +173,7 @@ Vector2D Configurable::FlippersCollision(Ball &ball, float collision_time, Manag
     for (int i = 0; i <FlippersNo; i++) {
         Acceleration+=pFlippers[i]->collideWith(ball,collision_time,manager);
     }
+    return Acceleration;
 }
 
 Vector2D Configurable::PopBumpersCollision(Ball &ball, float collision_time, Manager &manager) {
@@ -180,6 +181,7 @@ Vector2D Configurable::PopBumpersCollision(Ball &ball, float collision_time, Man
     for (int i = 0; i <PopBumpersNo; i++) {
         Acceleration+=pPopBumpers[i]->collideWith(ball,collision_time,manager);
     }
+    return Acceleration;
 }
 
 Vector2D Configurable::BallsCollision(Ball &ball, float collision_time, Manager &manager) {
@@ -187,6 +189,7 @@ Vector2D Configurable::BallsCollision(Ball &ball, float collision_time, Manager 
     for (int i = 0; i <BallsNo; i++) {
         Acceleration+=pBalls[i]->BallToBallCollision(ball);
     }
+    return Acceleration;
 }
 
 Vector2D Configurable::WallsCollision(Ball &ball, float collision_time, Manager &manager) {

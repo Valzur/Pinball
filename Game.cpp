@@ -5,9 +5,10 @@
 
 Game::Game(): leftFlipper(LEFT, Vector2D { GAME_WIDTH / 2.0f - (FLIPPER_LENGTH + FLIPPERS_DISTANCE / 2.0f),GAME_HEIGHT - 50.0f}, FLIPPER_LENGTH, 30.0f, FLIPPER_MAJOR_RADIUS, FLIPPER_MINOR_RADIUS,FLIPPERS_ANGLE_NORMAL,FLIPPERS_ANGLE_EXTENDED,FLIPPERS_ROTATE_VELOCITY),
               rightFlipper(RIGHT, Vector2D { GAME_WIDTH / 2.0f + (FLIPPER_LENGTH + FLIPPERS_DISTANCE / 2.0f), GAME_HEIGHT - 50.0f}, FLIPPER_LENGTH, -30.0f, FLIPPER_MAJOR_RADIUS, FLIPPER_MINOR_RADIUS,FLIPPERS_ANGLE_NORMAL,FLIPPERS_ANGLE_EXTENDED,FLIPPERS_ROTATE_VELOCITY),
-              bumper1({GAME_WIDTH/3,GAME_HEIGHT/2},70),bumper2({2*GAME_WIDTH/3,GAME_HEIGHT/2},70),
+              portals({200,200},{300,400})
+              ,bumper1({GAME_WIDTH/3,GAME_HEIGHT/2},70),bumper2({2*GAME_WIDTH/3,GAME_HEIGHT/2},70),
               audioManager(true,"Audio/NEFFEX.flac"),captive1({200,300},10,INITIAL_VELOCITY, false),captive2({500,300},10,INITIAL_VELOCITY, false),
-              leftWall(1,true), rightWall(GAME_WIDTH, true),upperWall(1, false) // This line should be removed,
+              leftWall(1,true), rightWall(GAME_WIDTH, true),upperWall(1, false)// This line should be removed
 {
     last_frame = high_resolution_clock::now();
     exit = left = right =space = false;
@@ -84,9 +85,9 @@ void Game::updateInterfaceOutput()
         interface.loadExternalFrame(1,-10.0f);
         interface.loadExternalFrame(1,10.0f);
         interface.loadExternalFrame(0,10.0f);
-        interface.loadInternalFrame(0,20);
-        interface.loadInternalFrame(1,20);
-        interface.loadInternalFrame(1,-20);
+        //interface.loadInternalFrame(0,20);
+        //interface.loadInternalFrame(1,20);
+        //interface.loadInternalFrame(1,-20);
 //        interface.loadExternalFrame(1,GAME_WIDTH+10.0f);
         interface.drawSpeedBoasterLeft();
         interface.drawSpeedBoasterRight();
@@ -100,6 +101,7 @@ void Game::updateInterfaceOutput()
         //Testing!!\\
         AllObjects.pManager->Updategame(interface);
         AllObjects.DrawEverything(interface);
+        portals.draw(interface);
         //                                         \\
 
 

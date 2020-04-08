@@ -17,6 +17,7 @@ using namespace std;
 #include "GameObjects/Manager.h"
 #include "Utility/AudioManager.h"
 #include "Utility/Configurable.h"
+#include "GameObjects/Obstacles/Portal.h"
 
 // Represents a game, keeps track of everything relevant to the game and delegates the tasks to their proper objects
 class Game
@@ -39,6 +40,7 @@ private:
     Flipper leftFlipper, rightFlipper;  // The right and left flippers
     Wall leftWall, rightWall,upperWall;  // This line should be replaced by an array of obstacles
     Bumper bumper1, bumper2;
+    Portal portals;
     //SpriteWalls walloutsite=SpriteWalls("Assets/Sprites - Test/WallOutside.png",{-74,-70});
     //sf::Sprite sprite=walloutsite.GetSprite();
 public:

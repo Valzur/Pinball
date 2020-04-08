@@ -81,3 +81,11 @@ void Ball::Reset() {
 bool Ball::getisMain() const {
     return isMain;
 }
+
+bool Ball::getIsUsedPortal() const{
+    return isUsedPortal;
+}
+
+void Ball::setUsedPortal(bool Used) {
+    isUsedPortal=Used;
+}

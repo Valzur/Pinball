@@ -38,6 +38,9 @@ private:
     sf::Texture backgroundTexture;
     sf::Sprite backgroundSprite;
 
+    sf::Texture PortalTexture;
+    sf::Sprite PortalSprite;
+
 public:
     Interface();  // Constructor
     void getControls(bool & exit, bool & left, bool & right, bool & space);  // Detects the buttons pressed
@@ -51,6 +54,9 @@ public:
     void drawWall(float position,bool isVertical);  // Draws a vertical wall
     void drawNewWall(sf::Sprite sprite);
     void drawBumper(Vector2D center, float radius);
+    void drawPortals(Vector2D Pos1, Vector2D Pos2,double radius);
+
+    //Utility
     void drawFPS();
     void drawText(string Text, int FontSize, sf::Color color, Vector2D position);
 
@@ -64,4 +70,5 @@ public:
     void loadInternalFrame(bool is45,bool isLeft,float Diameter, float LineXCoordinate, float LineYCoordinate, float InclinationAngle, float setPositionX,float setPositionYRation);
     void drawSpeedBoasterLeft();
     void drawSpeedBoasterRight();
+
 };
