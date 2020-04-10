@@ -296,7 +296,8 @@ void Interface::drawSpeedBoasterRight()
     window.draw(SpeedBoaster);
 }
 
-void Interface::drawBackground() {
+void Interface::drawBackground()
+{
     window.draw(backgroundSprite);
 }
 
