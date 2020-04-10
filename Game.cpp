@@ -85,12 +85,12 @@ void Game::updateInterfaceOutput()
         interface.loadExternalFrame(1,-10.0f);
         interface.loadExternalFrame(1,10.0f);
         interface.loadExternalFrame(0,10.0f);
-        //interface.loadInternalFrame(0,20);
-        //interface.loadInternalFrame(1,20);
-        //interface.loadInternalFrame(1,-20);
+        interface.loadInternalFrame(1,1,400.0,400,5.0,45.0,10.0,0.75);
+        interface.loadInternalFrame(1,0,400.0,400,5.0,45.0,10.0,0.75);
+        interface.loadInternalFrame(0,0,20,0,5.0,45.0,10.0,0.75);
 //        interface.loadExternalFrame(1,GAME_WIDTH+10.0f);
-        interface.drawSpeedBoasterLeft();
-        interface.drawSpeedBoasterRight();
+        interface.drawSpeedBoasterLeft(0,0,0,0,0,0);
+        interface.drawSpeedBoasterRight(0,0,0,0,0,0);
         /*
         leftFlipper.draw(interface);
         rightFlipper.draw(interface);

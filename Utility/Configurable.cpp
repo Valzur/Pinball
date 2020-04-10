@@ -140,7 +140,12 @@ void Configurable::ReadManager(const string& TextPath) {
     };
 }
 
-void Configurable::ReadWalls(string TextPath) {
+void Configurable::ReadWalls(const string TextPath) {
+    file.open(TextPath);
+    if(file.is_open())
+    {
+
+    }
 
 }
 
@@ -162,6 +167,7 @@ void Configurable::DrawPopBumpers(Interface &interface) {
         pPopBumpers[i]->draw(interface);
     }
 }
+
 
 void Configurable::DrawWalls(Interface &interface) {
 
@@ -249,3 +255,5 @@ void Configurable::ActivateBalls(bool space) {
             pBalls[i]->Activate(space);
     }
 }
+
+

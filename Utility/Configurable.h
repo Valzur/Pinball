@@ -7,6 +7,8 @@
 #include "../GameObjects/Obstacles/Bumper.h"
 #include "../GameObjects/Obstacles/Wall.h"
 #include "../GameObjects/Obstacles/PopBumper.h"
+#include "../GameObjects/Obstacles/InternalFrames.h"
+#include "../GameObjects/Obstacles/ExternalFrame.h"
 
 using namespace std;
 
@@ -24,6 +26,9 @@ public:
     //Those only need one instance.
     Manager *pManager;
     AudioManager *pAudioManager;
+    InternalFrames** pInternalFrames;
+    ExternalFrame** pExternalFrame;
+
 
     //Reading Functions
     void ReadBalls(const string& TextPath);

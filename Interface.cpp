@@ -163,7 +163,7 @@ void Interface::drawBumper(Vector2D center, float radius) {
 void Interface::drawFPS() {
     text.setString(FPS);
     text.setCharacterSize(24);
-    text.setFillColor(sf::Color::Green);
+    text.setColor(sf::Color::Green);
     text.setPosition(0,0);
     window.draw(text);
 }
@@ -178,7 +178,7 @@ void Interface::drawText(string Text, int FontSize, sf::Color color, Vector2D po
     text.setString(Text);
     sf::FloatRect bounds=text.getLocalBounds();
     text.setCharacterSize(FontSize);
-    text.setFillColor(color);
+    text.setColor(color);
     text.setPosition(position.x-bounds.width/2,position.y);
     window.draw(text);
 }
@@ -269,24 +269,24 @@ else
         internalFrame.setFillColor(sf::Color::Magenta);
         internalFrame.setPosition(GAME_WIDTH-20-Diameter,400.0f);
 //        internalFrame.setTexture(&texture);
-        window.draw(internalFrame);
+//        window.draw(internalFrame);
     window.draw(internalFrame);
 }
 
 }
 
-void Interface::drawSpeedBoasterLeft() {
+void Interface::drawSpeedBoasterLeft(float x1,float y1,float x2,float y2,float x3,float y3) {
     sf::ConvexShape SpeedBoaster;
     SpeedBoaster.setPointCount(3);
-    SpeedBoaster.setPoint(0,sf::Vector2f (25,735.0));
+    SpeedBoaster.setPoint(0,sf::Vector2f (25,735.0)); //Replace x,y variables by these numbers when loading from the file
     SpeedBoaster.setPoint(1,sf::Vector2f (130,850));
     SpeedBoaster.setPoint(2,sf::Vector2f (25,600));
     SpeedBoaster.setFillColor(sf::Color::Cyan);
     window.draw(SpeedBoaster);
 }
 
-void Interface::drawSpeedBoasterRight()
-{
+void Interface::drawSpeedBoasterRight(float x1,float y1,float x2,float y2,float x3,float y3)
+{//Replace x,y variables by these numbers when loading from the file
     sf::ConvexShape SpeedBoaster;
     SpeedBoaster.setPointCount(3);
     SpeedBoaster.setPoint(0,sf::Vector2f (GAME_WIDTH-30-25,735.0));
