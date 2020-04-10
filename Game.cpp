@@ -3,12 +3,7 @@
 
 #define GRAVITY 400.0f
 
-Game::Game(): leftFlipper(LEFT, Vector2D { GAME_WIDTH / 2.0f - (FLIPPER_LENGTH + FLIPPERS_DISTANCE / 2.0f),GAME_HEIGHT - 50.0f}, FLIPPER_LENGTH, 30.0f, FLIPPER_MAJOR_RADIUS, FLIPPER_MINOR_RADIUS,FLIPPERS_ANGLE_NORMAL,FLIPPERS_ANGLE_EXTENDED,FLIPPERS_ROTATE_VELOCITY),
-              rightFlipper(RIGHT, Vector2D { GAME_WIDTH / 2.0f + (FLIPPER_LENGTH + FLIPPERS_DISTANCE / 2.0f), GAME_HEIGHT - 50.0f}, FLIPPER_LENGTH, -30.0f, FLIPPER_MAJOR_RADIUS, FLIPPER_MINOR_RADIUS,FLIPPERS_ANGLE_NORMAL,FLIPPERS_ANGLE_EXTENDED,FLIPPERS_ROTATE_VELOCITY),
-              portals({200,200},{300,400})
-              ,bumper1({GAME_WIDTH/3,GAME_HEIGHT/2},70),bumper2({2*GAME_WIDTH/3,GAME_HEIGHT/2},70),
-              audioManager(true,"Audio/NEFFEX.flac"),captive1({200,300},10,INITIAL_VELOCITY, false),captive2({500,300},10,INITIAL_VELOCITY, false),
-              leftWall(1,true), rightWall(GAME_WIDTH, true),upperWall(1, false)// This line should be removed
+Game::Game(): manager(0,3), audioManager(true,("Audio/NEFFEX - Dangerous [Copyright Free].ogg"))
 {
     last_frame = high_resolution_clock::now();
     exit = left = right =space = false;
@@ -23,8 +18,8 @@ void Game::simulate()
 {
     //Load everything :"D
     if(!Loaded) {
-        AllObjects.LoadEverything();
         interface.LoadGraphics();
+        InstantiateObstacles();
     }
     // Measuring time elapsed in-between frames
     high_resolution_clock::time_point this_frame = high_resolution_clock::now();
@@ -32,44 +27,16 @@ void Game::simulate()
     last_frame = this_frame;
     float delta_time = time_span.count();  // Delta time in seconds
 
-    //Under testing m8!
-    AllObjects.FlippersMotion(left, right, delta_time);
-    AllObjects.ActivateBalls(space);
-    AllObjects.Collision(delta_time);
-
-
-    /*
-    switch(left){
-        case 1:
-            leftFlipper.RotateFlipper(-FLIPPERS_ANGLE_EXTENDED,delta_time);
-            break;
-        case 0:
-            leftFlipper.RotateFlipper(-FLIPPERS_ANGLE_NORMAL,delta_time);
-            break;
-    }
-    switch(right){
-        case 1:
-            rightFlipper.RotateFlipper(FLIPPERS_ANGLE_EXTENDED,delta_time);
-            break;
-        case 0:
-            rightFlipper.RotateFlipper(FLIPPERS_ANGLE_NORMAL,delta_time);
-            break;
-    }
-    */
     //Update fps
     interface.setFPS("FPS: " + to_string(1.0/delta_time));
-    /*
-    ball.Activate(space);
 
-    //Test
-    rightFlipper.collideWith(ball,delta_time, manager);
-    leftFlipper.collideWith(ball,delta_time, manager);
+    //Pls
+    ActivateBalls(space);
+    FlippersMotion(left, right,delta_time);
+    CollisionCheck(delta_time,manager);
+    MoveBalls(delta_time);
+    //Pls
 
-    //Ball Collision
-    DoBallCollision(ball,delta_time,0);
-    DoBallCollision(captive1,delta_time,1);
-    DoBallCollision(captive2,delta_time,2);
-    */
     if(!Loaded)
         Loaded=true;
 }
@@ -77,59 +44,24 @@ void Game::simulate()
 void Game::updateInterfaceOutput()
 {
     interface.clear();
-
     if(!Lost) {
-
         //Load things
         interface.drawBackground();
         interface.loadExternalFrame(1,-10.0f);
         interface.loadExternalFrame(1,10.0f);
         interface.loadExternalFrame(0,10.0f);
-        //interface.loadInternalFrame(0,20);
-        //interface.loadInternalFrame(1,20);
-        //interface.loadInternalFrame(1,-20);
-//        interface.loadExternalFrame(1,GAME_WIDTH+10.0f);
         interface.drawSpeedBoasterLeft();
         interface.drawSpeedBoasterRight();
-        /*
-        leftFlipper.draw(interface);
-        rightFlipper.draw(interface);
-        */
+
+        //Pls
+        DrawDrawables();
+        manager.Updategame(interface);
+        //Pls
+
         //FPS UPDATE
         interface.drawFPS();
-
-        //Testing!!\\
-        AllObjects.pManager->Updategame(interface);
-        AllObjects.DrawEverything(interface);
-        portals.draw(interface);
-        //                                         \\
-
-
-        /*
-        //Game state
-        manager.Updategame(interface);
-
-        // The following two lines be replaced with a loop over collidable obstacles
-        leftWall.draw(interface);
-        rightWall.draw(interface);
-        upperWall.draw(interface);
-
-        //Actual boundaries
-        interface.drawBumper(bumper1.GetPosition(), bumper1.GetRadius());
-        interface.drawBumper(bumper2.GetPosition(), bumper2.GetRadius());
-
-        //End Here
-        //Draw all balls
-        //ball.draw(interface);
-        //captive1.draw(interface);
-        //captive2.draw(interface);
-        */
-
-
-
     }else{
-        //manager.EndGame(interface);
-        AllObjects.pManager->EndGame(interface);
+        manager.EndGame(interface);
     }
         interface.display();
 }
@@ -144,38 +76,249 @@ void Game::GameOver(bool lost) {
     Lost=lost;
 }
 
-void Game::DoBallCollision(Ball & inball,float delta_time,int isMain) {
-    Vector2D resultant_acceleration = {0, GRAVITY};  // Starting with gravity as the first acceleration contributer
+void Game::InstantiateObstacles() {
+    file.open("../Configurations/Obstacles.txt");
+    if(file.is_open()){
+        string Choice="0";
+        while(Choice!="END") {
+            file >> Choice;
+            if (Choice=="PORTAL") {
+                ReadPortals(file);
+            } else if (Choice=="BALL") {
+                ReadBalls(file);
+            } else if (Choice=="FLIPPER") {
+                ReadFlippers(file);
+            } else if (Choice=="loadInternalFrameRight") {
 
-    //Bumpers
-    resultant_acceleration += bumper1.collideWith(inball,delta_time,manager);
-    resultant_acceleration += bumper2.collideWith(inball,delta_time,manager);
-    //Other balls
-    switch (isMain){
-        case 0:
-            //Main ball
-            resultant_acceleration += inball.BallToBallCollision(captive1);
-            resultant_acceleration += inball.BallToBallCollision(captive2);
-            break;
-        case 1:
-            //First Captive
-            resultant_acceleration += inball.BallToBallCollision(captive2);
-            resultant_acceleration += inball.BallToBallCollision(ball);
-            break;
-        case 2:
-            //Second Captive
-            resultant_acceleration += inball.BallToBallCollision(ball);
-            resultant_acceleration += inball.BallToBallCollision(captive1);
-            break;
+            } else if (Choice=="loadInternalFrameLeft") {
+
+            } else if (Choice=="POPBUMPERS"){
+                ReadPopBumpers(file);
+            } else if(Choice=="MAGNET"){
+                ReadMagnets(file);
+            }
+        }
+    }else{
+        cout << "Error, unable to open Obstacles file!" << endl;
     }
-    //Walls
-    resultant_acceleration += leftWall.collideWith(inball, delta_time, manager);
-    resultant_acceleration += rightWall.collideWith(inball, delta_time, manager);
-    resultant_acceleration += upperWall.collideWith(inball,delta_time, manager);
+}
 
-    //Debug
-    resultant_acceleration=resultant_acceleration;
-    //Motion
-    inball.move(resultant_acceleration, delta_time);
-    manager.ValueUpdate(inball, Lost);
+void Game::AddObstacle(Obstacle *obstacle) {
+    Obstacle **pTemp=new Obstacle*[ObstaclesNo+1];
+    //Everything is copied onto a temporary array
+    for (int i = 0; i <ObstaclesNo; i++) {
+        pTemp[i]=pObstacles[i];
+    }
+    pTemp[ObstaclesNo]=obstacle;
+    ObstaclesNo++;
+    pObstacles=new Obstacle*[ObstaclesNo];
+    for (int j = 0; j <ObstaclesNo; j++) {
+        pObstacles[j]=pTemp[j];
+    }
+    delete[]pTemp;
+}
+
+void Game::ReadBalls(fstream &file) {
+    Vector2D velocity, center;
+    string IsMain, Trash;
+    float radius;
+    int BallsNo;
+    file >> BallsNo;
+    for (int i = 0; i < BallsNo; ++i) {
+        //Center first
+        file >> Trash;
+        file >> center.x;
+        file >> center.y;
+        //Radius second
+        file >> Trash;
+        file >> radius;
+        //Velocity third
+        file >> Trash;
+        file >> velocity.x;
+        file >> velocity.y;
+        //If main last
+        file >> Trash;
+        file >> IsMain;
+        if (IsMain == "YES") {
+            AddBall(new Ball( center, radius, velocity, true));
+            AddDrawable(pBalls[i]);
+        } else if (IsMain == "NO") {
+            AddBall(new Ball( center, radius, velocity, false));
+            AddDrawable(pBalls[i]);
+        }
+    }
+}
+
+void Game::ReadFlippers(fstream &file) {
+    int FlippersNo = 0;
+    file >> FlippersNo;
+
+    for (int i = 0; i < FlippersNo; i++) {
+        Vector2D Center;
+        string Flippertype, Trash;
+        float length, angle, MajorRadius, MinorRadius, NormalAngle, ExtendedAngle, Velocity;
+        file >> Trash;
+        file >> Flippertype;
+        file >> Trash;
+        file >> Center.x;
+        file >> Center.y;
+        file >> Trash;
+        file >> length;
+        file >> Trash;
+        file >> angle;
+        file >> Trash;
+        file >> MajorRadius;
+        file >> Trash;
+        file >> MinorRadius;
+        file >> Trash;
+        file >> NormalAngle;
+        file >> Trash;
+        file >> ExtendedAngle;
+        file >> Trash;
+        file >> Velocity;
+
+        if (Flippertype == "RIGHT") {
+            AddObstacle(new Flipper(FlipperType::RIGHT, Center, length, angle, MajorRadius, MinorRadius, NormalAngle,
+                                    ExtendedAngle, Velocity));
+            AddDrawable(pObstacles[ObstaclesNo-1]);
+        } else if (Flippertype == "LEFT") {
+            AddObstacle(new Flipper(FlipperType::LEFT, Center, length, angle, MajorRadius, MinorRadius, NormalAngle,
+                                    ExtendedAngle, Velocity));
+            AddDrawable(pObstacles[ObstaclesNo-1]);
+        }
+    }
+}
+
+void Game::ReadPopBumpers(fstream &file) {
+    Vector2D center;
+    float radius;
+    int PopBumpersNo;
+    string Trash;
+    file >> PopBumpersNo;
+
+    for (int i = 0; i <PopBumpersNo; i++) {
+        file >> Trash;
+        file >> center.x;
+        file >> center.y;
+        file >> Trash;
+        file >> radius;
+        AddObstacle(new PopBumper(center,radius));
+        AddDrawable(pObstacles[ObstaclesNo-1]);
+    }
+}
+
+void Game::CollisionCheck(float collision_time, Manager & manager) {
+    for (int i = 0; i < BallsNo; i++) {
+        pBalls[i]->setAcceleration({0,-400});
+        for (int j = 0; j <ObstaclesNo; j++) {
+            pBalls[i]->setAcceleration(pBalls[i]->getAcceleration()+pObstacles[j]->collideWith(*pBalls[i],collision_time,manager));
+        }
+        //With other balls as well.
+        for (int k = 0; k <BallsNo; k++) {
+            pBalls[i]->setAcceleration(pBalls[i]->getAcceleration()+pBalls[k]->collideWith(*pBalls[i],collision_time,manager));
+        }
+    }
+}
+
+void Game::DrawDrawables() {
+    for (int i = 0; i <DrawablesNo; i++) {
+        pDrawn[i]->draw(interface);
+    }
+}
+
+void Game::ActivateBalls(bool space) {
+    for (int i = 0; i <BallsNo ;i++) {
+        if(pBalls[i]->getisMain())
+            pBalls[i]->Activate(space);
+    }
+}
+
+void Game::FlippersMotion(bool left, bool right, float delta_time) {
+    Flipper *pFlipper;
+    for (int i = 0; i <ObstaclesNo; i++) {
+        pFlipper= dynamic_cast<Flipper*>(pObstacles[i]);
+        if(pFlipper!=NULL){
+            pFlipper->MoveFlipper(left, right, delta_time);
+        }
+    }
+}
+
+void Game::ReadWalls(fstream &file) {
+    //Nope.
+}
+
+void Game::ReadPortals(fstream &file) {
+    string Trash;
+    double radius;
+    Vector2D Pos1,Pos2;
+    int PortalsNo;
+    file >> PortalsNo;
+    for (int i = 0; i <PortalsNo; i++) {
+        file >> Trash;
+        file >> Pos1.x;
+        file >> Pos1.y;
+        file >> Trash;
+        file >> Pos2.x;
+        file >> Pos2.y;
+        file >> Trash;
+        file >> radius;
+        AddObstacle(new Portal(Pos1,Pos2,radius));
+        AddDrawable(pObstacles[ObstaclesNo-1]);
+    }
+}
+
+void Game::MoveBalls(float time) {
+    for (int i = 0; i <BallsNo; i++) {
+        pBalls[i]->move(time);
+        manager.ValueUpdate(*pBalls[i],Lost);
+    }
+}
+
+void Game::AddDrawable(Drawn *drawn){
+    Drawn **pTemp=new Drawn*[DrawablesNo+1];
+    //Everything is copied onto a temporary array
+    for (int i = 0; i <DrawablesNo; i++) {
+        pTemp[i]=pDrawn[i];
+    }
+    pTemp[DrawablesNo]=drawn;
+    DrawablesNo++;
+    pDrawn=new Drawn*[DrawablesNo];
+    for (int j = 0; j <DrawablesNo; j++) {
+        pDrawn[j]=pTemp[j];
+    }
+    delete[]pTemp;
+}
+
+void Game::AddBall(Ball *ball) {
+    Ball **pTemp=new Ball*[BallsNo+1];
+    //Everything is copied onto a temporary array
+    for (int i = 0; i <BallsNo; i++) {
+        pTemp[i]=pBalls[i];
+    }
+    pTemp[BallsNo]=ball;
+    BallsNo++;
+    pBalls=new Ball*[BallsNo];
+    for (int j = 0; j <BallsNo; j++) {
+        pBalls[j]=pTemp[j];
+    }
+    delete[]pTemp;
+}
+
+void Game::ReadMagnets(fstream& file) {
+    string Trash;
+    Vector2D Position;
+    double MagnetRadius,radius;
+    int MagnetNo;
+    file >> MagnetNo;
+    for (int i = 0; i <MagnetNo; i++) {
+        file >> Trash;
+        file >> Position.x;
+        file >> Position.y;
+        file >> Trash;
+        file >> MagnetRadius;
+        file >> Trash;
+        file >> radius;
+        AddObstacle(new Magnet(Position,MagnetRadius,radius));
+        AddDrawable(pObstacles[ObstaclesNo-1]);
+    }
 }

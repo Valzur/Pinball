@@ -187,7 +187,7 @@ Vector2D Configurable::PopBumpersCollision(Ball &ball, float collision_time, Man
 Vector2D Configurable::BallsCollision(Ball &ball, float collision_time, Manager &manager) {
     Vector2D Acceleration={0,0};
     for (int i = 0; i <BallsNo; i++) {
-        Acceleration+=pBalls[i]->BallToBallCollision(ball);
+        //Acceleration+=pBalls[i]->BallToBallCollision(ball);
     }
     return Acceleration;
 }
@@ -233,7 +233,7 @@ void Configurable::Collision(float collision_time) {
         pAcceleration[i]=BallsCollision(*pBalls[i],collision_time,*pManager);
         //pAcceleration[i]=WallsCollision(*pBalls[i], collision_time,*pManager);
         //Move balls.
-        pBalls[i]->move(pAcceleration[i],collision_time);
+        //pBalls[i]->move(pAcceleration[i],collision_time);
     }
 }
 

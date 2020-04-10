@@ -55,6 +55,7 @@ public:
     void drawNewWall(sf::Sprite sprite);
     void drawBumper(Vector2D center, float radius);
     void drawPortals(Vector2D Pos1, Vector2D Pos2,double radius);
+    void drawMagnet(Vector2D Position, double magnetRadius,double radius,sf::Sprite * sprite);
 
     //Utility
     void drawFPS();

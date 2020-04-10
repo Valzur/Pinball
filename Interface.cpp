@@ -222,8 +222,6 @@ void Interface::LoadGraphics() {
 
 }
 
-
-
 //Draw external frame
 void Interface::loadExternalFrame(bool isVertical,float Position)
 {
@@ -323,6 +321,30 @@ void Interface::drawPortals(Vector2D Pos1, Vector2D Pos2,double radius) {
     PortalSprite.setPosition(Pos2.x,Pos2.y);
     PortalSprite.setScale(0.1,0.1);
     window.draw(PortalSprite);
+}
+
+void Interface::drawMagnet(Vector2D Position, double magnetRadius, double radius, sf::Sprite * sprite) {
+    sf::CircleShape magnet(magnetRadius),object(radius);
+    magnet.setOrigin(magnetRadius,magnetRadius);
+    magnet.setOutlineThickness(outlineThickness);
+    magnet.setOutlineColor(sf::Color::Black);
+    magnet.setFillColor(sf::Color(7,26,82,80));
+
+    object.setOrigin(radius,radius);
+    object.setOutlineThickness(outlineThickness);
+    object.setOutlineColor(sf::Color::Black);
+    object.setFillColor(sf::Color::Transparent);
+
+    magnet.setPosition(Position.x,Position.y);
+    object.setPosition(Position.x,Position.y);
+    window.draw(magnet);
+    window.draw(object);
+
+
+    //Sprite
+    sprite->setPosition(Position.x-radius,Position.y-radius);
+    sprite->setScale(0.07,0.07);
+    window.draw(*sprite);
 }
 
 

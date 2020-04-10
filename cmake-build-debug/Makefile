@@ -284,6 +284,33 @@ GameObjects/Obstacles/Bumper.cpp.s:
 	$(MAKE) -f CMakeFiles\Pinball.dir\build.make CMakeFiles/Pinball.dir/GameObjects/Obstacles/Bumper.cpp.s
 .PHONY : GameObjects/Obstacles/Bumper.cpp.s
 
+GameObjects/Obstacles/Magnet.obj: GameObjects/Obstacles/Magnet.cpp.obj
+
+.PHONY : GameObjects/Obstacles/Magnet.obj
+
+# target to build an object file
+GameObjects/Obstacles/Magnet.cpp.obj:
+	$(MAKE) -f CMakeFiles\Pinball.dir\build.make CMakeFiles/Pinball.dir/GameObjects/Obstacles/Magnet.cpp.obj
+.PHONY : GameObjects/Obstacles/Magnet.cpp.obj
+
+GameObjects/Obstacles/Magnet.i: GameObjects/Obstacles/Magnet.cpp.i
+
+.PHONY : GameObjects/Obstacles/Magnet.i
+
+# target to preprocess a source file
+GameObjects/Obstacles/Magnet.cpp.i:
+	$(MAKE) -f CMakeFiles\Pinball.dir\build.make CMakeFiles/Pinball.dir/GameObjects/Obstacles/Magnet.cpp.i
+.PHONY : GameObjects/Obstacles/Magnet.cpp.i
+
+GameObjects/Obstacles/Magnet.s: GameObjects/Obstacles/Magnet.cpp.s
+
+.PHONY : GameObjects/Obstacles/Magnet.s
+
+# target to generate assembly for a file
+GameObjects/Obstacles/Magnet.cpp.s:
+	$(MAKE) -f CMakeFiles\Pinball.dir\build.make CMakeFiles/Pinball.dir/GameObjects/Obstacles/Magnet.cpp.s
+.PHONY : GameObjects/Obstacles/Magnet.cpp.s
+
 GameObjects/Obstacles/PopBumper.obj: GameObjects/Obstacles/PopBumper.cpp.obj
 
 .PHONY : GameObjects/Obstacles/PopBumper.obj
@@ -635,6 +662,9 @@ help:
 	@echo ... GameObjects/Obstacles/Bumper.obj
 	@echo ... GameObjects/Obstacles/Bumper.i
 	@echo ... GameObjects/Obstacles/Bumper.s
+	@echo ... GameObjects/Obstacles/Magnet.obj
+	@echo ... GameObjects/Obstacles/Magnet.i
+	@echo ... GameObjects/Obstacles/Magnet.s
 	@echo ... GameObjects/Obstacles/PopBumper.obj
 	@echo ... GameObjects/Obstacles/PopBumper.i
 	@echo ... GameObjects/Obstacles/PopBumper.s

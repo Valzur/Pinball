@@ -5,6 +5,8 @@
 #include "Ball.h"
 using namespace std;
 
+class Ball;
+
 class Manager {
 private:
     int Score;
