@@ -12,7 +12,7 @@ using namespace std;
 #include "GameObjects/Obstacles/Wall.h"
 #include "GameObjects/Flipper.h"
 #include "GameObjects/Obstacles/SpriteWalls.h"
-#include "GameObjects/Obstacles/SpeedBoaster.h"
+#include "GameObjects/Obstacles/Kicker.h"
 #include "GameObjects/Obstacles/Bumper.h"
 #include "GameObjects/Obstacles/InternalFrames.h"
 #include "GameObjects/Manager.h"
@@ -24,12 +24,17 @@ using namespace std;
 #include "GameObjects/Obstacles/Magnet.h"
 #include <fstream>
 #include "GameObjects/Obstacles/SpeedBooster.h"
+#include "GameObjects/Obstacles/VibraniumBumper.h"
+#include "GameObjects/Obstacles/ThrustBumper.h"
+#include "GameObjects/Obstacles/PopBumper.h"
+#include "GameObjects/Obstacles/ScoreMultiplier.h"
+#include "GameObjects/Obstacles/Switch.h"
+#include "GameObjects/Obstacles/Collectable.h"
+
 // Represents a game, keeps track of everything relevant to the game and delegates the tasks to their proper objects
 class Game
 {
 private:
-
-
     fstream file;
     high_resolution_clock::time_point last_frame;  // Time point of the last rendered frame
     Interface interface;  // An object representing the game interface
@@ -68,13 +73,16 @@ public:
     //Reading
     void ReadBalls(fstream &file);
     void ReadFlippers(fstream &file);
-    void ReadPopBumpers(fstream &file);
+    void ReadBumpers(fstream &file);
     void ReadWalls(fstream& file);
     void ReadPortals(fstream&file);
     void ReadMagnets(fstream&file);
     void ReadInternalFrame(fstream& file);
-    void ReadGate(fstream& file);
-    void ReadSpeedboaster(fstream& file);
+    void ReadGates(fstream& file);
+    void ReadKickers(fstream& file);
+    void ReadSwitchs(fstream& file);
+    void ReadCollectables(fstream& file);
+    void ReadSpeedBoosters(fstream& file);
 
     void ActivateBalls(bool space);
     void FlippersMotion(bool left, bool right, float delta_time);

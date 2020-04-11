@@ -284,6 +284,33 @@ GameObjects/Obstacles/Bumper.cpp.s:
 	$(MAKE) -f CMakeFiles\Pinball.dir\build.make CMakeFiles/Pinball.dir/GameObjects/Obstacles/Bumper.cpp.s
 .PHONY : GameObjects/Obstacles/Bumper.cpp.s
 
+GameObjects/Obstacles/Collectable.obj: GameObjects/Obstacles/Collectable.cpp.obj
+
+.PHONY : GameObjects/Obstacles/Collectable.obj
+
+# target to build an object file
+GameObjects/Obstacles/Collectable.cpp.obj:
+	$(MAKE) -f CMakeFiles\Pinball.dir\build.make CMakeFiles/Pinball.dir/GameObjects/Obstacles/Collectable.cpp.obj
+.PHONY : GameObjects/Obstacles/Collectable.cpp.obj
+
+GameObjects/Obstacles/Collectable.i: GameObjects/Obstacles/Collectable.cpp.i
+
+.PHONY : GameObjects/Obstacles/Collectable.i
+
+# target to preprocess a source file
+GameObjects/Obstacles/Collectable.cpp.i:
+	$(MAKE) -f CMakeFiles\Pinball.dir\build.make CMakeFiles/Pinball.dir/GameObjects/Obstacles/Collectable.cpp.i
+.PHONY : GameObjects/Obstacles/Collectable.cpp.i
+
+GameObjects/Obstacles/Collectable.s: GameObjects/Obstacles/Collectable.cpp.s
+
+.PHONY : GameObjects/Obstacles/Collectable.s
+
+# target to generate assembly for a file
+GameObjects/Obstacles/Collectable.cpp.s:
+	$(MAKE) -f CMakeFiles\Pinball.dir\build.make CMakeFiles/Pinball.dir/GameObjects/Obstacles/Collectable.cpp.s
+.PHONY : GameObjects/Obstacles/Collectable.cpp.s
+
 GameObjects/Obstacles/ExternalFrame.obj: GameObjects/Obstacles/ExternalFrame.cpp.obj
 
 .PHONY : GameObjects/Obstacles/ExternalFrame.obj
@@ -364,6 +391,33 @@ GameObjects/Obstacles/InternalFrames.s: GameObjects/Obstacles/InternalFrames.cpp
 GameObjects/Obstacles/InternalFrames.cpp.s:
 	$(MAKE) -f CMakeFiles\Pinball.dir\build.make CMakeFiles/Pinball.dir/GameObjects/Obstacles/InternalFrames.cpp.s
 .PHONY : GameObjects/Obstacles/InternalFrames.cpp.s
+
+GameObjects/Obstacles/Kicker.obj: GameObjects/Obstacles/Kicker.cpp.obj
+
+.PHONY : GameObjects/Obstacles/Kicker.obj
+
+# target to build an object file
+GameObjects/Obstacles/Kicker.cpp.obj:
+	$(MAKE) -f CMakeFiles\Pinball.dir\build.make CMakeFiles/Pinball.dir/GameObjects/Obstacles/Kicker.cpp.obj
+.PHONY : GameObjects/Obstacles/Kicker.cpp.obj
+
+GameObjects/Obstacles/Kicker.i: GameObjects/Obstacles/Kicker.cpp.i
+
+.PHONY : GameObjects/Obstacles/Kicker.i
+
+# target to preprocess a source file
+GameObjects/Obstacles/Kicker.cpp.i:
+	$(MAKE) -f CMakeFiles\Pinball.dir\build.make CMakeFiles/Pinball.dir/GameObjects/Obstacles/Kicker.cpp.i
+.PHONY : GameObjects/Obstacles/Kicker.cpp.i
+
+GameObjects/Obstacles/Kicker.s: GameObjects/Obstacles/Kicker.cpp.s
+
+.PHONY : GameObjects/Obstacles/Kicker.s
+
+# target to generate assembly for a file
+GameObjects/Obstacles/Kicker.cpp.s:
+	$(MAKE) -f CMakeFiles\Pinball.dir\build.make CMakeFiles/Pinball.dir/GameObjects/Obstacles/Kicker.cpp.s
+.PHONY : GameObjects/Obstacles/Kicker.cpp.s
 
 GameObjects/Obstacles/Magnet.obj: GameObjects/Obstacles/Magnet.cpp.obj
 
@@ -473,32 +527,32 @@ GameObjects/Obstacles/ScoreMultiplier.cpp.s:
 	$(MAKE) -f CMakeFiles\Pinball.dir\build.make CMakeFiles/Pinball.dir/GameObjects/Obstacles/ScoreMultiplier.cpp.s
 .PHONY : GameObjects/Obstacles/ScoreMultiplier.cpp.s
 
-GameObjects/Obstacles/SpeedBoaster.obj: GameObjects/Obstacles/SpeedBoaster.cpp.obj
+GameObjects/Obstacles/SpeedBooster.obj: GameObjects/Obstacles/SpeedBooster.cpp.obj
 
-.PHONY : GameObjects/Obstacles/SpeedBoaster.obj
+.PHONY : GameObjects/Obstacles/SpeedBooster.obj
 
 # target to build an object file
-GameObjects/Obstacles/SpeedBoaster.cpp.obj:
-	$(MAKE) -f CMakeFiles\Pinball.dir\build.make CMakeFiles/Pinball.dir/GameObjects/Obstacles/SpeedBoaster.cpp.obj
-.PHONY : GameObjects/Obstacles/SpeedBoaster.cpp.obj
+GameObjects/Obstacles/SpeedBooster.cpp.obj:
+	$(MAKE) -f CMakeFiles\Pinball.dir\build.make CMakeFiles/Pinball.dir/GameObjects/Obstacles/SpeedBooster.cpp.obj
+.PHONY : GameObjects/Obstacles/SpeedBooster.cpp.obj
 
-GameObjects/Obstacles/SpeedBoaster.i: GameObjects/Obstacles/SpeedBoaster.cpp.i
+GameObjects/Obstacles/SpeedBooster.i: GameObjects/Obstacles/SpeedBooster.cpp.i
 
-.PHONY : GameObjects/Obstacles/SpeedBoaster.i
+.PHONY : GameObjects/Obstacles/SpeedBooster.i
 
 # target to preprocess a source file
-GameObjects/Obstacles/SpeedBoaster.cpp.i:
-	$(MAKE) -f CMakeFiles\Pinball.dir\build.make CMakeFiles/Pinball.dir/GameObjects/Obstacles/SpeedBoaster.cpp.i
-.PHONY : GameObjects/Obstacles/SpeedBoaster.cpp.i
+GameObjects/Obstacles/SpeedBooster.cpp.i:
+	$(MAKE) -f CMakeFiles\Pinball.dir\build.make CMakeFiles/Pinball.dir/GameObjects/Obstacles/SpeedBooster.cpp.i
+.PHONY : GameObjects/Obstacles/SpeedBooster.cpp.i
 
-GameObjects/Obstacles/SpeedBoaster.s: GameObjects/Obstacles/SpeedBoaster.cpp.s
+GameObjects/Obstacles/SpeedBooster.s: GameObjects/Obstacles/SpeedBooster.cpp.s
 
-.PHONY : GameObjects/Obstacles/SpeedBoaster.s
+.PHONY : GameObjects/Obstacles/SpeedBooster.s
 
 # target to generate assembly for a file
-GameObjects/Obstacles/SpeedBoaster.cpp.s:
-	$(MAKE) -f CMakeFiles\Pinball.dir\build.make CMakeFiles/Pinball.dir/GameObjects/Obstacles/SpeedBoaster.cpp.s
-.PHONY : GameObjects/Obstacles/SpeedBoaster.cpp.s
+GameObjects/Obstacles/SpeedBooster.cpp.s:
+	$(MAKE) -f CMakeFiles\Pinball.dir\build.make CMakeFiles/Pinball.dir/GameObjects/Obstacles/SpeedBooster.cpp.s
+.PHONY : GameObjects/Obstacles/SpeedBooster.cpp.s
 
 GameObjects/Obstacles/SpriteWalls.obj: GameObjects/Obstacles/SpriteWalls.cpp.obj
 
@@ -554,32 +608,32 @@ GameObjects/Obstacles/Switch.cpp.s:
 	$(MAKE) -f CMakeFiles\Pinball.dir\build.make CMakeFiles/Pinball.dir/GameObjects/Obstacles/Switch.cpp.s
 .PHONY : GameObjects/Obstacles/Switch.cpp.s
 
-GameObjects/Obstacles/ThurstBumper.obj: GameObjects/Obstacles/ThurstBumper.cpp.obj
+GameObjects/Obstacles/ThrustBumper.obj: GameObjects/Obstacles/ThrustBumper.cpp.obj
 
-.PHONY : GameObjects/Obstacles/ThurstBumper.obj
+.PHONY : GameObjects/Obstacles/ThrustBumper.obj
 
 # target to build an object file
-GameObjects/Obstacles/ThurstBumper.cpp.obj:
-	$(MAKE) -f CMakeFiles\Pinball.dir\build.make CMakeFiles/Pinball.dir/GameObjects/Obstacles/ThurstBumper.cpp.obj
-.PHONY : GameObjects/Obstacles/ThurstBumper.cpp.obj
+GameObjects/Obstacles/ThrustBumper.cpp.obj:
+	$(MAKE) -f CMakeFiles\Pinball.dir\build.make CMakeFiles/Pinball.dir/GameObjects/Obstacles/ThrustBumper.cpp.obj
+.PHONY : GameObjects/Obstacles/ThrustBumper.cpp.obj
 
-GameObjects/Obstacles/ThurstBumper.i: GameObjects/Obstacles/ThurstBumper.cpp.i
+GameObjects/Obstacles/ThrustBumper.i: GameObjects/Obstacles/ThrustBumper.cpp.i
 
-.PHONY : GameObjects/Obstacles/ThurstBumper.i
+.PHONY : GameObjects/Obstacles/ThrustBumper.i
 
 # target to preprocess a source file
-GameObjects/Obstacles/ThurstBumper.cpp.i:
-	$(MAKE) -f CMakeFiles\Pinball.dir\build.make CMakeFiles/Pinball.dir/GameObjects/Obstacles/ThurstBumper.cpp.i
-.PHONY : GameObjects/Obstacles/ThurstBumper.cpp.i
+GameObjects/Obstacles/ThrustBumper.cpp.i:
+	$(MAKE) -f CMakeFiles\Pinball.dir\build.make CMakeFiles/Pinball.dir/GameObjects/Obstacles/ThrustBumper.cpp.i
+.PHONY : GameObjects/Obstacles/ThrustBumper.cpp.i
 
-GameObjects/Obstacles/ThurstBumper.s: GameObjects/Obstacles/ThurstBumper.cpp.s
+GameObjects/Obstacles/ThrustBumper.s: GameObjects/Obstacles/ThrustBumper.cpp.s
 
-.PHONY : GameObjects/Obstacles/ThurstBumper.s
+.PHONY : GameObjects/Obstacles/ThrustBumper.s
 
 # target to generate assembly for a file
-GameObjects/Obstacles/ThurstBumper.cpp.s:
-	$(MAKE) -f CMakeFiles\Pinball.dir\build.make CMakeFiles/Pinball.dir/GameObjects/Obstacles/ThurstBumper.cpp.s
-.PHONY : GameObjects/Obstacles/ThurstBumper.cpp.s
+GameObjects/Obstacles/ThrustBumper.cpp.s:
+	$(MAKE) -f CMakeFiles\Pinball.dir\build.make CMakeFiles/Pinball.dir/GameObjects/Obstacles/ThrustBumper.cpp.s
+.PHONY : GameObjects/Obstacles/ThrustBumper.cpp.s
 
 GameObjects/Obstacles/VibraniumBumper.obj: GameObjects/Obstacles/VibraniumBumper.cpp.obj
 
@@ -878,6 +932,9 @@ help:
 	@echo ... GameObjects/Obstacles/Bumper.obj
 	@echo ... GameObjects/Obstacles/Bumper.i
 	@echo ... GameObjects/Obstacles/Bumper.s
+	@echo ... GameObjects/Obstacles/Collectable.obj
+	@echo ... GameObjects/Obstacles/Collectable.i
+	@echo ... GameObjects/Obstacles/Collectable.s
 	@echo ... GameObjects/Obstacles/ExternalFrame.obj
 	@echo ... GameObjects/Obstacles/ExternalFrame.i
 	@echo ... GameObjects/Obstacles/ExternalFrame.s
@@ -887,6 +944,9 @@ help:
 	@echo ... GameObjects/Obstacles/InternalFrames.obj
 	@echo ... GameObjects/Obstacles/InternalFrames.i
 	@echo ... GameObjects/Obstacles/InternalFrames.s
+	@echo ... GameObjects/Obstacles/Kicker.obj
+	@echo ... GameObjects/Obstacles/Kicker.i
+	@echo ... GameObjects/Obstacles/Kicker.s
 	@echo ... GameObjects/Obstacles/Magnet.obj
 	@echo ... GameObjects/Obstacles/Magnet.i
 	@echo ... GameObjects/Obstacles/Magnet.s
@@ -899,18 +959,18 @@ help:
 	@echo ... GameObjects/Obstacles/ScoreMultiplier.obj
 	@echo ... GameObjects/Obstacles/ScoreMultiplier.i
 	@echo ... GameObjects/Obstacles/ScoreMultiplier.s
-	@echo ... GameObjects/Obstacles/SpeedBoaster.obj
-	@echo ... GameObjects/Obstacles/SpeedBoaster.i
-	@echo ... GameObjects/Obstacles/SpeedBoaster.s
+	@echo ... GameObjects/Obstacles/SpeedBooster.obj
+	@echo ... GameObjects/Obstacles/SpeedBooster.i
+	@echo ... GameObjects/Obstacles/SpeedBooster.s
 	@echo ... GameObjects/Obstacles/SpriteWalls.obj
 	@echo ... GameObjects/Obstacles/SpriteWalls.i
 	@echo ... GameObjects/Obstacles/SpriteWalls.s
 	@echo ... GameObjects/Obstacles/Switch.obj
 	@echo ... GameObjects/Obstacles/Switch.i
 	@echo ... GameObjects/Obstacles/Switch.s
-	@echo ... GameObjects/Obstacles/ThurstBumper.obj
-	@echo ... GameObjects/Obstacles/ThurstBumper.i
-	@echo ... GameObjects/Obstacles/ThurstBumper.s
+	@echo ... GameObjects/Obstacles/ThrustBumper.obj
+	@echo ... GameObjects/Obstacles/ThrustBumper.i
+	@echo ... GameObjects/Obstacles/ThrustBumper.s
 	@echo ... GameObjects/Obstacles/VibraniumBumper.obj
 	@echo ... GameObjects/Obstacles/VibraniumBumper.i
 	@echo ... GameObjects/Obstacles/VibraniumBumper.s

@@ -15,3 +15,13 @@ Vector2D VectorDirection(Vector2D vector1,Vector2D vector2){
     direction=direction/VectorNorm(direction);
     return direction;
 }
+
+bool FloatToBool(float number){
+    if(number==1){
+        return true;
+    }else if (number==0){
+        return false;
+    }else {
+        return NULL;
+    }
+}

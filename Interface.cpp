@@ -149,22 +149,28 @@ void Interface::drawBumper(Vector2D center, float radius, BumperType type) {
     circle.setOutlineThickness(1.5*outlineThickness);
     circle.setOutlineColor(sf::Color::Magenta);
 
-    circle.setFillColor(ballFillColor);
     circle.setPosition(center.x, center.y);
-    window.draw(circle);
 
     switch (type)
     {
         case (BumperType::POP):{
+            circle.setFillColor(sf::Color::Blue);
+            window.draw(circle);
             Bumpersprite.setPosition(center.x - (radius / 2) - 15, center.y - (radius / 2) - 15);
             Bumpersprite.setScale(2, 2);
             window.draw(Bumpersprite);
+            break;
         }case(BumperType::THRUST):{
-            Thurstsprite.setPosition(center.x, center.y);
-            Thurstsprite.setScale(0.3, 0.3);
+            circle.setFillColor(sf::Color::Transparent);
+            window.draw(circle);
+            Thurstsprite.setPosition(center.x-radius, center.y-radius);
+            Thurstsprite.setScale(0.015, 0.015);
             window.draw(Thurstsprite);
+            break;
         }case(BumperType::VIBRANIUM):{
             //drawing 2nd circle
+            circle.setFillColor(sf::Color(8,105,114,255));
+            window.draw(circle);
             sf::CircleShape circle1(1.5*radius);
             circle1.setOrigin(1.5*radius,1.5* radius);
 
@@ -173,13 +179,17 @@ void Interface::drawBumper(Vector2D center, float radius, BumperType type) {
             window.draw(circle1);
             //drawing texture for 1st circle
 
-            Vibraniumsprite.setPosition(center.x, center.y);
+            Vibraniumsprite.setPosition(center.x-radius-18, center.y-radius-12);
             Vibraniumsprite.setScale(0.3, 0.3);
             window.draw(Vibraniumsprite);
+            break;
         }case(BumperType::SCOREM): {
-            ScoreMsprite.setPosition(center.x, center.y);
-            ScoreMsprite.setScale(0.3, 0.3);
+            circle.setFillColor(sf::Color(244,250,156,255));
+            window.draw(circle);
+            ScoreMsprite.setPosition(center.x-radius, center.y-radius);
+            ScoreMsprite.setScale(0.2, 0.2);
             window.draw(ScoreMsprite);
+            break;
         }
     }
 
@@ -254,6 +264,34 @@ void Interface::LoadGraphics() {
         PortalSprite.setTexture(PortalTexture);
     }
 
+    //SpeedBooster
+    if(!SpeedBoosterTexture.loadFromFile("../Assets/Sprites/SpeedBooster.png")){
+        cout<< "Can't load SpeedBooster sprite! "<< endl;
+    }else{
+        SpeedBoosterSprite.setTexture(SpeedBoosterTexture);
+    }
+
+    //Vibranium
+    if(!Vibraniumtexture.loadFromFile("../Assets/Sprites/Vibranium.png")){
+        cout<< "Can't load Vibranium sprite! "<< endl;
+    }else{
+        Vibraniumsprite.setTexture(Vibraniumtexture);
+    }
+
+    //Thrust
+    if(!Thursttexture.loadFromFile("../Assets/Sprites/Thurst.png")){
+        cout<< "Can't load ThrustBumper sprite! "<< endl;
+    }else{
+        Thurstsprite.setTexture(Thursttexture);
+    }
+
+    //Thrust
+    if(!ScoreMtexture.loadFromFile("../Assets/Sprites/ScoreMultiplier.png")){
+        cout<< "Can't load ScoreMultiplier sprite! "<< endl;
+    }else{
+        ScoreMsprite.setTexture(ScoreMtexture);
+    }
+
 }
 
 //Draw external frame
@@ -308,7 +346,7 @@ else
 
 }
 
-void Interface::drawSpeedBoasterLeft(float x1,float y1,float x2,float y2,float x3,float y3) {
+void Interface::drawLeftKicker(float x1,float y1,float x2,float y2,float x3,float y3) {
     sf::ConvexShape SpeedBoaster;
     SpeedBoaster.setPointCount(3);
     SpeedBoaster.setPoint(0,sf::Vector2f (25,735.0)); //Replace x,y variables by these numbers when loading from the file
@@ -318,7 +356,7 @@ void Interface::drawSpeedBoasterLeft(float x1,float y1,float x2,float y2,float x
     window.draw(SpeedBoaster);
 }
 
-void Interface::drawSpeedBoasterRight(float x1,float y1,float x2,float y2,float x3,float y3)
+void Interface::drawRightKicker(float x1,float y1,float x2,float y2,float x3,float y3)
 {//Replace x,y variables by these numbers when loading from the file
     sf::ConvexShape SpeedBoaster;//غير اسم البتاعة ديه ل Kicker
     SpeedBoaster.setPointCount(3);
@@ -361,11 +399,9 @@ void Interface::drawPortals(Vector2D Pos1, Vector2D Pos2,double radius) {
 
 void Interface::drawGate(float length,float width,float setPositionX,float setPositionY) {
     sf::RectangleShape Gate(sf::Vector2f (length,width));
-    Gate.setFillColor(sf::Color::Cyan);
-    Gate.setPosition(setPositionY,setPositionY);
-    sf::Texture GateTexture;
-    GateTexture.loadFromFile("");//Make it in load everything ;
-    Gate.setTexture(&GateTexture);
+    Gate.setFillColor(sf::Color::Red);
+    Gate.setPosition(setPositionX,setPositionY);
+    window.draw(Gate);
 }
 void Interface::drawMagnet(Vector2D Position, double magnetRadius, double radius, sf::Sprite * sprite) {
     sf::CircleShape magnet(magnetRadius),object(radius);
@@ -392,26 +428,34 @@ void Interface::drawMagnet(Vector2D Position, double magnetRadius, double radius
     window.draw(*sprite);
 }
 
-void Interface::drawCollectable(float radius, string L) {
+void Interface::drawCollectable(float radius, string L, Vector2D Center) {
     sf::CircleShape Collectable(radius);
-    Collectable.setFillColor(sf::Color(100,250,50));
-    drawText(L, 20,sf::Color(100,250,50), {50,50});
-    Collectable.setPosition(50,50);
+    Collectable.setFillColor(sf::Color::Transparent);
+    drawText(L, 30,sf::Color(100,250,50), {Center.x+radius,Center.y-radius/3 });
+    Collectable.setPosition(Center.x,Center.y);
+    Collectable.setOutlineThickness(2);
     window.draw(Collectable);
 }
 
-void Interface::drawSpeedBooster(float radius)
-{
+void Interface::drawSpeedBooster(float radius,Vector2D Center){
     sf::CircleShape SpeedBooster(radius);
-    SpeedBooster.setFillColor(sf::Color(100,250,50));
-    SpeedBooster.setPosition(100,100);
+    SpeedBooster.setFillColor(sf::Color::Transparent);
+    SpeedBooster.setPosition(Center.x,Center.y);
+    SpeedBooster.setOutlineThickness(0.2);
+    SpeedBooster.setOutlineColor(sf::Color::Yellow);
     window.draw(SpeedBooster);
+
+    SpeedBoosterSprite.setPosition(Center.x,Center.y);
+    SpeedBoosterSprite.setScale(0.07,0.07);
+    window.draw(SpeedBoosterSprite);
 }
 
 void Interface::drawSwitch(Vector2D pos) {
-    sf::RectangleShape line(sf::Vector2f(90, 5));
+    sf::RectangleShape line(sf::Vector2f(90, 20));
+    line.setOrigin(0,0);
     line.setPosition(pos.x, pos.y);
     line.setFillColor(sf::Color::Cyan);
+    line.setRotation(45);
     window.draw(line);
 }
 

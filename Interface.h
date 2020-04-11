@@ -40,6 +40,9 @@ private:
 
     sf::Texture PortalTexture;
     sf::Sprite PortalSprite;
+
+    sf::Texture SpeedBoosterTexture;
+    sf::Sprite SpeedBoosterSprite;
 public:
     Interface();  // Constructor
     void getControls(bool & exit, bool & left, bool & right, bool & space);  // Detects the buttons pressed
@@ -56,6 +59,9 @@ public:
     void drawPortals(Vector2D Pos1, Vector2D Pos2,double radius);
     void drawMagnet(Vector2D Position, double magnetRadius,double radius,sf::Sprite * sprite);
     void drawSwitch(Vector2D pos);
+    void drawCollectable(float radius,string L,Vector2D Center);
+    void drawSpeedBooster(float radius,Vector2D Center);
+    void drawGate(float length,float width,float setPositionX,float setPositionY);
 
     //Utility
     void drawFPS();
@@ -68,9 +74,6 @@ public:
     void loadExternalFrame(bool isVertical, float Position);
 
     void loadInternalFrame(bool is45,bool isLeft,float Diameter, float LineXCoordinate, float LineYCoordinate, float InclinationAngle, float setPositionX,float setPositionYRation);
-    void drawSpeedBoasterLeft(float x1,float y1,float x2,float y2,float x3,float y3);
-    void drawSpeedBoasterRight(float x1,float y1,float x2,float y2,float x3,float y3);
-    void drawGate(float length,float width,float setPositionX,float setPositionY);
-    void drawCollectable(float radius,string L);
-    void drawSpeedBooster(float radius);
+    void drawLeftKicker(float x1,float y1,float x2,float y2,float x3,float y3);
+    void drawRightKicker(float x1,float y1,float x2,float y2,float x3,float y3);
 };

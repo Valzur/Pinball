@@ -21,8 +21,9 @@ Vector2D Ball::getVelocity() const
     return velocity;
 }
 
-void Ball::move(float time)
-{   if(isActive) {
+void Ball::move(float time, Manager& manager,bool &lost){
+    if(isActive) {
+        manager.ValueUpdate(*this,lost);
         // Kinematic equations for planar motion of a particle
         velocity += Acceleration * time;
         center += velocity * time - Acceleration * time * time * 0.5;

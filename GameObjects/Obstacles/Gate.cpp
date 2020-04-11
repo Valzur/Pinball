@@ -1,7 +1,3 @@
-//
-// Created by anon on 4/11/20.
-//
-
 #include "Gate.h"
 
 void Gate::draw(Interface &interface) {
@@ -14,4 +10,8 @@ Gate::Gate(float setPositionX, float setPositionY, float length, float width) {
     this->setPositionY=setPositionY;
     this->length=length;
     this->width=width;
+}
+
+Vector2D Gate::collideWith(Ball &ball, float collision_time, Manager &manager) {
+    return{0,0};
 }

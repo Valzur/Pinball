@@ -34,7 +34,7 @@ public:
 
     Vector2D collideWith(Ball& ball, float collision_time, Manager & manager);
 
-    void move (float time);  // Simulates the ball's motion under uniform acceleration for a period of time
+    void move (float time, Manager& manager,bool &lost);  // Simulates the ball's motion under uniform acceleration for a period of time
 
     void draw (Interface & interface) override;
 };

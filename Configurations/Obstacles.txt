@@ -32,32 +32,59 @@ MinorRadius: 5
 NormalAngle: -30
 ExtendedAngle: 50
 Velocity: 1000
-loadInternalFrameLeft
+INTERNALFRAME
+3
 is45: 1
-LineXCoordinate: 400.0
 isLeft: 1
-LineYCoordinate: 5.0
-InclinationAngle: 45.0
-setPositionX: 10.0
-setPositionYRation: 0.75
-loadInternalFrameRight
-is45: 1
+Diameter: 400
 LineXCoordinate: 400.0
-isLeft: 0
 LineYCoordinate: 5.0
 InclinationAngle: 45.0
 setPositionX: 10.0
 setPositionYRation: 0.75
-POPBUMPERS
-2
-Center: 240 500
-Radius: 70
-Center: 480 500
-Radius: 70
+is45: 1
+isLeft: 0
+Diameter: 400
+LineXCoordinate: 400.0
+LineYCoordinate: 5.0
+InclinationAngle: 45.0
+setPositionX: 10.0
+setPositionYRation: 0.75
+is45: 0
+isLeft: 0
+Diameter: 20
+LineXCoordinate: 0
+LineYCoordinate: 5.0
+InclinationAngle: 45.0
+setPositionX: 10.0
+setPositionYRation: 0.75
+BUMPER
+7
+position 233 375
+Radius 60
+type 0
+position 466 375
+Radius 60
+type 0
+position 350  530
+Radius 60
+type 0
+position 118 140
+Radius 30
+type 2
+position  60  325
+Radius 40
+type 1
+position 680 325
+Radius 40
+type 1
+position 580 230
+Radius 25
+type 3
 PORTAL
 1
-POS1: 200 300
-POS2: 200 600
+POS1: 300 200
+POS2: 200 800
 RADIUS: 35
 MAGNET
 2
@@ -67,11 +94,38 @@ RADIUS: 30
 POSITION: 500 200
 MAGNETRADIUS: 70
 RADIUS: 30
-SPEEDBOASTER
+KICKER
+1
 X1 25
 Y1 735.0
 X2 130
 Y2 850
 X3 25
 Y3 600
+SWITCH
+1
+position 580 165
+COLLECTABLE
+6
+CENTER: 50 50
+RADIUS&LETTER: 15 C
+CENTER: 150 50
+RADIUS&LETTER: 15 I
+CENTER: 250 50
+RADIUS&LETTER: 15 E
+CENTER: 350 50
+RADIUS&LETTER: 15 2
+CENTER: 450 50
+RADIUS&LETTER: 15 0
+CENTER: 550 50
+RADIUS&LETTER: 15 2
+SPEEDBOOSTER
+1
+CENTER: 600 100
+RADIUS: 30
+GATE
+1
+POSITION: 300 700
+LENGTH: 100
+WIDTH: 20
 END

@@ -50,11 +50,6 @@ void Game::updateInterfaceOutput()
         interface.loadExternalFrame(1,-10.0f);
         interface.loadExternalFrame(1,10.0f);
         interface.loadExternalFrame(0,10.0f);
-        interface.loadInternalFrame(1,1,400.0,400,5.0,45.0,10.0,0.75);
-        interface.loadInternalFrame(1,0,400.0,400,5.0,45.0,10.0,0.75);
-        interface.loadInternalFrame(0,0,20,0,5.0,45.0,10.0,0.75);
-        interface.drawSpeedBoasterLeft(0,0,0,0,0,0);
-        interface.drawSpeedBoasterRight(0,0,0,0,0,0);
 
         //Pls
         DrawDrawables();
@@ -91,16 +86,27 @@ void Game::InstantiateObstacles() {
                 ReadBalls(file);
             } else if (Choice=="FLIPPER") {
                 ReadFlippers(file);
-            } else if (Choice=="loadInternalFrameRight") {
-
-            } else if (Choice=="loadInternalFrameLeft") {
-
-            } else if (Choice=="POPBUMPERS"){
-                ReadPopBumpers(file);
-            } else if(Choice=="MAGNET"){
+            } else if (Choice=="INTERNALFRAME") {
+                ReadInternalFrame(file);
+            } else if (Choice=="KICKER") {
+                ReadKickers(file);
+            } else if (Choice=="BUMPER"){
+                ReadBumpers(file);
+            } else if (Choice=="MAGNET"){
                 ReadMagnets(file);
+            } else if (Choice=="KICKER"){
+                ReadKickers(file);
+            } else if (Choice=="SWITCH"){
+                ReadSwitchs(file);
+            } else if (Choice=="COLLECTABLE"){
+                ReadCollectables(file);
+            } else if (Choice=="SPEEDBOOSTER"){
+                ReadSpeedBoosters(file);
+            } else if (Choice=="GATE"){
+                ReadGates(file);
             }
         }
+        file.close();
     }else{
         cout << "Error, unable to open Obstacles file!" << endl;
     }
@@ -192,34 +198,46 @@ void Game::ReadFlippers(fstream &file) {
     }
 }
 
-void Game::ReadPopBumpers(fstream &file) {
-    Vector2D center;
+void Game::ReadBumpers(fstream &file) {
+    Vector2D position;
     float radius;
-    int PopBumpersNo;
-    string Trash;
-    file >> PopBumpersNo;
-
-    for (int i = 0; i <PopBumpersNo; i++) {
-        file >> Trash;
-        file >> center.x;
-        file >> center.y;
-        file >> Trash;
+    int bumpersNo, type;
+    string trash;
+    file >> bumpersNo;
+    for (int i = 0; i < bumpersNo; i++) {
+        file >> trash;
+        file >> position.x;
+        file >> position.y;
+        file >> trash;
         file >> radius;
-        AddObstacle(new PopBumper(center,radius));
-        AddDrawable(pObstacles[ObstaclesNo-1]);
+        file >> trash;
+        file >> type;
+        if (type == 0) {
+            AddObstacle(new PopBumper(position, radius));
+            AddDrawable(pObstacles[ObstaclesNo-1]);
+        } else if (type == 1) {
+            AddObstacle(new ThrustBumper(position, radius));
+            AddDrawable(pObstacles[ObstaclesNo-1]);
+        } else if (type == 2) {
+            AddObstacle(new VibraniumBumper(position, radius));
+            AddDrawable(pObstacles[ObstaclesNo-1]);
+        } else if (type == 3) {
+            AddObstacle(new ScoreMultiplier(position, radius));
+            AddDrawable(pObstacles[ObstaclesNo-1]);
+        }
     }
 }
 
 void Game::CollisionCheck(float collision_time, Manager & manager) {
     for (int i = 0; i < BallsNo; i++) {
-        pBalls[i]->setAcceleration({0,-400});
-        for (int j = 0; j <ObstaclesNo; j++) {
-            pBalls[i]->setAcceleration(pBalls[i]->getAcceleration()+pObstacles[j]->collideWith(*pBalls[i],collision_time,manager));
-        }
-        //With other balls as well.
-        for (int k = 0; k <BallsNo; k++) {
-            pBalls[i]->setAcceleration(pBalls[i]->getAcceleration()+pBalls[k]->collideWith(*pBalls[i],collision_time,manager));
-        }
+        pBalls[i]->setAcceleration({0,400});
+//        for (int j = 0; j <ObstaclesNo; j++) {
+//            pBalls[i]->setAcceleration(pBalls[i]->getAcceleration()+pObstacles[j]->collideWith(*pBalls[i],collision_time,manager));
+//        }
+//        //With other balls as well.
+//        for (int k = 0; k <BallsNo; k++) {
+//            pBalls[i]->setAcceleration(pBalls[i]->getAcceleration()+pBalls[k]->collideWith(*pBalls[i],collision_time,manager));
+//        }
     }
 }
 
@@ -272,8 +290,7 @@ void Game::ReadPortals(fstream &file) {
 
 void Game::MoveBalls(float time) {
     for (int i = 0; i <BallsNo; i++) {
-        pBalls[i]->move(time);
-        manager.ValueUpdate(*pBalls[i],Lost);
+        pBalls[i]->move(time,manager,Lost);
     }
 }
 
@@ -330,68 +347,127 @@ void Game::ReadMagnets(fstream& file) {
 void Game::ReadInternalFrame(fstream& file)
 {
     string Trash;
-    float a,b,c,d,e,f,g,h;
+    float is45,isLeft,
+    Diameter,LineXCoordinate
+    ,LineYCoordinate,InclinationAngle
+    ,setPositionX,setPositionYRation;
     int NoFrame;
     file >> NoFrame;
     for (int i = 0; i <NoFrame; i++)
     {
         file >> Trash;
-        file >> a;
+        file >> is45;
         file >> Trash;
-        file >> b;
+        file >> isLeft;
         file >> Trash;
-        file >> c;
+        file >> Diameter;
         file >> Trash;
-        file >> d;
+        file >> LineXCoordinate;
         file >> Trash;
-        file >> e;
+        file >> LineYCoordinate;
         file >> Trash;
-        file >> f;
+        file >> InclinationAngle;
         file >> Trash;
-        file >> g;
+        file >> setPositionX;
         file >> Trash;
-        file >> h;
-        AddObstacle(new InternalFrames(a,b,c,d,e,f,g,h));
+        file >> setPositionYRation;
+        AddObstacle(new InternalFrames(FloatToBool(is45),FloatToBool(isLeft),Diameter,
+                LineXCoordinate,LineYCoordinate,InclinationAngle,setPositionX,setPositionYRation));
         AddDrawable(pObstacles[ObstaclesNo-1]);
     }
 }
 
-void Game::ReadGate(fstream& file)
-{
+void Game::ReadGates(fstream& file){
     string Trash;
     float length,width,x,y;
-    file >> Trash;
-    file >> width;
-    file >> Trash;
-    file >> length;
-    file >> Trash;
-    file >> x;
-    file >> Trash;
-    file >> y;
-    AddObstacle(new Gate(length,width,x,y));
-    AddDrawable(pObstacles[ObstaclesNo-1]);
+    int GatesNo;
+
+    file >> GatesNo;
+    for (int i = 0; i <GatesNo; i++) {
+        file >> Trash;
+        file >> x;
+        file >> y;
+        file >> Trash;
+        file >> length;
+        file >> Trash;
+        file >> width;
+        AddObstacle(new Gate(x,y,length,width));
+        AddDrawable(pObstacles[ObstaclesNo-1]);
+    }
 
 }
 
-void Game::ReadSpeedboaster(fstream &file)
-
+void Game::ReadKickers(fstream &file)
 {
     string Trash;
-    float a,b,c,d,e,f;
-    int NoFrame;
+    float x1,y1,x2,y2,x3,y3;
+    int NoFrame=0;
     file >> NoFrame;
-    file >> Trash;
-    file >> a;
-    file >> Trash;
-    file >> b;
-    file >> Trash;
-    file >> c;
-    file >> Trash;
-    file >> d;
-    file >> Trash;
-    file >> e;
-    file >> Trash;
-    file >> f;
-    AddObstacle(new SpeedBoaster(a,b,c,d,e,f));
-    AddDrawable(pObstacles[ObstaclesNo-1]);
+    for (int i = 0; i <NoFrame; i++) {
+        file >> Trash;
+        file >> x1;
+        file >> Trash;
+        file >> y1;
+        file >> Trash;
+        file >> x2;
+        file >> Trash;
+        file >> y2;
+        file >> Trash;
+        file >> x3;
+        file >> Trash;
+        file >> y3;
+        AddObstacle(new Kicker(x1, x2, x3, y1, y2, y3));
+        AddDrawable(pObstacles[ObstaclesNo-1]);
+    }
+}
+
+void Game::ReadSwitchs(fstream &file) {
+    Vector2D position;
+    string trash;
+    int SwitchNo;
+    file >> SwitchNo;
+    for (int i = 0; i <SwitchNo; i++) {
+        file >> trash;
+        file >> position.x;
+        file >> position.y;
+        AddObstacle(new Switch(position));
+        AddDrawable(pObstacles[ObstaclesNo-1]);
+    }
+}
+
+void Game::ReadCollectables(fstream &file) {
+    string Letter,Trash;
+    float radius;
+    int CollectablesNo;
+    Vector2D Center;
+
+    file >> CollectablesNo;
+    for (int i = 0; i <CollectablesNo; i++) {
+        file >> Trash;
+        file >> Center.x;
+        file >> Center.y;
+        file >> Trash;
+        file >> radius;
+        file >> Letter;
+        AddObstacle(new Collectable(radius,Letter,Center));
+        AddDrawable(pObstacles[ObstaclesNo-1]);
+    }
+}
+
+void Game::ReadSpeedBoosters(fstream &file) {
+    string Trash;
+    int BoostersNo;
+    float radius;
+    Vector2D Center;
+
+    file >> BoostersNo;
+    for (int i = 0; i <BoostersNo; i++) {
+        file >> Trash;
+        file >> Center.x;
+        file >> Center.y;
+        file >> Trash;
+        file >> radius;
+        AddObstacle(new SpeedBooster(radius,Center));
+        AddDrawable(pObstacles[ObstaclesNo-1]);
+    }
 }

@@ -24,7 +24,7 @@ Vector2D Bumper::collideWith(Ball &ball, float collision_time, Manager & manager
         acc= acc*velocity/collision_time;
 
         //Add score
-        manager.addScore(bscore);
+        //manager.addScore(bscore);
         //Returning values
         ball.setCenter(ModifiedRadiusPos);
         return acc;
@@ -65,6 +65,7 @@ Vector2D Bumper::collideWith(Ball &ball, float collision_time, Manager & manager
 Bumper::Bumper(Vector2D pos, float rad, BumperType type): type(type) {
     position=pos;
     radius=rad;
+    bscore=0;
 }
 
 Vector2D Bumper::GetPosition(){
@@ -72,7 +73,7 @@ Vector2D Bumper::GetPosition(){
 }
 
 void Bumper::draw(Interface &interface) {
-    //interface.drawBumper(position,radius,type);
+    interface.drawBumper(position,radius,type);
 }
 
 void Bumper::setScorepoints(int x) {

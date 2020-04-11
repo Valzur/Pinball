@@ -144,6 +144,12 @@
 		<Unit filename="D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/Bumper.h">
 			<Option target="Pinball"/>
 		</Unit>
+		<Unit filename="D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/Collectable.cpp">
+			<Option target="Pinball"/>
+		</Unit>
+		<Unit filename="D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/Collectable.h">
+			<Option target="Pinball"/>
+		</Unit>
 		<Unit filename="D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/ExternalFrame.cpp">
 			<Option target="Pinball"/>
 		</Unit>
@@ -160,6 +166,12 @@
 			<Option target="Pinball"/>
 		</Unit>
 		<Unit filename="D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/InternalFrames.h">
+			<Option target="Pinball"/>
+		</Unit>
+		<Unit filename="D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/Kicker.cpp">
+			<Option target="Pinball"/>
+		</Unit>
+		<Unit filename="D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/Kicker.h">
 			<Option target="Pinball"/>
 		</Unit>
 		<Unit filename="D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/Magnet.cpp">
@@ -189,10 +201,10 @@
 		<Unit filename="D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/ScoreMultiplier.h">
 			<Option target="Pinball"/>
 		</Unit>
-		<Unit filename="D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/SpeedBoaster.cpp">
+		<Unit filename="D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/SpeedBooster.cpp">
 			<Option target="Pinball"/>
 		</Unit>
-		<Unit filename="D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/SpeedBoaster.h">
+		<Unit filename="D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/SpeedBooster.h">
 			<Option target="Pinball"/>
 		</Unit>
 		<Unit filename="D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/SpriteWalls.cpp">
@@ -207,10 +219,10 @@
 		<Unit filename="D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/Switch.h">
 			<Option target="Pinball"/>
 		</Unit>
-		<Unit filename="D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/ThurstBumper.cpp">
+		<Unit filename="D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/ThrustBumper.cpp">
 			<Option target="Pinball"/>
 		</Unit>
-		<Unit filename="D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/ThurstBumper.h">
+		<Unit filename="D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/ThrustBumper.h">
 			<Option target="Pinball"/>
 		</Unit>
 		<Unit filename="D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/VibraniumBumper.cpp">

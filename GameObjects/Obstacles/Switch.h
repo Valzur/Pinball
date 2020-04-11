@@ -5,6 +5,7 @@
 #include <cmath>
 #include "../Manager.h"
 #include "../../Defs.h"
+
 class Switch : public Obstacle {
 private:
 	Vector2D position;
