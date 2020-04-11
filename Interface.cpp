@@ -372,6 +372,15 @@ void Interface::drawCollectable(float radius, string L) {
     Collectable.setFillColor(sf::Color(100,250,50));
     drawText(L, 20,sf::Color(100,250,50), {50,50});
     Collectable.setPosition(50,50);
+    window.draw(Collectable);
+}
+
+void Interface::drawSpeedBooster(float radius)
+{
+    sf::CircleShape SpeedBooster(radius);
+    SpeedBooster.setFillColor(sf::Color(100,250,50));
+    SpeedBooster.setPosition(100,100);
+    window.draw(SpeedBooster);
 }
 
 

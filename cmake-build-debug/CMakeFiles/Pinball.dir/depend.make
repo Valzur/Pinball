@@ -21,6 +21,7 @@ CMakeFiles/Pinball.dir/Game.cpp.o: ../GameObjects/Obstacles/Obstacle.h
 CMakeFiles/Pinball.dir/Game.cpp.o: ../GameObjects/Obstacles/PopBumper.h
 CMakeFiles/Pinball.dir/Game.cpp.o: ../GameObjects/Obstacles/Portal.h
 CMakeFiles/Pinball.dir/Game.cpp.o: ../GameObjects/Obstacles/SpeedBoaster.h
+CMakeFiles/Pinball.dir/Game.cpp.o: ../GameObjects/Obstacles/SpeedBooster.h
 CMakeFiles/Pinball.dir/Game.cpp.o: ../GameObjects/Obstacles/SpriteWalls.h
 CMakeFiles/Pinball.dir/Game.cpp.o: ../GameObjects/Obstacles/Wall.h
 CMakeFiles/Pinball.dir/Game.cpp.o: ../Interface.h
@@ -149,6 +150,16 @@ CMakeFiles/Pinball.dir/GameObjects/Obstacles/SpeedBoaster.cpp.o: ../GameObjects/
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/SpeedBoaster.cpp.o: ../GameObjects/Obstacles/SpeedBoaster.h
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/SpeedBoaster.cpp.o: ../Interface.h
 
+CMakeFiles/Pinball.dir/GameObjects/Obstacles/SpeedBooster.cpp.o: ../Defs.h
+CMakeFiles/Pinball.dir/GameObjects/Obstacles/SpeedBooster.cpp.o: ../GameObjects/Ball.h
+CMakeFiles/Pinball.dir/GameObjects/Obstacles/SpeedBooster.cpp.o: ../GameObjects/Collidable.h
+CMakeFiles/Pinball.dir/GameObjects/Obstacles/SpeedBooster.cpp.o: ../GameObjects/Drawable.h
+CMakeFiles/Pinball.dir/GameObjects/Obstacles/SpeedBooster.cpp.o: ../GameObjects/Manager.h
+CMakeFiles/Pinball.dir/GameObjects/Obstacles/SpeedBooster.cpp.o: ../GameObjects/Obstacles/Obstacle.h
+CMakeFiles/Pinball.dir/GameObjects/Obstacles/SpeedBooster.cpp.o: ../GameObjects/Obstacles/SpeedBooster.cpp
+CMakeFiles/Pinball.dir/GameObjects/Obstacles/SpeedBooster.cpp.o: ../GameObjects/Obstacles/SpeedBooster.h
+CMakeFiles/Pinball.dir/GameObjects/Obstacles/SpeedBooster.cpp.o: ../Interface.h
+
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/SpriteWalls.cpp.o: ../Defs.h
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/SpriteWalls.cpp.o: ../GameObjects/Ball.h
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/SpriteWalls.cpp.o: ../GameObjects/Collidable.h
@@ -250,6 +261,7 @@ CMakeFiles/Pinball.dir/main.cpp.o: ../GameObjects/Obstacles/Obstacle.h
 CMakeFiles/Pinball.dir/main.cpp.o: ../GameObjects/Obstacles/PopBumper.h
 CMakeFiles/Pinball.dir/main.cpp.o: ../GameObjects/Obstacles/Portal.h
 CMakeFiles/Pinball.dir/main.cpp.o: ../GameObjects/Obstacles/SpeedBoaster.h
+CMakeFiles/Pinball.dir/main.cpp.o: ../GameObjects/Obstacles/SpeedBooster.h
 CMakeFiles/Pinball.dir/main.cpp.o: ../GameObjects/Obstacles/SpriteWalls.h
 CMakeFiles/Pinball.dir/main.cpp.o: ../GameObjects/Obstacles/Wall.h
 CMakeFiles/Pinball.dir/main.cpp.o: ../Interface.h

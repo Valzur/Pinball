@@ -23,7 +23,7 @@ using namespace std;
 #include "GameObjects/Obstacles/Gate.h"
 #include "GameObjects/Obstacles/Magnet.h"
 #include <fstream>
-
+#include "GameObjects/Obstacles/SpeedBooster.h"
 // Represents a game, keeps track of everything relevant to the game and delegates the tasks to their proper objects
 class Game
 {

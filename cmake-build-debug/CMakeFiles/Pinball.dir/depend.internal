@@ -22,6 +22,7 @@ CMakeFiles/Pinball.dir/Game.cpp.o
  /home/anon/Desktop/Pinball/GameObjects/Obstacles/PopBumper.h
  /home/anon/Desktop/Pinball/GameObjects/Obstacles/Portal.h
  /home/anon/Desktop/Pinball/GameObjects/Obstacles/SpeedBoaster.h
+ /home/anon/Desktop/Pinball/GameObjects/Obstacles/SpeedBooster.h
  /home/anon/Desktop/Pinball/GameObjects/Obstacles/SpriteWalls.h
  /home/anon/Desktop/Pinball/GameObjects/Obstacles/Wall.h
  /home/anon/Desktop/Pinball/Interface.h
@@ -149,6 +150,16 @@ CMakeFiles/Pinball.dir/GameObjects/Obstacles/SpeedBoaster.cpp.o
  /home/anon/Desktop/Pinball/GameObjects/Obstacles/SpeedBoaster.cpp
  /home/anon/Desktop/Pinball/GameObjects/Obstacles/SpeedBoaster.h
  /home/anon/Desktop/Pinball/Interface.h
+CMakeFiles/Pinball.dir/GameObjects/Obstacles/SpeedBooster.cpp.o
+ /home/anon/Desktop/Pinball/Defs.h
+ /home/anon/Desktop/Pinball/GameObjects/Ball.h
+ /home/anon/Desktop/Pinball/GameObjects/Collidable.h
+ /home/anon/Desktop/Pinball/GameObjects/Drawable.h
+ /home/anon/Desktop/Pinball/GameObjects/Manager.h
+ /home/anon/Desktop/Pinball/GameObjects/Obstacles/Obstacle.h
+ /home/anon/Desktop/Pinball/GameObjects/Obstacles/SpeedBooster.cpp
+ /home/anon/Desktop/Pinball/GameObjects/Obstacles/SpeedBooster.h
+ /home/anon/Desktop/Pinball/Interface.h
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/SpriteWalls.cpp.o
  /home/anon/Desktop/Pinball/Defs.h
  /home/anon/Desktop/Pinball/GameObjects/Ball.h
@@ -251,6 +262,7 @@ CMakeFiles/Pinball.dir/main.cpp.o
  /home/anon/Desktop/Pinball/GameObjects/Obstacles/PopBumper.h
  /home/anon/Desktop/Pinball/GameObjects/Obstacles/Portal.h
  /home/anon/Desktop/Pinball/GameObjects/Obstacles/SpeedBoaster.h
+ /home/anon/Desktop/Pinball/GameObjects/Obstacles/SpeedBooster.h
  /home/anon/Desktop/Pinball/GameObjects/Obstacles/SpriteWalls.h
  /home/anon/Desktop/Pinball/GameObjects/Obstacles/Wall.h
  /home/anon/Desktop/Pinball/Interface.h

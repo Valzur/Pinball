@@ -1,14 +1,20 @@
 //
 // Created by anon on 4/11/20.
 //
+#pragma once
 
-#ifndef PINBALL_SPEEDBOOSTER_H
-#define PINBALL_SPEEDBOOSTER_H
+#include "Obstacle.h"
+class SpeedBooster :Obstacle
 
-
-class SpeedBooster {
-
+{
+private:
+    float radius;
+private:
+    SpeedBooster(float radius);
+    void draw(Interface & interface) override;
+    Vector2D collideWith(Ball& ball, float collision_time, Manager & manager) override;
 };
 
 
-#endif //PINBALL_SPEEDBOOSTER_H
+
+
