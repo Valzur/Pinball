@@ -1,0 +1,70 @@
+BALL
+3
+CENTER: 600 400
+RADIUS: 10
+VELOCITY: -900 -100
+MAIN: YES
+CENTER: 200 300
+RADIUS: 10
+VELOCITY: -900 600
+MAIN: NO
+CENTER: 500 300
+RADIUS: 10
+VELOCITY: -900 600
+MAIN: NO
+FLIPPER
+2
+FlipperType: LEFT
+Center: 285 950
+Length: 50
+Angle: 30
+MajorRadius: 10
+MinorRadius: 5
+NormalAngle: -30
+ExtendedAngle: 50
+Velocity: 1000
+FlipperType: RIGHT
+Center: 435 950
+Length: 50
+Angle: -30
+MajorRadius: 10
+MinorRadius: 5
+NormalAngle: -30
+ExtendedAngle: 50
+Velocity: 1000
+loadInternalFrameLeft
+is45: 1
+LineXCoordinate: 400.0
+isLeft: 1
+LineYCoordinate: 5.0
+InclinationAngle: 45.0
+setPositionX: 10.0
+setPositionYRation: 0.75
+loadInternalFrameRight
+is45: 1
+LineXCoordinate: 400.0
+isLeft: 0
+LineYCoordinate: 5.0
+InclinationAngle: 45.0
+setPositionX: 10.0
+setPositionYRation: 0.75
+POPBUMPERS
+2
+Center: 240 500
+Radius: 70
+Center: 480 500
+Radius: 70
+PORTAL
+1
+POS1: 200 300
+POS2: 200 600
+RADIUS: 35
+MAGNET
+2
+POSITION: 200 200
+MAGNETRADIUS: 70
+RADIUS: 30
+POSITION: 500 200
+MAGNETRADIUS: 70
+RADIUS: 30
+END

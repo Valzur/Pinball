@@ -1,0 +1,7 @@
+AUDIOMANAGER
+PlayMusic: YES
+AudioPath: ../Audio/NEFFEX.flac
+MANAGER
+Lives: 3
+InitialScore: 0
+END

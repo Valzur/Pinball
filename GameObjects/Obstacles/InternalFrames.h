@@ -1,6 +1,3 @@
-//
-// Created by anon on 4/1/20.
-//
 
 #pragma once
 #include "Obstacle.h"

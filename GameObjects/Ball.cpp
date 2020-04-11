@@ -21,11 +21,11 @@ Vector2D Ball::getVelocity() const
     return velocity;
 }
 
-void Ball::move(Vector2D acceleration, float time)
+void Ball::move(float time)
 {   if(isActive) {
         // Kinematic equations for planar motion of a particle
-        velocity += acceleration * time;
-        center += velocity * time - acceleration * time * time * 0.5;
+        velocity += Acceleration * time;
+        center += velocity * time - Acceleration * time * time * 0.5;
     }
 }
 
@@ -51,7 +51,7 @@ void Ball::deActivate() {
     isActive=false;
 }
 
-Vector2D Ball::BallToBallCollision(const Ball& ball) {
+Vector2D Ball::collideWith(Ball &ball, float collision_time, Manager & manager) {
     if(ball.getCenter().x==center.x & ball.getCenter().y == center.y){
         return {0,0};
     }else {
@@ -88,4 +88,12 @@ bool Ball::getIsUsedPortal() const{
 
 void Ball::setUsedPortal(bool Used) {
     isUsedPortal=Used;
+}
+
+Vector2D Ball::getAcceleration() const {
+    return  Acceleration;
+}
+
+void Ball::setAcceleration(Vector2D Acceleration) {
+    this-> Acceleration=Acceleration;
 }

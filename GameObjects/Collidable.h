@@ -3,6 +3,10 @@
 #include "Ball.h"
 #include "Manager.h"
 
+class Manager;
+
+class Ball;
+
 // An interface class that should be implemented by any class that can apply force on the ball upon collision
 class Collidable
 {

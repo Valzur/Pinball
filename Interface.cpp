@@ -163,7 +163,7 @@ void Interface::drawBumper(Vector2D center, float radius) {
 void Interface::drawFPS() {
     text.setString(FPS);
     text.setCharacterSize(24);
-    text.setColor(sf::Color::Green);
+    text.setFillColor(sf::Color::Green);
     text.setPosition(0,0);
     window.draw(text);
 }
@@ -178,7 +178,7 @@ void Interface::drawText(string Text, int FontSize, sf::Color color, Vector2D po
     text.setString(Text);
     sf::FloatRect bounds=text.getLocalBounds();
     text.setCharacterSize(FontSize);
-    text.setColor(color);
+    text.setFillColor(color);
     text.setPosition(position.x-bounds.width/2,position.y);
     window.draw(text);
 }
@@ -230,8 +230,6 @@ if(GateTexture.loadFromFile("")) {
     }
 
 }
-
-
 
 //Draw external frame
 void Interface::loadExternalFrame(bool isVertical,float Position)
@@ -342,6 +340,30 @@ void Interface::drawGate(float length,float width,float setPositionX,float setPo
     sf::Texture GateTexture;
     GateTexture.loadFromFile("");//Make it in load everything ;
     Gate.setTexture(&GateTexture);
+}
+void Interface::drawMagnet(Vector2D Position, double magnetRadius, double radius, sf::Sprite * sprite) {
+    sf::CircleShape magnet(magnetRadius),object(radius);
+    magnet.setOrigin(magnetRadius,magnetRadius);
+    magnet.setOutlineThickness(outlineThickness);
+    magnet.setOutlineColor(sf::Color::Black);
+    magnet.setFillColor(sf::Color(7,26,82,80));
+
+    object.setOrigin(radius,radius);
+    object.setOutlineThickness(outlineThickness);
+    object.setOutlineColor(sf::Color::Black);
+    object.setFillColor(sf::Color::Transparent);
+
+    magnet.setPosition(Position.x,Position.y);
+    object.setPosition(Position.x,Position.y);
+    window.draw(magnet);
+    window.draw(object);
+
+
+
+    //Sprite
+    sprite->setPosition(Position.x-radius,Position.y-radius);
+    sprite->setScale(0.07,0.07);
+    window.draw(*sprite);
 }
 
 

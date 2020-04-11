@@ -3,7 +3,6 @@
 
 int main()
 {
-
     // Create an object of ApplicationManager
     Game game;
     while (!game.exited())
