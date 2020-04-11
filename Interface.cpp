@@ -198,6 +198,15 @@ void Interface::LoadGraphics() {
     }else{
         Ballsprite.setTexture(Balltexture);
     }
+//
+if(GateTexture.loadFromFile("")) {
+    cout << "Error loading GateTexture";
+}
+    else
+    {
+        Gate.setTexture(GateTexture);//Make object for this to work
+    }
+}
 
     //Loading Bumper sprite
     if(!Bumpertexture.loadFromFile("../Assets/Sprites/PokeBumper.png")){
@@ -324,6 +333,15 @@ void Interface::drawPortals(Vector2D Pos1, Vector2D Pos2,double radius) {
     PortalSprite.setPosition(Pos2.x,Pos2.y);
     PortalSprite.setScale(0.1,0.1);
     window.draw(PortalSprite);
+}
+
+void Interface::drawGate(float length,float width,float setPositionX,float setPositionY) {
+    sf::RectangleShape Gate(sf::Vector2f (length,width));
+    Gate.setFillColor(sf::Color::Cyan);
+    Gate.setPosition(setPositionY,setPositionY);
+    sf::Texture GateTexture;
+    GateTexture.loadFromFile("");//Make it in load everything ;
+    Gate.setTexture(&GateTexture);
 }
 
 

@@ -20,7 +20,7 @@ using namespace std;
 #include "Utility/Configurable.h"
 #include "GameObjects/Obstacles/Portal.h"
 #include "GameObjects/Obstacles/ExternalFrame.h"
-
+#include "GameObjects/Obstacles/Gate.h"
 
 // Represents a game, keeps track of everything relevant to the game and delegates the tasks to their proper objects
 class Game
