@@ -66,6 +66,16 @@ CMakeFiles/Pinball.dir/GameObjects/Obstacles/Bumper.cpp.o: ../GameObjects/Obstac
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/Bumper.cpp.o: ../GameObjects/Obstacles/Obstacle.h
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/Bumper.cpp.o: ../Interface.h
 
+CMakeFiles/Pinball.dir/GameObjects/Obstacles/Collectable.cpp.o: ../Defs.h
+CMakeFiles/Pinball.dir/GameObjects/Obstacles/Collectable.cpp.o: ../GameObjects/Ball.h
+CMakeFiles/Pinball.dir/GameObjects/Obstacles/Collectable.cpp.o: ../GameObjects/Collidable.h
+CMakeFiles/Pinball.dir/GameObjects/Obstacles/Collectable.cpp.o: ../GameObjects/Drawable.h
+CMakeFiles/Pinball.dir/GameObjects/Obstacles/Collectable.cpp.o: ../GameObjects/Manager.h
+CMakeFiles/Pinball.dir/GameObjects/Obstacles/Collectable.cpp.o: ../GameObjects/Obstacles/Collectable.cpp
+CMakeFiles/Pinball.dir/GameObjects/Obstacles/Collectable.cpp.o: ../GameObjects/Obstacles/Collectable.h
+CMakeFiles/Pinball.dir/GameObjects/Obstacles/Collectable.cpp.o: ../GameObjects/Obstacles/Obstacle.h
+CMakeFiles/Pinball.dir/GameObjects/Obstacles/Collectable.cpp.o: ../Interface.h
+
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/ExternalFrame.cpp.o: ../Defs.h
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/ExternalFrame.cpp.o: ../GameObjects/Ball.h
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/ExternalFrame.cpp.o: ../GameObjects/Collidable.h

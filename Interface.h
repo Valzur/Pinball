@@ -72,4 +72,5 @@ public:
     void drawSpeedBoasterLeft(float x1,float y1,float x2,float y2,float x3,float y3);
     void drawSpeedBoasterRight(float x1,float y1,float x2,float y2,float x3,float y3);
     void drawGate(float length,float width,float setPositionX,float setPositionY);
+    void drawCollectable(float radius,string L);
 };

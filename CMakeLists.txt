@@ -30,7 +30,7 @@ add_executable(Pinball main.cpp Game.cpp Game.h Interface.cpp Interface.h
         GameObjects/Obstacles/PopBumper.h Utility/PostProcessing.cpp Utility/PostProcessing.h GameObjects/Obstacles/Portal.cpp
         GameObjects/Obstacles/Portal.h Utility/CollisionDetection.cpp Utility/CollisionDetection.h GameObjects/Obstacles/Magnet.cpp
         GameObjects/Obstacles/Magnet.h GameObjects/Obstacles/Gate.cpp GameObjects/Obstacles/ExternalFrame.cpp
-        GameObjects/Obstacles/InternalFrames.cpp GameObjects/Obstacles/SpeedBoaster.cpp)
+        GameObjects/Obstacles/InternalFrames.cpp GameObjects/Obstacles/SpeedBoaster.cpp GameObjects/Obstacles/Collectable.cpp GameObjects/Obstacles/Collectable.h GameObjects/Obstacles/SpeedBooster.cpp GameObjects/Obstacles/SpeedBooster.h)
 
 target_link_libraries(Pinball openal vorbis FLAC)
 

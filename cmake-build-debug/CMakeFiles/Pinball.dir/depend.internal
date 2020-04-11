@@ -66,6 +66,16 @@ CMakeFiles/Pinball.dir/GameObjects/Obstacles/Bumper.cpp.o
  /home/anon/Desktop/Pinball/GameObjects/Obstacles/Bumper.h
  /home/anon/Desktop/Pinball/GameObjects/Obstacles/Obstacle.h
  /home/anon/Desktop/Pinball/Interface.h
+CMakeFiles/Pinball.dir/GameObjects/Obstacles/Collectable.cpp.o
+ /home/anon/Desktop/Pinball/Defs.h
+ /home/anon/Desktop/Pinball/GameObjects/Ball.h
+ /home/anon/Desktop/Pinball/GameObjects/Collidable.h
+ /home/anon/Desktop/Pinball/GameObjects/Drawable.h
+ /home/anon/Desktop/Pinball/GameObjects/Manager.h
+ /home/anon/Desktop/Pinball/GameObjects/Obstacles/Collectable.cpp
+ /home/anon/Desktop/Pinball/GameObjects/Obstacles/Collectable.h
+ /home/anon/Desktop/Pinball/GameObjects/Obstacles/Obstacle.h
+ /home/anon/Desktop/Pinball/Interface.h
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/ExternalFrame.cpp.o
  /home/anon/Desktop/Pinball/Defs.h
  /home/anon/Desktop/Pinball/GameObjects/Ball.h

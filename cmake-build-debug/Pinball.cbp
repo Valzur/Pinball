@@ -126,6 +126,12 @@
 		<Unit filename="/home/anon/Desktop/Pinball/GameObjects/Obstacles/Bumper.h">
 			<Option target="Pinball"/>
 		</Unit>
+		<Unit filename="/home/anon/Desktop/Pinball/GameObjects/Obstacles/Collectable.cpp">
+			<Option target="Pinball"/>
+		</Unit>
+		<Unit filename="/home/anon/Desktop/Pinball/GameObjects/Obstacles/Collectable.h">
+			<Option target="Pinball"/>
+		</Unit>
 		<Unit filename="/home/anon/Desktop/Pinball/GameObjects/Obstacles/ExternalFrame.cpp">
 			<Option target="Pinball"/>
 		</Unit>
@@ -169,6 +175,12 @@
 			<Option target="Pinball"/>
 		</Unit>
 		<Unit filename="/home/anon/Desktop/Pinball/GameObjects/Obstacles/SpeedBoaster.h">
+			<Option target="Pinball"/>
+		</Unit>
+		<Unit filename="/home/anon/Desktop/Pinball/GameObjects/Obstacles/SpeedBooster.cpp">
+			<Option target="Pinball"/>
+		</Unit>
+		<Unit filename="/home/anon/Desktop/Pinball/GameObjects/Obstacles/SpeedBooster.h">
 			<Option target="Pinball"/>
 		</Unit>
 		<Unit filename="/home/anon/Desktop/Pinball/GameObjects/Obstacles/SpriteWalls.cpp">

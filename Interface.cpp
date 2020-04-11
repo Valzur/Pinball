@@ -367,5 +367,12 @@ void Interface::drawMagnet(Vector2D Position, double magnetRadius, double radius
     window.draw(*sprite);
 }
 
+void Interface::drawCollectable(float radius, string L) {
+    sf::CircleShape Collectable(radius);
+    Collectable.setFillColor(sf::Color(100,250,50));
+    drawText(L, 20,sf::Color(100,250,50), {50,50});
+    Collectable.setPosition(50,50);
+}
+
 
 

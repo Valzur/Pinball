@@ -356,6 +356,32 @@ CMakeFiles/Pinball.dir/GameObjects/Obstacles/SpeedBoaster.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Pinball.dir/GameObjects/Obstacles/SpeedBoaster.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anon/Desktop/Pinball/GameObjects/Obstacles/SpeedBoaster.cpp -o CMakeFiles/Pinball.dir/GameObjects/Obstacles/SpeedBoaster.cpp.s
 
+CMakeFiles/Pinball.dir/GameObjects/Obstacles/Collectable.cpp.o: CMakeFiles/Pinball.dir/flags.make
+CMakeFiles/Pinball.dir/GameObjects/Obstacles/Collectable.cpp.o: ../GameObjects/Obstacles/Collectable.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/anon/Desktop/Pinball/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/Pinball.dir/GameObjects/Obstacles/Collectable.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Pinball.dir/GameObjects/Obstacles/Collectable.cpp.o -c /home/anon/Desktop/Pinball/GameObjects/Obstacles/Collectable.cpp
+
+CMakeFiles/Pinball.dir/GameObjects/Obstacles/Collectable.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Pinball.dir/GameObjects/Obstacles/Collectable.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anon/Desktop/Pinball/GameObjects/Obstacles/Collectable.cpp > CMakeFiles/Pinball.dir/GameObjects/Obstacles/Collectable.cpp.i
+
+CMakeFiles/Pinball.dir/GameObjects/Obstacles/Collectable.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Pinball.dir/GameObjects/Obstacles/Collectable.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anon/Desktop/Pinball/GameObjects/Obstacles/Collectable.cpp -o CMakeFiles/Pinball.dir/GameObjects/Obstacles/Collectable.cpp.s
+
+CMakeFiles/Pinball.dir/GameObjects/Obstacles/SpeedBooster.cpp.o: CMakeFiles/Pinball.dir/flags.make
+CMakeFiles/Pinball.dir/GameObjects/Obstacles/SpeedBooster.cpp.o: ../GameObjects/Obstacles/SpeedBooster.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/anon/Desktop/Pinball/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/Pinball.dir/GameObjects/Obstacles/SpeedBooster.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Pinball.dir/GameObjects/Obstacles/SpeedBooster.cpp.o -c /home/anon/Desktop/Pinball/GameObjects/Obstacles/SpeedBooster.cpp
+
+CMakeFiles/Pinball.dir/GameObjects/Obstacles/SpeedBooster.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Pinball.dir/GameObjects/Obstacles/SpeedBooster.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anon/Desktop/Pinball/GameObjects/Obstacles/SpeedBooster.cpp > CMakeFiles/Pinball.dir/GameObjects/Obstacles/SpeedBooster.cpp.i
+
+CMakeFiles/Pinball.dir/GameObjects/Obstacles/SpeedBooster.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Pinball.dir/GameObjects/Obstacles/SpeedBooster.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anon/Desktop/Pinball/GameObjects/Obstacles/SpeedBooster.cpp -o CMakeFiles/Pinball.dir/GameObjects/Obstacles/SpeedBooster.cpp.s
+
 # Object files for target Pinball
 Pinball_OBJECTS = \
 "CMakeFiles/Pinball.dir/main.cpp.o" \
@@ -380,7 +406,9 @@ Pinball_OBJECTS = \
 "CMakeFiles/Pinball.dir/GameObjects/Obstacles/Gate.cpp.o" \
 "CMakeFiles/Pinball.dir/GameObjects/Obstacles/ExternalFrame.cpp.o" \
 "CMakeFiles/Pinball.dir/GameObjects/Obstacles/InternalFrames.cpp.o" \
-"CMakeFiles/Pinball.dir/GameObjects/Obstacles/SpeedBoaster.cpp.o"
+"CMakeFiles/Pinball.dir/GameObjects/Obstacles/SpeedBoaster.cpp.o" \
+"CMakeFiles/Pinball.dir/GameObjects/Obstacles/Collectable.cpp.o" \
+"CMakeFiles/Pinball.dir/GameObjects/Obstacles/SpeedBooster.cpp.o"
 
 # External object files for target Pinball
 Pinball_EXTERNAL_OBJECTS =
@@ -408,9 +436,11 @@ Pinball: CMakeFiles/Pinball.dir/GameObjects/Obstacles/Gate.cpp.o
 Pinball: CMakeFiles/Pinball.dir/GameObjects/Obstacles/ExternalFrame.cpp.o
 Pinball: CMakeFiles/Pinball.dir/GameObjects/Obstacles/InternalFrames.cpp.o
 Pinball: CMakeFiles/Pinball.dir/GameObjects/Obstacles/SpeedBoaster.cpp.o
+Pinball: CMakeFiles/Pinball.dir/GameObjects/Obstacles/Collectable.cpp.o
+Pinball: CMakeFiles/Pinball.dir/GameObjects/Obstacles/SpeedBooster.cpp.o
 Pinball: CMakeFiles/Pinball.dir/build.make
 Pinball: CMakeFiles/Pinball.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/anon/Desktop/Pinball/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Linking CXX executable Pinball"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/anon/Desktop/Pinball/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Linking CXX executable Pinball"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Pinball.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
