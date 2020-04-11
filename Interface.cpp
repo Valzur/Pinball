@@ -392,6 +392,22 @@ void Interface::drawMagnet(Vector2D Position, double magnetRadius, double radius
     window.draw(*sprite);
 }
 
+void Interface::drawCollectable(float radius, string L) {
+    sf::CircleShape Collectable(radius);
+    Collectable.setFillColor(sf::Color(100,250,50));
+    drawText(L, 20,sf::Color(100,250,50), {50,50});
+    Collectable.setPosition(50,50);
+    window.draw(Collectable);
+}
+
+void Interface::drawSpeedBooster(float radius)
+{
+    sf::CircleShape SpeedBooster(radius);
+    SpeedBooster.setFillColor(sf::Color(100,250,50));
+    SpeedBooster.setPosition(100,100);
+    window.draw(SpeedBooster);
+}
+
 void Interface::drawSwitch(Vector2D pos) {
     sf::RectangleShape line(sf::Vector2f(90, 5));
     line.setPosition(pos.x, pos.y);
