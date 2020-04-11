@@ -69,7 +69,7 @@ public:
 
 
     void loadInternalFrame(bool is45,bool isLeft,float Diameter, float LineXCoordinate, float LineYCoordinate, float InclinationAngle, float setPositionX,float setPositionYRation);
-    void drawSpeedBoasterLeft();
-    void drawSpeedBoasterRight();
+    void drawSpeedBoasterLeft(float x1,float y1,float x2,float y2,float x3,float y3);
+    void drawSpeedBoasterRight(float x1,float y1,float x2,float y2,float x3,float y3);
 
 };

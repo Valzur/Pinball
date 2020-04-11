@@ -12,14 +12,17 @@ using namespace std;
 #include "GameObjects/Obstacles/Wall.h"
 #include "GameObjects/Flipper.h"
 #include "GameObjects/Obstacles/SpriteWalls.h"
+#include "GameObjects/Obstacles/SpeedBoaster.h"
 #include "GameObjects/Obstacles/Bumper.h"
 #include "GameObjects/Obstacles/InternalFrames.h"
 #include "GameObjects/Manager.h"
 #include "Utility/AudioManager.h"
 #include "Utility/Configurable.h"
 #include "GameObjects/Obstacles/Portal.h"
+#include "GameObjects/Obstacles/ExternalFrame.h"
 #include "GameObjects/Obstacles/Magnet.h"
 #include <fstream>
+
 
 // Represents a game, keeps track of everything relevant to the game and delegates the tasks to their proper objects
 class Game

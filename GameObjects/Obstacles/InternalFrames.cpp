@@ -5,7 +5,7 @@
 #include "InternalFrames.h"
 
 void InternalFrames::draw(Interface &interface) {
-    interface.loadInternalFrame(bool is45,bool isLeft,float Diameter, float LineXCoordinate, float LineYCoordinate, float InclinationAngle, float setPositionX,float setPositionYRation);
+    interface.loadInternalFrame( is45,isLeft, Diameter, LineXCoordinate, LineYCoordinate, InclinationAngle, setPositionX, setPositionYRation);
 
 }
 
@@ -14,7 +14,14 @@ InternalFrames::InternalFrames(bool is45, bool isLeft, float Diameter, float Lin
                                : Frames( is45, isLeft, Diameter, LineXCoordinate, LineYCoordinate, InclinationAngle, setPositionX, setPositionYRation)
 
                                {
-
+//this->is45=is45;
+//this->isLeft=isLeft;
+//this->Diameter=Diameter;
+//this->LineXCoordinate=LineXCoordinate;
+//this->LineYCoordinate=LineYCoordinate;
+//this->InclinationAngle=InclinationAngle;
+//this->setPositionX=setPositionX;
+//this->setPositionYRation=setPositionYRation;
 
 
                                }

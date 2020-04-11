@@ -3,7 +3,6 @@
 #include "Obstacle.h"
 
 
-
 class InternalFrames: public Obstacle
 {
 private:
@@ -22,4 +21,3 @@ public:
 
 };
 
-//PINBALL_INTERNALFRAMES_H
