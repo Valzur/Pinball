@@ -58,3 +58,7 @@ Manager::Manager(int Score, int lives) {
     this->Score=Score;
     this->lives=lives;
 }
+
+int Manager::getScore() {
+    return Score;
+}

@@ -24,6 +24,7 @@ double VectorDistance(Vector2D vector1,Vector2D vector2);
 double VectorNorm(Vector2D vector);
 Vector2D VectorDirection(Vector2D vector1,Vector2D vector2);
 enum FlipperType { LEFT, RIGHT };
+enum BumperType{POP,THRUST,VIBRANIUM,SCOREM};
 
 // Should be replaced by a config file!
 #define GAME_WIDTH 720

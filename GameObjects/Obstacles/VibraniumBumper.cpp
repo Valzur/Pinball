@@ -1,0 +1,13 @@
+#include "VibraniumBumper.h"
+
+VibraniumBumper:: VibraniumBumper(Vector2D pos, float rad): Bumper(pos,rad,  VIBRANIUM){
+    setScorepoints(0);
+}
+void VibraniumBumper::draw(Interface& interface) {
+    Bumper::draw(interface);
+}
+
+Vector2D VibraniumBumper::collideWith(Ball& ball, float collision_time, Manager& manager) {
+    return Bumper::collideWith(ball, collision_time, manager);
+}
+

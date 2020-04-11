@@ -143,7 +143,7 @@ void Interface::drawNewWall(sf::Sprite sprite) {
     window.draw(sprite);
 }
 
-void Interface::drawBumper(Vector2D center, float radius) {
+void Interface::drawBumper(Vector2D center, float radius, BumperType type) {
     sf::CircleShape circle(radius);
     circle.setOrigin(radius, radius);
     circle.setOutlineThickness(1.5*outlineThickness);
@@ -153,17 +153,42 @@ void Interface::drawBumper(Vector2D center, float radius) {
     circle.setPosition(center.x, center.y);
     window.draw(circle);
 
-    //Sprite draw
-    Bumpersprite.setTexture(Bumpertexture);
-    Bumpersprite.setPosition(center.x-(radius/2)-15,center.y-(radius/2)-15);
-    Bumpersprite.setScale(2,2);
-    window.draw(Bumpersprite);
+    switch (type)
+    {
+        case (BumperType::POP):{
+            Bumpersprite.setPosition(center.x - (radius / 2) - 15, center.y - (radius / 2) - 15);
+            Bumpersprite.setScale(2, 2);
+            window.draw(Bumpersprite);
+        }case(BumperType::THRUST):{
+            Thurstsprite.setPosition(center.x, center.y);
+            Thurstsprite.setScale(0.3, 0.3);
+            window.draw(Thurstsprite);
+        }case(BumperType::VIBRANIUM):{
+            //drawing 2nd circle
+            sf::CircleShape circle1(1.5*radius);
+            circle1.setOrigin(1.5*radius,1.5* radius);
+
+            circle1.setFillColor(sf::Color::Transparent);
+            circle1.setPosition(center.x, center.y);
+            window.draw(circle1);
+            //drawing texture for 1st circle
+
+            Vibraniumsprite.setPosition(center.x, center.y);
+            Vibraniumsprite.setScale(0.3, 0.3);
+            window.draw(Vibraniumsprite);
+        }case(BumperType::SCOREM): {
+            ScoreMsprite.setPosition(center.x, center.y);
+            ScoreMsprite.setScale(0.3, 0.3);
+            window.draw(ScoreMsprite);
+        }
+    }
+
 }
 
 void Interface::drawFPS() {
     text.setString(FPS);
     text.setCharacterSize(24);
-    text.setColor(sf::Color::Green);
+    text.setFillColor(sf::Color::Green);
     text.setPosition(0,0);
     window.draw(text);
 }
@@ -178,7 +203,7 @@ void Interface::drawText(string Text, int FontSize, sf::Color color, Vector2D po
     text.setString(Text);
     sf::FloatRect bounds=text.getLocalBounds();
     text.setCharacterSize(FontSize);
-    text.setColor(color);
+    text.setFillColor(color);
     text.setPosition(position.x-bounds.width/2,position.y);
     window.draw(text);
 }
@@ -365,6 +390,13 @@ void Interface::drawMagnet(Vector2D Position, double magnetRadius, double radius
     sprite->setPosition(Position.x-radius,Position.y-radius);
     sprite->setScale(0.07,0.07);
     window.draw(*sprite);
+}
+
+void Interface::drawSwitch(Vector2D pos) {
+    sf::RectangleShape line(sf::Vector2f(90, 5));
+    line.setPosition(pos.x, pos.y);
+    line.setFillColor(sf::Color::Cyan);
+    window.draw(line);
 }
 
 

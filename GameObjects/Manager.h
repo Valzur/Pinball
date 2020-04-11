@@ -22,6 +22,7 @@ public:
 
     //Getters
     int getLives();
+    int getScore();
 
     //Update function
     void Updategame(Interface & interface);
