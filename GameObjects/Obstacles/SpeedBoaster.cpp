@@ -18,3 +18,7 @@ SpeedBoaster::SpeedBoaster(float x1, float x2, float x3, float y1, float y2, flo
     this->y2=y2;
     this->y3=y3;
 }
+
+Vector2D SpeedBoaster::collideWith(Ball &ball, float collision_time, Manager &manager) {
+    return {0,0};
+}

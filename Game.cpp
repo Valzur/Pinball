@@ -313,7 +313,8 @@ void Game::ReadMagnets(fstream& file) {
     double MagnetRadius,radius;
     int MagnetNo;
     file >> MagnetNo;
-    for (int i = 0; i <MagnetNo; i++) {
+    for (int i = 0; i <MagnetNo; i++)
+    {
         file >> Trash;
         file >> Position.x;
         file >> Position.y;
@@ -324,4 +325,73 @@ void Game::ReadMagnets(fstream& file) {
         AddObstacle(new Magnet(Position,MagnetRadius,radius));
         AddDrawable(pObstacles[ObstaclesNo-1]);
     }
+}
+
+void Game::ReadInternalFrame(fstream& file)
+{
+    string Trash;
+    float a,b,c,d,e,f,g,h;
+    int NoFrame;
+    file >> NoFrame;
+    for (int i = 0; i <NoFrame; i++)
+    {
+        file >> Trash;
+        file >> a;
+        file >> Trash;
+        file >> b;
+        file >> Trash;
+        file >> c;
+        file >> Trash;
+        file >> d;
+        file >> Trash;
+        file >> e;
+        file >> Trash;
+        file >> f;
+        file >> Trash;
+        file >> g;
+        file >> Trash;
+        file >> h;
+        AddObstacle(new InternalFrames(a,b,c,d,e,f,g,h));
+        AddDrawable(pObstacles[ObstaclesNo-1]);
+    }
+}
+
+void Game::ReadGate(fstream& file)
+{
+    string Trash;
+    float length,width,x,y;
+    file >> Trash;
+    file >> width;
+    file >> Trash;
+    file >> length;
+    file >> Trash;
+    file >> x;
+    file >> Trash;
+    file >> y;
+    AddObstacle(new Gate(length,width,x,y));
+    AddDrawable(pObstacles[ObstaclesNo-1]);
+
+}
+
+void Game::ReadSpeedboaster(fstream &file)
+
+{
+    string Trash;
+    float a,b,c,d,e,f;
+    int NoFrame;
+    file >> NoFrame;
+    file >> Trash;
+    file >> a;
+    file >> Trash;
+    file >> b;
+    file >> Trash;
+    file >> c;
+    file >> Trash;
+    file >> d;
+    file >> Trash;
+    file >> e;
+    file >> Trash;
+    file >> f;
+    AddObstacle(new SpeedBoaster(a,b,c,d,e,f));
+    AddDrawable(pObstacles[ObstaclesNo-1]);
 }

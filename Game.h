@@ -28,6 +28,8 @@ using namespace std;
 class Game
 {
 private:
+
+
     fstream file;
     high_resolution_clock::time_point last_frame;  // Time point of the last rendered frame
     Interface interface;  // An object representing the game interface
@@ -70,6 +72,9 @@ public:
     void ReadWalls(fstream& file);
     void ReadPortals(fstream&file);
     void ReadMagnets(fstream&file);
+    void ReadInternalFrame(fstream& file);
+    void ReadGate(fstream& file);
+    void ReadSpeedboaster(fstream& file);
 
     void ActivateBalls(bool space);
     void FlippersMotion(bool left, bool right, float delta_time);

@@ -13,3 +13,7 @@ void ExternalFrame::draw(Interface &interface) {
     interface.loadExternalFrame( isVertical,  Position);
 
 }
+
+Vector2D ExternalFrame::collideWith(Ball &ball, float collision_time, Manager &manager) {
+    return {0,0};
+}

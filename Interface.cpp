@@ -163,7 +163,7 @@ void Interface::drawBumper(Vector2D center, float radius) {
 void Interface::drawFPS() {
     text.setString(FPS);
     text.setCharacterSize(24);
-    text.setFillColor(sf::Color::Green);
+    text.setColor(sf::Color::Green);
     text.setPosition(0,0);
     window.draw(text);
 }
@@ -178,7 +178,7 @@ void Interface::drawText(string Text, int FontSize, sf::Color color, Vector2D po
     text.setString(Text);
     sf::FloatRect bounds=text.getLocalBounds();
     text.setCharacterSize(FontSize);
-    text.setFillColor(color);
+    text.setColor(color);
     text.setPosition(position.x-bounds.width/2,position.y);
     window.draw(text);
 }
@@ -199,14 +199,14 @@ void Interface::LoadGraphics() {
         Ballsprite.setTexture(Balltexture);
     }
 //
-if(GateTexture.loadFromFile("")) {
-    cout << "Error loading GateTexture";
-}
-    else
-    {
-        Gate.setTexture(GateTexture);//Make object for this to work
-    }
-}
+//if(GateTexture.loadFromFile("")) {
+//    cout << "Error loading GateTexture";
+//}
+//    else
+//    {
+//        Gate.setTexture(GateTexture);//Make object for this to work
+//    }
+//}
 
     //Loading Bumper sprite
     if(!Bumpertexture.loadFromFile("../Assets/Sprites/PokeBumper.png")){
@@ -250,7 +250,8 @@ void Interface::loadExternalFrame(bool isVertical,float Position)
         }
 }
 
-void Interface::loadInternalFrame(bool is45,bool isLeft,float Diameter, float LineXCoordinate, float LineYCoordinate, float InclinationAngle, float setPositionX,float setPositionYRation)
+void Interface::loadInternalFrame(bool is45,bool isLeft,float Diameter, float LineXCoordinate,
+        float LineYCoordinate, float InclinationAngle, float setPositionX,float setPositionYRation)
 {
 //    sf::Texture texture;
 //    texture.loadFromFile("Frame.png");
@@ -294,7 +295,7 @@ void Interface::drawSpeedBoasterLeft(float x1,float y1,float x2,float y2,float x
 
 void Interface::drawSpeedBoasterRight(float x1,float y1,float x2,float y2,float x3,float y3)
 {//Replace x,y variables by these numbers when loading from the file
-    sf::ConvexShape SpeedBoaster;
+    sf::ConvexShape SpeedBoaster;//غير اسم البتاعة ديه ل Kicker
     SpeedBoaster.setPointCount(3);
     SpeedBoaster.setPoint(0,sf::Vector2f (GAME_WIDTH-30-25,735.0));
     SpeedBoaster.setPoint(1,sf::Vector2f (GAME_WIDTH-30-130,850));
