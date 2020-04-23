@@ -7,5 +7,7 @@ void PopBumper::draw(Interface &interface) {
 }
 
 Vector2D PopBumper::collideWith(Ball &ball, float collision_time, Manager &manager) {
-    return Bumper::collideWith(ball, collision_time, manager);
+    Vector2D Acceleration={0,0};
+    Acceleration=CircleCollision(ball,GetPosition(),GetRadius(),collision_time);
+    return Acceleration;
 }

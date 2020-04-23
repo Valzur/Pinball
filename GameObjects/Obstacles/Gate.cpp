@@ -2,7 +2,6 @@
 
 void Gate::draw(Interface &interface) {
     interface.drawGate(length,width,setPositionX,setPositionY);
-
 }
 
 Gate::Gate(float setPositionX, float setPositionY, float length, float width) {

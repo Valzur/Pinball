@@ -20,7 +20,7 @@ void AudioManager::PlayMusic(const string&) {
 AudioManager::AudioManager(bool Playmusic, const string& AudioPath) {
 
     if(Playmusic) {
-        PlayMusic(AudioPath);
+        //PlayMusic(AudioPath);
     }
 
 }

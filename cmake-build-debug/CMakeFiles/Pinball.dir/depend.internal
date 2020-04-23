@@ -459,6 +459,7 @@ CMakeFiles/Pinball.dir/GameObjects/Obstacles/Bumper.cpp.obj
  D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/Bumper.h
  D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/Obstacle.h
  D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Interface.h
+ D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Utility/CollisionDetection.h
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/Collectable.cpp.obj
  ../libs/SFML-2.5.1/include/SFML/Config.hpp
  ../libs/SFML-2.5.1/include/SFML/Graphics.hpp
@@ -1049,6 +1050,7 @@ CMakeFiles/Pinball.dir/GameObjects/Obstacles/PopBumper.cpp.obj
  D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/PopBumper.cpp
  D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/PopBumper.h
  D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Interface.h
+ D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Utility/CollisionDetection.h
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/Portal.cpp.obj
  ../libs/SFML-2.5.1/include/SFML/Config.hpp
  ../libs/SFML-2.5.1/include/SFML/Graphics.hpp
@@ -1219,6 +1221,7 @@ CMakeFiles/Pinball.dir/GameObjects/Obstacles/ScoreMultiplier.cpp.obj
  D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/ScoreMultiplier.cpp
  D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/ScoreMultiplier.h
  D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Interface.h
+ D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Utility/CollisionDetection.h
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/SpeedBooster.cpp.obj
  ../libs/SFML-2.5.1/include/SFML/Config.hpp
  ../libs/SFML-2.5.1/include/SFML/Graphics.hpp
@@ -1556,6 +1559,7 @@ CMakeFiles/Pinball.dir/GameObjects/Obstacles/ThrustBumper.cpp.obj
  D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/ThrustBumper.cpp
  D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/ThrustBumper.h
  D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Interface.h
+ D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Utility/CollisionDetection.h
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/VibraniumBumper.cpp.obj
  ../libs/SFML-2.5.1/include/SFML/Config.hpp
  ../libs/SFML-2.5.1/include/SFML/Graphics.hpp
@@ -1641,6 +1645,7 @@ CMakeFiles/Pinball.dir/GameObjects/Obstacles/VibraniumBumper.cpp.obj
  D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/VibraniumBumper.cpp
  D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/VibraniumBumper.h
  D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Interface.h
+ D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Utility/CollisionDetection.h
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/Wall.cpp.obj
  ../libs/SFML-2.5.1/include/SFML/Config.hpp
  ../libs/SFML-2.5.1/include/SFML/Graphics.hpp
@@ -1804,6 +1809,49 @@ CMakeFiles/Pinball.dir/Interface.cpp.obj
  D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Interface.cpp
  D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Interface.h
 CMakeFiles/Pinball.dir/Utility/AudioManager.cpp.obj
+ ../libs/SFML-2.5.1/include/SFML/Audio.hpp
+ ../libs/SFML-2.5.1/include/SFML/Audio/AlResource.hpp
+ ../libs/SFML-2.5.1/include/SFML/Audio/Export.hpp
+ ../libs/SFML-2.5.1/include/SFML/Audio/InputSoundFile.hpp
+ ../libs/SFML-2.5.1/include/SFML/Audio/Listener.hpp
+ ../libs/SFML-2.5.1/include/SFML/Audio/Music.hpp
+ ../libs/SFML-2.5.1/include/SFML/Audio/OutputSoundFile.hpp
+ ../libs/SFML-2.5.1/include/SFML/Audio/Sound.hpp
+ ../libs/SFML-2.5.1/include/SFML/Audio/SoundBuffer.hpp
+ ../libs/SFML-2.5.1/include/SFML/Audio/SoundBufferRecorder.hpp
+ ../libs/SFML-2.5.1/include/SFML/Audio/SoundFileFactory.hpp
+ ../libs/SFML-2.5.1/include/SFML/Audio/SoundFileFactory.inl
+ ../libs/SFML-2.5.1/include/SFML/Audio/SoundFileReader.hpp
+ ../libs/SFML-2.5.1/include/SFML/Audio/SoundFileWriter.hpp
+ ../libs/SFML-2.5.1/include/SFML/Audio/SoundRecorder.hpp
+ ../libs/SFML-2.5.1/include/SFML/Audio/SoundSource.hpp
+ ../libs/SFML-2.5.1/include/SFML/Audio/SoundStream.hpp
+ ../libs/SFML-2.5.1/include/SFML/Config.hpp
+ ../libs/SFML-2.5.1/include/SFML/System.hpp
+ ../libs/SFML-2.5.1/include/SFML/System/Clock.hpp
+ ../libs/SFML-2.5.1/include/SFML/System/Err.hpp
+ ../libs/SFML-2.5.1/include/SFML/System/Export.hpp
+ ../libs/SFML-2.5.1/include/SFML/System/FileInputStream.hpp
+ ../libs/SFML-2.5.1/include/SFML/System/InputStream.hpp
+ ../libs/SFML-2.5.1/include/SFML/System/Lock.hpp
+ ../libs/SFML-2.5.1/include/SFML/System/MemoryInputStream.hpp
+ ../libs/SFML-2.5.1/include/SFML/System/Mutex.hpp
+ ../libs/SFML-2.5.1/include/SFML/System/NonCopyable.hpp
+ ../libs/SFML-2.5.1/include/SFML/System/Sleep.hpp
+ ../libs/SFML-2.5.1/include/SFML/System/String.hpp
+ ../libs/SFML-2.5.1/include/SFML/System/String.inl
+ ../libs/SFML-2.5.1/include/SFML/System/Thread.hpp
+ ../libs/SFML-2.5.1/include/SFML/System/Thread.inl
+ ../libs/SFML-2.5.1/include/SFML/System/ThreadLocal.hpp
+ ../libs/SFML-2.5.1/include/SFML/System/ThreadLocalPtr.hpp
+ ../libs/SFML-2.5.1/include/SFML/System/ThreadLocalPtr.inl
+ ../libs/SFML-2.5.1/include/SFML/System/Time.hpp
+ ../libs/SFML-2.5.1/include/SFML/System/Utf.hpp
+ ../libs/SFML-2.5.1/include/SFML/System/Utf.inl
+ ../libs/SFML-2.5.1/include/SFML/System/Vector2.hpp
+ ../libs/SFML-2.5.1/include/SFML/System/Vector2.inl
+ ../libs/SFML-2.5.1/include/SFML/System/Vector3.hpp
+ ../libs/SFML-2.5.1/include/SFML/System/Vector3.inl
  D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Utility/AudioManager.cpp
  D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Utility/AudioManager.h
 CMakeFiles/Pinball.dir/Utility/CollisionDetection.cpp.obj
@@ -1996,6 +2044,7 @@ CMakeFiles/Pinball.dir/Utility/Configurable.cpp.obj
  D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/Wall.h
  D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Interface.h
  D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Utility/AudioManager.h
+ D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Utility/CollisionDetection.h
  D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Utility/Configurable.cpp
  D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Utility/Configurable.h
 CMakeFiles/Pinball.dir/Utility/PixelPerfectCollision.cpp.obj
@@ -2191,6 +2240,7 @@ CMakeFiles/Pinball.dir/Utility/PreGame.cpp.obj
  D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/Wall.h
  D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Interface.h
  D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Utility/AudioManager.h
+ D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Utility/CollisionDetection.h
  D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Utility/Configurable.h
  D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Utility/PreGame.cpp
  D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Utility/PreGame.h

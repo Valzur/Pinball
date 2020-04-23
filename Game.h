@@ -51,6 +51,8 @@ private:
     Obstacle **pObstacles;
     Drawn** pDrawn;
     int ObstaclesNo=0,BallsNo=0,DrawablesNo=0;
+    //Debug position
+    string Debug;
 public:
     Game();
     void readInterfaceInput();

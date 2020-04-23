@@ -7,7 +7,7 @@ Interface::Interface()
     settings.antialiasingLevel = 8;  // Remove this line if the game was too laggy
     window.create(sf::VideoMode(GAME_WIDTH, GAME_HEIGHT), "Pinball", sf::Style::Titlebar, settings);
     window.setVerticalSyncEnabled(false);
-    window.setFramerateLimit(0);
+    window.setFramerateLimit(FPSLimit);
 }
 
 void Interface::getControls(bool & exit, bool & left, bool & right, bool & space)
@@ -458,6 +458,3 @@ void Interface::drawSwitch(Vector2D pos) {
     line.setRotation(45);
     window.draw(line);
 }
-
-
-

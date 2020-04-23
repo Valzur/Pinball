@@ -8,6 +8,6 @@ void VibraniumBumper::draw(Interface& interface) {
 }
 
 Vector2D VibraniumBumper::collideWith(Ball& ball, float collision_time, Manager& manager) {
-    return Bumper::collideWith(ball, collision_time, manager);
+    return {0,0};
 }
 

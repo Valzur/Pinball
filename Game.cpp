@@ -56,14 +56,21 @@ void Game::updateInterfaceOutput()
         manager.Updategame(interface);
         //Pls
 
+        //Debug
+        for (int i = 0; i < BallsNo; i++) {
+            if(pBalls[i]->getisMain()){
+                Debug="X: " + to_string(pBalls[i]->getCenter().x) + " Y: " + to_string(pBalls[i]->getCenter().y);
+            }
+        }
+        interface.drawText(Debug,30,sf::Color::Black,{400,900});
+
         //FPS UPDATE
         interface.drawFPS();
     }else{
         manager.EndGame(interface);
     }
-        interface.display();
+    interface.display();
 }
-
 
 bool Game::exited()
 {
@@ -231,13 +238,13 @@ void Game::ReadBumpers(fstream &file) {
 void Game::CollisionCheck(float collision_time, Manager & manager) {
     for (int i = 0; i < BallsNo; i++) {
         pBalls[i]->setAcceleration({0,400});
-//        for (int j = 0; j <ObstaclesNo; j++) {
-//            pBalls[i]->setAcceleration(pBalls[i]->getAcceleration()+pObstacles[j]->collideWith(*pBalls[i],collision_time,manager));
-//        }
-//        //With other balls as well.
-//        for (int k = 0; k <BallsNo; k++) {
-//            pBalls[i]->setAcceleration(pBalls[i]->getAcceleration()+pBalls[k]->collideWith(*pBalls[i],collision_time,manager));
-//        }
+        for (int j = 0; j <ObstaclesNo; j++) {
+            pBalls[i]->setAcceleration(pBalls[i]->getAcceleration()+pObstacles[j]->collideWith(*pBalls[i],collision_time,manager));
+        }
+        //With other balls as well.
+        for (int k = 0; k <BallsNo; k++) {
+            pBalls[i]->setAcceleration(pBalls[i]->getAcceleration()+pBalls[k]->collideWith(*pBalls[i],collision_time,manager));
+        }
     }
 }
 

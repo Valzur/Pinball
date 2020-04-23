@@ -4,12 +4,12 @@
 
 struct Vector2D  // Represents a 2D vector
 {
-    float x = 0;  // The first coordinate
-    float y = 0;  // The second coordinate
-    Vector2D operator*(float scale) { return Vector2D{x * scale, y * scale}; }  // Scalar multiplication
-    Vector2D operator/(float scale) { return Vector2D{x / scale, y / scale}; }  // Scalar division
-    Vector2D operator+(float scale) { return Vector2D{x + scale, y + scale}; }  // Scalar addition
-    Vector2D operator-(float scale) { return Vector2D{x - scale, y - scale}; }  // Scalar subtraction
+    double x = 0;  // The first coordinate
+    double y = 0;  // The second coordinate
+    Vector2D operator*(double scale) { return Vector2D{x * scale, y * scale}; }  // Scalar multiplication
+    Vector2D operator/(double scale) { return Vector2D{x / scale, y / scale}; }  // Scalar division
+    Vector2D operator+(double scale) { return Vector2D{x + scale, y + scale}; }  // Scalar addition
+    Vector2D operator-(double scale) { return Vector2D{x - scale, y - scale}; }  // Scalar subtraction
     Vector2D operator*(const Vector2D & v) { return Vector2D{x * v.x, y * v.y}; }  // Element-wise multiplication
     Vector2D operator/(const Vector2D & v) { return Vector2D{x / v.x, y / v.y}; }  // Element-wise division
     Vector2D operator+(const Vector2D & v) { return Vector2D{x + v.x, y + v.y}; }  // Element-wise addition
@@ -28,7 +28,9 @@ enum BumperType{POP,THRUST,VIBRANIUM,SCOREM};
 bool FloatToBool(float number);
 
 // Should be replaced by a config file!
+#define FPSLimit 120
 #define GAME_WIDTH 720
+#define WINDOW_WIDTH 1000
 #define GAME_HEIGHT 1000
 #define BALL_RADIUS 10
 #define INITIAL_CENTER {600, 400}

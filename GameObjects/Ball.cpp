@@ -26,7 +26,7 @@ void Ball::move(float time, Manager& manager,bool &lost){
         manager.ValueUpdate(*this,lost);
         // Kinematic equations for planar motion of a particle
         velocity += Acceleration * time;
-        center += velocity * time - Acceleration * time * time * 0.5;
+        center += velocity * time + Acceleration * time * time * 0.5;
     }
 }
 
@@ -75,8 +75,10 @@ Vector2D Ball::collideWith(Ball &ball, float collision_time, Manager & manager) 
 
 void Ball::Reset() {
     deActivate();
-    setCenter(InitialPosition);
-    setVelocity(InitialVelocity);
+    if(isMain){
+        setCenter(InitialPosition);
+        setVelocity(InitialVelocity);
+    }
 }
 
 bool Ball::getisMain() const {

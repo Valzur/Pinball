@@ -5,6 +5,7 @@
 #include <cmath>
 #include "../Manager.h"
 #include "../../Defs.h"
+#include "../../Utility/CollisionDetection.h"
 
 using namespace std;
 

@@ -680,9 +680,35 @@ D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Defs.h
 cmath
 -
 
-D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Interface.cpp
-Interface.h
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Ball.h
+Obstacles/Obstacle.h
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/Obstacle.h
+Manager.h
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Manager.h
+
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Collidable.h
+Ball.h
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Ball.h
+Manager.h
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Manager.h
+
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Drawable.h
+../Interface.h
 D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Interface.h
+
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Manager.h
+iostream
+-
+../Interface.h
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Interface.h
+Ball.h
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Ball.h
+
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/Obstacle.h
+../Drawable.h
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Drawable.h
+../Collidable.h
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Collidable.h
 
 D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Interface.h
 SFML/Window.hpp
@@ -693,4 +719,14 @@ Defs.h
 D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Defs.h
 iostream
 -
+
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Utility/CollisionDetection.cpp
+CollisionDetection.h
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Utility/CollisionDetection.h
+
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Utility/CollisionDetection.h
+../Defs.h
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Defs.h
+../GameObjects/Ball.h
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Ball.h
 

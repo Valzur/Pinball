@@ -29,5 +29,4 @@ public:
     void draw(Interface & interface) override;
     void RotateFlipper(float a, float time);
     void MoveFlipper(bool left, bool right, float delta_time);
-
 };
