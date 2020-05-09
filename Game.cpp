@@ -295,9 +295,10 @@ void Game::ReadPortals(fstream &file) {
     }
 }
 
-void Game::MoveBalls(float time) {
+void Game::MoveBalls(double time) {
     for (int i = 0; i <BallsNo; i++) {
         pBalls[i]->move(time,manager,Lost);
+        pBalls[i]->UpdateBoost(time);
     }
 }
 

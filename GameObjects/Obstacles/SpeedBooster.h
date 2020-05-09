@@ -1,6 +1,8 @@
 #pragma once
 
 #include "Obstacle.h"
+#include "../../Utility/CollisionDetection.h"
+
 class SpeedBooster :public Obstacle{
 private:
     float radius;

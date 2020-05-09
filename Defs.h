@@ -32,13 +32,12 @@ bool FloatToBool(float number);
 #define GAME_WIDTH 720
 #define WINDOW_WIDTH 1000
 #define GAME_HEIGHT 1000
-#define BALL_RADIUS 10
+
 #define INITIAL_CENTER {600, 400}
 #define INITIAL_VELOCITY {-900, 600}
-#define FLIPPER_MAJOR_RADIUS 10
-#define FLIPPER_MINOR_RADIUS 5
-#define FLIPPER_LENGTH 50
-#define FLIPPERS_DISTANCE FLIPPER_LENGTH
-#define FLIPPERS_ANGLE_EXTENDED 50
-#define FLIPPERS_ANGLE_NORMAL -30
-#define FLIPPERS_ROTATE_VELOCITY 1000
+
+
+
+//Making life easier <3
+
+#define SpeedBoosterAmount 2.5

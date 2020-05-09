@@ -1306,6 +1306,7 @@ CMakeFiles/Pinball.dir/GameObjects/Obstacles/SpeedBooster.cpp.obj
  D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/SpeedBooster.cpp
  D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/SpeedBooster.h
  D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Interface.h
+ D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Utility/CollisionDetection.h
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/SpriteWalls.cpp.obj
  ../libs/SFML-2.5.1/include/SFML/Config.hpp
  ../libs/SFML-2.5.1/include/SFML/Graphics.hpp

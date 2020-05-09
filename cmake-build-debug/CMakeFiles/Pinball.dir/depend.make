@@ -1305,6 +1305,7 @@ CMakeFiles/Pinball.dir/GameObjects/Obstacles/SpeedBooster.cpp.obj: ../GameObject
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/SpeedBooster.cpp.obj: ../GameObjects/Obstacles/SpeedBooster.cpp
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/SpeedBooster.cpp.obj: ../GameObjects/Obstacles/SpeedBooster.h
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/SpeedBooster.cpp.obj: ../Interface.h
+CMakeFiles/Pinball.dir/GameObjects/Obstacles/SpeedBooster.cpp.obj: ../Utility/CollisionDetection.h
 
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/SpriteWalls.cpp.obj: ../libs/SFML-2.5.1/include/SFML/Config.hpp
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/SpriteWalls.cpp.obj: ../libs/SFML-2.5.1/include/SFML/Graphics.hpp

@@ -6,6 +6,11 @@ void SpeedBooster::draw(Interface &interface) {
 }
 
 Vector2D SpeedBooster::collideWith(Ball &ball, float collision_time, Manager &manager) {
+    bool isInside=BICCollision(ball,Center,radius);
+
+    if(isInside){
+        ball.Boost(SpeedBoosterAmount);
+    }
     return {0,0};
 }
 

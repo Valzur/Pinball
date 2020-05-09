@@ -88,5 +88,5 @@ public:
 
     void ActivateBalls(bool space);
     void FlippersMotion(bool left, bool right, float delta_time);
-    void MoveBalls(float time);
+    void MoveBalls(double time);
 };

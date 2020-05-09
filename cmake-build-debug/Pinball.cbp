@@ -25,7 +25,6 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add option="-DOV_EXCLUDE_STATIC_CALLBACKS"/>
-					<Add option="-DFLAC__NO_DLL"/>
 					<Add option="-DSFML_STATIC"/>
 					<Add directory="D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/libs/libogg-1.3.4/include"/>
 					<Add directory="D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/libs/libogg-1.3.4"/>
@@ -57,7 +56,6 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add option="-DOV_EXCLUDE_STATIC_CALLBACKS"/>
-					<Add option="-DFLAC__NO_DLL"/>
 					<Add option="-DSFML_STATIC"/>
 					<Add directory="D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/libs/libogg-1.3.4/include"/>
 					<Add directory="D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/libs/libogg-1.3.4"/>

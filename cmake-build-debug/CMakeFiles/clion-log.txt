@@ -2,36 +2,13 @@
 -- Found SFML 2.5.1 in D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/libs/SFML-2.5.1/lib/cmake/SFML
 -- Could NOT find Freetype (missing: FREETYPE_LIBRARY FREETYPE_INCLUDE_DIRS) 
 CMake Warning at CMakeLists.txt:13 (find_package):
-  By not providing "FindOgg.cmake" in CMAKE_MODULE_PATH this project has
-  asked CMake to find a package configuration file provided by "Ogg", but
-  CMake did not find one.
+  Could not find a configuration file for package "Ogg" that is compatible
+  with requested version "1.3.4".
 
-  Could not find a package configuration file provided by "Ogg" (requested
-  version 1.3.4) with any of the following names:
+  The following configuration files were considered but not accepted:
 
-    OggConfig.cmake
-    ogg-config.cmake
+    D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/libs/libogg-1.3.4/cmake/OggConfig.cmake, version: unknown
 
-  Add the installation prefix of "Ogg" to CMAKE_PREFIX_PATH or set "Ogg_DIR"
-  to a directory containing one of the above files.  If "Ogg" provides a
-  separate development package or SDK, be sure it has been installed.
-
-
-CMake Warning at CMakeLists.txt:14 (find_package):
-  By not providing "FindFLAC.cmake" in CMAKE_MODULE_PATH this project has
-  asked CMake to find a package configuration file provided by "FLAC", but
-  CMake did not find one.
-
-  Could not find a package configuration file provided by "FLAC" (requested
-  version 1.3.2) with any of the following names:
-
-    FLACConfig.cmake
-    flac-config.cmake
-
-  Add the installation prefix of "FLAC" to CMAKE_PREFIX_PATH or set
-  "FLAC_DIR" to a directory containing one of the above files.  If "FLAC"
-  provides a separate development package or SDK, be sure it has been
-  installed.
 
 
 -- Configuring done

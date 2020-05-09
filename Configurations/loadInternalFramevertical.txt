@@ -1,8 +1,0 @@
-is45: 0
-isleft: 0
-Diameter: 30
-isLeft: 0
-LineYCoordinate: 5.0
-InclinationAngle: 45.0
-setPositionX: 10.0
-setPositionYRation: 0.75
