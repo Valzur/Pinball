@@ -36,6 +36,8 @@ void Game::simulate()
     CollisionCheck(delta_time,manager);
     MoveBalls(delta_time);
     //Pls
+    scoreText="Score: " + to_string(manager.getScore());
+    livesText="Lives: " + to_string(manager.getLives());
 
     if(!Loaded)
         Loaded=true;
@@ -53,19 +55,10 @@ void Game::updateInterfaceOutput()
 
         //Pls
         DrawDrawables();
-        manager.Updategame(interface);
+        UIElements(interface);
         //Pls
 
-        //Debug
-        for (int i = 0; i < BallsNo; i++) {
-            if(pBalls[i]->getisMain()){
-                Debug="X: " + to_string(pBalls[i]->getCenter().x) + " Y: " + to_string(pBalls[i]->getCenter().y);
-            }
-        }
-        interface.drawText(Debug,30,sf::Color::Black,{400,900});
 
-        //FPS UPDATE
-        interface.drawFPS();
     }else{
         manager.EndGame(interface);
     }
@@ -111,6 +104,8 @@ void Game::InstantiateObstacles() {
                 ReadSpeedBoosters(file);
             } else if (Choice=="GATE"){
                 ReadGates(file);
+            } else if(Choice=="LANE"){
+                ReadLanes(file);
             }
         }
         file.close();
@@ -476,6 +471,48 @@ void Game::ReadSpeedBoosters(fstream &file) {
         file >> Trash;
         file >> radius;
         AddObstacle(new SpeedBooster(radius,Center));
+        AddDrawable(pObstacles[ObstaclesNo-1]);
+    }
+}
+
+void Game::DebugMode(Interface & interface) {
+    //Debug
+    for (int i = 0; i < BallsNo; i++) {
+        if(pBalls[i]->getisMain()){
+            Debug="X: " + to_string(pBalls[i]->getCenter().x) + " Y: " + to_string(pBalls[i]->getCenter().y);
+        }
+    }
+    interface.drawText(Debug,30,{GAME_WIDTH+1,GAME_HEIGHT/2.0});
+
+    //FPS UPDATE
+    interface.drawFPS();
+}
+
+void Game::UIElements(Interface& interface) {
+    //Black background
+    interface.drawUIBackground();
+    //Debug
+    DebugMode(interface);
+
+    manager.Updategame(interface);
+
+}
+
+void Game::ReadLanes(fstream &file) {
+    double Length;
+    Vector2D Center;
+    int LanesNo;
+    string Trash;
+
+    file >> LanesNo;
+
+    for (int i = 0; i <LanesNo; i++) {
+        file >> Trash;
+        file >> Center.x;
+        file >> Center.y;
+        file >> Trash;
+        file >> Length;
+        AddObstacle(new Lane(Length,Center));
         AddDrawable(pObstacles[ObstaclesNo-1]);
     }
 }

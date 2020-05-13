@@ -22,11 +22,13 @@ Vector2D Ball::getVelocity() const
 }
 
 void Ball::move(double time, Manager& manager,bool &lost){
-    if(isActive) {
+    if(isActive & !isUsedLane) {
         manager.ValueUpdate(*this,lost);
         // Kinematic equations for planar motion of a particle
         velocity += Acceleration * time;
         center += velocity *SpeedBoost* time + Acceleration * time * time * 0.5;
+    } else if (isUsedLane){
+
     }
 }
 
@@ -110,4 +112,10 @@ void Ball::UpdateBoost(double time) {
     if(BoostTimer>0){
         BoostTimer-=time;
     }
+}
+
+void Ball::SetLaneAttributes(double Length, Vector2D Center) {
+    this->LaneLength=Length;
+    this->LaneCenter=Center;
+    isUsedLane=true;
 }

@@ -28,7 +28,7 @@ enum BumperType{POP,THRUST,VIBRANIUM,SCOREM};
 bool FloatToBool(float number);
 
 // Should be replaced by a config file!
-#define FPSLimit 120
+#define FPSLimit 240
 #define GAME_WIDTH 720
 #define WINDOW_WIDTH 1000
 #define GAME_HEIGHT 1000

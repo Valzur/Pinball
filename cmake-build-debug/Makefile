@@ -419,6 +419,33 @@ GameObjects/Obstacles/Kicker.cpp.s:
 	$(MAKE) -f CMakeFiles\Pinball.dir\build.make CMakeFiles/Pinball.dir/GameObjects/Obstacles/Kicker.cpp.s
 .PHONY : GameObjects/Obstacles/Kicker.cpp.s
 
+GameObjects/Obstacles/Lane.obj: GameObjects/Obstacles/Lane.cpp.obj
+
+.PHONY : GameObjects/Obstacles/Lane.obj
+
+# target to build an object file
+GameObjects/Obstacles/Lane.cpp.obj:
+	$(MAKE) -f CMakeFiles\Pinball.dir\build.make CMakeFiles/Pinball.dir/GameObjects/Obstacles/Lane.cpp.obj
+.PHONY : GameObjects/Obstacles/Lane.cpp.obj
+
+GameObjects/Obstacles/Lane.i: GameObjects/Obstacles/Lane.cpp.i
+
+.PHONY : GameObjects/Obstacles/Lane.i
+
+# target to preprocess a source file
+GameObjects/Obstacles/Lane.cpp.i:
+	$(MAKE) -f CMakeFiles\Pinball.dir\build.make CMakeFiles/Pinball.dir/GameObjects/Obstacles/Lane.cpp.i
+.PHONY : GameObjects/Obstacles/Lane.cpp.i
+
+GameObjects/Obstacles/Lane.s: GameObjects/Obstacles/Lane.cpp.s
+
+.PHONY : GameObjects/Obstacles/Lane.s
+
+# target to generate assembly for a file
+GameObjects/Obstacles/Lane.cpp.s:
+	$(MAKE) -f CMakeFiles\Pinball.dir\build.make CMakeFiles/Pinball.dir/GameObjects/Obstacles/Lane.cpp.s
+.PHONY : GameObjects/Obstacles/Lane.cpp.s
+
 GameObjects/Obstacles/Magnet.obj: GameObjects/Obstacles/Magnet.cpp.obj
 
 .PHONY : GameObjects/Obstacles/Magnet.obj
@@ -947,6 +974,9 @@ help:
 	@echo ... GameObjects/Obstacles/Kicker.obj
 	@echo ... GameObjects/Obstacles/Kicker.i
 	@echo ... GameObjects/Obstacles/Kicker.s
+	@echo ... GameObjects/Obstacles/Lane.obj
+	@echo ... GameObjects/Obstacles/Lane.i
+	@echo ... GameObjects/Obstacles/Lane.s
 	@echo ... GameObjects/Obstacles/Magnet.obj
 	@echo ... GameObjects/Obstacles/Magnet.i
 	@echo ... GameObjects/Obstacles/Magnet.s

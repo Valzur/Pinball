@@ -9,7 +9,7 @@ class Ball;
 
 class Manager {
 private:
-    int Score;
+    int Score=0;
     int lives;
     string scoreText;
     string livesText;

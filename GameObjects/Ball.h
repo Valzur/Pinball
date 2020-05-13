@@ -7,12 +7,15 @@ class Ball: public Drawn
 {
 private:
     const Vector2D InitialPosition,InitialVelocity;
-    bool isActive,isMain,isUsedPortal=false;
+    bool isActive,isMain,isUsedPortal=false,isUsedLane=false;
     const double radius, BoostDuration=0.5;
     Vector2D center;  // The instantaneous center of the ball
     Vector2D velocity;  // The instantaneous velocity of the ball
     Vector2D Acceleration;
     double BoostTimer=0.0, SpeedBoost=1.0;
+    //Lane Attributes
+    Vector2D LaneCenter;
+    double LaneLength;
 public:
     explicit Ball(Vector2D center = INITIAL_CENTER,float radius=10, Vector2D velocity = INITIAL_VELOCITY,bool Main =true);  // Constructor
 
@@ -28,6 +31,7 @@ public:
     void setCenter(Vector2D pos);
     void setVelocity(Vector2D vel);
     void setAcceleration(Vector2D Acceleration);
+    void SetLaneAttributes(double Length, Vector2D Center);
 
     void deActivate();
     void Activate(bool & space);

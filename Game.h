@@ -30,6 +30,7 @@ using namespace std;
 #include "GameObjects/Obstacles/ScoreMultiplier.h"
 #include "GameObjects/Obstacles/Switch.h"
 #include "GameObjects/Obstacles/Collectable.h"
+#include "GameObjects/Obstacles/Lane.h"
 
 // Represents a game, keeps track of everything relevant to the game and delegates the tasks to their proper objects
 class Game
@@ -53,6 +54,7 @@ private:
     int ObstaclesNo=0,BallsNo=0,DrawablesNo=0;
     //Debug position
     string Debug;
+    string scoreText,livesText;
 public:
     Game();
     void readInterfaceInput();
@@ -85,8 +87,12 @@ public:
     void ReadSwitchs(fstream& file);
     void ReadCollectables(fstream& file);
     void ReadSpeedBoosters(fstream& file);
+    void ReadLanes(fstream& file);
 
     void ActivateBalls(bool space);
     void FlippersMotion(bool left, bool right, float delta_time);
     void MoveBalls(double time);
+
+    void DebugMode(Interface& interface);
+    void UIElements(Interface& interface);
 };

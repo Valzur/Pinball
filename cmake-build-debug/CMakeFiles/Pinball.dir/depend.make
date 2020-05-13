@@ -4,6 +4,7 @@
 CMakeFiles/Pinball.dir/Defs.cpp.obj: ../Defs.cpp
 CMakeFiles/Pinball.dir/Defs.cpp.obj: ../Defs.h
 
+CMakeFiles/Pinball.dir/Game.cpp.obj: ../Utility/CollisionDetection.h
 CMakeFiles/Pinball.dir/Game.cpp.obj: ../libs/SFML-2.5.1/include/SFML/Audio.hpp
 CMakeFiles/Pinball.dir/Game.cpp.obj: ../libs/SFML-2.5.1/include/SFML/Audio/AlResource.hpp
 CMakeFiles/Pinball.dir/Game.cpp.obj: ../libs/SFML-2.5.1/include/SFML/Audio/Export.hpp
@@ -109,6 +110,7 @@ CMakeFiles/Pinball.dir/Game.cpp.obj: ../GameObjects/Obstacles/ExternalFrame.h
 CMakeFiles/Pinball.dir/Game.cpp.obj: ../GameObjects/Obstacles/Gate.h
 CMakeFiles/Pinball.dir/Game.cpp.obj: ../GameObjects/Obstacles/InternalFrames.h
 CMakeFiles/Pinball.dir/Game.cpp.obj: ../GameObjects/Obstacles/Kicker.h
+CMakeFiles/Pinball.dir/Game.cpp.obj: ../GameObjects/Obstacles/Lane.h
 CMakeFiles/Pinball.dir/Game.cpp.obj: ../GameObjects/Obstacles/Magnet.h
 CMakeFiles/Pinball.dir/Game.cpp.obj: ../GameObjects/Obstacles/Obstacle.h
 CMakeFiles/Pinball.dir/Game.cpp.obj: ../GameObjects/Obstacles/PopBumper.h
@@ -122,7 +124,6 @@ CMakeFiles/Pinball.dir/Game.cpp.obj: ../GameObjects/Obstacles/VibraniumBumper.h
 CMakeFiles/Pinball.dir/Game.cpp.obj: ../GameObjects/Obstacles/Wall.h
 CMakeFiles/Pinball.dir/Game.cpp.obj: ../Interface.h
 CMakeFiles/Pinball.dir/Game.cpp.obj: ../Utility/AudioManager.h
-CMakeFiles/Pinball.dir/Game.cpp.obj: ../Utility/CollisionDetection.h
 CMakeFiles/Pinball.dir/Game.cpp.obj: ../Utility/Configurable.h
 
 CMakeFiles/Pinball.dir/GameObjects/Ball.cpp.obj: ../libs/SFML-2.5.1/include/SFML/Config.hpp
@@ -208,6 +209,8 @@ CMakeFiles/Pinball.dir/GameObjects/Ball.cpp.obj: ../GameObjects/Manager.h
 CMakeFiles/Pinball.dir/GameObjects/Ball.cpp.obj: ../GameObjects/Obstacles/Obstacle.h
 CMakeFiles/Pinball.dir/GameObjects/Ball.cpp.obj: ../Interface.h
 
+CMakeFiles/Pinball.dir/GameObjects/Flipper.cpp.obj: ../GameObjects/Ball.h
+CMakeFiles/Pinball.dir/GameObjects/Flipper.cpp.obj: ../Utility/CollisionDetection.h
 CMakeFiles/Pinball.dir/GameObjects/Flipper.cpp.obj: ../libs/SFML-2.5.1/include/SFML/Config.hpp
 CMakeFiles/Pinball.dir/GameObjects/Flipper.cpp.obj: ../libs/SFML-2.5.1/include/SFML/Graphics.hpp
 CMakeFiles/Pinball.dir/GameObjects/Flipper.cpp.obj: ../libs/SFML-2.5.1/include/SFML/Graphics/BlendMode.hpp
@@ -879,6 +882,91 @@ CMakeFiles/Pinball.dir/GameObjects/Obstacles/Kicker.cpp.obj: ../GameObjects/Obst
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/Kicker.cpp.obj: ../GameObjects/Obstacles/Kicker.h
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/Kicker.cpp.obj: ../GameObjects/Obstacles/Obstacle.h
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/Kicker.cpp.obj: ../Interface.h
+
+CMakeFiles/Pinball.dir/GameObjects/Obstacles/Lane.cpp.obj: ../libs/SFML-2.5.1/include/SFML/Config.hpp
+CMakeFiles/Pinball.dir/GameObjects/Obstacles/Lane.cpp.obj: ../libs/SFML-2.5.1/include/SFML/Graphics.hpp
+CMakeFiles/Pinball.dir/GameObjects/Obstacles/Lane.cpp.obj: ../libs/SFML-2.5.1/include/SFML/Graphics/BlendMode.hpp
+CMakeFiles/Pinball.dir/GameObjects/Obstacles/Lane.cpp.obj: ../libs/SFML-2.5.1/include/SFML/Graphics/CircleShape.hpp
+CMakeFiles/Pinball.dir/GameObjects/Obstacles/Lane.cpp.obj: ../libs/SFML-2.5.1/include/SFML/Graphics/Color.hpp
+CMakeFiles/Pinball.dir/GameObjects/Obstacles/Lane.cpp.obj: ../libs/SFML-2.5.1/include/SFML/Graphics/ConvexShape.hpp
+CMakeFiles/Pinball.dir/GameObjects/Obstacles/Lane.cpp.obj: ../libs/SFML-2.5.1/include/SFML/Graphics/Drawable.hpp
+CMakeFiles/Pinball.dir/GameObjects/Obstacles/Lane.cpp.obj: ../libs/SFML-2.5.1/include/SFML/Graphics/Export.hpp
+CMakeFiles/Pinball.dir/GameObjects/Obstacles/Lane.cpp.obj: ../libs/SFML-2.5.1/include/SFML/Graphics/Font.hpp
+CMakeFiles/Pinball.dir/GameObjects/Obstacles/Lane.cpp.obj: ../libs/SFML-2.5.1/include/SFML/Graphics/Glsl.hpp
+CMakeFiles/Pinball.dir/GameObjects/Obstacles/Lane.cpp.obj: ../libs/SFML-2.5.1/include/SFML/Graphics/Glsl.inl
+CMakeFiles/Pinball.dir/GameObjects/Obstacles/Lane.cpp.obj: ../libs/SFML-2.5.1/include/SFML/Graphics/Glyph.hpp
+CMakeFiles/Pinball.dir/GameObjects/Obstacles/Lane.cpp.obj: ../libs/SFML-2.5.1/include/SFML/Graphics/Image.hpp
+CMakeFiles/Pinball.dir/GameObjects/Obstacles/Lane.cpp.obj: ../libs/SFML-2.5.1/include/SFML/Graphics/PrimitiveType.hpp
+CMakeFiles/Pinball.dir/GameObjects/Obstacles/Lane.cpp.obj: ../libs/SFML-2.5.1/include/SFML/Graphics/Rect.hpp
+CMakeFiles/Pinball.dir/GameObjects/Obstacles/Lane.cpp.obj: ../libs/SFML-2.5.1/include/SFML/Graphics/Rect.inl
+CMakeFiles/Pinball.dir/GameObjects/Obstacles/Lane.cpp.obj: ../libs/SFML-2.5.1/include/SFML/Graphics/RectangleShape.hpp
+CMakeFiles/Pinball.dir/GameObjects/Obstacles/Lane.cpp.obj: ../libs/SFML-2.5.1/include/SFML/Graphics/RenderStates.hpp
+CMakeFiles/Pinball.dir/GameObjects/Obstacles/Lane.cpp.obj: ../libs/SFML-2.5.1/include/SFML/Graphics/RenderTarget.hpp
+CMakeFiles/Pinball.dir/GameObjects/Obstacles/Lane.cpp.obj: ../libs/SFML-2.5.1/include/SFML/Graphics/RenderTexture.hpp
+CMakeFiles/Pinball.dir/GameObjects/Obstacles/Lane.cpp.obj: ../libs/SFML-2.5.1/include/SFML/Graphics/RenderWindow.hpp
+CMakeFiles/Pinball.dir/GameObjects/Obstacles/Lane.cpp.obj: ../libs/SFML-2.5.1/include/SFML/Graphics/Shader.hpp
+CMakeFiles/Pinball.dir/GameObjects/Obstacles/Lane.cpp.obj: ../libs/SFML-2.5.1/include/SFML/Graphics/Shape.hpp
+CMakeFiles/Pinball.dir/GameObjects/Obstacles/Lane.cpp.obj: ../libs/SFML-2.5.1/include/SFML/Graphics/Sprite.hpp
+CMakeFiles/Pinball.dir/GameObjects/Obstacles/Lane.cpp.obj: ../libs/SFML-2.5.1/include/SFML/Graphics/Text.hpp
+CMakeFiles/Pinball.dir/GameObjects/Obstacles/Lane.cpp.obj: ../libs/SFML-2.5.1/include/SFML/Graphics/Texture.hpp
+CMakeFiles/Pinball.dir/GameObjects/Obstacles/Lane.cpp.obj: ../libs/SFML-2.5.1/include/SFML/Graphics/Transform.hpp
+CMakeFiles/Pinball.dir/GameObjects/Obstacles/Lane.cpp.obj: ../libs/SFML-2.5.1/include/SFML/Graphics/Transformable.hpp
+CMakeFiles/Pinball.dir/GameObjects/Obstacles/Lane.cpp.obj: ../libs/SFML-2.5.1/include/SFML/Graphics/Vertex.hpp
+CMakeFiles/Pinball.dir/GameObjects/Obstacles/Lane.cpp.obj: ../libs/SFML-2.5.1/include/SFML/Graphics/VertexArray.hpp
+CMakeFiles/Pinball.dir/GameObjects/Obstacles/Lane.cpp.obj: ../libs/SFML-2.5.1/include/SFML/Graphics/VertexBuffer.hpp
+CMakeFiles/Pinball.dir/GameObjects/Obstacles/Lane.cpp.obj: ../libs/SFML-2.5.1/include/SFML/Graphics/View.hpp
+CMakeFiles/Pinball.dir/GameObjects/Obstacles/Lane.cpp.obj: ../libs/SFML-2.5.1/include/SFML/System.hpp
+CMakeFiles/Pinball.dir/GameObjects/Obstacles/Lane.cpp.obj: ../libs/SFML-2.5.1/include/SFML/System/Clock.hpp
+CMakeFiles/Pinball.dir/GameObjects/Obstacles/Lane.cpp.obj: ../libs/SFML-2.5.1/include/SFML/System/Err.hpp
+CMakeFiles/Pinball.dir/GameObjects/Obstacles/Lane.cpp.obj: ../libs/SFML-2.5.1/include/SFML/System/Export.hpp
+CMakeFiles/Pinball.dir/GameObjects/Obstacles/Lane.cpp.obj: ../libs/SFML-2.5.1/include/SFML/System/FileInputStream.hpp
+CMakeFiles/Pinball.dir/GameObjects/Obstacles/Lane.cpp.obj: ../libs/SFML-2.5.1/include/SFML/System/InputStream.hpp
+CMakeFiles/Pinball.dir/GameObjects/Obstacles/Lane.cpp.obj: ../libs/SFML-2.5.1/include/SFML/System/Lock.hpp
+CMakeFiles/Pinball.dir/GameObjects/Obstacles/Lane.cpp.obj: ../libs/SFML-2.5.1/include/SFML/System/MemoryInputStream.hpp
+CMakeFiles/Pinball.dir/GameObjects/Obstacles/Lane.cpp.obj: ../libs/SFML-2.5.1/include/SFML/System/Mutex.hpp
+CMakeFiles/Pinball.dir/GameObjects/Obstacles/Lane.cpp.obj: ../libs/SFML-2.5.1/include/SFML/System/NonCopyable.hpp
+CMakeFiles/Pinball.dir/GameObjects/Obstacles/Lane.cpp.obj: ../libs/SFML-2.5.1/include/SFML/System/Sleep.hpp
+CMakeFiles/Pinball.dir/GameObjects/Obstacles/Lane.cpp.obj: ../libs/SFML-2.5.1/include/SFML/System/String.hpp
+CMakeFiles/Pinball.dir/GameObjects/Obstacles/Lane.cpp.obj: ../libs/SFML-2.5.1/include/SFML/System/String.inl
+CMakeFiles/Pinball.dir/GameObjects/Obstacles/Lane.cpp.obj: ../libs/SFML-2.5.1/include/SFML/System/Thread.hpp
+CMakeFiles/Pinball.dir/GameObjects/Obstacles/Lane.cpp.obj: ../libs/SFML-2.5.1/include/SFML/System/Thread.inl
+CMakeFiles/Pinball.dir/GameObjects/Obstacles/Lane.cpp.obj: ../libs/SFML-2.5.1/include/SFML/System/ThreadLocal.hpp
+CMakeFiles/Pinball.dir/GameObjects/Obstacles/Lane.cpp.obj: ../libs/SFML-2.5.1/include/SFML/System/ThreadLocalPtr.hpp
+CMakeFiles/Pinball.dir/GameObjects/Obstacles/Lane.cpp.obj: ../libs/SFML-2.5.1/include/SFML/System/ThreadLocalPtr.inl
+CMakeFiles/Pinball.dir/GameObjects/Obstacles/Lane.cpp.obj: ../libs/SFML-2.5.1/include/SFML/System/Time.hpp
+CMakeFiles/Pinball.dir/GameObjects/Obstacles/Lane.cpp.obj: ../libs/SFML-2.5.1/include/SFML/System/Utf.hpp
+CMakeFiles/Pinball.dir/GameObjects/Obstacles/Lane.cpp.obj: ../libs/SFML-2.5.1/include/SFML/System/Utf.inl
+CMakeFiles/Pinball.dir/GameObjects/Obstacles/Lane.cpp.obj: ../libs/SFML-2.5.1/include/SFML/System/Vector2.hpp
+CMakeFiles/Pinball.dir/GameObjects/Obstacles/Lane.cpp.obj: ../libs/SFML-2.5.1/include/SFML/System/Vector2.inl
+CMakeFiles/Pinball.dir/GameObjects/Obstacles/Lane.cpp.obj: ../libs/SFML-2.5.1/include/SFML/System/Vector3.hpp
+CMakeFiles/Pinball.dir/GameObjects/Obstacles/Lane.cpp.obj: ../libs/SFML-2.5.1/include/SFML/System/Vector3.inl
+CMakeFiles/Pinball.dir/GameObjects/Obstacles/Lane.cpp.obj: ../libs/SFML-2.5.1/include/SFML/Window.hpp
+CMakeFiles/Pinball.dir/GameObjects/Obstacles/Lane.cpp.obj: ../libs/SFML-2.5.1/include/SFML/Window/Clipboard.hpp
+CMakeFiles/Pinball.dir/GameObjects/Obstacles/Lane.cpp.obj: ../libs/SFML-2.5.1/include/SFML/Window/Context.hpp
+CMakeFiles/Pinball.dir/GameObjects/Obstacles/Lane.cpp.obj: ../libs/SFML-2.5.1/include/SFML/Window/ContextSettings.hpp
+CMakeFiles/Pinball.dir/GameObjects/Obstacles/Lane.cpp.obj: ../libs/SFML-2.5.1/include/SFML/Window/Cursor.hpp
+CMakeFiles/Pinball.dir/GameObjects/Obstacles/Lane.cpp.obj: ../libs/SFML-2.5.1/include/SFML/Window/Event.hpp
+CMakeFiles/Pinball.dir/GameObjects/Obstacles/Lane.cpp.obj: ../libs/SFML-2.5.1/include/SFML/Window/Export.hpp
+CMakeFiles/Pinball.dir/GameObjects/Obstacles/Lane.cpp.obj: ../libs/SFML-2.5.1/include/SFML/Window/GlResource.hpp
+CMakeFiles/Pinball.dir/GameObjects/Obstacles/Lane.cpp.obj: ../libs/SFML-2.5.1/include/SFML/Window/Joystick.hpp
+CMakeFiles/Pinball.dir/GameObjects/Obstacles/Lane.cpp.obj: ../libs/SFML-2.5.1/include/SFML/Window/Keyboard.hpp
+CMakeFiles/Pinball.dir/GameObjects/Obstacles/Lane.cpp.obj: ../libs/SFML-2.5.1/include/SFML/Window/Mouse.hpp
+CMakeFiles/Pinball.dir/GameObjects/Obstacles/Lane.cpp.obj: ../libs/SFML-2.5.1/include/SFML/Window/Sensor.hpp
+CMakeFiles/Pinball.dir/GameObjects/Obstacles/Lane.cpp.obj: ../libs/SFML-2.5.1/include/SFML/Window/Touch.hpp
+CMakeFiles/Pinball.dir/GameObjects/Obstacles/Lane.cpp.obj: ../libs/SFML-2.5.1/include/SFML/Window/VideoMode.hpp
+CMakeFiles/Pinball.dir/GameObjects/Obstacles/Lane.cpp.obj: ../libs/SFML-2.5.1/include/SFML/Window/Window.hpp
+CMakeFiles/Pinball.dir/GameObjects/Obstacles/Lane.cpp.obj: ../libs/SFML-2.5.1/include/SFML/Window/WindowHandle.hpp
+CMakeFiles/Pinball.dir/GameObjects/Obstacles/Lane.cpp.obj: ../libs/SFML-2.5.1/include/SFML/Window/WindowStyle.hpp
+CMakeFiles/Pinball.dir/GameObjects/Obstacles/Lane.cpp.obj: ../Defs.h
+CMakeFiles/Pinball.dir/GameObjects/Obstacles/Lane.cpp.obj: ../GameObjects/Ball.h
+CMakeFiles/Pinball.dir/GameObjects/Obstacles/Lane.cpp.obj: ../GameObjects/Collidable.h
+CMakeFiles/Pinball.dir/GameObjects/Obstacles/Lane.cpp.obj: ../GameObjects/Drawable.h
+CMakeFiles/Pinball.dir/GameObjects/Obstacles/Lane.cpp.obj: ../GameObjects/Manager.h
+CMakeFiles/Pinball.dir/GameObjects/Obstacles/Lane.cpp.obj: ../GameObjects/Obstacles/Lane.cpp
+CMakeFiles/Pinball.dir/GameObjects/Obstacles/Lane.cpp.obj: ../GameObjects/Obstacles/Lane.h
+CMakeFiles/Pinball.dir/GameObjects/Obstacles/Lane.cpp.obj: ../GameObjects/Obstacles/Obstacle.h
+CMakeFiles/Pinball.dir/GameObjects/Obstacles/Lane.cpp.obj: ../Interface.h
+CMakeFiles/Pinball.dir/GameObjects/Obstacles/Lane.cpp.obj: ../Utility/CollisionDetection.h
 
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/Magnet.cpp.obj: ../libs/SFML-2.5.1/include/SFML/Config.hpp
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/Magnet.cpp.obj: ../libs/SFML-2.5.1/include/SFML/Graphics.hpp
@@ -1939,6 +2027,7 @@ CMakeFiles/Pinball.dir/Utility/CollisionDetection.cpp.obj: ../Interface.h
 CMakeFiles/Pinball.dir/Utility/CollisionDetection.cpp.obj: ../Utility/CollisionDetection.cpp
 CMakeFiles/Pinball.dir/Utility/CollisionDetection.cpp.obj: ../Utility/CollisionDetection.h
 
+CMakeFiles/Pinball.dir/Utility/Configurable.cpp.obj: ../Utility/CollisionDetection.h
 CMakeFiles/Pinball.dir/Utility/Configurable.cpp.obj: ../libs/SFML-2.5.1/include/SFML/Audio.hpp
 CMakeFiles/Pinball.dir/Utility/Configurable.cpp.obj: ../libs/SFML-2.5.1/include/SFML/Audio/AlResource.hpp
 CMakeFiles/Pinball.dir/Utility/Configurable.cpp.obj: ../libs/SFML-2.5.1/include/SFML/Audio/Export.hpp
@@ -2044,7 +2133,6 @@ CMakeFiles/Pinball.dir/Utility/Configurable.cpp.obj: ../GameObjects/Obstacles/Po
 CMakeFiles/Pinball.dir/Utility/Configurable.cpp.obj: ../GameObjects/Obstacles/Wall.h
 CMakeFiles/Pinball.dir/Utility/Configurable.cpp.obj: ../Interface.h
 CMakeFiles/Pinball.dir/Utility/Configurable.cpp.obj: ../Utility/AudioManager.h
-CMakeFiles/Pinball.dir/Utility/Configurable.cpp.obj: ../Utility/CollisionDetection.h
 CMakeFiles/Pinball.dir/Utility/Configurable.cpp.obj: ../Utility/Configurable.cpp
 CMakeFiles/Pinball.dir/Utility/Configurable.cpp.obj: ../Utility/Configurable.h
 
@@ -2135,6 +2223,7 @@ CMakeFiles/Pinball.dir/Utility/PixelPerfectCollision.cpp.obj: ../Utility/PixelPe
 CMakeFiles/Pinball.dir/Utility/PostProcessing.cpp.obj: ../Utility/PostProcessing.cpp
 CMakeFiles/Pinball.dir/Utility/PostProcessing.cpp.obj: ../Utility/PostProcessing.h
 
+CMakeFiles/Pinball.dir/Utility/PreGame.cpp.obj: ../Utility/CollisionDetection.h
 CMakeFiles/Pinball.dir/Utility/PreGame.cpp.obj: ../libs/SFML-2.5.1/include/SFML/Audio.hpp
 CMakeFiles/Pinball.dir/Utility/PreGame.cpp.obj: ../libs/SFML-2.5.1/include/SFML/Audio/AlResource.hpp
 CMakeFiles/Pinball.dir/Utility/PreGame.cpp.obj: ../libs/SFML-2.5.1/include/SFML/Audio/Export.hpp
@@ -2240,11 +2329,11 @@ CMakeFiles/Pinball.dir/Utility/PreGame.cpp.obj: ../GameObjects/Obstacles/PopBump
 CMakeFiles/Pinball.dir/Utility/PreGame.cpp.obj: ../GameObjects/Obstacles/Wall.h
 CMakeFiles/Pinball.dir/Utility/PreGame.cpp.obj: ../Interface.h
 CMakeFiles/Pinball.dir/Utility/PreGame.cpp.obj: ../Utility/AudioManager.h
-CMakeFiles/Pinball.dir/Utility/PreGame.cpp.obj: ../Utility/CollisionDetection.h
 CMakeFiles/Pinball.dir/Utility/PreGame.cpp.obj: ../Utility/Configurable.h
 CMakeFiles/Pinball.dir/Utility/PreGame.cpp.obj: ../Utility/PreGame.cpp
 CMakeFiles/Pinball.dir/Utility/PreGame.cpp.obj: ../Utility/PreGame.h
 
+CMakeFiles/Pinball.dir/main.cpp.obj: ../Utility/CollisionDetection.h
 CMakeFiles/Pinball.dir/main.cpp.obj: ../libs/SFML-2.5.1/include/SFML/Audio.hpp
 CMakeFiles/Pinball.dir/main.cpp.obj: ../libs/SFML-2.5.1/include/SFML/Audio/AlResource.hpp
 CMakeFiles/Pinball.dir/main.cpp.obj: ../libs/SFML-2.5.1/include/SFML/Audio/Export.hpp
@@ -2349,6 +2438,7 @@ CMakeFiles/Pinball.dir/main.cpp.obj: ../GameObjects/Obstacles/ExternalFrame.h
 CMakeFiles/Pinball.dir/main.cpp.obj: ../GameObjects/Obstacles/Gate.h
 CMakeFiles/Pinball.dir/main.cpp.obj: ../GameObjects/Obstacles/InternalFrames.h
 CMakeFiles/Pinball.dir/main.cpp.obj: ../GameObjects/Obstacles/Kicker.h
+CMakeFiles/Pinball.dir/main.cpp.obj: ../GameObjects/Obstacles/Lane.h
 CMakeFiles/Pinball.dir/main.cpp.obj: ../GameObjects/Obstacles/Magnet.h
 CMakeFiles/Pinball.dir/main.cpp.obj: ../GameObjects/Obstacles/Obstacle.h
 CMakeFiles/Pinball.dir/main.cpp.obj: ../GameObjects/Obstacles/PopBumper.h
@@ -2362,7 +2452,6 @@ CMakeFiles/Pinball.dir/main.cpp.obj: ../GameObjects/Obstacles/VibraniumBumper.h
 CMakeFiles/Pinball.dir/main.cpp.obj: ../GameObjects/Obstacles/Wall.h
 CMakeFiles/Pinball.dir/main.cpp.obj: ../Interface.h
 CMakeFiles/Pinball.dir/main.cpp.obj: ../Utility/AudioManager.h
-CMakeFiles/Pinball.dir/main.cpp.obj: ../Utility/CollisionDetection.h
 CMakeFiles/Pinball.dir/main.cpp.obj: ../Utility/Configurable.h
 CMakeFiles/Pinball.dir/main.cpp.obj: ../main.cpp
 

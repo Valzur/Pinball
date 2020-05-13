@@ -5,7 +5,7 @@ Interface::Interface()
 {
     sf::ContextSettings settings;
     settings.antialiasingLevel = 8;  // Remove this line if the game was too laggy
-    window.create(sf::VideoMode(GAME_WIDTH, GAME_HEIGHT), "Pinball", sf::Style::Titlebar, settings);
+    window.create(sf::VideoMode(WINDOW_WIDTH, GAME_HEIGHT), "Pinball", sf::Style::Titlebar, settings);
     window.setVerticalSyncEnabled(false);
     window.setFramerateLimit(FPSLimit);
 }
@@ -62,7 +62,7 @@ void Interface::drawFlipper(FlipperType type, Vector2D center, float length, flo
     majorCircleOutline.setPosition(center.x, center.y);
     window.draw(majorCircleOutline);
 
-    // Draw the minor circle outline000000000000000000000000000000000000
+    // Draw the minor circle outline
     sf::CircleShape minorCircleOutline(minorRadius);
     minorCircleOutline.setOutlineThickness(outlineThickness);
     minorCircleOutline.setOutlineColor(outlineColor);
@@ -207,14 +207,15 @@ void Interface::setFPS(string fps) {
     FPS=fps;
 }
 
-void Interface::drawText(string Text, int FontSize, sf::Color color, Vector2D position) {
+void Interface::drawText(string Text, int FontSize, Vector2D position) {
 
     text.setFont(font);
     text.setString(Text);
     sf::FloatRect bounds=text.getLocalBounds();
     text.setCharacterSize(FontSize);
-    text.setFillColor(color);
-    text.setPosition(position.x-bounds.width/2,position.y);
+    text.setFillColor(textColor);
+    text.setOrigin(0,0);
+    text.setPosition(position.x,position.y);
     window.draw(text);
 }
 
@@ -431,7 +432,7 @@ void Interface::drawMagnet(Vector2D Position, double magnetRadius, double radius
 void Interface::drawCollectable(float radius, string L, Vector2D Center) {
     sf::CircleShape Collectable(radius);
     Collectable.setFillColor(sf::Color::Transparent);
-    drawText(L, 30,sf::Color(100,250,50), {Center.x+radius,Center.y-radius/3 });
+    drawText(L, 30, {Center.x+radius/1.5,Center.y-radius/3.0 });
     Collectable.setPosition(Center.x,Center.y);
     Collectable.setOutlineThickness(2);
     window.draw(Collectable);
@@ -457,4 +458,36 @@ void Interface::drawSwitch(Vector2D pos) {
     line.setFillColor(sf::Color::Cyan);
     line.setRotation(45);
     window.draw(line);
+}
+
+void Interface::drawLane(double Length, Vector2D Center, double Width) {
+    //Initializing
+    sf::RectangleShape LeftLine(sf::Vector2f(5,Length)),RightLine(sf::Vector2f(5,Length));
+    //Aesthetics
+    LeftLine.setFillColor(sf::Color(67, 221, 230));
+    RightLine.setFillColor(sf::Color(67, 221, 230));
+
+    //Positioning
+    LeftLine.setOrigin(0,0);
+    RightLine.setOrigin(0,0);
+    LeftLine.setPosition(Center.x-Width,Center.y);
+    RightLine.setPosition(Center.x+Width,Center.y);
+
+    //Drawing
+    window.draw(LeftLine);
+    window.draw(RightLine);
+}
+
+void Interface::drawUIBackground() {
+    sf::RectangleShape Box(sf::Vector2f(WINDOW_WIDTH-GAME_WIDTH,GAME_HEIGHT));
+
+    Box.setOrigin(0,0);
+    Box.setPosition(GAME_WIDTH,0);
+    Box.setFillColor(sf::Color(54,79,107));
+
+    window.draw(Box);
+}
+
+sf::RenderWindow &Interface::GetWindow() {
+    return window;
 }

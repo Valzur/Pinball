@@ -22,10 +22,11 @@ private:
 
     sf::RenderWindow window;  // Represents the game window
     const sf::Color  // Colors used for drawing (can change the whole theme of the game)
-        backgroundColor = sf::Color::White,
+        backgroundColor = sf::Color(240, 240, 240),
         outlineColor = sf::Color::Black,
         ballFillColor = sf::Color::White,
-        flipperFillColor = sf::Color::White;
+        flipperFillColor = sf::Color::White,
+        textColor = sf::Color(252, 81, 133);
     const float outlineThickness = -2.0f;  // Negative sign means inwards
 
     //Sprites and textures
@@ -62,18 +63,22 @@ public:
     void drawCollectable(float radius,string L,Vector2D Center);
     void drawSpeedBooster(float radius,Vector2D Center);
     void drawGate(float length,float width,float setPositionX,float setPositionY);
+    void drawLane(double Length, Vector2D Center, double Width);
 
     //Utility
     void drawFPS();
-    void drawText(string Text, int FontSize, sf::Color color, Vector2D position);
+    void drawText(string Text, int FontSize, Vector2D position);
 
     void LoadGraphics();
     void drawBackground();
-
+    void drawUIBackground();
 
     void loadExternalFrame(bool isVertical, float Position);
 
     void loadInternalFrame(bool is45,bool isLeft,float Diameter, float LineXCoordinate, float LineYCoordinate, float InclinationAngle, float setPositionX,float setPositionYRation);
     void drawLeftKicker(float x1,float y1,float x2,float y2,float x3,float y3);
     void drawRightKicker(float x1,float y1,float x2,float y2,float x3,float y3);
+
+    //
+    sf::RenderWindow& GetWindow();
 };
