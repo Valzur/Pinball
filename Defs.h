@@ -23,6 +23,8 @@ struct Vector2D  // Represents a 2D vector
 double VectorDistance(Vector2D vector1,Vector2D vector2);
 double VectorNorm(Vector2D vector);
 Vector2D VectorDirection(Vector2D vector1,Vector2D vector2);
+double lerp(double a,double b,double t);
+
 enum FlipperType { LEFT, RIGHT };
 enum BumperType{POP,THRUST,VIBRANIUM,SCOREM};
 bool FloatToBool(float number);
@@ -41,3 +43,4 @@ bool FloatToBool(float number);
 //Making life easier <3
 
 #define SpeedBoosterAmount 2.5
+#define LaneVelocityMultiplier 2.5

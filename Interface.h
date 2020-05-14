@@ -44,6 +44,9 @@ private:
 
     sf::Texture SpeedBoosterTexture;
     sf::Sprite SpeedBoosterSprite;
+
+    sf::Texture RampTexture;
+    sf::Sprite RampSprite;
 public:
     Interface();  // Constructor
     void getControls(bool & exit, bool & left, bool & right, bool & space);  // Detects the buttons pressed
@@ -64,6 +67,7 @@ public:
     void drawSpeedBooster(float radius,Vector2D Center);
     void drawGate(float length,float width,float setPositionX,float setPositionY);
     void drawLane(double Length, Vector2D Center, double Width);
+    void drawRamp(Vector2D Center);
 
     //Utility
     void drawFPS();

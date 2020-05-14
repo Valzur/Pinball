@@ -2,6 +2,9 @@
 
 #include "Obstacles/Obstacle.h"
 #include "Manager.h"
+#include <iostream>
+#include "../Defs.h"
+
 // Represents the ball (the single most important object in a Pinball game!)
 class Ball: public Drawn
 {
@@ -13,9 +16,10 @@ private:
     Vector2D velocity;  // The instantaneous velocity of the ball
     Vector2D Acceleration;
     double BoostTimer=0.0, SpeedBoost=1.0;
+
     //Lane Attributes
     Vector2D LaneCenter;
-    double LaneLength;
+    double LaneLength,LaneVelocity,LaneProgress;
 public:
     explicit Ball(Vector2D center = INITIAL_CENTER,float radius=10, Vector2D velocity = INITIAL_VELOCITY,bool Main =true);  // Constructor
 
@@ -32,6 +36,7 @@ public:
     void setVelocity(Vector2D vel);
     void setAcceleration(Vector2D Acceleration);
     void SetLaneAttributes(double Length, Vector2D Center);
+    void SetLaneMode(bool Active);
 
     void deActivate();
     void Activate(bool & space);

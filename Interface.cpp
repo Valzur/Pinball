@@ -234,15 +234,6 @@ void Interface::LoadGraphics() {
     }else{
         Ballsprite.setTexture(Balltexture);
     }
-//
-//if(GateTexture.loadFromFile("")) {
-//    cout << "Error loading GateTexture";
-//}
-//    else
-//    {
-//        Gate.setTexture(GateTexture);//Make object for this to work
-//    }
-//}
 
     //Loading Bumper sprite
     if(!Bumpertexture.loadFromFile("../Assets/Sprites/PokeBumper.png")){
@@ -291,6 +282,13 @@ void Interface::LoadGraphics() {
         cout<< "Can't load ScoreMultiplier sprite! "<< endl;
     }else{
         ScoreMsprite.setTexture(ScoreMtexture);
+    }
+
+    //Ramps
+    if(!RampTexture.loadFromFile("../Assets/Sprites/Ramp.png")){
+        cout<< "Can't load Ramp sprite! "<< endl;
+    }else{
+        RampSprite.setTexture(RampTexture);
     }
 
 }
@@ -490,4 +488,10 @@ void Interface::drawUIBackground() {
 
 sf::RenderWindow &Interface::GetWindow() {
     return window;
+}
+
+void Interface::drawRamp(Vector2D Center) {
+    RampSprite.setOrigin(RampSprite.getLocalBounds().width,RampSprite.getLocalBounds().height);
+    RampSprite.setPosition(Center.x,Center.y);
+    window.draw(RampSprite);
 }

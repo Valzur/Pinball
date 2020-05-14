@@ -106,6 +106,8 @@ void Game::InstantiateObstacles() {
                 ReadGates(file);
             } else if(Choice=="LANE"){
                 ReadLanes(file);
+            } else if(Choice=="RAMP"){
+                ReadRamps(file);
             }
         }
         file.close();
@@ -515,4 +517,19 @@ void Game::ReadLanes(fstream &file) {
         AddObstacle(new Lane(Length,Center));
         AddDrawable(pObstacles[ObstaclesNo-1]);
     }
+}
+
+void Game::ReadRamps(fstream &file) {
+    Vector2D Center;
+    string Trash;
+    int RampsNo;
+    file >> RampsNo;
+    for (int i = 0; i <RampsNo; i++) {
+        file >> Trash;
+        file >> Center.x;
+        file >> Center.y;
+        AddObstacle( new Ramp(Center));
+        AddDrawable(pObstacles[ObstaclesNo-1]);
+    }
+
 }

@@ -31,6 +31,7 @@ using namespace std;
 #include "GameObjects/Obstacles/Switch.h"
 #include "GameObjects/Obstacles/Collectable.h"
 #include "GameObjects/Obstacles/Lane.h"
+#include "GameObjects/Obstacles/Ramp.h"
 
 // Represents a game, keeps track of everything relevant to the game and delegates the tasks to their proper objects
 class Game
@@ -88,6 +89,7 @@ public:
     void ReadCollectables(fstream& file);
     void ReadSpeedBoosters(fstream& file);
     void ReadLanes(fstream& file);
+    void ReadRamps(fstream& file);
 
     void ActivateBalls(bool space);
     void FlippersMotion(bool left, bool right, float delta_time);

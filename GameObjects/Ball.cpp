@@ -22,12 +22,19 @@ Vector2D Ball::getVelocity() const
 }
 
 void Ball::move(double time, Manager& manager,bool &lost){
-    if(isActive & !isUsedLane) {
+    if(isActive & !isUsedLane & !isUsedPortal) {
         manager.ValueUpdate(*this,lost);
         // Kinematic equations for planar motion of a particle
         velocity += Acceleration * time;
         center += velocity *SpeedBoost* time + Acceleration * time * time * 0.5;
     } else if (isUsedLane){
+        if(LaneProgress<1){
+            LaneProgress+=LaneVelocity/time;
+            center.y=lerp(LaneCenter.y,LaneCenter.y+LaneLength,LaneProgress);
+        }else{
+            isUsedLane=false;
+        }
+    } else if (isUsedPortal){
 
     }
 }
@@ -117,5 +124,9 @@ void Ball::UpdateBoost(double time) {
 void Ball::SetLaneAttributes(double Length, Vector2D Center) {
     this->LaneLength=Length;
     this->LaneCenter=Center;
-    isUsedLane=true;
+    LaneVelocity=VectorNorm(velocity);
+}
+
+void Ball::SetLaneMode(bool Active) {
+    isUsedLane=Active;
 }

@@ -14,6 +14,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Pinball.dir/GameObjects/Obstacles/Magnet.cpp.obj"
   "CMakeFiles/Pinball.dir/GameObjects/Obstacles/PopBumper.cpp.obj"
   "CMakeFiles/Pinball.dir/GameObjects/Obstacles/Portal.cpp.obj"
+  "CMakeFiles/Pinball.dir/GameObjects/Obstacles/Ramp.cpp.obj"
   "CMakeFiles/Pinball.dir/GameObjects/Obstacles/ScoreMultiplier.cpp.obj"
   "CMakeFiles/Pinball.dir/GameObjects/Obstacles/SpeedBooster.cpp.obj"
   "CMakeFiles/Pinball.dir/GameObjects/Obstacles/SpriteWalls.cpp.obj"

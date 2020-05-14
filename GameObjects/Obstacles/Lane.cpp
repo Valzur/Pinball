@@ -23,6 +23,18 @@ void Lane::draw(Interface &interface) {
 }
 
 Vector2D Lane::collideWith(Ball &ball, float collision_time, Manager &manager) {
+    bool Bottom= BICCollision(ball,Vector2D {Center.x,Center.y+Length/2.0},Width),
+    Top=  BICCollision(ball,Vector2D {Center.x,Center.y-Length/2.0},Width);
+
+    if(Bottom){
+        ball.setCenter(Vector2D {Center.x,Center.y+Length/2.0});
+        ball.SetLaneAttributes(-Length,Center);
+        ball.SetLaneMode(true);
+    }else if(Top){
+        ball.setCenter(Vector2D {Center.x,Center.y-Length/2.0});
+        ball.SetLaneAttributes(Length,Center);
+        ball.SetLaneMode(true);
+    }
 
     return {0,0};
 }

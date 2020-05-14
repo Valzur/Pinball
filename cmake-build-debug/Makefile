@@ -527,6 +527,33 @@ GameObjects/Obstacles/Portal.cpp.s:
 	$(MAKE) -f CMakeFiles\Pinball.dir\build.make CMakeFiles/Pinball.dir/GameObjects/Obstacles/Portal.cpp.s
 .PHONY : GameObjects/Obstacles/Portal.cpp.s
 
+GameObjects/Obstacles/Ramp.obj: GameObjects/Obstacles/Ramp.cpp.obj
+
+.PHONY : GameObjects/Obstacles/Ramp.obj
+
+# target to build an object file
+GameObjects/Obstacles/Ramp.cpp.obj:
+	$(MAKE) -f CMakeFiles\Pinball.dir\build.make CMakeFiles/Pinball.dir/GameObjects/Obstacles/Ramp.cpp.obj
+.PHONY : GameObjects/Obstacles/Ramp.cpp.obj
+
+GameObjects/Obstacles/Ramp.i: GameObjects/Obstacles/Ramp.cpp.i
+
+.PHONY : GameObjects/Obstacles/Ramp.i
+
+# target to preprocess a source file
+GameObjects/Obstacles/Ramp.cpp.i:
+	$(MAKE) -f CMakeFiles\Pinball.dir\build.make CMakeFiles/Pinball.dir/GameObjects/Obstacles/Ramp.cpp.i
+.PHONY : GameObjects/Obstacles/Ramp.cpp.i
+
+GameObjects/Obstacles/Ramp.s: GameObjects/Obstacles/Ramp.cpp.s
+
+.PHONY : GameObjects/Obstacles/Ramp.s
+
+# target to generate assembly for a file
+GameObjects/Obstacles/Ramp.cpp.s:
+	$(MAKE) -f CMakeFiles\Pinball.dir\build.make CMakeFiles/Pinball.dir/GameObjects/Obstacles/Ramp.cpp.s
+.PHONY : GameObjects/Obstacles/Ramp.cpp.s
+
 GameObjects/Obstacles/ScoreMultiplier.obj: GameObjects/Obstacles/ScoreMultiplier.cpp.obj
 
 .PHONY : GameObjects/Obstacles/ScoreMultiplier.obj
@@ -986,6 +1013,9 @@ help:
 	@echo ... GameObjects/Obstacles/Portal.obj
 	@echo ... GameObjects/Obstacles/Portal.i
 	@echo ... GameObjects/Obstacles/Portal.s
+	@echo ... GameObjects/Obstacles/Ramp.obj
+	@echo ... GameObjects/Obstacles/Ramp.i
+	@echo ... GameObjects/Obstacles/Ramp.s
 	@echo ... GameObjects/Obstacles/ScoreMultiplier.obj
 	@echo ... GameObjects/Obstacles/ScoreMultiplier.i
 	@echo ... GameObjects/Obstacles/ScoreMultiplier.s

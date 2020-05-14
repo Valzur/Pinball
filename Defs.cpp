@@ -16,6 +16,10 @@ Vector2D VectorDirection(Vector2D vector1,Vector2D vector2){
     return direction;
 }
 
+double lerp(double a,double b,double t){
+    return a+t*(b-a);
+};
+
 bool FloatToBool(float number){
     if(number==1){
         return true;
