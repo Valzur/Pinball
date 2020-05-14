@@ -13,21 +13,21 @@ class Flipper: public Obstacle
 private:
     FlipperType type;  // Left or right flipper
     Vector2D center;  // Center of rotation
-    float length;  // Flipper length
-    float angle;  // Angle of rotation
+    double length;  // Flipper length
+    double angle;  // Angle of rotation
     const float ExtendedAngle;
     const float NormalAngle;
     const float Velocity;
-    float majorRadius;  // The radius of the rotation end
-    float minorRadius;  // The radius of the other end
-    float ImpulseMultiplier; //to be used to accelerate the collision if the flipper was moving at the time of collision.
+    double majorRadius;  // The radius of the rotation end
+    double minorRadius;  // The radius of the other end
+    double ImpulseMultiplier; //to be used to accelerate the collision if the flipper was moving at the time of collision.
 
 public:
     // The angle should probably be removed from the constructor after adding the controls
-    Flipper(FlipperType type, Vector2D center, float length, float angle, float majorRadius, float minorRadius, float NormalAngle, float ExtendedAngle,float Velocity);
+    Flipper(FlipperType type, Vector2D center, double length, double angle, double majorRadius, double minorRadius, double NormalAngle, double ExtendedAngle,double Velocity);
 
-    Vector2D collideWith(Ball & ball, float collision_time, Manager & manager) override;
+    Vector2D collideWith(Ball & ball, double collision_time, Manager & manager) override;
     void draw(Interface & interface) override;
-    void RotateFlipper(float a, float time);
-    void MoveFlipper(bool left, bool right, float delta_time);
+    void RotateFlipper(double a, double time);
+    void MoveFlipper(bool left, bool right, double delta_time);
 };

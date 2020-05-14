@@ -27,6 +27,7 @@ public:
     //Update function
     void Updategame(Interface & interface);
     void ValueUpdate(Ball & ball, bool & Islost);
+    void MultiplyScore(double Factor);
 
     //Game lost
     void EndGame(Interface & interface);

@@ -1,10 +1,10 @@
 #include "Bumper.h"
 
-float Bumper::GetRadius() {
+double Bumper::GetRadius() {
     return radius;
 }
 
-Vector2D Bumper::collideWith(Ball &ball, float collision_time, Manager & manager) {
+Vector2D Bumper::collideWith(Ball &ball, double collision_time, Manager & manager) {
     float actualRadius, Modificationfactor, Acc, velocity;
     Vector2D ModifiedRadiusPos;
     velocity = VectorNorm(ball.getVelocity());
@@ -62,7 +62,7 @@ Vector2D Bumper::collideWith(Ball &ball, float collision_time, Manager & manager
     */
 }
 
-Bumper::Bumper(Vector2D pos, float rad, BumperType type): type(type) {
+Bumper::Bumper(Vector2D pos, double rad, BumperType type): type(type) {
     position=pos;
     radius=rad;
     bscore=0;

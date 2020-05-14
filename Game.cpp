@@ -23,9 +23,9 @@ void Game::simulate()
     }
     // Measuring time elapsed in-between frames
     high_resolution_clock::time_point this_frame = high_resolution_clock::now();
-    duration<float> time_span = duration_cast<duration<float>>(this_frame - last_frame);
+    duration<double> time_span = duration_cast<duration<double>>(this_frame - last_frame);
     last_frame = this_frame;
-    float delta_time = time_span.count();  // Delta time in seconds
+    double delta_time = time_span.count();  // Delta time in seconds
 
     //Update fps
     interface.setFPS("FPS: " + to_string(1.0/delta_time));
@@ -108,6 +108,8 @@ void Game::InstantiateObstacles() {
                 ReadLanes(file);
             } else if(Choice=="RAMP"){
                 ReadRamps(file);
+            } else if(Choice=="SCOREMULTIPLIER"){
+                ReadScoreMultipliers(file);
             }
         }
         file.close();
@@ -134,7 +136,7 @@ void Game::AddObstacle(Obstacle *obstacle) {
 void Game::ReadBalls(fstream &file) {
     Vector2D velocity, center;
     string IsMain, Trash;
-    float radius;
+    double radius;
     int BallsNo;
     file >> BallsNo;
     for (int i = 0; i < BallsNo; ++i) {
@@ -169,7 +171,7 @@ void Game::ReadFlippers(fstream &file) {
     for (int i = 0; i < FlippersNo; i++) {
         Vector2D Center;
         string Flippertype, Trash;
-        float length, angle, MajorRadius, MinorRadius, NormalAngle, ExtendedAngle, Velocity;
+        double length, angle, MajorRadius, MinorRadius, NormalAngle, ExtendedAngle, Velocity;
         file >> Trash;
         file >> Flippertype;
         file >> Trash;
@@ -204,7 +206,7 @@ void Game::ReadFlippers(fstream &file) {
 
 void Game::ReadBumpers(fstream &file) {
     Vector2D position;
-    float radius;
+    double radius;
     int bumpersNo, type;
     string trash;
     file >> bumpersNo;
@@ -232,7 +234,7 @@ void Game::ReadBumpers(fstream &file) {
     }
 }
 
-void Game::CollisionCheck(float collision_time, Manager & manager) {
+void Game::CollisionCheck(double collision_time, Manager & manager) {
     for (int i = 0; i < BallsNo; i++) {
         pBalls[i]->setAcceleration({0,400});
         for (int j = 0; j <ObstaclesNo; j++) {
@@ -258,7 +260,7 @@ void Game::ActivateBalls(bool space) {
     }
 }
 
-void Game::FlippersMotion(bool left, bool right, float delta_time) {
+void Game::FlippersMotion(bool left, bool right, double delta_time) {
     Flipper *pFlipper;
     for (int i = 0; i <ObstaclesNo; i++) {
         pFlipper= dynamic_cast<Flipper*>(pObstacles[i]);
@@ -352,7 +354,7 @@ void Game::ReadMagnets(fstream& file) {
 void Game::ReadInternalFrame(fstream& file)
 {
     string Trash;
-    float is45,isLeft,
+    double is45,isLeft,
     Diameter,LineXCoordinate
     ,LineYCoordinate,InclinationAngle
     ,setPositionX,setPositionYRation;
@@ -384,7 +386,7 @@ void Game::ReadInternalFrame(fstream& file)
 
 void Game::ReadGates(fstream& file){
     string Trash;
-    float length,width,x,y;
+    double length,width,x,y;
     int GatesNo;
 
     file >> GatesNo;
@@ -405,7 +407,7 @@ void Game::ReadGates(fstream& file){
 void Game::ReadKickers(fstream &file)
 {
     string Trash;
-    float x1,y1,x2,y2,x3,y3;
+    double x1,y1,x2,y2,x3,y3;
     int NoFrame=0;
     file >> NoFrame;
     for (int i = 0; i <NoFrame; i++) {
@@ -442,7 +444,7 @@ void Game::ReadSwitchs(fstream &file) {
 
 void Game::ReadCollectables(fstream &file) {
     string Letter,Trash;
-    float radius;
+    double radius;
     int CollectablesNo;
     Vector2D Center;
 
@@ -462,7 +464,7 @@ void Game::ReadCollectables(fstream &file) {
 void Game::ReadSpeedBoosters(fstream &file) {
     string Trash;
     int BoostersNo;
-    float radius;
+    double radius;
     Vector2D Center;
 
     file >> BoostersNo;
@@ -532,4 +534,23 @@ void Game::ReadRamps(fstream &file) {
         AddDrawable(pObstacles[ObstaclesNo-1]);
     }
 
+}
+
+void Game::ReadScoreMultipliers(fstream &file) {
+    Vector2D Center;
+    string Trash;
+    int ScoreMultipliersNo;
+    double Radius;
+
+    file >> ScoreMultipliersNo;
+    for (int i = 0; i <ScoreMultipliersNo; i++) {
+        file >> Trash;
+        file >> Center.x;
+        file >> Center.y;
+        file >> Trash;
+        file >> Radius;
+
+        AddObstacle( new ScoreMultiplier(Center,Radius));
+        AddDrawable(pObstacles[ObstaclesNo-1]);
+    }
 }

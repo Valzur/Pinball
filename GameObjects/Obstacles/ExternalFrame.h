@@ -1,22 +1,17 @@
-//
-// Created by anon on 4/10/20.
-//
 #pragma once
 #include "Obstacle.h"
 
 
 
 
-class ExternalFrame:public Obstacle
-        {
+class ExternalFrame:public Obstacle{
 private:
-            bool isVertical;
-            float Position;
-
+    bool isVertical;
+    float Position;
 public:
-            explicit ExternalFrame(bool isVertical, float Position);
+    explicit ExternalFrame(bool isVertical, float Position);
     void draw(Interface & interface) override;
-    Vector2D collideWith(Ball& ball, float collision_time, Manager & manager) override;
+    Vector2D collideWith(Ball& ball, double collision_time, Manager & manager) override;
 };
 
 

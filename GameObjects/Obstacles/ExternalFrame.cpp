@@ -14,6 +14,6 @@ void ExternalFrame::draw(Interface &interface) {
 
 }
 
-Vector2D ExternalFrame::collideWith(Ball &ball, float collision_time, Manager &manager) {
+Vector2D ExternalFrame::collideWith(Ball &ball, double collision_time, Manager &manager) {
     return {0,0};
 }

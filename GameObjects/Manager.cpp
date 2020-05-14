@@ -81,3 +81,7 @@ Manager::Manager(int Score, int lives) {
 int Manager::getScore() {
     return Score;
 }
+
+void Manager::MultiplyScore(double Factor) {
+    Score*=Factor;
+}

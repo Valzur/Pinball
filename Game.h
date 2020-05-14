@@ -32,6 +32,7 @@ using namespace std;
 #include "GameObjects/Obstacles/Collectable.h"
 #include "GameObjects/Obstacles/Lane.h"
 #include "GameObjects/Obstacles/Ramp.h"
+#include "GameObjects/Obstacles/ScoreMultiplier.h"
 
 // Represents a game, keeps track of everything relevant to the game and delegates the tasks to their proper objects
 class Game
@@ -68,7 +69,7 @@ public:
     void InstantiateObstacles();
 
     void DrawDrawables();
-    void CollisionCheck(float collision_time, Manager & manager);
+    void CollisionCheck(double collision_time, Manager & manager);
 
     //Utility
     void AddObstacle(Obstacle *obstacle);
@@ -90,9 +91,10 @@ public:
     void ReadSpeedBoosters(fstream& file);
     void ReadLanes(fstream& file);
     void ReadRamps(fstream& file);
+    void ReadScoreMultipliers(fstream& file);
 
     void ActivateBalls(bool space);
-    void FlippersMotion(bool left, bool right, float delta_time);
+    void FlippersMotion(bool left, bool right, double delta_time);
     void MoveBalls(double time);
 
     void DebugMode(Interface& interface);

@@ -12,7 +12,7 @@ void Magnet::draw(Interface &interface) {
     interface.drawMagnet(Position,Magnetradius,radius,&sprite);
 }
 
-Vector2D Magnet::collideWith(Ball &ball, float collision_time, Manager &manager) {
+Vector2D Magnet::collideWith(Ball &ball, double collision_time, Manager &manager) {
     Vector2D Acceleration={0,0};
     if(VectorDistance(Position,ball.getCenter())<ball.getRadius()+Magnetradius){
         if(VectorDistance(Position,ball.getCenter())<ball.getRadius()+radius){

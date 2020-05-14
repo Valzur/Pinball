@@ -6,9 +6,10 @@
 class ScoreMultiplier : public Bumper
 {
 private:
+    Vector2D Center;
+    double Radius;
 public:
-	ScoreMultiplier(Vector2D pos, float rad);
-	Vector2D collideWith(Ball& ball, float collision_time, Manager& manager) override;
+	ScoreMultiplier(Vector2D pos, double rad);
+	Vector2D collideWith(Ball& ball, double collision_time, Manager& manager) override;
 	void draw(Interface& interface) override;
-
 };

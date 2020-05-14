@@ -6,7 +6,7 @@ void Ramp::draw(Interface &interface) {
     interface.drawRamp(Center);
 }
 
-Vector2D Ramp::collideWith(Ball &ball, float collision_time, Manager &manager) {
+Vector2D Ramp::collideWith(Ball &ball, double collision_time, Manager &manager) {
 
 
     return {0,0};

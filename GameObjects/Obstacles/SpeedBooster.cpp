@@ -5,7 +5,7 @@ void SpeedBooster::draw(Interface &interface) {
     interface.drawSpeedBooster(radius,Center);
 }
 
-Vector2D SpeedBooster::collideWith(Ball &ball, float collision_time, Manager &manager) {
+Vector2D SpeedBooster::collideWith(Ball &ball, double collision_time, Manager &manager) {
     bool isInside=BICCollision(ball,Center,radius);
 
     if(isInside){
@@ -14,6 +14,6 @@ Vector2D SpeedBooster::collideWith(Ball &ball, float collision_time, Manager &ma
     return {0,0};
 }
 
-SpeedBooster::SpeedBooster(float radius, Vector2D Center): Center(Center) {
+SpeedBooster::SpeedBooster(double radius, Vector2D Center): Center(Center) {
     this->radius=radius;
 }

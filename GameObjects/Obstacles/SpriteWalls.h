@@ -18,7 +18,7 @@ public:
     void SetPosition(Vector2D pos);
     sf::Sprite GetSprite();
     void draw(Interface & interface) override=0;
-    Vector2D collideWith(Ball & ball, float collision_time, Manager & manager) override=0;
+    Vector2D collideWith(Ball & ball, double collision_time, Manager & manager) override=0;
 
 };
 

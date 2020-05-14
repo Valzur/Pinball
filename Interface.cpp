@@ -30,7 +30,7 @@ void Interface::display()
     window.display();
 }
 
-void Interface::drawBall(Vector2D center, float radius)
+void Interface::drawBall(Vector2D center, double radius)
 {
     sf::CircleShape circle(radius);
     circle.setOrigin(radius, radius);
@@ -49,9 +49,9 @@ void Interface::drawBall(Vector2D center, float radius)
 
 }
 
-void Interface::drawFlipper(FlipperType type, Vector2D center, float length, float angle, float majorRadius, float minorRadius)
+void Interface::drawFlipper(FlipperType type, Vector2D center, double length, double angle, double majorRadius, double minorRadius)
 {
-    float flip = type == LEFT ? 1.0f : -1.0f;
+    double flip = type == LEFT ? 1.0f : -1.0f;
 
     // Draw the major circle outline
     sf::CircleShape majorCircleOutline(majorRadius);
@@ -120,7 +120,7 @@ void Interface::drawFlipper(FlipperType type, Vector2D center, float length, flo
     window.draw(bottomLine);
 }
 
-void Interface::drawWall(float position, bool isVertical)
+void Interface::drawWall(double position, bool isVertical)
 {
     if(isVertical) {
         sf::Vertex line[] =
@@ -143,7 +143,7 @@ void Interface::drawNewWall(sf::Sprite sprite) {
     window.draw(sprite);
 }
 
-void Interface::drawBumper(Vector2D center, float radius, BumperType type) {
+void Interface::drawBumper(Vector2D center, double radius, BumperType type) {
     sf::CircleShape circle(radius);
     circle.setOrigin(radius, radius);
     circle.setOutlineThickness(1.5*outlineThickness);
@@ -294,7 +294,7 @@ void Interface::LoadGraphics() {
 }
 
 //Draw external frame
-void Interface::loadExternalFrame(bool isVertical,float Position)
+void Interface::loadExternalFrame(bool isVertical,double Position)
 {
         if (isVertical) {
             sf::RectangleShape externalFrame(sf::Vector2f(Position, GAME_HEIGHT));
@@ -312,8 +312,8 @@ void Interface::loadExternalFrame(bool isVertical,float Position)
         }
 }
 
-void Interface::loadInternalFrame(bool is45,bool isLeft,float Diameter, float LineXCoordinate,
-        float LineYCoordinate, float InclinationAngle, float setPositionX,float setPositionYRation)
+void Interface::loadInternalFrame(bool is45,bool isLeft,double Diameter, double LineXCoordinate,
+        double LineYCoordinate, double InclinationAngle, double setPositionX,double setPositionYRation)
 {
 //    sf::Texture texture;
 //    texture.loadFromFile("Frame.png");
@@ -345,7 +345,7 @@ else
 
 }
 
-void Interface::drawLeftKicker(float x1,float y1,float x2,float y2,float x3,float y3) {
+void Interface::drawLeftKicker(double x1,double y1,double x2,double y2,double x3,double y3) {
     sf::ConvexShape SpeedBoaster;
     SpeedBoaster.setPointCount(3);
     SpeedBoaster.setPoint(0,sf::Vector2f (25,735.0)); //Replace x,y variables by these numbers when loading from the file
@@ -355,7 +355,7 @@ void Interface::drawLeftKicker(float x1,float y1,float x2,float y2,float x3,floa
     window.draw(SpeedBoaster);
 }
 
-void Interface::drawRightKicker(float x1,float y1,float x2,float y2,float x3,float y3)
+void Interface::drawRightKicker(double x1,double y1,double x2,double y2,double x3,double y3)
 {//Replace x,y variables by these numbers when loading from the file
     sf::ConvexShape SpeedBoaster;//غير اسم البتاعة ديه ل Kicker
     SpeedBoaster.setPointCount(3);
@@ -396,7 +396,7 @@ void Interface::drawPortals(Vector2D Pos1, Vector2D Pos2,double radius) {
     window.draw(PortalSprite);
 }
 
-void Interface::drawGate(float length,float width,float setPositionX,float setPositionY) {
+void Interface::drawGate(double length,double width,double setPositionX,double setPositionY) {
     sf::RectangleShape Gate(sf::Vector2f (length,width));
     Gate.setFillColor(sf::Color::Red);
     Gate.setPosition(setPositionX,setPositionY);
@@ -427,7 +427,7 @@ void Interface::drawMagnet(Vector2D Position, double magnetRadius, double radius
     window.draw(*sprite);
 }
 
-void Interface::drawCollectable(float radius, string L, Vector2D Center) {
+void Interface::drawCollectable(double radius, string L, Vector2D Center) {
     sf::CircleShape Collectable(radius);
     Collectable.setFillColor(sf::Color::Transparent);
     drawText(L, 30, {Center.x+radius/1.5,Center.y-radius/3.0 });
@@ -436,7 +436,7 @@ void Interface::drawCollectable(float radius, string L, Vector2D Center) {
     window.draw(Collectable);
 }
 
-void Interface::drawSpeedBooster(float radius,Vector2D Center){
+void Interface::drawSpeedBooster(double radius,Vector2D Center){
     sf::CircleShape SpeedBooster(radius);
     SpeedBooster.setFillColor(sf::Color::Transparent);
     SpeedBooster.setPosition(Center.x,Center.y);
@@ -492,6 +492,12 @@ sf::RenderWindow &Interface::GetWindow() {
 
 void Interface::drawRamp(Vector2D Center) {
     RampSprite.setOrigin(RampSprite.getLocalBounds().width,RampSprite.getLocalBounds().height);
-    RampSprite.setPosition(Center.x,Center.y);
+    RampSprite.setPosition(Center);
     window.draw(RampSprite);
+}
+
+void Interface::drawScoreMultiplier(Vector2D Center, double Radius) {
+    ScoreMsprite.setOrigin(ScoreMsprite.getLocalBounds().width/2.0,ScoreMsprite.getLocalBounds().height/2.0);
+    ScoreMsprite.setPosition(Center);
+    window.draw(ScoreMsprite);
 }

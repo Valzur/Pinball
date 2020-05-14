@@ -5,7 +5,7 @@ void Kicker::draw(Interface &interface) {
     interface.drawLeftKicker(x1+30,y1,x2+30,y2,x3+30,y3);
 }
 
-Kicker::Kicker(float x1, float x2, float x3, float y1, float y2, float y3) {
+Kicker::Kicker(double x1, double x2, double x3, double y1, double y2, double y3) {
     this->x1=x1;
     this->x3=x3;
     this->x2=x2;
@@ -14,6 +14,6 @@ Kicker::Kicker(float x1, float x2, float x3, float y1, float y2, float y3) {
     this->y3=y3;
 }
 
-Vector2D Kicker::collideWith(Ball &ball, float collision_time, Manager &manager) {
+Vector2D Kicker::collideWith(Ball &ball, double collision_time, Manager &manager) {
     return {0,0};
 }

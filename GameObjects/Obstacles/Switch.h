@@ -14,5 +14,5 @@ public:
 	Switch(Vector2D position);
 
 	void draw(Interface& interface)override;
-    Vector2D collideWith(Ball& ball, float collision_time, Manager& manager) override;
+    Vector2D collideWith(Ball& ball, double collision_time, Manager& manager) override;
 };

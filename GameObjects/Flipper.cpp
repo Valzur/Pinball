@@ -1,9 +1,9 @@
 #include "Flipper.h"
 
-Flipper::Flipper(FlipperType type, Vector2D center, float length, float angle, float majorRadius, float minorRadius, float NormalAngle, float ExtendedAngle,float Velocity):
+Flipper::Flipper(FlipperType type, Vector2D center, double length, double angle, double majorRadius, double minorRadius, double NormalAngle, double ExtendedAngle,double Velocity):
     type(type), center(center), length(length), angle(angle), majorRadius(majorRadius), minorRadius(minorRadius),NormalAngle(NormalAngle),ExtendedAngle(ExtendedAngle), Velocity(Velocity){}
 
-Vector2D Flipper::collideWith(Ball & ball, float collision_time, Manager & manager)
+Vector2D Flipper::collideWith(Ball & ball, double collision_time, Manager & manager)
 {
     Vector2D Acceleration={0,0}, minorCenter;
 
@@ -20,7 +20,7 @@ void Flipper::draw(Interface & interface)
     interface.drawFlipper(type, center, length, angle, majorRadius, minorRadius);
 }
 
-void Flipper::RotateFlipper(float a, float time){
+void Flipper::RotateFlipper(double a, double time){
     if(a>0){
         if(angle<0.7*a) {
             angle += time * Velocity;
@@ -47,7 +47,7 @@ void Flipper::RotateFlipper(float a, float time){
 
 }
 
-void Flipper::MoveFlipper(bool left, bool right, float delta_time) {
+void Flipper::MoveFlipper(bool left, bool right, double delta_time) {
     //A little finicky, but its cleaner :')
     switch(type) {
         //Left

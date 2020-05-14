@@ -19,7 +19,6 @@ private:
     sf::Font font;
     sf::Text text;
     sf::Text FPSText;
-
     sf::RenderWindow window;  // Represents the game window
     const sf::Color  // Colors used for drawing (can change the whole theme of the game)
         backgroundColor = sf::Color(240, 240, 240),
@@ -27,7 +26,7 @@ private:
         ballFillColor = sf::Color::White,
         flipperFillColor = sf::Color::White,
         textColor = sf::Color(252, 81, 133);
-    const float outlineThickness = -2.0f;  // Negative sign means inwards
+    const double outlineThickness = -2.0f;  // Negative sign means inwards
 
     //Sprites and textures
     sf::Texture Balltexture;
@@ -55,19 +54,20 @@ public:
     void clear();  // Clears the frame (first step in rendering a new frame)
     void display();  // Displays the frame (last step in rendering a new frame)
 
-    void drawBall(Vector2D center, float radius);  // Draws a ball
-    void drawFlipper(FlipperType type, Vector2D center, float length, float angle, float majorRadius, float minor_radius);  // Draws a flipper
-    void drawWall(float position,bool isVertical);  // Draws a vertical wall
+    void drawBall(Vector2D center, double radius);  // Draws a ball
+    void drawFlipper(FlipperType type, Vector2D center, double length, double angle, double majorRadius, double minor_radius);  // Draws a flipper
+    void drawWall(double position,bool isVertical);  // Draws a vertical wall
     void drawNewWall(sf::Sprite sprite);
-    void drawBumper(Vector2D center, float radius, BumperType type);
+    void drawBumper(Vector2D center, double radius, BumperType type);
     void drawPortals(Vector2D Pos1, Vector2D Pos2,double radius);
     void drawMagnet(Vector2D Position, double magnetRadius,double radius,sf::Sprite * sprite);
     void drawSwitch(Vector2D pos);
-    void drawCollectable(float radius,string L,Vector2D Center);
-    void drawSpeedBooster(float radius,Vector2D Center);
-    void drawGate(float length,float width,float setPositionX,float setPositionY);
+    void drawCollectable(double radius,string L,Vector2D Center);
+    void drawSpeedBooster(double radius,Vector2D Center);
+    void drawGate(double length,double width,double setPositionX,double setPositionY);
     void drawLane(double Length, Vector2D Center, double Width);
     void drawRamp(Vector2D Center);
+    void drawScoreMultiplier(Vector2D Center, double Radius);
 
     //Utility
     void drawFPS();
@@ -77,11 +77,11 @@ public:
     void drawBackground();
     void drawUIBackground();
 
-    void loadExternalFrame(bool isVertical, float Position);
+    void loadExternalFrame(bool isVertical, double Position);
 
-    void loadInternalFrame(bool is45,bool isLeft,float Diameter, float LineXCoordinate, float LineYCoordinate, float InclinationAngle, float setPositionX,float setPositionYRation);
-    void drawLeftKicker(float x1,float y1,float x2,float y2,float x3,float y3);
-    void drawRightKicker(float x1,float y1,float x2,float y2,float x3,float y3);
+    void loadInternalFrame(bool is45,bool isLeft,double Diameter, double LineXCoordinate, double LineYCoordinate, double InclinationAngle, double setPositionX,double setPositionYRation);
+    void drawLeftKicker(double x1,double y1,double x2,double y2,double x3,double y3);
+    void drawRightKicker(double x1,double y1,double x2,double y2,double x3,double y3);
 
     //
     sf::RenderWindow& GetWindow();

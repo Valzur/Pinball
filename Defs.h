@@ -1,6 +1,8 @@
 #pragma once
 
 #include <cmath>
+#include "SFML/Graphics.hpp"
+#include "SFML/Window.hpp"
 
 struct Vector2D  // Represents a 2D vector
 {
@@ -18,6 +20,9 @@ struct Vector2D  // Represents a 2D vector
     Vector2D & operator/=(const Vector2D & v) { x /= v.x; y /= v.y; return *this; }  // Element-wise division
     Vector2D & operator+=(const Vector2D & v) { x += v.x; y += v.y; return *this; }  // Element-wise addition
     Vector2D & operator-=(const Vector2D & v) { x -= v.x; y -= v.y; return *this; }  // Element-wise subtraction
+    bool operator==(const Vector2D & v){ return x == v.x & y == v.y; } //Equality.
+    bool operator!=(const Vector2D & v){ return x != v.x || y != v.y; } //Opposite
+    operator sf::Vector2f(){ return {static_cast<float>(x),static_cast<float>(y)}; }
 };
 
 double VectorDistance(Vector2D vector1,Vector2D vector2);

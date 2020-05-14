@@ -11,5 +11,5 @@ class Ball;
 class Collidable
 {
 public:
-    virtual Vector2D collideWith(Ball & ball, float collision_time, Manager & manager) = 0;  // Simulates a collision with the ball (if any) and returns the contribution of the collision on the ball's acceleration
+    virtual Vector2D collideWith(Ball & ball, double collision_time, Manager & manager) = 0;  // Simulates a collision with the ball (if any) and returns the contribution of the collision on the ball's acceleration
 };
