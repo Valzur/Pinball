@@ -42,7 +42,8 @@ void Interface::drawBall(Vector2D center, double radius)
 
     //Graphics b2a w kda
     Ballsprite.setTexture(Balltexture);
-    Ballsprite.setPosition(center.x-radius,center.y-radius);
+    Ballsprite.setOrigin(Ballsprite.getTexture()->getSize().x/2.0,Ballsprite.getTexture()->getSize().y/2.0);
+    Ballsprite.setPosition(center.x,center.y);
     Ballsprite.setScale(0.01,0.01);
     window.draw(Ballsprite);
 
@@ -143,27 +144,34 @@ void Interface::drawNewWall(sf::Sprite sprite) {
     window.draw(sprite);
 }
 
-void Interface::drawBumper(Vector2D center, double radius, BumperType type) {
+void Interface::drawBumper(Vector2D center, double radius, BumperType type,bool Hit) {
     sf::CircleShape circle(radius);
     circle.setOrigin(radius, radius);
     circle.setOutlineThickness(1.5*outlineThickness);
-    circle.setOutlineColor(sf::Color::Magenta);
+    circle.setOutlineColor(outlineColor);
 
     circle.setPosition(center.x, center.y);
 
     switch (type)
     {
         case (BumperType::POP):{
-            circle.setFillColor(sf::Color::Blue);
+            if(!Hit){
+                circle.setFillColor(RadiantColor);
+            }else{
+                circle.setFillColor(textColor);
+            }
+
             window.draw(circle);
-            Bumpersprite.setPosition(center.x - (radius / 2) - 15, center.y - (radius / 2) - 15);
+            Bumpersprite.setOrigin(Bumpersprite.getTexture()->getSize().x/2.0,Bumpersprite.getTexture()->getSize().y/2.0);
+            Bumpersprite.setPosition(center.x , center.y);
             Bumpersprite.setScale(2, 2);
             window.draw(Bumpersprite);
             break;
         }case(BumperType::THRUST):{
             circle.setFillColor(sf::Color::Transparent);
             window.draw(circle);
-            Thurstsprite.setPosition(center.x-radius, center.y-radius);
+            Thurstsprite.setOrigin(Thurstsprite.getTexture()->getSize().x/2.0,Thurstsprite.getTexture()->getSize().y/2.0);
+            Thurstsprite.setPosition(center.x, center.y);
             Thurstsprite.setScale(0.015, 0.015);
             window.draw(Thurstsprite);
             break;
@@ -178,15 +186,20 @@ void Interface::drawBumper(Vector2D center, double radius, BumperType type) {
             circle1.setPosition(center.x, center.y);
             window.draw(circle1);
             //drawing texture for 1st circle
-
-            Vibraniumsprite.setPosition(center.x-radius-18, center.y-radius-12);
+            Vibraniumsprite.setOrigin(Vibraniumsprite.getTexture()->getSize().x/2.0,Vibraniumsprite.getTexture()->getSize().y/2.0);
+            Vibraniumsprite.setPosition(center.x, center.y);
             Vibraniumsprite.setScale(0.3, 0.3);
             window.draw(Vibraniumsprite);
             break;
         }case(BumperType::SCOREM): {
-            circle.setFillColor(sf::Color(244,250,156,255));
+            if(Hit){
+                circle.setFillColor(textColor);
+            }else{
+                circle.setFillColor(RadiantColor);
+            }
             window.draw(circle);
-            ScoreMsprite.setPosition(center.x-radius, center.y-radius);
+            ScoreMsprite.setOrigin(ScoreMsprite.getTexture()->getSize().x/2.0,ScoreMsprite.getTexture()->getSize().y/2.0);
+            ScoreMsprite.setPosition(center);
             ScoreMsprite.setScale(0.2, 0.2);
             window.draw(ScoreMsprite);
             break;
@@ -298,16 +311,15 @@ void Interface::loadExternalFrame(bool isVertical,double Position)
 {
         if (isVertical) {
             sf::RectangleShape externalFrame(sf::Vector2f(Position, GAME_HEIGHT));
-            externalFrame.setFillColor(sf::Color::Magenta);
+            externalFrame.setFillColor(outlineColor);
             if (Position < 0) {
                 externalFrame.setPosition(GAME_WIDTH, 0.0f);
             }
-//          externalFrame.setTexture(&texture);
             window.draw(externalFrame);
         } else {
             sf::RectangleShape externalFrame(sf::Vector2f(GAME_WIDTH, Position));
-            externalFrame.setFillColor(sf::Color::Magenta);
-//          externalFrame.setTexture(&texture);
+            externalFrame.setFillColor(outlineColor);
+
             window.draw(externalFrame);
         }
 }
@@ -315,31 +327,27 @@ void Interface::loadExternalFrame(bool isVertical,double Position)
 void Interface::loadInternalFrame(bool is45,bool isLeft,double Diameter, double LineXCoordinate,
         double LineYCoordinate, double InclinationAngle, double setPositionX,double setPositionYRation)
 {
-//    sf::Texture texture;
-//    texture.loadFromFile("Frame.png");
+
 if(is45)
 {
     sf::RectangleShape line(sf::Vector2f(LineXCoordinate, LineYCoordinate));
     line.rotate(InclinationAngle);
     line.setPosition(setPositionX, GAME_HEIGHT * setPositionYRation);
-    line.setFillColor(sf::Color::Magenta);
-//    line.setTexture(&texture);
+    line.setFillColor(outlineColor);
 
     if(!isLeft)
     {
         line.rotate(2*InclinationAngle);
         line.setPosition(GAME_WIDTH-36.f, GAME_HEIGHT * setPositionYRation);
-        line.setFillColor(sf::Color::Magenta);
+        line.setFillColor(outlineColor);
     }
     window.draw(line);
 }
 else
     {
         sf::RectangleShape internalFrame(sf::Vector2f(10.f, GAME_HEIGHT));
-        internalFrame.setFillColor(sf::Color::Magenta);
+        internalFrame.setFillColor(outlineColor);
         internalFrame.setPosition(GAME_WIDTH-20-Diameter,400.0f);
-//        internalFrame.setTexture(&texture);
-//        window.draw(internalFrame);
     window.draw(internalFrame);
 }
 
@@ -357,29 +365,33 @@ void Interface::drawLeftKicker(double x1,double y1,double x2,double y2,double x3
 
 void Interface::drawRightKicker(double x1,double y1,double x2,double y2,double x3,double y3)
 {//Replace x,y variables by these numbers when loading from the file
-    sf::ConvexShape SpeedBoaster;//غير اسم البتاعة ديه ل Kicker
-    SpeedBoaster.setPointCount(3);
-    SpeedBoaster.setPoint(0,sf::Vector2f (GAME_WIDTH-30-25,735.0));
-    SpeedBoaster.setPoint(1,sf::Vector2f (GAME_WIDTH-30-130,850));
-    SpeedBoaster.setPoint(2,sf::Vector2f (GAME_WIDTH-30-25,600));
-    SpeedBoaster.setFillColor(sf::Color::Cyan);
-    window.draw(SpeedBoaster);
+    sf::ConvexShape Kicker; //غير اسم البتاعة ديه ل Kicker
+    Kicker.setPointCount(3);
+    Kicker.setPoint(0,sf::Vector2f (GAME_WIDTH-30-25,735.0));
+    Kicker.setPoint(1,sf::Vector2f (GAME_WIDTH-30-130,850));
+    Kicker.setPoint(2,sf::Vector2f (GAME_WIDTH-30-25,600));
+    Kicker.setFillColor(sf::Color::Cyan);
+    window.draw(Kicker);
 }
 
 void Interface::drawBackground()
 {
-    window.draw(backgroundSprite);
+    sf::RectangleShape Background(sf::Vector2f(GAME_WIDTH,GAME_HEIGHT));
+    Background.setFillColor(backgroundColor);
+    window.draw(Background);
 }
 
 void Interface::drawPortals(Vector2D Pos1, Vector2D Pos2,double radius) {
     sf::CircleShape circle1(radius),circle2(radius);
-    circle1.setOrigin(0, 0);
+    circle1.setOrigin(radius, radius);
     circle1.setOutlineThickness(outlineThickness);
-    circle1.setOutlineColor(sf::Color::Magenta);
+    circle1.setOutlineColor(RadiantColor);
+    circle1.setFillColor(sf::Color::Transparent);
 
-    circle2.setOrigin(0,0);
+    circle2.setFillColor(sf::Color::Transparent);
+    circle2.setOrigin(radius,radius);
     circle2.setOutlineThickness(outlineThickness);
-    circle2.setOutlineColor(sf::Color::Magenta);
+    circle2.setOutlineColor(RadiantColor);
 
     circle1.setPosition(Pos1.x,Pos1.y);
     circle2.setPosition(Pos2.x,Pos2.y);
@@ -387,20 +399,37 @@ void Interface::drawPortals(Vector2D Pos1, Vector2D Pos2,double radius) {
     window.draw(circle1);
 
     //Sprite
+    PortalSprite.setOrigin(PortalSprite.getTexture()->getSize().x/2.0,PortalSprite.getTexture()->getSize().y/2.0);
     PortalSprite.setPosition(Pos1.x,Pos1.y);
     PortalSprite.setScale(0.1,0.1);
+
     window.draw(PortalSprite);
 
     PortalSprite.setPosition(Pos2.x,Pos2.y);
-    PortalSprite.setScale(0.1,0.1);
     window.draw(PortalSprite);
 }
 
-void Interface::drawGate(double length,double width,double setPositionX,double setPositionY) {
-    sf::RectangleShape Gate(sf::Vector2f (length,width));
-    Gate.setFillColor(sf::Color::Red);
-    Gate.setPosition(setPositionX,setPositionY);
-    window.draw(Gate);
+void Interface::drawGate(double length,double width,Vector2D Center,bool AllowUp) {
+    sf::RectangleShape UpperGate(sf::Vector2f (length,width/2.0)),
+    LowerGate(sf::Vector2f(length,width/2.0));
+
+    //Origin to center
+    LowerGate.setOrigin(length/2.0,width/4.0);
+    UpperGate.setOrigin(length/2.0,width/4.0);
+
+    //Coloring
+    if(AllowUp){
+        UpperGate.setFillColor(outlineColor);
+        LowerGate.setFillColor(RadiantColor);
+    }else{
+        UpperGate.setFillColor(RadiantColor);
+        LowerGate.setFillColor(outlineColor);
+    }
+
+    UpperGate.setPosition(Center.x,Center.y-width/4.0);
+    LowerGate.setPosition(Center.x,Center.y+width/4.0);
+    window.draw(UpperGate);
+    window.draw(LowerGate);
 }
 void Interface::drawMagnet(Vector2D Position, double magnetRadius, double radius, sf::Sprite * sprite) {
     sf::CircleShape magnet(magnetRadius),object(radius);
@@ -438,6 +467,7 @@ void Interface::drawCollectable(double radius, string L, Vector2D Center, bool U
     Collectable.setOrigin(radius,radius);
     Collectable.setPosition(Center.x,Center.y);
     Collectable.setOutlineThickness(2);
+    Collectable.setOutlineColor(RadiantColor);
     window.draw(Collectable);
 }
 
@@ -456,7 +486,7 @@ void Interface::drawSpeedBooster(double radius,Vector2D Center){
 
 void Interface::drawSwitch(Vector2D pos) {
     sf::RectangleShape line(sf::Vector2f(90, 20));
-    line.setOrigin(0,0);
+    line.setOrigin(45,10);
     line.setPosition(pos.x, pos.y);
     line.setFillColor(sf::Color::Cyan);
     line.setRotation(45);
@@ -467,12 +497,12 @@ void Interface::drawLane(double Length, Vector2D Center, double Width) {
     //Initializing
     sf::RectangleShape LeftLine(sf::Vector2f(5,Length)),RightLine(sf::Vector2f(5,Length));
     //Aesthetics
-    LeftLine.setFillColor(sf::Color(67, 221, 230));
-    RightLine.setFillColor(sf::Color(67, 221, 230));
+    LeftLine.setFillColor(outlineColor);
+    RightLine.setFillColor(outlineColor);
 
     //Positioning
-    LeftLine.setOrigin(0,0);
-    RightLine.setOrigin(0,0);
+    LeftLine.setOrigin(2.5,Length/2.0);
+    RightLine.setOrigin(2.5,Length/2.0);
     LeftLine.setPosition(Center.x-Width,Center.y);
     RightLine.setPosition(Center.x+Width,Center.y);
 

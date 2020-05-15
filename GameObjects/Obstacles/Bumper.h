@@ -10,6 +10,9 @@
 using namespace std;
 
 class Bumper : public Obstacle{
+protected:
+    double hitTimer=FlashTimer;
+    bool Hit=false;
 private:
     Vector2D position;
     double radius;

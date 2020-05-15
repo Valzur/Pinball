@@ -7,7 +7,7 @@
 class Collectable:public Obstacle
 {
 private:
-    double radius,Timer=CollectableTimer;
+    double radius,Timer=FlashTimer;
     string L;
     Vector2D Center;
     bool Active=true,Used=false;

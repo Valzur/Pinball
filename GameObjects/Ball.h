@@ -18,8 +18,8 @@ private:
     double BoostTimer=0.0, SpeedBoost=1.0;
 
     //Lane Attributes
-    Vector2D LaneCenter;
-    double LaneLength,LaneVelocity,LaneProgress;
+    double LaneLength=0;
+    bool isDirectedUp=false;
 public:
     explicit Ball(Vector2D center = INITIAL_CENTER,float radius=10, Vector2D velocity = INITIAL_VELOCITY,bool Main =true);  // Constructor
 
@@ -30,13 +30,14 @@ public:
     Vector2D getAcceleration() const;
     bool getisMain() const;
     bool getIsUsedPortal() const;
+    bool GetLaneMode() const;
 
     void setUsedPortal(bool Used);
     void setCenter(Vector2D pos);
     void setVelocity(Vector2D vel);
     void setAcceleration(Vector2D Acceleration);
-    void SetLaneAttributes(double Length, Vector2D Center);
-    void SetLaneMode(bool Active);
+    void SetLaneLength(double Length);
+    void SetLaneMode(bool Active, bool IsDirectedUp=true);
 
     void deActivate();
     void Activate(bool & space);

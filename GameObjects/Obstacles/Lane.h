@@ -8,6 +8,7 @@ private:
     double Length;
     const double Width;
     Vector2D Center;
+    bool Top=false,Bottom=false;
 public:
     Lane(double Length, Vector2D Center, double Width=20);
 

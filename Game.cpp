@@ -386,19 +386,20 @@ void Game::ReadInternalFrame(fstream& file)
 
 void Game::ReadGates(fstream& file){
     string Trash;
-    double length,width,x,y;
+    double length,width;
     int GatesNo;
+    Vector2D Center;
 
     file >> GatesNo;
     for (int i = 0; i <GatesNo; i++) {
         file >> Trash;
-        file >> x;
-        file >> y;
+        file >> Center.x;
+        file >> Center.y;
         file >> Trash;
         file >> length;
         file >> Trash;
         file >> width;
-        AddObstacle(new Gate(x,y,length,width));
+        AddObstacle(new Gate(Center,length,width));
         AddDrawable(pObstacles[ObstaclesNo-1]);
     }
 

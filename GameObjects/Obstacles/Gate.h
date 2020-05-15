@@ -6,12 +6,12 @@
 class Gate : public Obstacle
 {
 private:
-    double setPositionX;
-    double setPositionY;
+    Vector2D Center;
     double length;
     double width;
+    bool AllowUp;
 public:
-    Gate(double setPositionX,double setPositionY,double length,double width);
+    Gate(Vector2D Center,double length,double width, bool AllowUp = true);
     void draw(Interface & interface) override;
     Vector2D collideWith(Ball& ball, double collision_time, Manager & manager) override;
 };

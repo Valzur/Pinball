@@ -49,4 +49,4 @@ bool FloatToBool(float number);
 
 #define SpeedBoosterAmount 2.5
 #define LaneVelocityMultiplier 2.5
-#define CollectableTimer 0.1
+#define FlashTimer 0.3

@@ -73,7 +73,7 @@ Vector2D Bumper::GetPosition(){
 }
 
 void Bumper::draw(Interface &interface) {
-    interface.drawBumper(position,radius,type);
+    interface.drawBumper(position,radius,type,Hit);
 }
 
 void Bumper::setScorepoints(int x) {

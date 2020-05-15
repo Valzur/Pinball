@@ -23,17 +23,31 @@ void Lane::draw(Interface &interface) {
 }
 
 Vector2D Lane::collideWith(Ball &ball, double collision_time, Manager &manager) {
-    bool Bottom= BICCollision(ball,Vector2D {Center.x,Center.y+Length/2.0},Width),
-    Top=  BICCollision(ball,Vector2D {Center.x,Center.y-Length/2.0},Width);
+    if(!Top)
+        Top = BICCollision(ball,Vector2D {Center.x,Center.y-Length/2.0},Width);
+    if(!Bottom)
+        Bottom = BICCollision(ball,Vector2D {Center.x,Center.y+Length/2.0},Width);
 
-    if(Bottom){
-        ball.setCenter(Vector2D {Center.x,Center.y+Length/2.0});
-        ball.SetLaneAttributes(-Length,Center);
-        ball.SetLaneMode(true);
+    if(Top & Bottom){
+        bool Check1 = BICCollision(ball,Vector2D {Center.x,Center.y-Length/2.0},Width),
+        Check2 = BICCollision(ball,Vector2D {Center.x,Center.y+Length/2.0},Width);
+        if(!Check1 & !Check2){
+            Top = false;
+            Bottom = false;
+            ball.SetLaneMode(false);
+        }
     }else if(Top){
-        ball.setCenter(Vector2D {Center.x,Center.y-Length/2.0});
-        ball.SetLaneAttributes(Length,Center);
-        ball.SetLaneMode(true);
+        if (!ball.GetLaneMode()){
+            ball.setCenter(Vector2D{Center.x, Center.y - Length / 2.0});
+            ball.SetLaneLength(Length);
+            ball.SetLaneMode(true,false);
+        }
+    }else if(Bottom){
+        if (!ball.GetLaneMode()){
+            ball.SetLaneMode(true,true);
+            ball.setCenter(Vector2D {Center.x,Center.y+Length/2.0});
+            ball.SetLaneLength(Length);
+        }
     }
 
     return {0,0};

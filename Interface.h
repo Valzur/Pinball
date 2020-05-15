@@ -22,7 +22,7 @@ private:
     sf::RenderWindow window;  // Represents the game window
     const sf::Color  // Colors used for drawing (can change the whole theme of the game)
         backgroundColor = sf::Color(240, 240, 240),
-        outlineColor = sf::Color::Black,
+        outlineColor = sf::Color(54, 79, 107),
         ballFillColor = sf::Color::White,
         flipperFillColor = sf::Color::White,
         textColor = sf::Color(252, 81, 133),
@@ -59,13 +59,13 @@ public:
     void drawFlipper(FlipperType type, Vector2D center, double length, double angle, double majorRadius, double minor_radius);  // Draws a flipper
     void drawWall(double position,bool isVertical);  // Draws a vertical wall
     void drawNewWall(sf::Sprite sprite);
-    void drawBumper(Vector2D center, double radius, BumperType type);
+    void drawBumper(Vector2D center, double radius, BumperType type,bool Hit=false);
     void drawPortals(Vector2D Pos1, Vector2D Pos2,double radius);
     void drawMagnet(Vector2D Position, double magnetRadius,double radius,sf::Sprite * sprite);
     void drawSwitch(Vector2D pos);
     void drawCollectable(double radius,string L,Vector2D Center,bool Used);
     void drawSpeedBooster(double radius,Vector2D Center);
-    void drawGate(double length,double width,double setPositionX,double setPositionY);
+    void drawGate(double length,double width,Vector2D Center,bool AllowUp=false);
     void drawLane(double Length, Vector2D Center, double Width);
     void drawRamp(Vector2D Center);
     void drawScoreMultiplier(Vector2D Center, double Radius);
@@ -84,6 +84,5 @@ public:
     void drawLeftKicker(double x1,double y1,double x2,double y2,double x3,double y3);
     void drawRightKicker(double x1,double y1,double x2,double y2,double x3,double y3);
 
-    //
     sf::RenderWindow& GetWindow();
 };
