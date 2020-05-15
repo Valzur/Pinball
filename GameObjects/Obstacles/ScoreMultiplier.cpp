@@ -21,9 +21,10 @@ Vector2D ScoreMultiplier::collideWith(Ball & ball, double collision_time, Manage
     }else{
         Hit=true;
     }
-    return {0,0};
+
+    return Acceleration;
 }
 
 void ScoreMultiplier::draw(Interface& interface) {
-    interface.drawBumper(Center,Radius, SCOREM);
+    interface.drawBumper(Center,Radius, SCOREM,Hit);
 }
