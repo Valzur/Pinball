@@ -22,20 +22,30 @@ Vector2D Ball::getVelocity() const
 }
 
 void Ball::move(double time, Manager& manager,bool &lost){
-    if(isActive & !isUsedLane) {
-        manager.ValueUpdate(*this,lost);
-        // Kinematic equations for planar motion of a particle
-        velocity += Acceleration * time;
-        center += velocity *SpeedBoost* time + Acceleration * time * time * 0.5;
-    } else if (isUsedLane){
-        if(isDirectedUp){
-            velocity=Vector2D{0,-1}*VectorNorm(velocity);
-            center+=velocity*time*SpeedBoost;
-            std::cout << "Vx:" << velocity.x << " Vy: " << velocity.y << std::endl;
-        }else{
-            velocity=Vector2D{0,1}*VectorNorm(velocity);
-            center+=velocity*time*SpeedBoost;
-            std::cout << "Vx:" << velocity.x << " Vy: " << velocity.y << std::endl;
+    if(isActive){
+        if(!isUsedLane) {
+            manager.ValueUpdate(*this,lost);
+            // Kinematic equations for planar motion of a particle
+            velocity += Acceleration * time;
+            center += velocity *SpeedBoost* time + Acceleration * time * time * 0.5;
+        } else {
+            if(isDirectedUp){
+                if(LaneLength>0){
+                    velocity=Vector2D{0,-1}*VectorNorm(velocity);
+                    center+=velocity*time*SpeedBoost;
+                    LaneLength-=VectorNorm(velocity)*time*SpeedBoost;
+                }else{
+                    isUsedLane=false;
+                }
+            }else{
+                if(LaneLength>0){
+                    velocity=Vector2D{0,1}*VectorNorm(velocity);
+                    center+=velocity*time*SpeedBoost;
+                    LaneLength-=VectorNorm(velocity)*time*SpeedBoost;
+                }else{
+                    isUsedLane=false;
+                }
+            }
         }
     }
 }
@@ -60,6 +70,8 @@ void Ball::Activate(bool & space) {
 
 void Ball::deActivate() {
     isActive=false;
+    isUsedPortal=false;
+    isUsedLane=false;
 }
 
 Vector2D Ball::collideWith(Ball &ball, float collision_time, Manager & manager) {
@@ -126,12 +138,14 @@ void Ball::SetLaneLength(double Length) {
     this->LaneLength=Length;
 }
 
-void Ball::SetLaneMode(bool Active, bool IsDirectedUp) {
+void Ball::SetLaneMode(bool Active) {
     isUsedLane=Active;
-    isDirectedUp=IsDirectedUp;
 }
 
 bool Ball::GetLaneMode()const{
     return isUsedLane;
 }
 
+void Ball::SetLaneDirection(bool isUp) {
+    isDirectedUp=isUp;
+}

@@ -5,7 +5,7 @@
 
 class Lane : public Obstacle{
 private:
-    double Length;
+    double Length,Timer=LaneTimer;
     const double Width;
     Vector2D Center;
     bool Top=false,Bottom=false;
@@ -20,7 +20,7 @@ public:
     double GetLength() const;
     Vector2D GetCenter() const;
 
-    void draw(Interface& interface)override ;
+    void draw(Interface& interface)override;
     Vector2D collideWith(Ball & ball, double collision_time, Manager & manager) override;
 };
 

@@ -12,7 +12,7 @@ Vector2D Flipper::collideWith(Ball & ball, double collision_time, Manager & mana
     Acceleration+=CircleCollision(ball,center,majorRadius,collision_time);
     Acceleration+=CircleCollision(ball,minorCenter,minorRadius,collision_time);
 
-    return{0,0};
+    return Acceleration;
 }
 
 void Flipper::draw(Interface & interface)
