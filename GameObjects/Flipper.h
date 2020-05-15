@@ -3,7 +3,7 @@
 #include "Obstacles/Obstacle.h"
 #include <cmath>
 #include "../Defs.h"
-#include "../../Utility/CollisionDetection.h"
+#include "../Utility/CollisionDetection.h"
 
 using namespace std;
 

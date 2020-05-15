@@ -78,9 +78,9 @@ public:
     void drawBackground();
     void drawUIBackground();
 
-    void loadExternalFrame(bool isVertical, double Position);
+    void loadVerticalandHorizontalWall(bool isVertical, double Position);
 
-    void loadInternalFrame(bool is45,bool isLeft,double Diameter, double LineXCoordinate, double LineYCoordinate, double InclinationAngle, double setPositionX,double setPositionYRation);
+    void loadInclinedWall(bool is45, bool isLeft, double Diameter, double LineXCoordinate, double LineYCoordinate, double InclinationAngle, double setPositionX, double setPositionYRation);
     void drawLeftKicker(double x1,double y1,double x2,double y2,double x3,double y3);
     void drawRightKicker(double x1,double y1,double x2,double y2,double x3,double y3);
 

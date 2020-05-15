@@ -307,7 +307,7 @@ void Interface::LoadGraphics() {
 }
 
 //Draw external frame
-void Interface::loadExternalFrame(bool isVertical,double Position)
+void Interface::loadVerticalandHorizontalWall(bool isVertical, double Position)
 {
         if (isVertical) {
             sf::RectangleShape externalFrame(sf::Vector2f(Position, GAME_HEIGHT));
@@ -324,8 +324,8 @@ void Interface::loadExternalFrame(bool isVertical,double Position)
         }
 }
 
-void Interface::loadInternalFrame(bool is45,bool isLeft,double Diameter, double LineXCoordinate,
-        double LineYCoordinate, double InclinationAngle, double setPositionX,double setPositionYRation)
+void Interface::loadInclinedWall(bool is45, bool isLeft, double Diameter, double LineXCoordinate,
+                                 double LineYCoordinate, double InclinationAngle, double setPositionX, double setPositionYRation)
 {
 
 if(is45)
