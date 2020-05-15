@@ -25,7 +25,8 @@ private:
         outlineColor = sf::Color::Black,
         ballFillColor = sf::Color::White,
         flipperFillColor = sf::Color::White,
-        textColor = sf::Color(252, 81, 133);
+        textColor = sf::Color(252, 81, 133),
+        RadiantColor = sf::Color(67, 221, 230);
     const double outlineThickness = -2.0f;  // Negative sign means inwards
 
     //Sprites and textures
@@ -62,7 +63,7 @@ public:
     void drawPortals(Vector2D Pos1, Vector2D Pos2,double radius);
     void drawMagnet(Vector2D Position, double magnetRadius,double radius,sf::Sprite * sprite);
     void drawSwitch(Vector2D pos);
-    void drawCollectable(double radius,string L,Vector2D Center);
+    void drawCollectable(double radius,string L,Vector2D Center,bool Used);
     void drawSpeedBooster(double radius,Vector2D Center);
     void drawGate(double length,double width,double setPositionX,double setPositionY);
     void drawLane(double Length, Vector2D Center, double Width);

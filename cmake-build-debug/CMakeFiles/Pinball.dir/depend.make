@@ -621,6 +621,7 @@ CMakeFiles/Pinball.dir/GameObjects/Obstacles/Collectable.cpp.obj: ../GameObjects
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/Collectable.cpp.obj: ../GameObjects/Obstacles/Collectable.h
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/Collectable.cpp.obj: ../GameObjects/Obstacles/Obstacle.h
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/Collectable.cpp.obj: ../Interface.h
+CMakeFiles/Pinball.dir/GameObjects/Obstacles/Collectable.cpp.obj: ../Utility/CollisionDetection.h
 
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/ExternalFrame.cpp.obj: ../libs/SFML-2.5.1/include/SFML/Config.hpp
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/ExternalFrame.cpp.obj: ../libs/SFML-2.5.1/include/SFML/Graphics.hpp

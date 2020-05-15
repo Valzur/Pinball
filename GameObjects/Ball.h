@@ -12,8 +12,8 @@ private:
     const Vector2D InitialPosition,InitialVelocity;
     bool isActive,isMain,isUsedPortal=false,isUsedLane=false;
     const double radius, BoostDuration=0.5;
-    Vector2D center;  // The instantaneous center of the ball
-    Vector2D velocity;  // The instantaneous velocity of the ball
+    Vector2D center;  //The instantaneous center of the ball
+    Vector2D velocity;  //The instantaneous velocity of the ball
     Vector2D Acceleration;
     double BoostTimer=0.0, SpeedBoost=1.0;
 

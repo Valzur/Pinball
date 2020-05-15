@@ -427,10 +427,15 @@ void Interface::drawMagnet(Vector2D Position, double magnetRadius, double radius
     window.draw(*sprite);
 }
 
-void Interface::drawCollectable(double radius, string L, Vector2D Center) {
+void Interface::drawCollectable(double radius, string L, Vector2D Center, bool Used) {
     sf::CircleShape Collectable(radius);
-    Collectable.setFillColor(sf::Color::Transparent);
-    drawText(L, 30, {Center.x+radius/1.5,Center.y-radius/3.0 });
+    if(Used){
+        Collectable.setFillColor(RadiantColor);
+    }else{
+        Collectable.setFillColor(sf::Color::Transparent);
+    }
+    drawText(L, 30, {Center.x-radius/1.8,Center.y-radius*5/4});
+    Collectable.setOrigin(radius,radius);
     Collectable.setPosition(Center.x,Center.y);
     Collectable.setOutlineThickness(2);
     window.draw(Collectable);

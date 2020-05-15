@@ -622,6 +622,7 @@ CMakeFiles/Pinball.dir/GameObjects/Obstacles/Collectable.cpp.obj
  D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/Collectable.h
  D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/Obstacle.h
  D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Interface.h
+ D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Utility/CollisionDetection.h
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/ExternalFrame.cpp.obj
  ../libs/SFML-2.5.1/include/SFML/Config.hpp
  ../libs/SFML-2.5.1/include/SFML/Graphics.hpp

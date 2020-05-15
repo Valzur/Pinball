@@ -11,7 +11,7 @@ Vector2D CircleCollision(const Ball& ball,Vector2D position, double radius, doub
     return Acceleration;
 }
 
-bool BICCollision(const Ball &ball, Vector2D position, double radius) {
+bool BICCollision(Ball &ball, Vector2D position, double radius) {
     bool detected = false;
     if (VectorDistance(ball.getCenter(), position) < radius - ball.getRadius())
         detected = true;
