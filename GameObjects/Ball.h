@@ -37,7 +37,8 @@ public:
     void setVelocity(Vector2D vel);
     void setAcceleration(Vector2D Acceleration);
     void SetLaneLength(double Length);
-    void SetLaneMode(bool Active, bool IsDirectedUp=true);
+    void SetLaneDirection(bool isUp);
+    void SetLaneMode(bool Active);
 
     void deActivate();
     void Activate(bool & space);

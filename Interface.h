@@ -69,6 +69,7 @@ public:
     void drawLane(double Length, Vector2D Center, double Width);
     void drawRamp(Vector2D Center);
     void drawScoreMultiplier(Vector2D Center, double Radius);
+    void drawBullseye(Vector2D Center,double Length, double Width, bool isVertical);
 
     //Utility
     void drawFPS();

@@ -108,8 +108,8 @@ void Game::InstantiateObstacles() {
                 ReadLanes(file);
             } else if(Choice=="RAMP"){
                 ReadRamps(file);
-            } else if(Choice=="SCOREMULTIPLIER"){
-                ReadScoreMultipliers(file);
+            } else if(Choice=="BULLSEYE"){
+                ReadBullseyes(file);
             }
         }
         file.close();
@@ -552,6 +552,35 @@ void Game::ReadScoreMultipliers(fstream &file) {
         file >> Radius;
 
         AddObstacle( new ScoreMultiplier(Center,Radius));
+        AddDrawable(pObstacles[ObstaclesNo-1]);
+    }
+}
+
+void Game::ReadBullseyes(fstream &file) {
+    Vector2D Center;
+    double Length;
+    bool isVertical=false;
+    string Trash,Choice;
+    int BullseyeNo;
+
+    file >> BullseyeNo;
+
+    for (int i = 0; i < BullseyeNo; i++) {
+        file >> Trash;
+        file >> Center.x;
+        file >> Center.y;
+        file >> Trash;
+        file >> Length;
+        file >> Trash;
+        file >> Choice;
+
+        if(Choice=="YES"){
+            isVertical=true;
+        }else if(Choice=="NO"){
+            isVertical=false;
+        }
+
+        AddObstacle( new Bullseye(Center,Length,isVertical));
         AddDrawable(pObstacles[ObstaclesNo-1]);
     }
 }

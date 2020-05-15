@@ -257,6 +257,33 @@ GameObjects/Manager.cpp.s:
 	$(MAKE) -f CMakeFiles\Pinball.dir\build.make CMakeFiles/Pinball.dir/GameObjects/Manager.cpp.s
 .PHONY : GameObjects/Manager.cpp.s
 
+GameObjects/Obstacles/Bullseye.obj: GameObjects/Obstacles/Bullseye.cpp.obj
+
+.PHONY : GameObjects/Obstacles/Bullseye.obj
+
+# target to build an object file
+GameObjects/Obstacles/Bullseye.cpp.obj:
+	$(MAKE) -f CMakeFiles\Pinball.dir\build.make CMakeFiles/Pinball.dir/GameObjects/Obstacles/Bullseye.cpp.obj
+.PHONY : GameObjects/Obstacles/Bullseye.cpp.obj
+
+GameObjects/Obstacles/Bullseye.i: GameObjects/Obstacles/Bullseye.cpp.i
+
+.PHONY : GameObjects/Obstacles/Bullseye.i
+
+# target to preprocess a source file
+GameObjects/Obstacles/Bullseye.cpp.i:
+	$(MAKE) -f CMakeFiles\Pinball.dir\build.make CMakeFiles/Pinball.dir/GameObjects/Obstacles/Bullseye.cpp.i
+.PHONY : GameObjects/Obstacles/Bullseye.cpp.i
+
+GameObjects/Obstacles/Bullseye.s: GameObjects/Obstacles/Bullseye.cpp.s
+
+.PHONY : GameObjects/Obstacles/Bullseye.s
+
+# target to generate assembly for a file
+GameObjects/Obstacles/Bullseye.cpp.s:
+	$(MAKE) -f CMakeFiles\Pinball.dir\build.make CMakeFiles/Pinball.dir/GameObjects/Obstacles/Bullseye.cpp.s
+.PHONY : GameObjects/Obstacles/Bullseye.cpp.s
+
 GameObjects/Obstacles/Bumper.obj: GameObjects/Obstacles/Bumper.cpp.obj
 
 .PHONY : GameObjects/Obstacles/Bumper.obj
@@ -983,6 +1010,9 @@ help:
 	@echo ... GameObjects/Manager.obj
 	@echo ... GameObjects/Manager.i
 	@echo ... GameObjects/Manager.s
+	@echo ... GameObjects/Obstacles/Bullseye.obj
+	@echo ... GameObjects/Obstacles/Bullseye.i
+	@echo ... GameObjects/Obstacles/Bullseye.s
 	@echo ... GameObjects/Obstacles/Bumper.obj
 	@echo ... GameObjects/Obstacles/Bumper.i
 	@echo ... GameObjects/Obstacles/Bumper.s

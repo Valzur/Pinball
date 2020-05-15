@@ -4,6 +4,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Pinball.dir/GameObjects/Ball.cpp.obj"
   "CMakeFiles/Pinball.dir/GameObjects/Flipper.cpp.obj"
   "CMakeFiles/Pinball.dir/GameObjects/Manager.cpp.obj"
+  "CMakeFiles/Pinball.dir/GameObjects/Obstacles/Bullseye.cpp.obj"
   "CMakeFiles/Pinball.dir/GameObjects/Obstacles/Bumper.cpp.obj"
   "CMakeFiles/Pinball.dir/GameObjects/Obstacles/Collectable.cpp.obj"
   "CMakeFiles/Pinball.dir/GameObjects/Obstacles/ExternalFrame.cpp.obj"

@@ -536,3 +536,53 @@ void Interface::drawScoreMultiplier(Vector2D Center, double Radius) {
     ScoreMsprite.setPosition(Center);
     window.draw(ScoreMsprite);
 }
+
+void Interface::drawBullseye(Vector2D Center,double Length, double Width, bool isVertical) {
+    if (isVertical){
+        sf::RectangleShape Ace(Vector2D{Width,Length/3.0}),
+                Expert(Vector2D{Width,Length*2.0/3.0}),
+                Novice(Vector2D{Width,Length});
+        //Origin
+        Ace.setOrigin(Width/2.0,Length/6.0);
+        Expert.setOrigin(Width/2.0,Length/3.0);
+        Novice.setOrigin(Width/2.0,Length/2.0);
+
+        //Positioning
+        Ace.setPosition(Center);
+        Expert.setPosition(Center);
+        Novice.setPosition(Center);
+
+        //Aesthetics
+        Ace.setFillColor(sf::Color(254, 255, 137));
+        Expert.setFillColor(sf::Color(255, 159, 104));
+        Novice.setFillColor(sf::Color(248, 89, 89));
+
+        //Draw
+        window.draw(Novice);
+        window.draw(Expert);
+        window.draw(Ace);
+    }else{
+        sf::RectangleShape Ace(Vector2D {Length/3.0,Width}),
+                Expert(Vector2D {Length*2/3.0,Width}),
+                Novice(Vector2D{Length,Width});
+        //Origin
+        Ace.setOrigin(Length/6.0,Width/2.0);
+        Expert.setOrigin(Length/3.0,Width/2.0);
+        Novice.setOrigin(Length/2.0,Width/2.0);
+
+        //Positioning
+        Ace.setPosition(Center);
+        Expert.setPosition(Center);
+        Novice.setPosition(Center);
+
+        //Aesthetics
+        Ace.setFillColor(sf::Color(254, 255, 137));
+        Expert.setFillColor(sf::Color(255, 159, 104));
+        Novice.setFillColor(sf::Color(248, 89, 89));
+
+        //Draw
+        window.draw(Novice);
+        window.draw(Expert);
+        window.draw(Ace);
+    }
+}
