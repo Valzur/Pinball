@@ -1,21 +1,24 @@
+//
+// Created by anon on 4/10/20.
+//
+
 #include "Wall.h"
 
-#include <cmath>
-using namespace std;
-
-Wall::Wall(float position,bool vertical): position(position), collidedLastFrame(false) {
-    isVertical=vertical;
-}
-
-void Wall::draw(Interface & interface)
+Wall::Wall(bool isVertical, float Position)
 {
-    interface.drawWall(position,isVertical);
+
 }
 
-Vector2D Wall::collideWith(Ball & ball, double collision_time, Manager & manager)
+void Wall::draw(Interface &interface)
+{
+    interface.drawWall(isVertical, Position);
+
+}
+
+Vector2D Wall::collideWith(Ball &ball, double collision_time, Manager &manager)
 {
     if(isVertical) {
-        if (!collidedLastFrame && abs(position - ball.getCenter().x) < ball.getRadius()) {
+        if (!collidedLastFrame && abs(Position - ball.getCenter().x) < ball.getRadius()) {
             collidedLastFrame = true;
 
             if(ball.getCenter().x>GAME_WIDTH-ball.getRadius())
@@ -30,7 +33,7 @@ Vector2D Wall::collideWith(Ball & ball, double collision_time, Manager & manager
             return Vector2D{0, 0};
         }
     }else{
-        if (!collidedLastFrame && abs(position - ball.getCenter().y) < ball.getRadius()) {
+        if (!collidedLastFrame && abs(Position - ball.getCenter().y) < ball.getRadius()) {
             collidedLastFrame = true;
 
             return Vector2D{0, ball.getVelocity().y * -1} / collision_time;

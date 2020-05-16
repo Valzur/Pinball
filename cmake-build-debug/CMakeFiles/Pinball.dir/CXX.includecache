@@ -6,10 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/home/rasberry/Desktop/Pinball Project/Pinball/Defs.cpp
-Defs.h
-/home/rasberry/Desktop/Pinball Project/Pinball/Defs.h
-
 /home/rasberry/Desktop/Pinball Project/Pinball/Defs.h
 cmath
 -
@@ -35,8 +31,6 @@ Defs.h
 /home/rasberry/Desktop/Pinball Project/Pinball/Defs.h
 GameObjects/Ball.h
 /home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Ball.h
-GameObjects/Obstacles/Wall.h
-/home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/Wall.h
 GameObjects/Flipper.h
 /home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Flipper.h
 GameObjects/Obstacles/SpriteWalls.h
@@ -45,8 +39,8 @@ GameObjects/Obstacles/Kicker.h
 /home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/Kicker.h
 GameObjects/Obstacles/Bumper.h
 /home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/Bumper.h
-GameObjects/Obstacles/InclinedWall.h
-/home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/InclinedWall.h
+GameObjects/Obstacles/Ramp.h
+/home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/Ramp.h
 GameObjects/Manager.h
 /home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Manager.h
 Utility/AudioManager.h
@@ -55,8 +49,8 @@ Utility/Configurable.h
 /home/rasberry/Desktop/Pinball Project/Pinball/Utility/Configurable.h
 GameObjects/Obstacles/Portal.h
 /home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/Portal.h
-GameObjects/Obstacles/VerticalandHorizontalWall.h
-/home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/VerticalandHorizontalWall.h
+GameObjects/Obstacles/Wall.h
+/home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/Wall.h
 GameObjects/Obstacles/Gate.h
 /home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/Gate.h
 GameObjects/Obstacles/Magnet.h
@@ -182,16 +176,6 @@ Gate.h
 Obstacle.h
 /home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/Obstacle.h
 
-/home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/InclinedWall.cpp
-InclinedWall.h
-/home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/InclinedWall.h
-
-/home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/InclinedWall.h
-Obstacle.h
-/home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/Obstacle.h
-Wall.h
-/home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/Wall.h
-
 /home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/Kicker.cpp
 Kicker.h
 /home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/Kicker.h
@@ -249,8 +233,8 @@ Ramp.h
 /home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/Ramp.h
 
 /home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/Ramp.h
-InclinedWall.h
-/home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/InclinedWall.h
+Obstacle.h
+/home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/Obstacle.h
 
 /home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/ScoreMultiplier.cpp
 ScoreMultiplier.h
@@ -310,16 +294,6 @@ Bumper.h
 ../../Defs.h
 /home/rasberry/Desktop/Pinball Project/Pinball/Defs.h
 
-/home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/VerticalandHorizontalWall.cpp
-VerticalandHorizontalWall.h
-/home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/VerticalandHorizontalWall.h
-
-/home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/VerticalandHorizontalWall.h
-Obstacle.h
-/home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/Obstacle.h
-Wall.h
-/home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/Wall.h
-
 /home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/VibraniumBumper.cpp
 VibraniumBumper.h
 /home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/VibraniumBumper.h
@@ -331,8 +305,6 @@ Bumper.h
 /home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/Wall.cpp
 Wall.h
 /home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/Wall.h
-cmath
--
 
 /home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/Wall.h
 Obstacle.h
@@ -351,10 +323,6 @@ Defs.h
 /home/rasberry/Desktop/Pinball Project/Pinball/Defs.h
 iostream
 -
-
-/home/rasberry/Desktop/Pinball Project/Pinball/Utility/AudioManager.cpp
-AudioManager.h
-/home/rasberry/Desktop/Pinball Project/Pinball/Utility/AudioManager.h
 
 /home/rasberry/Desktop/Pinball Project/Pinball/Utility/AudioManager.h
 iostream
@@ -393,10 +361,10 @@ AudioManager.h
 /home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/Wall.h
 ../GameObjects/Obstacles/PopBumper.h
 /home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/PopBumper.h
-../GameObjects/Obstacles/InclinedWall.h
-/home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/InclinedWall.h
-../GameObjects/Obstacles/VerticalandHorizontalWall.h
-/home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/VerticalandHorizontalWall.h
+../GameObjects/Obstacles/Ramp.h
+/home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/Ramp.h
+../GameObjects/Obstacles/Wall.h
+/home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/Wall.h
 
 /home/rasberry/Desktop/Pinball Project/Pinball/Utility/PixelPerfectCollision.cpp
 PixelPerfectCollision.h
@@ -406,16 +374,6 @@ PixelPerfectCollision.h
 ../GameObjects/Ball.h
 /home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Ball.h
 cmath
--
-
-/home/rasberry/Desktop/Pinball Project/Pinball/Utility/PostProcessing.cpp
-PostProcessing.h
-/home/rasberry/Desktop/Pinball Project/Pinball/Utility/PostProcessing.h
-
-/home/rasberry/Desktop/Pinball Project/Pinball/Utility/PostProcessing.h
-SFML/Graphics/Shader.hpp
--
-SFML/Graphics/Texture.hpp
 -
 
 /home/rasberry/Desktop/Pinball Project/Pinball/Utility/PreGame.cpp

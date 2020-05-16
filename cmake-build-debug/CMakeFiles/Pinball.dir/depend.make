@@ -16,7 +16,6 @@ CMakeFiles/Pinball.dir/Game.cpp.o: ../GameObjects/Obstacles/Bullseye.h
 CMakeFiles/Pinball.dir/Game.cpp.o: ../GameObjects/Obstacles/Bumper.h
 CMakeFiles/Pinball.dir/Game.cpp.o: ../GameObjects/Obstacles/Collectable.h
 CMakeFiles/Pinball.dir/Game.cpp.o: ../GameObjects/Obstacles/Gate.h
-CMakeFiles/Pinball.dir/Game.cpp.o: ../GameObjects/Obstacles/InclinedWall.h
 CMakeFiles/Pinball.dir/Game.cpp.o: ../GameObjects/Obstacles/Kicker.h
 CMakeFiles/Pinball.dir/Game.cpp.o: ../GameObjects/Obstacles/Lane.h
 CMakeFiles/Pinball.dir/Game.cpp.o: ../GameObjects/Obstacles/Magnet.h
@@ -29,7 +28,6 @@ CMakeFiles/Pinball.dir/Game.cpp.o: ../GameObjects/Obstacles/SpeedBooster.h
 CMakeFiles/Pinball.dir/Game.cpp.o: ../GameObjects/Obstacles/SpriteWalls.h
 CMakeFiles/Pinball.dir/Game.cpp.o: ../GameObjects/Obstacles/Switch.h
 CMakeFiles/Pinball.dir/Game.cpp.o: ../GameObjects/Obstacles/ThrustBumper.h
-CMakeFiles/Pinball.dir/Game.cpp.o: ../GameObjects/Obstacles/VerticalandHorizontalWall.h
 CMakeFiles/Pinball.dir/Game.cpp.o: ../GameObjects/Obstacles/VibraniumBumper.h
 CMakeFiles/Pinball.dir/Game.cpp.o: ../GameObjects/Obstacles/Wall.h
 CMakeFiles/Pinball.dir/Game.cpp.o: ../Interface.h
@@ -108,17 +106,6 @@ CMakeFiles/Pinball.dir/GameObjects/Obstacles/Gate.cpp.o: ../GameObjects/Obstacle
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/Gate.cpp.o: ../GameObjects/Obstacles/Obstacle.h
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/Gate.cpp.o: ../Interface.h
 
-CMakeFiles/Pinball.dir/GameObjects/Obstacles/InclinedWall.cpp.o: ../Defs.h
-CMakeFiles/Pinball.dir/GameObjects/Obstacles/InclinedWall.cpp.o: ../GameObjects/Ball.h
-CMakeFiles/Pinball.dir/GameObjects/Obstacles/InclinedWall.cpp.o: ../GameObjects/Collidable.h
-CMakeFiles/Pinball.dir/GameObjects/Obstacles/InclinedWall.cpp.o: ../GameObjects/Drawable.h
-CMakeFiles/Pinball.dir/GameObjects/Obstacles/InclinedWall.cpp.o: ../GameObjects/Manager.h
-CMakeFiles/Pinball.dir/GameObjects/Obstacles/InclinedWall.cpp.o: ../GameObjects/Obstacles/InclinedWall.cpp
-CMakeFiles/Pinball.dir/GameObjects/Obstacles/InclinedWall.cpp.o: ../GameObjects/Obstacles/InclinedWall.h
-CMakeFiles/Pinball.dir/GameObjects/Obstacles/InclinedWall.cpp.o: ../GameObjects/Obstacles/Obstacle.h
-CMakeFiles/Pinball.dir/GameObjects/Obstacles/InclinedWall.cpp.o: ../GameObjects/Obstacles/Wall.h
-CMakeFiles/Pinball.dir/GameObjects/Obstacles/InclinedWall.cpp.o: ../Interface.h
-
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/Kicker.cpp.o: ../Defs.h
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/Kicker.cpp.o: ../GameObjects/Ball.h
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/Kicker.cpp.o: ../GameObjects/Collidable.h
@@ -179,11 +166,9 @@ CMakeFiles/Pinball.dir/GameObjects/Obstacles/Ramp.cpp.o: ../GameObjects/Ball.h
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/Ramp.cpp.o: ../GameObjects/Collidable.h
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/Ramp.cpp.o: ../GameObjects/Drawable.h
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/Ramp.cpp.o: ../GameObjects/Manager.h
-CMakeFiles/Pinball.dir/GameObjects/Obstacles/Ramp.cpp.o: ../GameObjects/Obstacles/InclinedWall.h
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/Ramp.cpp.o: ../GameObjects/Obstacles/Obstacle.h
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/Ramp.cpp.o: ../GameObjects/Obstacles/Ramp.cpp
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/Ramp.cpp.o: ../GameObjects/Obstacles/Ramp.h
-CMakeFiles/Pinball.dir/GameObjects/Obstacles/Ramp.cpp.o: ../GameObjects/Obstacles/Wall.h
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/Ramp.cpp.o: ../Interface.h
 
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/ScoreMultiplier.cpp.o: ../Defs.h
@@ -241,17 +226,6 @@ CMakeFiles/Pinball.dir/GameObjects/Obstacles/ThrustBumper.cpp.o: ../GameObjects/
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/ThrustBumper.cpp.o: ../Interface.h
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/ThrustBumper.cpp.o: ../Utility/CollisionDetection.h
 
-CMakeFiles/Pinball.dir/GameObjects/Obstacles/VerticalandHorizontalWall.cpp.o: ../Defs.h
-CMakeFiles/Pinball.dir/GameObjects/Obstacles/VerticalandHorizontalWall.cpp.o: ../GameObjects/Ball.h
-CMakeFiles/Pinball.dir/GameObjects/Obstacles/VerticalandHorizontalWall.cpp.o: ../GameObjects/Collidable.h
-CMakeFiles/Pinball.dir/GameObjects/Obstacles/VerticalandHorizontalWall.cpp.o: ../GameObjects/Drawable.h
-CMakeFiles/Pinball.dir/GameObjects/Obstacles/VerticalandHorizontalWall.cpp.o: ../GameObjects/Manager.h
-CMakeFiles/Pinball.dir/GameObjects/Obstacles/VerticalandHorizontalWall.cpp.o: ../GameObjects/Obstacles/Obstacle.h
-CMakeFiles/Pinball.dir/GameObjects/Obstacles/VerticalandHorizontalWall.cpp.o: ../GameObjects/Obstacles/VerticalandHorizontalWall.cpp
-CMakeFiles/Pinball.dir/GameObjects/Obstacles/VerticalandHorizontalWall.cpp.o: ../GameObjects/Obstacles/VerticalandHorizontalWall.h
-CMakeFiles/Pinball.dir/GameObjects/Obstacles/VerticalandHorizontalWall.cpp.o: ../GameObjects/Obstacles/Wall.h
-CMakeFiles/Pinball.dir/GameObjects/Obstacles/VerticalandHorizontalWall.cpp.o: ../Interface.h
-
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/VibraniumBumper.cpp.o: ../Defs.h
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/VibraniumBumper.cpp.o: ../GameObjects/Ball.h
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/VibraniumBumper.cpp.o: ../GameObjects/Collidable.h
@@ -298,10 +272,9 @@ CMakeFiles/Pinball.dir/Utility/Configurable.cpp.o: ../GameObjects/Drawable.h
 CMakeFiles/Pinball.dir/Utility/Configurable.cpp.o: ../GameObjects/Flipper.h
 CMakeFiles/Pinball.dir/Utility/Configurable.cpp.o: ../GameObjects/Manager.h
 CMakeFiles/Pinball.dir/Utility/Configurable.cpp.o: ../GameObjects/Obstacles/Bumper.h
-CMakeFiles/Pinball.dir/Utility/Configurable.cpp.o: ../GameObjects/Obstacles/InclinedWall.h
 CMakeFiles/Pinball.dir/Utility/Configurable.cpp.o: ../GameObjects/Obstacles/Obstacle.h
 CMakeFiles/Pinball.dir/Utility/Configurable.cpp.o: ../GameObjects/Obstacles/PopBumper.h
-CMakeFiles/Pinball.dir/Utility/Configurable.cpp.o: ../GameObjects/Obstacles/VerticalandHorizontalWall.h
+CMakeFiles/Pinball.dir/Utility/Configurable.cpp.o: ../GameObjects/Obstacles/Ramp.h
 CMakeFiles/Pinball.dir/Utility/Configurable.cpp.o: ../GameObjects/Obstacles/Wall.h
 CMakeFiles/Pinball.dir/Utility/Configurable.cpp.o: ../Interface.h
 CMakeFiles/Pinball.dir/Utility/Configurable.cpp.o: ../Utility/AudioManager.h
@@ -329,10 +302,9 @@ CMakeFiles/Pinball.dir/Utility/PreGame.cpp.o: ../GameObjects/Drawable.h
 CMakeFiles/Pinball.dir/Utility/PreGame.cpp.o: ../GameObjects/Flipper.h
 CMakeFiles/Pinball.dir/Utility/PreGame.cpp.o: ../GameObjects/Manager.h
 CMakeFiles/Pinball.dir/Utility/PreGame.cpp.o: ../GameObjects/Obstacles/Bumper.h
-CMakeFiles/Pinball.dir/Utility/PreGame.cpp.o: ../GameObjects/Obstacles/InclinedWall.h
 CMakeFiles/Pinball.dir/Utility/PreGame.cpp.o: ../GameObjects/Obstacles/Obstacle.h
 CMakeFiles/Pinball.dir/Utility/PreGame.cpp.o: ../GameObjects/Obstacles/PopBumper.h
-CMakeFiles/Pinball.dir/Utility/PreGame.cpp.o: ../GameObjects/Obstacles/VerticalandHorizontalWall.h
+CMakeFiles/Pinball.dir/Utility/PreGame.cpp.o: ../GameObjects/Obstacles/Ramp.h
 CMakeFiles/Pinball.dir/Utility/PreGame.cpp.o: ../GameObjects/Obstacles/Wall.h
 CMakeFiles/Pinball.dir/Utility/PreGame.cpp.o: ../Interface.h
 CMakeFiles/Pinball.dir/Utility/PreGame.cpp.o: ../Utility/AudioManager.h
@@ -352,7 +324,6 @@ CMakeFiles/Pinball.dir/main.cpp.o: ../GameObjects/Obstacles/Bullseye.h
 CMakeFiles/Pinball.dir/main.cpp.o: ../GameObjects/Obstacles/Bumper.h
 CMakeFiles/Pinball.dir/main.cpp.o: ../GameObjects/Obstacles/Collectable.h
 CMakeFiles/Pinball.dir/main.cpp.o: ../GameObjects/Obstacles/Gate.h
-CMakeFiles/Pinball.dir/main.cpp.o: ../GameObjects/Obstacles/InclinedWall.h
 CMakeFiles/Pinball.dir/main.cpp.o: ../GameObjects/Obstacles/Kicker.h
 CMakeFiles/Pinball.dir/main.cpp.o: ../GameObjects/Obstacles/Lane.h
 CMakeFiles/Pinball.dir/main.cpp.o: ../GameObjects/Obstacles/Magnet.h
@@ -365,7 +336,6 @@ CMakeFiles/Pinball.dir/main.cpp.o: ../GameObjects/Obstacles/SpeedBooster.h
 CMakeFiles/Pinball.dir/main.cpp.o: ../GameObjects/Obstacles/SpriteWalls.h
 CMakeFiles/Pinball.dir/main.cpp.o: ../GameObjects/Obstacles/Switch.h
 CMakeFiles/Pinball.dir/main.cpp.o: ../GameObjects/Obstacles/ThrustBumper.h
-CMakeFiles/Pinball.dir/main.cpp.o: ../GameObjects/Obstacles/VerticalandHorizontalWall.h
 CMakeFiles/Pinball.dir/main.cpp.o: ../GameObjects/Obstacles/VibraniumBumper.h
 CMakeFiles/Pinball.dir/main.cpp.o: ../GameObjects/Obstacles/Wall.h
 CMakeFiles/Pinball.dir/main.cpp.o: ../Interface.h

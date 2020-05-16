@@ -20,7 +20,7 @@ set(CMAKE_CXX_STANDARD 14)
 
 add_executable(Pinball main.cpp Game.cpp Game.h Interface.cpp Interface.h
         GameObjects/Drawable.h GameObjects/Ball.cpp GameObjects/Ball.h GameObjects/Collidable.h
-        Defs.h GameObjects/Obstacles/Obstacle.h GameObjects/Obstacles/Wall.cpp GameObjects/Obstacles/Wall.h
+        Defs.h GameObjects/Obstacles/Obstacle.h
         GameObjects/Flipper.cpp GameObjects/Flipper.h GameObjects/Obstacles/SpriteWalls.cpp
         GameObjects/Obstacles/SpriteWalls.h GameObjects/Obstacles/Bumper.cpp GameObjects/Obstacles/Bumper.h
         Utility/PixelPerfectCollision.cpp Utility/PixelPerfectCollision.h GameObjects/Manager.cpp
@@ -28,12 +28,12 @@ add_executable(Pinball main.cpp Game.cpp Game.h Interface.cpp Interface.h
         Utility/PreGame.h Utility/Configurable.cpp Utility/Configurable.h GameObjects/Obstacles/PopBumper.cpp
         GameObjects/Obstacles/PopBumper.h Utility/PostProcessing.cpp Utility/PostProcessing.h GameObjects/Obstacles/Portal.cpp
         GameObjects/Obstacles/Portal.h Utility/CollisionDetection.cpp Utility/CollisionDetection.h GameObjects/Obstacles/Magnet.cpp
-        GameObjects/Obstacles/Magnet.h GameObjects/Obstacles/Gate.cpp GameObjects/Obstacles/VerticalandHorizontalWall.cpp
-        GameObjects/Obstacles/InclinedWall.cpp GameObjects/Obstacles/Kicker.cpp
+        GameObjects/Obstacles/Magnet.h GameObjects/Obstacles/Gate.cpp GameObjects/Obstacles/Wall.cpp
+        GameObjects/Obstacles/Ramp.cpp GameObjects/Obstacles/Kicker.cpp
         GameObjects/Obstacles/Collectable.cpp GameObjects/Obstacles/Collectable.h GameObjects/Obstacles/SpeedBooster.cpp
         GameObjects/Obstacles/SpeedBooster.h GameObjects/Obstacles/ThrustBumper.cpp GameObjects/Obstacles/ThrustBumper.h
         GameObjects/Obstacles/VibraniumBumper.cpp GameObjects/Obstacles/VibraniumBumper.h GameObjects/Obstacles/ScoreMultiplier.cpp
-        GameObjects/Obstacles/ScoreMultiplier.h GameObjects/Obstacles/Switch.cpp GameObjects/Obstacles/Switch.h GameObjects/Obstacles/Lane.cpp GameObjects/Obstacles/Lane.h GameObjects/Obstacles/Ramp.cpp GameObjects/Obstacles/Ramp.h GameObjects/Obstacles/Bullseye.cpp GameObjects/Obstacles/Bullseye.h)
+        GameObjects/Obstacles/ScoreMultiplier.h GameObjects/Obstacles/Switch.cpp GameObjects/Obstacles/Switch.h GameObjects/Obstacles/Lane.cpp GameObjects/Obstacles/Lane.h GameObjects/Obstacles/Bullseye.cpp GameObjects/Obstacles/Bullseye.h)
 
 target_link_libraries(Pinball openal vorbis)
 

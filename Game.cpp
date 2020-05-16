@@ -49,9 +49,9 @@ void Game::updateInterfaceOutput()
     if(!Lost) {
         //Load things
         interface.drawBackground();
-        interface.loadExternalFrame(1,-10.0f);
-        interface.loadExternalFrame(1,10.0f);
-        interface.loadExternalFrame(0,10.0f);
+        interface.drawWall(1, -10.0f);
+        interface.drawWall(1, 10.0f);
+        interface.drawWall(0, 10.0f);
 
         //Pls
         DrawDrawables();
@@ -106,10 +106,10 @@ void Game::InstantiateObstacles() {
                 ReadGates(file);
             } else if(Choice=="LANE"){
                 ReadLanes(file);
-            } else if(Choice=="RAMP"){
-                ReadRamps(file);
-            } else if(Choice=="BULLSEYE"){
-                ReadBullseyes(file);
+//            } else if(Choice=="RAMP"){ // This is replaced by calling the "drawRamp" function
+//                ReadRamps(file);
+            } else if(Choice=="SCOREMULTIPLIER"){
+                ReadScoreMultipliers(file);
             }
         }
         file.close();
@@ -378,8 +378,8 @@ void Game::ReadInternalFrame(fstream& file)
         file >> setPositionX;
         file >> Trash;
         file >> setPositionYRation;
-        AddObstacle(new InternalFrames(FloatToBool(is45),FloatToBool(isLeft),Diameter,
-                LineXCoordinate,LineYCoordinate,InclinationAngle,setPositionX,setPositionYRation));
+        AddObstacle(new Ramp(FloatToBool(is45), FloatToBool(isLeft), Diameter,
+                             LineXCoordinate, LineYCoordinate, InclinationAngle, setPositionX, setPositionYRation));
         AddDrawable(pObstacles[ObstaclesNo-1]);
     }
 }
@@ -522,20 +522,20 @@ void Game::ReadLanes(fstream &file) {
     }
 }
 
-void Game::ReadRamps(fstream &file) {
-    Vector2D Center;
-    string Trash;
-    int RampsNo;
-    file >> RampsNo;
-    for (int i = 0; i <RampsNo; i++) {
-        file >> Trash;
-        file >> Center.x;
-        file >> Center.y;
-        AddObstacle( new Ramp(Center));
-        AddDrawable(pObstacles[ObstaclesNo-1]);
-    }
+//void Game::ReadRamps(fstream &file) {    //This is replaced be "load Ramp function , so we need to load the date in the configuration file
+//    Vector2D Center;
+//    string Trash;
+//    int RampsNo;
+//    file >> RampsNo;
+//    for (int i = 0; i <RampsNo; i++) {
+//        file >> Trash;
+//        file >> Center.x;
+//        file >> Center.y;
+//        AddObstacle( new Ramp(Center));
+//        AddDrawable(pObstacles[ObstaclesNo-1]);
+//    }
 
-}
+//}
 
 void Game::ReadScoreMultipliers(fstream &file) {
     Vector2D Center;
@@ -552,35 +552,6 @@ void Game::ReadScoreMultipliers(fstream &file) {
         file >> Radius;
 
         AddObstacle( new ScoreMultiplier(Center,Radius));
-        AddDrawable(pObstacles[ObstaclesNo-1]);
-    }
-}
-
-void Game::ReadBullseyes(fstream &file) {
-    Vector2D Center;
-    double Length;
-    bool isVertical=false;
-    string Trash,Choice;
-    int BullseyeNo;
-
-    file >> BullseyeNo;
-
-    for (int i = 0; i < BullseyeNo; i++) {
-        file >> Trash;
-        file >> Center.x;
-        file >> Center.y;
-        file >> Trash;
-        file >> Length;
-        file >> Trash;
-        file >> Choice;
-
-        if(Choice=="YES"){
-            isVertical=true;
-        }else if(Choice=="NO"){
-            isVertical=false;
-        }
-
-        AddObstacle( new Bullseye(Center,Length,isVertical));
         AddDrawable(pObstacles[ObstaclesNo-1]);
     }
 }

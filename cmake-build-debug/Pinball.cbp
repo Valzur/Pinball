@@ -144,12 +144,6 @@
 		<Unit filename="/home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/Gate.h">
 			<Option target="Pinball"/>
 		</Unit>
-		<Unit filename="/home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/InclinedWall.cpp">
-			<Option target="Pinball"/>
-		</Unit>
-		<Unit filename="/home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/InclinedWall.h">
-			<Option target="Pinball"/>
-		</Unit>
 		<Unit filename="/home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/Kicker.cpp">
 			<Option target="Pinball"/>
 		</Unit>
@@ -217,12 +211,6 @@
 			<Option target="Pinball"/>
 		</Unit>
 		<Unit filename="/home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/ThrustBumper.h">
-			<Option target="Pinball"/>
-		</Unit>
-		<Unit filename="/home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/VerticalandHorizontalWall.cpp">
-			<Option target="Pinball"/>
-		</Unit>
-		<Unit filename="/home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/VerticalandHorizontalWall.h">
 			<Option target="Pinball"/>
 		</Unit>
 		<Unit filename="/home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/VibraniumBumper.cpp">

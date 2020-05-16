@@ -366,33 +366,6 @@ GameObjects/Obstacles/Gate.cpp.s:
 	$(MAKE) -f CMakeFiles/Pinball.dir/build.make CMakeFiles/Pinball.dir/GameObjects/Obstacles/Gate.cpp.s
 .PHONY : GameObjects/Obstacles/Gate.cpp.s
 
-GameObjects/Obstacles/InclinedWall.o: GameObjects/Obstacles/InclinedWall.cpp.o
-
-.PHONY : GameObjects/Obstacles/InclinedWall.o
-
-# target to build an object file
-GameObjects/Obstacles/InclinedWall.cpp.o:
-	$(MAKE) -f CMakeFiles/Pinball.dir/build.make CMakeFiles/Pinball.dir/GameObjects/Obstacles/InclinedWall.cpp.o
-.PHONY : GameObjects/Obstacles/InclinedWall.cpp.o
-
-GameObjects/Obstacles/InclinedWall.i: GameObjects/Obstacles/InclinedWall.cpp.i
-
-.PHONY : GameObjects/Obstacles/InclinedWall.i
-
-# target to preprocess a source file
-GameObjects/Obstacles/InclinedWall.cpp.i:
-	$(MAKE) -f CMakeFiles/Pinball.dir/build.make CMakeFiles/Pinball.dir/GameObjects/Obstacles/InclinedWall.cpp.i
-.PHONY : GameObjects/Obstacles/InclinedWall.cpp.i
-
-GameObjects/Obstacles/InclinedWall.s: GameObjects/Obstacles/InclinedWall.cpp.s
-
-.PHONY : GameObjects/Obstacles/InclinedWall.s
-
-# target to generate assembly for a file
-GameObjects/Obstacles/InclinedWall.cpp.s:
-	$(MAKE) -f CMakeFiles/Pinball.dir/build.make CMakeFiles/Pinball.dir/GameObjects/Obstacles/InclinedWall.cpp.s
-.PHONY : GameObjects/Obstacles/InclinedWall.cpp.s
-
 GameObjects/Obstacles/Kicker.o: GameObjects/Obstacles/Kicker.cpp.o
 
 .PHONY : GameObjects/Obstacles/Kicker.o
@@ -689,33 +662,6 @@ GameObjects/Obstacles/ThrustBumper.s: GameObjects/Obstacles/ThrustBumper.cpp.s
 GameObjects/Obstacles/ThrustBumper.cpp.s:
 	$(MAKE) -f CMakeFiles/Pinball.dir/build.make CMakeFiles/Pinball.dir/GameObjects/Obstacles/ThrustBumper.cpp.s
 .PHONY : GameObjects/Obstacles/ThrustBumper.cpp.s
-
-GameObjects/Obstacles/VerticalandHorizontalWall.o: GameObjects/Obstacles/VerticalandHorizontalWall.cpp.o
-
-.PHONY : GameObjects/Obstacles/VerticalandHorizontalWall.o
-
-# target to build an object file
-GameObjects/Obstacles/VerticalandHorizontalWall.cpp.o:
-	$(MAKE) -f CMakeFiles/Pinball.dir/build.make CMakeFiles/Pinball.dir/GameObjects/Obstacles/VerticalandHorizontalWall.cpp.o
-.PHONY : GameObjects/Obstacles/VerticalandHorizontalWall.cpp.o
-
-GameObjects/Obstacles/VerticalandHorizontalWall.i: GameObjects/Obstacles/VerticalandHorizontalWall.cpp.i
-
-.PHONY : GameObjects/Obstacles/VerticalandHorizontalWall.i
-
-# target to preprocess a source file
-GameObjects/Obstacles/VerticalandHorizontalWall.cpp.i:
-	$(MAKE) -f CMakeFiles/Pinball.dir/build.make CMakeFiles/Pinball.dir/GameObjects/Obstacles/VerticalandHorizontalWall.cpp.i
-.PHONY : GameObjects/Obstacles/VerticalandHorizontalWall.cpp.i
-
-GameObjects/Obstacles/VerticalandHorizontalWall.s: GameObjects/Obstacles/VerticalandHorizontalWall.cpp.s
-
-.PHONY : GameObjects/Obstacles/VerticalandHorizontalWall.s
-
-# target to generate assembly for a file
-GameObjects/Obstacles/VerticalandHorizontalWall.cpp.s:
-	$(MAKE) -f CMakeFiles/Pinball.dir/build.make CMakeFiles/Pinball.dir/GameObjects/Obstacles/VerticalandHorizontalWall.cpp.s
-.PHONY : GameObjects/Obstacles/VerticalandHorizontalWall.cpp.s
 
 GameObjects/Obstacles/VibraniumBumper.o: GameObjects/Obstacles/VibraniumBumper.cpp.o
 
@@ -1023,9 +969,6 @@ help:
 	@echo "... GameObjects/Obstacles/Gate.o"
 	@echo "... GameObjects/Obstacles/Gate.i"
 	@echo "... GameObjects/Obstacles/Gate.s"
-	@echo "... GameObjects/Obstacles/InclinedWall.o"
-	@echo "... GameObjects/Obstacles/InclinedWall.i"
-	@echo "... GameObjects/Obstacles/InclinedWall.s"
 	@echo "... GameObjects/Obstacles/Kicker.o"
 	@echo "... GameObjects/Obstacles/Kicker.i"
 	@echo "... GameObjects/Obstacles/Kicker.s"
@@ -1059,9 +1002,6 @@ help:
 	@echo "... GameObjects/Obstacles/ThrustBumper.o"
 	@echo "... GameObjects/Obstacles/ThrustBumper.i"
 	@echo "... GameObjects/Obstacles/ThrustBumper.s"
-	@echo "... GameObjects/Obstacles/VerticalandHorizontalWall.o"
-	@echo "... GameObjects/Obstacles/VerticalandHorizontalWall.i"
-	@echo "... GameObjects/Obstacles/VerticalandHorizontalWall.s"
 	@echo "... GameObjects/Obstacles/VibraniumBumper.o"
 	@echo "... GameObjects/Obstacles/VibraniumBumper.i"
 	@echo "... GameObjects/Obstacles/VibraniumBumper.s"

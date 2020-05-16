@@ -7,8 +7,8 @@
 #include "../GameObjects/Obstacles/Bumper.h"
 #include "../GameObjects/Obstacles/Wall.h"
 #include "../GameObjects/Obstacles/PopBumper.h"
-#include "../GameObjects/Obstacles/InclinedWall.h"
-#include "../GameObjects/Obstacles/VerticalandHorizontalWall.h"
+#include "../GameObjects/Obstacles/Ramp.h"
+#include "../GameObjects/Obstacles/Wall.h"
 
 using namespace std;
 
@@ -26,8 +26,8 @@ public:
     //Those only need one instance.
     Manager *pManager;
     AudioManager *pAudioManager;
-    InclinedWall** pInternalFrames;
-    VerticalandHorizontalWall** pExternalFrame;
+    Ramp** pInternalFrames;
+    Wall** pExternalFrame;
 
 
     //Reading Functions

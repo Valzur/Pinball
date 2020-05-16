@@ -109,22 +109,9 @@ CMakeFiles/Pinball.dir/GameObjects/Ball.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Pinball.dir/GameObjects/Ball.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Ball.cpp" -o CMakeFiles/Pinball.dir/GameObjects/Ball.cpp.s
 
-CMakeFiles/Pinball.dir/GameObjects/Obstacles/Wall.cpp.o: CMakeFiles/Pinball.dir/flags.make
-CMakeFiles/Pinball.dir/GameObjects/Obstacles/Wall.cpp.o: ../GameObjects/Obstacles/Wall.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/rasberry/Desktop/Pinball Project/Pinball/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Pinball.dir/GameObjects/Obstacles/Wall.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Pinball.dir/GameObjects/Obstacles/Wall.cpp.o -c "/home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/Wall.cpp"
-
-CMakeFiles/Pinball.dir/GameObjects/Obstacles/Wall.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Pinball.dir/GameObjects/Obstacles/Wall.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/Wall.cpp" > CMakeFiles/Pinball.dir/GameObjects/Obstacles/Wall.cpp.i
-
-CMakeFiles/Pinball.dir/GameObjects/Obstacles/Wall.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Pinball.dir/GameObjects/Obstacles/Wall.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/Wall.cpp" -o CMakeFiles/Pinball.dir/GameObjects/Obstacles/Wall.cpp.s
-
 CMakeFiles/Pinball.dir/GameObjects/Flipper.cpp.o: CMakeFiles/Pinball.dir/flags.make
 CMakeFiles/Pinball.dir/GameObjects/Flipper.cpp.o: ../GameObjects/Flipper.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/rasberry/Desktop/Pinball Project/Pinball/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Pinball.dir/GameObjects/Flipper.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/rasberry/Desktop/Pinball Project/Pinball/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Pinball.dir/GameObjects/Flipper.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Pinball.dir/GameObjects/Flipper.cpp.o -c "/home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Flipper.cpp"
 
 CMakeFiles/Pinball.dir/GameObjects/Flipper.cpp.i: cmake_force
@@ -137,7 +124,7 @@ CMakeFiles/Pinball.dir/GameObjects/Flipper.cpp.s: cmake_force
 
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/SpriteWalls.cpp.o: CMakeFiles/Pinball.dir/flags.make
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/SpriteWalls.cpp.o: ../GameObjects/Obstacles/SpriteWalls.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/rasberry/Desktop/Pinball Project/Pinball/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Pinball.dir/GameObjects/Obstacles/SpriteWalls.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/rasberry/Desktop/Pinball Project/Pinball/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Pinball.dir/GameObjects/Obstacles/SpriteWalls.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Pinball.dir/GameObjects/Obstacles/SpriteWalls.cpp.o -c "/home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/SpriteWalls.cpp"
 
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/SpriteWalls.cpp.i: cmake_force
@@ -150,7 +137,7 @@ CMakeFiles/Pinball.dir/GameObjects/Obstacles/SpriteWalls.cpp.s: cmake_force
 
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/Bumper.cpp.o: CMakeFiles/Pinball.dir/flags.make
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/Bumper.cpp.o: ../GameObjects/Obstacles/Bumper.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/rasberry/Desktop/Pinball Project/Pinball/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Pinball.dir/GameObjects/Obstacles/Bumper.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/rasberry/Desktop/Pinball Project/Pinball/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Pinball.dir/GameObjects/Obstacles/Bumper.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Pinball.dir/GameObjects/Obstacles/Bumper.cpp.o -c "/home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/Bumper.cpp"
 
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/Bumper.cpp.i: cmake_force
@@ -163,7 +150,7 @@ CMakeFiles/Pinball.dir/GameObjects/Obstacles/Bumper.cpp.s: cmake_force
 
 CMakeFiles/Pinball.dir/Utility/PixelPerfectCollision.cpp.o: CMakeFiles/Pinball.dir/flags.make
 CMakeFiles/Pinball.dir/Utility/PixelPerfectCollision.cpp.o: ../Utility/PixelPerfectCollision.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/rasberry/Desktop/Pinball Project/Pinball/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Pinball.dir/Utility/PixelPerfectCollision.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/rasberry/Desktop/Pinball Project/Pinball/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Pinball.dir/Utility/PixelPerfectCollision.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Pinball.dir/Utility/PixelPerfectCollision.cpp.o -c "/home/rasberry/Desktop/Pinball Project/Pinball/Utility/PixelPerfectCollision.cpp"
 
 CMakeFiles/Pinball.dir/Utility/PixelPerfectCollision.cpp.i: cmake_force
@@ -176,7 +163,7 @@ CMakeFiles/Pinball.dir/Utility/PixelPerfectCollision.cpp.s: cmake_force
 
 CMakeFiles/Pinball.dir/GameObjects/Manager.cpp.o: CMakeFiles/Pinball.dir/flags.make
 CMakeFiles/Pinball.dir/GameObjects/Manager.cpp.o: ../GameObjects/Manager.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/rasberry/Desktop/Pinball Project/Pinball/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Pinball.dir/GameObjects/Manager.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/rasberry/Desktop/Pinball Project/Pinball/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Pinball.dir/GameObjects/Manager.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Pinball.dir/GameObjects/Manager.cpp.o -c "/home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Manager.cpp"
 
 CMakeFiles/Pinball.dir/GameObjects/Manager.cpp.i: cmake_force
@@ -189,7 +176,7 @@ CMakeFiles/Pinball.dir/GameObjects/Manager.cpp.s: cmake_force
 
 CMakeFiles/Pinball.dir/Utility/AudioManager.cpp.o: CMakeFiles/Pinball.dir/flags.make
 CMakeFiles/Pinball.dir/Utility/AudioManager.cpp.o: ../Utility/AudioManager.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/rasberry/Desktop/Pinball Project/Pinball/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/Pinball.dir/Utility/AudioManager.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/rasberry/Desktop/Pinball Project/Pinball/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Pinball.dir/Utility/AudioManager.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Pinball.dir/Utility/AudioManager.cpp.o -c "/home/rasberry/Desktop/Pinball Project/Pinball/Utility/AudioManager.cpp"
 
 CMakeFiles/Pinball.dir/Utility/AudioManager.cpp.i: cmake_force
@@ -202,7 +189,7 @@ CMakeFiles/Pinball.dir/Utility/AudioManager.cpp.s: cmake_force
 
 CMakeFiles/Pinball.dir/Defs.cpp.o: CMakeFiles/Pinball.dir/flags.make
 CMakeFiles/Pinball.dir/Defs.cpp.o: ../Defs.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/rasberry/Desktop/Pinball Project/Pinball/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/Pinball.dir/Defs.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/rasberry/Desktop/Pinball Project/Pinball/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/Pinball.dir/Defs.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Pinball.dir/Defs.cpp.o -c "/home/rasberry/Desktop/Pinball Project/Pinball/Defs.cpp"
 
 CMakeFiles/Pinball.dir/Defs.cpp.i: cmake_force
@@ -215,7 +202,7 @@ CMakeFiles/Pinball.dir/Defs.cpp.s: cmake_force
 
 CMakeFiles/Pinball.dir/Utility/PreGame.cpp.o: CMakeFiles/Pinball.dir/flags.make
 CMakeFiles/Pinball.dir/Utility/PreGame.cpp.o: ../Utility/PreGame.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/rasberry/Desktop/Pinball Project/Pinball/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/Pinball.dir/Utility/PreGame.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/rasberry/Desktop/Pinball Project/Pinball/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/Pinball.dir/Utility/PreGame.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Pinball.dir/Utility/PreGame.cpp.o -c "/home/rasberry/Desktop/Pinball Project/Pinball/Utility/PreGame.cpp"
 
 CMakeFiles/Pinball.dir/Utility/PreGame.cpp.i: cmake_force
@@ -228,7 +215,7 @@ CMakeFiles/Pinball.dir/Utility/PreGame.cpp.s: cmake_force
 
 CMakeFiles/Pinball.dir/Utility/Configurable.cpp.o: CMakeFiles/Pinball.dir/flags.make
 CMakeFiles/Pinball.dir/Utility/Configurable.cpp.o: ../Utility/Configurable.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/rasberry/Desktop/Pinball Project/Pinball/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/Pinball.dir/Utility/Configurable.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/rasberry/Desktop/Pinball Project/Pinball/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/Pinball.dir/Utility/Configurable.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Pinball.dir/Utility/Configurable.cpp.o -c "/home/rasberry/Desktop/Pinball Project/Pinball/Utility/Configurable.cpp"
 
 CMakeFiles/Pinball.dir/Utility/Configurable.cpp.i: cmake_force
@@ -241,7 +228,7 @@ CMakeFiles/Pinball.dir/Utility/Configurable.cpp.s: cmake_force
 
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/PopBumper.cpp.o: CMakeFiles/Pinball.dir/flags.make
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/PopBumper.cpp.o: ../GameObjects/Obstacles/PopBumper.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/rasberry/Desktop/Pinball Project/Pinball/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/Pinball.dir/GameObjects/Obstacles/PopBumper.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/rasberry/Desktop/Pinball Project/Pinball/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/Pinball.dir/GameObjects/Obstacles/PopBumper.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Pinball.dir/GameObjects/Obstacles/PopBumper.cpp.o -c "/home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/PopBumper.cpp"
 
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/PopBumper.cpp.i: cmake_force
@@ -254,7 +241,7 @@ CMakeFiles/Pinball.dir/GameObjects/Obstacles/PopBumper.cpp.s: cmake_force
 
 CMakeFiles/Pinball.dir/Utility/PostProcessing.cpp.o: CMakeFiles/Pinball.dir/flags.make
 CMakeFiles/Pinball.dir/Utility/PostProcessing.cpp.o: ../Utility/PostProcessing.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/rasberry/Desktop/Pinball Project/Pinball/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/Pinball.dir/Utility/PostProcessing.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/rasberry/Desktop/Pinball Project/Pinball/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/Pinball.dir/Utility/PostProcessing.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Pinball.dir/Utility/PostProcessing.cpp.o -c "/home/rasberry/Desktop/Pinball Project/Pinball/Utility/PostProcessing.cpp"
 
 CMakeFiles/Pinball.dir/Utility/PostProcessing.cpp.i: cmake_force
@@ -267,7 +254,7 @@ CMakeFiles/Pinball.dir/Utility/PostProcessing.cpp.s: cmake_force
 
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/Portal.cpp.o: CMakeFiles/Pinball.dir/flags.make
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/Portal.cpp.o: ../GameObjects/Obstacles/Portal.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/rasberry/Desktop/Pinball Project/Pinball/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/Pinball.dir/GameObjects/Obstacles/Portal.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/rasberry/Desktop/Pinball Project/Pinball/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/Pinball.dir/GameObjects/Obstacles/Portal.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Pinball.dir/GameObjects/Obstacles/Portal.cpp.o -c "/home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/Portal.cpp"
 
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/Portal.cpp.i: cmake_force
@@ -280,7 +267,7 @@ CMakeFiles/Pinball.dir/GameObjects/Obstacles/Portal.cpp.s: cmake_force
 
 CMakeFiles/Pinball.dir/Utility/CollisionDetection.cpp.o: CMakeFiles/Pinball.dir/flags.make
 CMakeFiles/Pinball.dir/Utility/CollisionDetection.cpp.o: ../Utility/CollisionDetection.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/rasberry/Desktop/Pinball Project/Pinball/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/Pinball.dir/Utility/CollisionDetection.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/rasberry/Desktop/Pinball Project/Pinball/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/Pinball.dir/Utility/CollisionDetection.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Pinball.dir/Utility/CollisionDetection.cpp.o -c "/home/rasberry/Desktop/Pinball Project/Pinball/Utility/CollisionDetection.cpp"
 
 CMakeFiles/Pinball.dir/Utility/CollisionDetection.cpp.i: cmake_force
@@ -293,7 +280,7 @@ CMakeFiles/Pinball.dir/Utility/CollisionDetection.cpp.s: cmake_force
 
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/Magnet.cpp.o: CMakeFiles/Pinball.dir/flags.make
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/Magnet.cpp.o: ../GameObjects/Obstacles/Magnet.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/rasberry/Desktop/Pinball Project/Pinball/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/Pinball.dir/GameObjects/Obstacles/Magnet.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/rasberry/Desktop/Pinball Project/Pinball/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/Pinball.dir/GameObjects/Obstacles/Magnet.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Pinball.dir/GameObjects/Obstacles/Magnet.cpp.o -c "/home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/Magnet.cpp"
 
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/Magnet.cpp.i: cmake_force
@@ -306,7 +293,7 @@ CMakeFiles/Pinball.dir/GameObjects/Obstacles/Magnet.cpp.s: cmake_force
 
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/Gate.cpp.o: CMakeFiles/Pinball.dir/flags.make
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/Gate.cpp.o: ../GameObjects/Obstacles/Gate.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/rasberry/Desktop/Pinball Project/Pinball/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/Pinball.dir/GameObjects/Obstacles/Gate.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/rasberry/Desktop/Pinball Project/Pinball/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/Pinball.dir/GameObjects/Obstacles/Gate.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Pinball.dir/GameObjects/Obstacles/Gate.cpp.o -c "/home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/Gate.cpp"
 
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/Gate.cpp.i: cmake_force
@@ -317,35 +304,35 @@ CMakeFiles/Pinball.dir/GameObjects/Obstacles/Gate.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Pinball.dir/GameObjects/Obstacles/Gate.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/Gate.cpp" -o CMakeFiles/Pinball.dir/GameObjects/Obstacles/Gate.cpp.s
 
-CMakeFiles/Pinball.dir/GameObjects/Obstacles/VerticalandHorizontalWall.cpp.o: CMakeFiles/Pinball.dir/flags.make
-CMakeFiles/Pinball.dir/GameObjects/Obstacles/VerticalandHorizontalWall.cpp.o: ../GameObjects/Obstacles/VerticalandHorizontalWall.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/rasberry/Desktop/Pinball Project/Pinball/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/Pinball.dir/GameObjects/Obstacles/VerticalandHorizontalWall.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Pinball.dir/GameObjects/Obstacles/VerticalandHorizontalWall.cpp.o -c "/home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/VerticalandHorizontalWall.cpp"
+CMakeFiles/Pinball.dir/GameObjects/Obstacles/Wall.cpp.o: CMakeFiles/Pinball.dir/flags.make
+CMakeFiles/Pinball.dir/GameObjects/Obstacles/Wall.cpp.o: ../GameObjects/Obstacles/Wall.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/rasberry/Desktop/Pinball Project/Pinball/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/Pinball.dir/GameObjects/Obstacles/Wall.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Pinball.dir/GameObjects/Obstacles/Wall.cpp.o -c "/home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/Wall.cpp"
 
-CMakeFiles/Pinball.dir/GameObjects/Obstacles/VerticalandHorizontalWall.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Pinball.dir/GameObjects/Obstacles/VerticalandHorizontalWall.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/VerticalandHorizontalWall.cpp" > CMakeFiles/Pinball.dir/GameObjects/Obstacles/VerticalandHorizontalWall.cpp.i
+CMakeFiles/Pinball.dir/GameObjects/Obstacles/Wall.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Pinball.dir/GameObjects/Obstacles/Wall.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/Wall.cpp" > CMakeFiles/Pinball.dir/GameObjects/Obstacles/Wall.cpp.i
 
-CMakeFiles/Pinball.dir/GameObjects/Obstacles/VerticalandHorizontalWall.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Pinball.dir/GameObjects/Obstacles/VerticalandHorizontalWall.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/VerticalandHorizontalWall.cpp" -o CMakeFiles/Pinball.dir/GameObjects/Obstacles/VerticalandHorizontalWall.cpp.s
+CMakeFiles/Pinball.dir/GameObjects/Obstacles/Wall.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Pinball.dir/GameObjects/Obstacles/Wall.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/Wall.cpp" -o CMakeFiles/Pinball.dir/GameObjects/Obstacles/Wall.cpp.s
 
-CMakeFiles/Pinball.dir/GameObjects/Obstacles/InclinedWall.cpp.o: CMakeFiles/Pinball.dir/flags.make
-CMakeFiles/Pinball.dir/GameObjects/Obstacles/InclinedWall.cpp.o: ../GameObjects/Obstacles/InclinedWall.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/rasberry/Desktop/Pinball Project/Pinball/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/Pinball.dir/GameObjects/Obstacles/InclinedWall.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Pinball.dir/GameObjects/Obstacles/InclinedWall.cpp.o -c "/home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/InclinedWall.cpp"
+CMakeFiles/Pinball.dir/GameObjects/Obstacles/Ramp.cpp.o: CMakeFiles/Pinball.dir/flags.make
+CMakeFiles/Pinball.dir/GameObjects/Obstacles/Ramp.cpp.o: ../GameObjects/Obstacles/Ramp.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/rasberry/Desktop/Pinball Project/Pinball/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/Pinball.dir/GameObjects/Obstacles/Ramp.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Pinball.dir/GameObjects/Obstacles/Ramp.cpp.o -c "/home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/Ramp.cpp"
 
-CMakeFiles/Pinball.dir/GameObjects/Obstacles/InclinedWall.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Pinball.dir/GameObjects/Obstacles/InclinedWall.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/InclinedWall.cpp" > CMakeFiles/Pinball.dir/GameObjects/Obstacles/InclinedWall.cpp.i
+CMakeFiles/Pinball.dir/GameObjects/Obstacles/Ramp.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Pinball.dir/GameObjects/Obstacles/Ramp.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/Ramp.cpp" > CMakeFiles/Pinball.dir/GameObjects/Obstacles/Ramp.cpp.i
 
-CMakeFiles/Pinball.dir/GameObjects/Obstacles/InclinedWall.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Pinball.dir/GameObjects/Obstacles/InclinedWall.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/InclinedWall.cpp" -o CMakeFiles/Pinball.dir/GameObjects/Obstacles/InclinedWall.cpp.s
+CMakeFiles/Pinball.dir/GameObjects/Obstacles/Ramp.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Pinball.dir/GameObjects/Obstacles/Ramp.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/Ramp.cpp" -o CMakeFiles/Pinball.dir/GameObjects/Obstacles/Ramp.cpp.s
 
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/Kicker.cpp.o: CMakeFiles/Pinball.dir/flags.make
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/Kicker.cpp.o: ../GameObjects/Obstacles/Kicker.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/rasberry/Desktop/Pinball Project/Pinball/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/Pinball.dir/GameObjects/Obstacles/Kicker.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/rasberry/Desktop/Pinball Project/Pinball/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/Pinball.dir/GameObjects/Obstacles/Kicker.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Pinball.dir/GameObjects/Obstacles/Kicker.cpp.o -c "/home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/Kicker.cpp"
 
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/Kicker.cpp.i: cmake_force
@@ -358,7 +345,7 @@ CMakeFiles/Pinball.dir/GameObjects/Obstacles/Kicker.cpp.s: cmake_force
 
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/Collectable.cpp.o: CMakeFiles/Pinball.dir/flags.make
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/Collectable.cpp.o: ../GameObjects/Obstacles/Collectable.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/rasberry/Desktop/Pinball Project/Pinball/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/Pinball.dir/GameObjects/Obstacles/Collectable.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/rasberry/Desktop/Pinball Project/Pinball/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/Pinball.dir/GameObjects/Obstacles/Collectable.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Pinball.dir/GameObjects/Obstacles/Collectable.cpp.o -c "/home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/Collectable.cpp"
 
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/Collectable.cpp.i: cmake_force
@@ -371,7 +358,7 @@ CMakeFiles/Pinball.dir/GameObjects/Obstacles/Collectable.cpp.s: cmake_force
 
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/SpeedBooster.cpp.o: CMakeFiles/Pinball.dir/flags.make
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/SpeedBooster.cpp.o: ../GameObjects/Obstacles/SpeedBooster.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/rasberry/Desktop/Pinball Project/Pinball/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/Pinball.dir/GameObjects/Obstacles/SpeedBooster.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/rasberry/Desktop/Pinball Project/Pinball/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/Pinball.dir/GameObjects/Obstacles/SpeedBooster.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Pinball.dir/GameObjects/Obstacles/SpeedBooster.cpp.o -c "/home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/SpeedBooster.cpp"
 
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/SpeedBooster.cpp.i: cmake_force
@@ -384,7 +371,7 @@ CMakeFiles/Pinball.dir/GameObjects/Obstacles/SpeedBooster.cpp.s: cmake_force
 
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/ThrustBumper.cpp.o: CMakeFiles/Pinball.dir/flags.make
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/ThrustBumper.cpp.o: ../GameObjects/Obstacles/ThrustBumper.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/rasberry/Desktop/Pinball Project/Pinball/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/Pinball.dir/GameObjects/Obstacles/ThrustBumper.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/rasberry/Desktop/Pinball Project/Pinball/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/Pinball.dir/GameObjects/Obstacles/ThrustBumper.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Pinball.dir/GameObjects/Obstacles/ThrustBumper.cpp.o -c "/home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/ThrustBumper.cpp"
 
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/ThrustBumper.cpp.i: cmake_force
@@ -397,7 +384,7 @@ CMakeFiles/Pinball.dir/GameObjects/Obstacles/ThrustBumper.cpp.s: cmake_force
 
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/VibraniumBumper.cpp.o: CMakeFiles/Pinball.dir/flags.make
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/VibraniumBumper.cpp.o: ../GameObjects/Obstacles/VibraniumBumper.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/rasberry/Desktop/Pinball Project/Pinball/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/Pinball.dir/GameObjects/Obstacles/VibraniumBumper.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/rasberry/Desktop/Pinball Project/Pinball/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/Pinball.dir/GameObjects/Obstacles/VibraniumBumper.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Pinball.dir/GameObjects/Obstacles/VibraniumBumper.cpp.o -c "/home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/VibraniumBumper.cpp"
 
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/VibraniumBumper.cpp.i: cmake_force
@@ -410,7 +397,7 @@ CMakeFiles/Pinball.dir/GameObjects/Obstacles/VibraniumBumper.cpp.s: cmake_force
 
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/ScoreMultiplier.cpp.o: CMakeFiles/Pinball.dir/flags.make
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/ScoreMultiplier.cpp.o: ../GameObjects/Obstacles/ScoreMultiplier.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/rasberry/Desktop/Pinball Project/Pinball/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/Pinball.dir/GameObjects/Obstacles/ScoreMultiplier.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/rasberry/Desktop/Pinball Project/Pinball/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/Pinball.dir/GameObjects/Obstacles/ScoreMultiplier.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Pinball.dir/GameObjects/Obstacles/ScoreMultiplier.cpp.o -c "/home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/ScoreMultiplier.cpp"
 
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/ScoreMultiplier.cpp.i: cmake_force
@@ -423,7 +410,7 @@ CMakeFiles/Pinball.dir/GameObjects/Obstacles/ScoreMultiplier.cpp.s: cmake_force
 
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/Switch.cpp.o: CMakeFiles/Pinball.dir/flags.make
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/Switch.cpp.o: ../GameObjects/Obstacles/Switch.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/rasberry/Desktop/Pinball Project/Pinball/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/Pinball.dir/GameObjects/Obstacles/Switch.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/rasberry/Desktop/Pinball Project/Pinball/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/Pinball.dir/GameObjects/Obstacles/Switch.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Pinball.dir/GameObjects/Obstacles/Switch.cpp.o -c "/home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/Switch.cpp"
 
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/Switch.cpp.i: cmake_force
@@ -436,7 +423,7 @@ CMakeFiles/Pinball.dir/GameObjects/Obstacles/Switch.cpp.s: cmake_force
 
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/Lane.cpp.o: CMakeFiles/Pinball.dir/flags.make
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/Lane.cpp.o: ../GameObjects/Obstacles/Lane.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/rasberry/Desktop/Pinball Project/Pinball/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/Pinball.dir/GameObjects/Obstacles/Lane.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/rasberry/Desktop/Pinball Project/Pinball/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/Pinball.dir/GameObjects/Obstacles/Lane.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Pinball.dir/GameObjects/Obstacles/Lane.cpp.o -c "/home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/Lane.cpp"
 
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/Lane.cpp.i: cmake_force
@@ -447,22 +434,9 @@ CMakeFiles/Pinball.dir/GameObjects/Obstacles/Lane.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Pinball.dir/GameObjects/Obstacles/Lane.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/Lane.cpp" -o CMakeFiles/Pinball.dir/GameObjects/Obstacles/Lane.cpp.s
 
-CMakeFiles/Pinball.dir/GameObjects/Obstacles/Ramp.cpp.o: CMakeFiles/Pinball.dir/flags.make
-CMakeFiles/Pinball.dir/GameObjects/Obstacles/Ramp.cpp.o: ../GameObjects/Obstacles/Ramp.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/rasberry/Desktop/Pinball Project/Pinball/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/Pinball.dir/GameObjects/Obstacles/Ramp.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Pinball.dir/GameObjects/Obstacles/Ramp.cpp.o -c "/home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/Ramp.cpp"
-
-CMakeFiles/Pinball.dir/GameObjects/Obstacles/Ramp.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Pinball.dir/GameObjects/Obstacles/Ramp.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/Ramp.cpp" > CMakeFiles/Pinball.dir/GameObjects/Obstacles/Ramp.cpp.i
-
-CMakeFiles/Pinball.dir/GameObjects/Obstacles/Ramp.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Pinball.dir/GameObjects/Obstacles/Ramp.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/Ramp.cpp" -o CMakeFiles/Pinball.dir/GameObjects/Obstacles/Ramp.cpp.s
-
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/Bullseye.cpp.o: CMakeFiles/Pinball.dir/flags.make
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/Bullseye.cpp.o: ../GameObjects/Obstacles/Bullseye.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/rasberry/Desktop/Pinball Project/Pinball/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/Pinball.dir/GameObjects/Obstacles/Bullseye.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/rasberry/Desktop/Pinball Project/Pinball/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/Pinball.dir/GameObjects/Obstacles/Bullseye.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Pinball.dir/GameObjects/Obstacles/Bullseye.cpp.o -c "/home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/Bullseye.cpp"
 
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/Bullseye.cpp.i: cmake_force
@@ -479,7 +453,6 @@ Pinball_OBJECTS = \
 "CMakeFiles/Pinball.dir/Game.cpp.o" \
 "CMakeFiles/Pinball.dir/Interface.cpp.o" \
 "CMakeFiles/Pinball.dir/GameObjects/Ball.cpp.o" \
-"CMakeFiles/Pinball.dir/GameObjects/Obstacles/Wall.cpp.o" \
 "CMakeFiles/Pinball.dir/GameObjects/Flipper.cpp.o" \
 "CMakeFiles/Pinball.dir/GameObjects/Obstacles/SpriteWalls.cpp.o" \
 "CMakeFiles/Pinball.dir/GameObjects/Obstacles/Bumper.cpp.o" \
@@ -495,8 +468,8 @@ Pinball_OBJECTS = \
 "CMakeFiles/Pinball.dir/Utility/CollisionDetection.cpp.o" \
 "CMakeFiles/Pinball.dir/GameObjects/Obstacles/Magnet.cpp.o" \
 "CMakeFiles/Pinball.dir/GameObjects/Obstacles/Gate.cpp.o" \
-"CMakeFiles/Pinball.dir/GameObjects/Obstacles/VerticalandHorizontalWall.cpp.o" \
-"CMakeFiles/Pinball.dir/GameObjects/Obstacles/InclinedWall.cpp.o" \
+"CMakeFiles/Pinball.dir/GameObjects/Obstacles/Wall.cpp.o" \
+"CMakeFiles/Pinball.dir/GameObjects/Obstacles/Ramp.cpp.o" \
 "CMakeFiles/Pinball.dir/GameObjects/Obstacles/Kicker.cpp.o" \
 "CMakeFiles/Pinball.dir/GameObjects/Obstacles/Collectable.cpp.o" \
 "CMakeFiles/Pinball.dir/GameObjects/Obstacles/SpeedBooster.cpp.o" \
@@ -505,7 +478,6 @@ Pinball_OBJECTS = \
 "CMakeFiles/Pinball.dir/GameObjects/Obstacles/ScoreMultiplier.cpp.o" \
 "CMakeFiles/Pinball.dir/GameObjects/Obstacles/Switch.cpp.o" \
 "CMakeFiles/Pinball.dir/GameObjects/Obstacles/Lane.cpp.o" \
-"CMakeFiles/Pinball.dir/GameObjects/Obstacles/Ramp.cpp.o" \
 "CMakeFiles/Pinball.dir/GameObjects/Obstacles/Bullseye.cpp.o"
 
 # External object files for target Pinball
@@ -515,7 +487,6 @@ Pinball: CMakeFiles/Pinball.dir/main.cpp.o
 Pinball: CMakeFiles/Pinball.dir/Game.cpp.o
 Pinball: CMakeFiles/Pinball.dir/Interface.cpp.o
 Pinball: CMakeFiles/Pinball.dir/GameObjects/Ball.cpp.o
-Pinball: CMakeFiles/Pinball.dir/GameObjects/Obstacles/Wall.cpp.o
 Pinball: CMakeFiles/Pinball.dir/GameObjects/Flipper.cpp.o
 Pinball: CMakeFiles/Pinball.dir/GameObjects/Obstacles/SpriteWalls.cpp.o
 Pinball: CMakeFiles/Pinball.dir/GameObjects/Obstacles/Bumper.cpp.o
@@ -531,8 +502,8 @@ Pinball: CMakeFiles/Pinball.dir/GameObjects/Obstacles/Portal.cpp.o
 Pinball: CMakeFiles/Pinball.dir/Utility/CollisionDetection.cpp.o
 Pinball: CMakeFiles/Pinball.dir/GameObjects/Obstacles/Magnet.cpp.o
 Pinball: CMakeFiles/Pinball.dir/GameObjects/Obstacles/Gate.cpp.o
-Pinball: CMakeFiles/Pinball.dir/GameObjects/Obstacles/VerticalandHorizontalWall.cpp.o
-Pinball: CMakeFiles/Pinball.dir/GameObjects/Obstacles/InclinedWall.cpp.o
+Pinball: CMakeFiles/Pinball.dir/GameObjects/Obstacles/Wall.cpp.o
+Pinball: CMakeFiles/Pinball.dir/GameObjects/Obstacles/Ramp.cpp.o
 Pinball: CMakeFiles/Pinball.dir/GameObjects/Obstacles/Kicker.cpp.o
 Pinball: CMakeFiles/Pinball.dir/GameObjects/Obstacles/Collectable.cpp.o
 Pinball: CMakeFiles/Pinball.dir/GameObjects/Obstacles/SpeedBooster.cpp.o
@@ -541,11 +512,10 @@ Pinball: CMakeFiles/Pinball.dir/GameObjects/Obstacles/VibraniumBumper.cpp.o
 Pinball: CMakeFiles/Pinball.dir/GameObjects/Obstacles/ScoreMultiplier.cpp.o
 Pinball: CMakeFiles/Pinball.dir/GameObjects/Obstacles/Switch.cpp.o
 Pinball: CMakeFiles/Pinball.dir/GameObjects/Obstacles/Lane.cpp.o
-Pinball: CMakeFiles/Pinball.dir/GameObjects/Obstacles/Ramp.cpp.o
 Pinball: CMakeFiles/Pinball.dir/GameObjects/Obstacles/Bullseye.cpp.o
 Pinball: CMakeFiles/Pinball.dir/build.make
 Pinball: CMakeFiles/Pinball.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/rasberry/Desktop/Pinball Project/Pinball/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_33) "Linking CXX executable Pinball"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/rasberry/Desktop/Pinball Project/Pinball/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_31) "Linking CXX executable Pinball"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Pinball.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

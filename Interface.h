@@ -57,7 +57,7 @@ public:
 
     void drawBall(Vector2D center, double radius);  // Draws a ball
     void drawFlipper(FlipperType type, Vector2D center, double length, double angle, double majorRadius, double minor_radius);  // Draws a flipper
-    void drawWall(double position,bool isVertical);  // Draws a vertical wall
+    void drawWall(double position,bool isVertical);  // Draws a vertical Wall
     void drawNewWall(sf::Sprite sprite);
     void drawBumper(Vector2D center, double radius, BumperType type,bool Hit=false);
     void drawPortals(Vector2D Pos1, Vector2D Pos2,double radius);
@@ -79,9 +79,9 @@ public:
     void drawBackground();
     void drawUIBackground();
 
-    void loadVerticalandHorizontalWall(bool isVertical, double Position);
+    void drawWall(bool isVertical, double Position);
 
-    void loadInclinedWall(bool is45, bool isLeft, double Diameter, double LineXCoordinate, double LineYCoordinate, double InclinationAngle, double setPositionX, double setPositionYRation);
+    void drawRamp   (bool is45, bool isLeft, double Diameter, double LineXCoordinate, double LineYCoordinate, double InclinationAngle, double setPositionX, double setPositionYRation);
     void drawLeftKicker(double x1,double y1,double x2,double y2,double x3,double y3);
     void drawRightKicker(double x1,double y1,double x2,double y2,double x3,double y3);
 

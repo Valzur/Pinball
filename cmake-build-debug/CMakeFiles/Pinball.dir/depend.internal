@@ -17,7 +17,6 @@ CMakeFiles/Pinball.dir/Game.cpp.o
  /home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/Bumper.h
  /home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/Collectable.h
  /home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/Gate.h
- /home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/InclinedWall.h
  /home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/Kicker.h
  /home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/Lane.h
  /home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/Magnet.h
@@ -30,7 +29,6 @@ CMakeFiles/Pinball.dir/Game.cpp.o
  /home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/SpriteWalls.h
  /home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/Switch.h
  /home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/ThrustBumper.h
- /home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/VerticalandHorizontalWall.h
  /home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/VibraniumBumper.h
  /home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/Wall.h
  /home/rasberry/Desktop/Pinball Project/Pinball/Interface.h
@@ -108,17 +106,6 @@ CMakeFiles/Pinball.dir/GameObjects/Obstacles/Gate.cpp.o
  /home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/Gate.h
  /home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/Obstacle.h
  /home/rasberry/Desktop/Pinball Project/Pinball/Interface.h
-CMakeFiles/Pinball.dir/GameObjects/Obstacles/InclinedWall.cpp.o
- /home/rasberry/Desktop/Pinball Project/Pinball/Defs.h
- /home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Ball.h
- /home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Collidable.h
- /home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Drawable.h
- /home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Manager.h
- /home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/InclinedWall.cpp
- /home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/InclinedWall.h
- /home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/Obstacle.h
- /home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/Wall.h
- /home/rasberry/Desktop/Pinball Project/Pinball/Interface.h
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/Kicker.cpp.o
  /home/rasberry/Desktop/Pinball Project/Pinball/Defs.h
  /home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Ball.h
@@ -180,11 +167,9 @@ CMakeFiles/Pinball.dir/GameObjects/Obstacles/Ramp.cpp.o
  /home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Collidable.h
  /home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Drawable.h
  /home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Manager.h
- /home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/InclinedWall.h
  /home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/Obstacle.h
  /home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/Ramp.cpp
  /home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/Ramp.h
- /home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/Wall.h
  /home/rasberry/Desktop/Pinball Project/Pinball/Interface.h
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/ScoreMultiplier.cpp.o
  /home/rasberry/Desktop/Pinball Project/Pinball/Defs.h
@@ -241,17 +226,6 @@ CMakeFiles/Pinball.dir/GameObjects/Obstacles/ThrustBumper.cpp.o
  /home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/ThrustBumper.h
  /home/rasberry/Desktop/Pinball Project/Pinball/Interface.h
  /home/rasberry/Desktop/Pinball Project/Pinball/Utility/CollisionDetection.h
-CMakeFiles/Pinball.dir/GameObjects/Obstacles/VerticalandHorizontalWall.cpp.o
- /home/rasberry/Desktop/Pinball Project/Pinball/Defs.h
- /home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Ball.h
- /home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Collidable.h
- /home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Drawable.h
- /home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Manager.h
- /home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/Obstacle.h
- /home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/VerticalandHorizontalWall.cpp
- /home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/VerticalandHorizontalWall.h
- /home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/Wall.h
- /home/rasberry/Desktop/Pinball Project/Pinball/Interface.h
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/VibraniumBumper.cpp.o
  /home/rasberry/Desktop/Pinball Project/Pinball/Defs.h
  /home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Ball.h
@@ -299,10 +273,9 @@ CMakeFiles/Pinball.dir/Utility/Configurable.cpp.o
  /home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Flipper.h
  /home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Manager.h
  /home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/Bumper.h
- /home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/InclinedWall.h
  /home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/Obstacle.h
  /home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/PopBumper.h
- /home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/VerticalandHorizontalWall.h
+ /home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/Ramp.h
  /home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/Wall.h
  /home/rasberry/Desktop/Pinball Project/Pinball/Interface.h
  /home/rasberry/Desktop/Pinball Project/Pinball/Utility/AudioManager.h
@@ -330,10 +303,9 @@ CMakeFiles/Pinball.dir/Utility/PreGame.cpp.o
  /home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Flipper.h
  /home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Manager.h
  /home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/Bumper.h
- /home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/InclinedWall.h
  /home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/Obstacle.h
  /home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/PopBumper.h
- /home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/VerticalandHorizontalWall.h
+ /home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/Ramp.h
  /home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/Wall.h
  /home/rasberry/Desktop/Pinball Project/Pinball/Interface.h
  /home/rasberry/Desktop/Pinball Project/Pinball/Utility/AudioManager.h
@@ -353,7 +325,6 @@ CMakeFiles/Pinball.dir/main.cpp.o
  /home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/Bumper.h
  /home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/Collectable.h
  /home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/Gate.h
- /home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/InclinedWall.h
  /home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/Kicker.h
  /home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/Lane.h
  /home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/Magnet.h
@@ -366,7 +337,6 @@ CMakeFiles/Pinball.dir/main.cpp.o
  /home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/SpriteWalls.h
  /home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/Switch.h
  /home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/ThrustBumper.h
- /home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/VerticalandHorizontalWall.h
  /home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/VibraniumBumper.h
  /home/rasberry/Desktop/Pinball Project/Pinball/GameObjects/Obstacles/Wall.h
  /home/rasberry/Desktop/Pinball Project/Pinball/Interface.h
