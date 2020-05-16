@@ -490,7 +490,7 @@ void Game::UIElements(Interface& interface) {
     //Black background
     interface.drawUIBackground();
     //Debug
-    DebugMode(interface);
+    //DebugMode(interface);
 
     manager.Updategame(interface);
 

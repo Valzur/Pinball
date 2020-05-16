@@ -14,8 +14,10 @@ void VibraniumBumper::draw(Interface& interface) {
 Vector2D VibraniumBumper::collideWith(Ball& ball, double collision_time, Manager& manager) {
     if (ball.getRadius() + GetRadius() >= VectorDistance(ball.getCenter(), GetPosition())) {
         ball.setVelocity({ 0,0 });
-        if(SoundDelay <= 0)
+        if(SoundDelay <= 0){
             sound.play();
+            SoundDelay = VibraniumFlash;
+        }
         manager.addScore(-1);
     }
     if(SoundDelay > 0){

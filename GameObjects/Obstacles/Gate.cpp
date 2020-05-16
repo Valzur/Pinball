@@ -1,7 +1,7 @@
 #include "Gate.h"
 
 void Gate::draw(Interface &interface) {
-    interface.drawGate(length,width,Center);
+    interface.drawGate(length,width,Center, AllowUp);
 }
 
 Gate::Gate(Vector2D Center, double length, double width,bool AllowUp) {

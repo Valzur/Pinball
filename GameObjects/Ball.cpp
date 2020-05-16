@@ -33,8 +33,8 @@ void Ball::move(double time, Manager& manager,bool &lost){
         if(!isUsedLane) {
             manager.ValueUpdate(*this,lost);
             // Kinematic equations for planar motion of a particle
-            velocity += Acceleration * time;
-            center += velocity *SpeedBoost* time + Acceleration * time * time * 0.5;
+            setVelocity(velocity + Acceleration * time );
+            setCenter( center + velocity *SpeedBoost* time + Acceleration * time * time * 0.5 );
         } else {
             if(isDirectedUp){
                 if(LaneLength>0){
@@ -63,11 +63,28 @@ void Ball::draw (Interface & interface)
 }
 
 void Ball::setCenter(Vector2D pos) {
-    center=pos;
+    bool Check1 = pos.x < radius,
+    Check2 = pos.x > GAME_WIDTH - radius,
+    Check3 = pos.y < radius;
+    Vector2D ModifiedPosition = pos;
+    if(Check1)
+        ModifiedPosition = { radius , pos.y };
+
+    if(Check2)
+        ModifiedPosition = { GAME_WIDTH - radius, pos.y };
+
+    if(Check3)
+        ModifiedPosition = { pos.x, radius };
+
+    center = ModifiedPosition;
 }
 
 void Ball::setVelocity(Vector2D vel) {
-    velocity=vel;
+    if(VectorNorm(vel) < 600){
+        velocity = vel;
+    } else {
+        velocity = vel * VelocityControl / VectorNorm(vel);
+    }
 }
 
 void Ball::Activate(bool & space) {

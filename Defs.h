@@ -56,4 +56,6 @@ bool FloatToBool(float number);
 #define ThrustBumperBoost 1.5
 #define PI M_PI
 #define ControlFrames 15
-#define VibraniumFlash 0.2
+#define VibraniumFlash 0.4
+#define VelocityControl 1000
+#define GlobalWidth 15

@@ -123,10 +123,10 @@ void Interface::drawFlipper(FlipperType type, Vector2D center, double length, do
 
 void Interface::drawWall(Vector2D Center, bool isVertical){
     if(isVertical) {
-        sf::RectangleShape Wall({10,GAME_HEIGHT});
+        sf::RectangleShape Wall({GlobalWidth,GAME_HEIGHT});
 
         //Origin
-        Wall.setOrigin({5,GAME_HEIGHT/2.0});
+        Wall.setOrigin({GlobalWidth/2.0,GAME_HEIGHT/2.0});
 
         //Aesthetics
         Wall.setFillColor(outlineColor);
@@ -136,10 +136,10 @@ void Interface::drawWall(Vector2D Center, bool isVertical){
 
         window.draw(Wall);
     }else{
-        sf::RectangleShape Wall({GAME_WIDTH,10});
+        sf::RectangleShape Wall({GAME_WIDTH,GlobalWidth});
 
         //Origin
-        Wall.setOrigin({GAME_WIDTH/2.0,5});
+        Wall.setOrigin({GAME_WIDTH/2.0,GlobalWidth/2.0});
 
         //Aesthetics
         Wall.setFillColor(outlineColor);
@@ -462,7 +462,7 @@ void Interface::drawSpeedBooster(double radius,Vector2D Center, bool Hit){
 }
 
 void Interface::drawSwitch(Vector2D Center, double Length,bool Used) {
-    sf::RectangleShape line(sf::Vector2f(Length, 10));
+    sf::RectangleShape line(sf::Vector2f(Length, GlobalWidth));
     line.setOrigin(Length,5);
     line.setPosition(Center);
     if(Used){

@@ -27,5 +27,5 @@ Ramp::Ramp(Vector2D Size, Vector2D Center, double Angle):Size(Size),Center(Cente
     }else{
         std:: cout << "Unable to load Wallhit.wav!" << std::endl;
     }
-
+    this->Size={Size.x,GlobalWidth/2.0};
 }
