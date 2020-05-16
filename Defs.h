@@ -29,6 +29,7 @@ double VectorDistance(Vector2D vector1,Vector2D vector2);
 double VectorNorm(Vector2D vector);
 Vector2D VectorDirection(Vector2D vector1,Vector2D vector2);
 double lerp(double a,double b,double t);
+double DotProduct(Vector2D u, Vector2D v);
 
 enum FlipperType { LEFT, RIGHT };
 enum BumperType{POP,THRUST,VIBRANIUM,SCOREM};
@@ -49,3 +50,7 @@ bool FloatToBool(float number);
 #define LaneVelocityMultiplier 2.5
 #define FlashTimer 0.3
 #define LaneTimer 0.6
+#define MagnetForce 3.5
+#define PobBumperBoost 0.1
+#define ControlTimer 1
+#define ThrustBumperBoost 1.5

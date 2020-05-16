@@ -438,27 +438,19 @@ void Interface::drawGate(double length,double width,Vector2D Center,bool AllowUp
     window.draw(LowerGate);
 }
 void Interface::drawMagnet(Vector2D Position, double magnetRadius, double radius, sf::Sprite * sprite) {
-    sf::CircleShape magnet(magnetRadius),object(radius);
+    sf::CircleShape magnet(magnetRadius);
     magnet.setOrigin(magnetRadius,magnetRadius);
     magnet.setOutlineThickness(outlineThickness);
-    magnet.setOutlineColor(sf::Color::Black);
     magnet.setFillColor(sf::Color(7,26,82,80));
 
-    object.setOrigin(radius,radius);
-    object.setOutlineThickness(outlineThickness);
-    object.setOutlineColor(sf::Color::Black);
-    object.setFillColor(sf::Color::Transparent);
-
     magnet.setPosition(Position.x,Position.y);
-    object.setPosition(Position.x,Position.y);
     window.draw(magnet);
-    window.draw(object);
-
-
 
     //Sprite
-    sprite->setPosition(Position.x-radius,Position.y-radius);
+    sprite->setOrigin(sprite->getTexture()->getSize().x/2.0,sprite->getTexture()->getSize().y/2.0);
+    sprite->setPosition(Position.x,Position.y);
     sprite->setScale(0.07,0.07);
+    sprite->setColor(sf::Color(255, 255, 255, 128));
     window.draw(*sprite);
 }
 
@@ -477,14 +469,20 @@ void Interface::drawCollectable(double radius, string L, Vector2D Center, bool U
     window.draw(Collectable);
 }
 
-void Interface::drawSpeedBooster(double radius,Vector2D Center){
+void Interface::drawSpeedBooster(double radius,Vector2D Center, bool Hit){
     sf::CircleShape SpeedBooster(radius);
-    SpeedBooster.setFillColor(sf::Color::Transparent);
+    if(Hit){
+        SpeedBooster.setFillColor(sf::Color(254, 255, 137));
+    }else{
+        SpeedBooster.setFillColor(sf::Color::Transparent);
+    }
+    SpeedBooster.setOrigin(radius,radius);
     SpeedBooster.setPosition(Center.x,Center.y);
-    SpeedBooster.setOutlineThickness(0.2);
-    SpeedBooster.setOutlineColor(sf::Color::Yellow);
+    SpeedBooster.setOutlineThickness(outlineThickness);
+    SpeedBooster.setOutlineColor(RadiantColor);
     window.draw(SpeedBooster);
 
+    SpeedBoosterSprite.setOrigin(SpeedBoosterSprite.getTexture()->getSize().x/2.0,SpeedBoosterSprite.getTexture()->getSize().y/2.0);
     SpeedBoosterSprite.setPosition(Center.x,Center.y);
     SpeedBoosterSprite.setScale(0.07,0.07);
     window.draw(SpeedBoosterSprite);
@@ -607,19 +605,26 @@ void Interface::drawThrustBumper(Vector2D center, double radius, bool Hit) {
     sf::CircleShape circle(radius);
     ThrustSprite.setOrigin(ThrustSprite.getTexture()->getSize().x/2.0,ThrustSprite.getTexture()->getSize().y/2.0);
     ThrustSprite.setPosition(center.x, center.y);
+    ThrustSprite.setScale(0.015, 0.015);
+
     circle.setOrigin(radius,radius);
-    circle.setFillColor(sf::Color::Transparent);
+    circle.setPosition(center);
+    if(Hit){
+        circle.setFillColor(textColor);
+    }else{
+        circle.setFillColor(RadiantColor);
+    }
     circle.setOutlineThickness(1.5 * outlineThickness);
     circle.setOutlineColor(outlineColor);
+
     window.draw(circle);
-    ThrustSprite.setScale(0.015, 0.015);
     window.draw(ThrustSprite);
 }
 
 void Interface::drawVibraniumBumper(Vector2D center, double radius,bool Hit) {
     sf::CircleShape circle(radius);
     circle.setOrigin(radius, radius);
-    circle.setPosition(center.x, center.y);
+    circle.setPosition(center);
     circle.setFillColor(sf::Color(8, 105, 114, 255));
     circle.setOutlineThickness(1.3 * outlineThickness);
     circle.setOutlineColor(sf::Color::Black);
@@ -627,7 +632,8 @@ void Interface::drawVibraniumBumper(Vector2D center, double radius,bool Hit) {
 
     //drawing texture for 1st circle
     Vibraniumsprite.setOrigin(Vibraniumsprite.getTexture()->getSize().x/2.0,Vibraniumsprite.getTexture()->getSize().y/2.0);
-    Vibraniumsprite.setPosition(center.x, center.y);
+    Vibraniumsprite.setPosition(center);
     Vibraniumsprite.setScale(0.4,0.4);
+    Vibraniumsprite.setColor(sf::Color(255, 255, 255, 128));
     window.draw(Vibraniumsprite);
 }

@@ -78,6 +78,7 @@ CMakeFiles/Pinball.dir/Defs.cpp.obj: ../libs/SFML-2.5.1/include/SFML/Window/Wind
 CMakeFiles/Pinball.dir/Defs.cpp.obj: ../Defs.cpp
 CMakeFiles/Pinball.dir/Defs.cpp.obj: ../Defs.h
 
+CMakeFiles/Pinball.dir/Game.cpp.obj: ../Utility/AudioManager.h
 CMakeFiles/Pinball.dir/Game.cpp.obj: ../libs/SFML-2.5.1/include/SFML/Audio.hpp
 CMakeFiles/Pinball.dir/Game.cpp.obj: ../libs/SFML-2.5.1/include/SFML/Audio/AlResource.hpp
 CMakeFiles/Pinball.dir/Game.cpp.obj: ../libs/SFML-2.5.1/include/SFML/Audio/Export.hpp
@@ -200,6 +201,7 @@ CMakeFiles/Pinball.dir/Game.cpp.obj: ../Utility/AudioManager.h
 CMakeFiles/Pinball.dir/Game.cpp.obj: ../Utility/CollisionDetection.h
 CMakeFiles/Pinball.dir/Game.cpp.obj: ../Utility/Configurable.h
 
+CMakeFiles/Pinball.dir/GameObjects/Ball.cpp.obj: ../Utility/AudioManager.h
 CMakeFiles/Pinball.dir/GameObjects/Ball.cpp.obj: ../libs/SFML-2.5.1/include/SFML/Audio.hpp
 CMakeFiles/Pinball.dir/GameObjects/Ball.cpp.obj: ../libs/SFML-2.5.1/include/SFML/Audio/AlResource.hpp
 CMakeFiles/Pinball.dir/GameObjects/Ball.cpp.obj: ../libs/SFML-2.5.1/include/SFML/Audio/Export.hpp
@@ -299,7 +301,6 @@ CMakeFiles/Pinball.dir/GameObjects/Ball.cpp.obj: ../GameObjects/Drawable.h
 CMakeFiles/Pinball.dir/GameObjects/Ball.cpp.obj: ../GameObjects/Manager.h
 CMakeFiles/Pinball.dir/GameObjects/Ball.cpp.obj: ../GameObjects/Obstacles/Obstacle.h
 CMakeFiles/Pinball.dir/GameObjects/Ball.cpp.obj: ../Interface.h
-CMakeFiles/Pinball.dir/GameObjects/Ball.cpp.obj: ../Utility/AudioManager.h
 
 CMakeFiles/Pinball.dir/GameObjects/Flipper.cpp.obj: ../libs/SFML-2.5.1/include/SFML/Audio.hpp
 CMakeFiles/Pinball.dir/GameObjects/Flipper.cpp.obj: ../libs/SFML-2.5.1/include/SFML/Audio/AlResource.hpp
@@ -404,6 +405,7 @@ CMakeFiles/Pinball.dir/GameObjects/Flipper.cpp.obj: ../Interface.h
 CMakeFiles/Pinball.dir/GameObjects/Flipper.cpp.obj: ../Utility/AudioManager.h
 CMakeFiles/Pinball.dir/GameObjects/Flipper.cpp.obj: ../Utility/CollisionDetection.h
 
+CMakeFiles/Pinball.dir/GameObjects/Manager.cpp.obj: ../Utility/AudioManager.h
 CMakeFiles/Pinball.dir/GameObjects/Manager.cpp.obj: ../libs/SFML-2.5.1/include/SFML/Audio.hpp
 CMakeFiles/Pinball.dir/GameObjects/Manager.cpp.obj: ../libs/SFML-2.5.1/include/SFML/Audio/AlResource.hpp
 CMakeFiles/Pinball.dir/GameObjects/Manager.cpp.obj: ../libs/SFML-2.5.1/include/SFML/Audio/Export.hpp
@@ -503,7 +505,6 @@ CMakeFiles/Pinball.dir/GameObjects/Manager.cpp.obj: ../GameObjects/Manager.cpp
 CMakeFiles/Pinball.dir/GameObjects/Manager.cpp.obj: ../GameObjects/Manager.h
 CMakeFiles/Pinball.dir/GameObjects/Manager.cpp.obj: ../GameObjects/Obstacles/Obstacle.h
 CMakeFiles/Pinball.dir/GameObjects/Manager.cpp.obj: ../Interface.h
-CMakeFiles/Pinball.dir/GameObjects/Manager.cpp.obj: ../Utility/AudioManager.h
 
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/Bullseye.cpp.obj: ../libs/SFML-2.5.1/include/SFML/Audio.hpp
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/Bullseye.cpp.obj: ../libs/SFML-2.5.1/include/SFML/Audio/AlResource.hpp
@@ -1017,6 +1018,7 @@ CMakeFiles/Pinball.dir/GameObjects/Obstacles/Kicker.cpp.obj: ../GameObjects/Obst
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/Kicker.cpp.obj: ../Interface.h
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/Kicker.cpp.obj: ../Utility/AudioManager.h
 
+CMakeFiles/Pinball.dir/GameObjects/Obstacles/Lane.cpp.obj: ../Utility/AudioManager.h
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/Lane.cpp.obj: ../libs/SFML-2.5.1/include/SFML/Audio.hpp
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/Lane.cpp.obj: ../libs/SFML-2.5.1/include/SFML/Audio/AlResource.hpp
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/Lane.cpp.obj: ../libs/SFML-2.5.1/include/SFML/Audio/Export.hpp
@@ -1117,7 +1119,6 @@ CMakeFiles/Pinball.dir/GameObjects/Obstacles/Lane.cpp.obj: ../GameObjects/Obstac
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/Lane.cpp.obj: ../GameObjects/Obstacles/Lane.h
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/Lane.cpp.obj: ../GameObjects/Obstacles/Obstacle.h
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/Lane.cpp.obj: ../Interface.h
-CMakeFiles/Pinball.dir/GameObjects/Obstacles/Lane.cpp.obj: ../Utility/AudioManager.h
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/Lane.cpp.obj: ../Utility/CollisionDetection.h
 
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/Magnet.cpp.obj: ../libs/SFML-2.5.1/include/SFML/Audio.hpp
@@ -2378,6 +2379,7 @@ CMakeFiles/Pinball.dir/Utility/AudioManager.cpp.obj: ../libs/SFML-2.5.1/include/
 CMakeFiles/Pinball.dir/Utility/AudioManager.cpp.obj: ../Utility/AudioManager.cpp
 CMakeFiles/Pinball.dir/Utility/AudioManager.cpp.obj: ../Utility/AudioManager.h
 
+CMakeFiles/Pinball.dir/Utility/CollisionDetection.cpp.obj: ../Utility/AudioManager.h
 CMakeFiles/Pinball.dir/Utility/CollisionDetection.cpp.obj: ../libs/SFML-2.5.1/include/SFML/Audio.hpp
 CMakeFiles/Pinball.dir/Utility/CollisionDetection.cpp.obj: ../libs/SFML-2.5.1/include/SFML/Audio/AlResource.hpp
 CMakeFiles/Pinball.dir/Utility/CollisionDetection.cpp.obj: ../libs/SFML-2.5.1/include/SFML/Audio/Export.hpp
@@ -2476,10 +2478,10 @@ CMakeFiles/Pinball.dir/Utility/CollisionDetection.cpp.obj: ../GameObjects/Drawab
 CMakeFiles/Pinball.dir/Utility/CollisionDetection.cpp.obj: ../GameObjects/Manager.h
 CMakeFiles/Pinball.dir/Utility/CollisionDetection.cpp.obj: ../GameObjects/Obstacles/Obstacle.h
 CMakeFiles/Pinball.dir/Utility/CollisionDetection.cpp.obj: ../Interface.h
-CMakeFiles/Pinball.dir/Utility/CollisionDetection.cpp.obj: ../Utility/AudioManager.h
 CMakeFiles/Pinball.dir/Utility/CollisionDetection.cpp.obj: ../Utility/CollisionDetection.cpp
 CMakeFiles/Pinball.dir/Utility/CollisionDetection.cpp.obj: ../Utility/CollisionDetection.h
 
+CMakeFiles/Pinball.dir/Utility/Configurable.cpp.obj: ../Utility/AudioManager.h
 CMakeFiles/Pinball.dir/Utility/Configurable.cpp.obj: ../libs/SFML-2.5.1/include/SFML/Audio.hpp
 CMakeFiles/Pinball.dir/Utility/Configurable.cpp.obj: ../libs/SFML-2.5.1/include/SFML/Audio/AlResource.hpp
 CMakeFiles/Pinball.dir/Utility/Configurable.cpp.obj: ../libs/SFML-2.5.1/include/SFML/Audio/Export.hpp
@@ -2588,6 +2590,7 @@ CMakeFiles/Pinball.dir/Utility/Configurable.cpp.obj: ../Utility/CollisionDetecti
 CMakeFiles/Pinball.dir/Utility/Configurable.cpp.obj: ../Utility/Configurable.cpp
 CMakeFiles/Pinball.dir/Utility/Configurable.cpp.obj: ../Utility/Configurable.h
 
+CMakeFiles/Pinball.dir/Utility/PixelPerfectCollision.cpp.obj: ../Utility/AudioManager.h
 CMakeFiles/Pinball.dir/Utility/PixelPerfectCollision.cpp.obj: ../libs/SFML-2.5.1/include/SFML/Audio.hpp
 CMakeFiles/Pinball.dir/Utility/PixelPerfectCollision.cpp.obj: ../libs/SFML-2.5.1/include/SFML/Audio/AlResource.hpp
 CMakeFiles/Pinball.dir/Utility/PixelPerfectCollision.cpp.obj: ../libs/SFML-2.5.1/include/SFML/Audio/Export.hpp
@@ -2686,7 +2689,6 @@ CMakeFiles/Pinball.dir/Utility/PixelPerfectCollision.cpp.obj: ../GameObjects/Dra
 CMakeFiles/Pinball.dir/Utility/PixelPerfectCollision.cpp.obj: ../GameObjects/Manager.h
 CMakeFiles/Pinball.dir/Utility/PixelPerfectCollision.cpp.obj: ../GameObjects/Obstacles/Obstacle.h
 CMakeFiles/Pinball.dir/Utility/PixelPerfectCollision.cpp.obj: ../Interface.h
-CMakeFiles/Pinball.dir/Utility/PixelPerfectCollision.cpp.obj: ../Utility/AudioManager.h
 CMakeFiles/Pinball.dir/Utility/PixelPerfectCollision.cpp.obj: ../Utility/PixelPerfectCollision.cpp
 CMakeFiles/Pinball.dir/Utility/PixelPerfectCollision.cpp.obj: ../Utility/PixelPerfectCollision.h
 
@@ -2712,6 +2714,7 @@ CMakeFiles/Pinball.dir/Utility/PostProcessing.cpp.obj: ../libs/SFML-2.5.1/includ
 CMakeFiles/Pinball.dir/Utility/PostProcessing.cpp.obj: ../Utility/PostProcessing.cpp
 CMakeFiles/Pinball.dir/Utility/PostProcessing.cpp.obj: ../Utility/PostProcessing.h
 
+CMakeFiles/Pinball.dir/Utility/PreGame.cpp.obj: ../Utility/AudioManager.h
 CMakeFiles/Pinball.dir/Utility/PreGame.cpp.obj: ../libs/SFML-2.5.1/include/SFML/Audio.hpp
 CMakeFiles/Pinball.dir/Utility/PreGame.cpp.obj: ../libs/SFML-2.5.1/include/SFML/Audio/AlResource.hpp
 CMakeFiles/Pinball.dir/Utility/PreGame.cpp.obj: ../libs/SFML-2.5.1/include/SFML/Audio/Export.hpp
@@ -2821,6 +2824,7 @@ CMakeFiles/Pinball.dir/Utility/PreGame.cpp.obj: ../Utility/Configurable.h
 CMakeFiles/Pinball.dir/Utility/PreGame.cpp.obj: ../Utility/PreGame.cpp
 CMakeFiles/Pinball.dir/Utility/PreGame.cpp.obj: ../Utility/PreGame.h
 
+CMakeFiles/Pinball.dir/main.cpp.obj: ../Utility/AudioManager.h
 CMakeFiles/Pinball.dir/main.cpp.obj: ../libs/SFML-2.5.1/include/SFML/Audio.hpp
 CMakeFiles/Pinball.dir/main.cpp.obj: ../libs/SFML-2.5.1/include/SFML/Audio/AlResource.hpp
 CMakeFiles/Pinball.dir/main.cpp.obj: ../libs/SFML-2.5.1/include/SFML/Audio/Export.hpp

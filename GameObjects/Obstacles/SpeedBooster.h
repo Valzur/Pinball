@@ -5,8 +5,9 @@
 
 class SpeedBooster :public Obstacle{
 private:
-    double radius;
+    double radius,HitTimer=FlashTimer;
     Vector2D Center;
+    bool Hit=false;
 public:
     SpeedBooster(double radius, Vector2D Center);
     void draw(Interface & interface) override;

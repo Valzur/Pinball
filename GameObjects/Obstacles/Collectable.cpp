@@ -3,7 +3,11 @@
 Collectable::Collectable(double radius, string L,Vector2D Center): Center(Center) {
     this->radius=radius;
     this->L=L;
-
+    if(buffer.loadFromFile("../Assets/SFX/StarCollect.wav")){
+        sound.setBuffer(buffer);
+    }else{
+        std:: cout << "Unable to load StarCollect.wav!" << std::endl;
+    }
 }
 
 void Collectable::draw(Interface &interface)
@@ -18,7 +22,11 @@ Vector2D Collectable::collideWith(Ball &ball, double collision_time, Manager &ma
         if(Timer>0){
             Timer-=collision_time;
         } else {
-            Active=false;
+            if(Active){
+                Active=false;
+                sound.play();
+                manager.addScore(5000);
+            }
         }
 
     } else {

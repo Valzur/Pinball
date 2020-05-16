@@ -4,6 +4,13 @@ Ball::Ball(Vector2D center,float radius, Vector2D velocity,bool Main): InitialPo
     isActive=false;
     isMain=Main;
     setCenter(InitialPosition);
+    if(!Main){
+        if(buffer.loadFromFile("../Assets/SFX/Captive.wav")){
+            sound.setBuffer(buffer);
+        }else{
+            std:: cout << "Unable to load Captive.wav!" << std::endl;
+        }
+    }
 }
 
 float Ball::getRadius() const
@@ -64,8 +71,9 @@ void Ball::setVelocity(Vector2D vel) {
 }
 
 void Ball::Activate(bool & space) {
-    if(space & isMain)
+    if(space & isMain){
         isActive=true;
+    }
 }
 
 void Ball::deActivate() {
@@ -82,8 +90,10 @@ Vector2D Ball::collideWith(Ball &ball, float collision_time, Manager & manager) 
         Vector2D dir;
         if (VectorDistance(ball.getCenter(), center) <= radius + ball.getRadius()) {
             //Break Captivity
-            if (!isMain & !isActive)
+            if (!isMain & !isActive){
                 isActive=true;
+                sound.play();
+            }
 
             //Readjust balls
             dir = VectorDirection(center, ball.getCenter());

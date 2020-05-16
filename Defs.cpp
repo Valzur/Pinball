@@ -29,3 +29,6 @@ bool FloatToBool(float number){
         return NULL;
     }
 }
+double DotProduct(Vector2D u, Vector2D v){
+   return u.x*v.x + u.y+v.y;
+}

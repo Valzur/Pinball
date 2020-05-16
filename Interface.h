@@ -63,7 +63,7 @@ public:
     void drawMagnet(Vector2D Position, double magnetRadius,double radius,sf::Sprite * sprite);
     void drawSwitch(Vector2D Center, double Length, bool Used);
     void drawCollectable(double radius,string L,Vector2D Center,bool Used);
-    void drawSpeedBooster(double radius,Vector2D Center);
+    void drawSpeedBooster(double radius,Vector2D Center,bool Hit);
     void drawGate(double length,double width,Vector2D Center,bool AllowUp=false);
     void drawLane(double Length, Vector2D Center, double Width);
     void drawBullseye(Vector2D Center,double Length, double Width, bool isVertical);

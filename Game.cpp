@@ -36,8 +36,7 @@ void Game::simulate()
     CollisionCheck(delta_time,manager);
     MoveBalls(delta_time);
     //Pls
-    scoreText="Score: " + to_string(manager.getScore());
-    livesText="Lives: " + to_string(manager.getLives());
+    manager.UpdateTimer(delta_time);
 
     if(!Loaded)
         Loaded=true;
@@ -52,6 +51,7 @@ void Game::updateInterfaceOutput()
 
 
         //Pls
+        manager.Updategame(interface);
         DrawDrawables();
         UIElements(interface);
         //Pls

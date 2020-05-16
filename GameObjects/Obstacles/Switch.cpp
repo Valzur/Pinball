@@ -3,7 +3,13 @@
 
 using namespace std;
 
-Switch::Switch(Vector2D Center,double Length) :collidedLastFrame(false), Center(Center),Length(Length) {}
+Switch::Switch(Vector2D Center,double Length) :collidedLastFrame(false), Center(Center),Length(Length) {
+    if(buffer.loadFromFile("../Assets/SFX/WallHit.wav")){
+        sound.setBuffer(buffer);
+    }else{
+        std:: cout << "Unable to load WallHit.wav!" << std::endl;
+    }
+}
 
 void Switch::draw(Interface& interface)
 {
@@ -20,6 +26,7 @@ Vector2D Switch::collideWith(Ball &ball, double collision_time, Manager &manager
                 }else{
                     collidedLastFrame = true;
                     ball.setVelocity({ball.getVelocity().x,-ball.getVelocity().y});
+                    sound.play();
                 }
             }else{
                 if(collidedLastFrame){

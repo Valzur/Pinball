@@ -4,14 +4,15 @@
 #include "Manager.h"
 #include <iostream>
 #include "../Defs.h"
+#include "../../Utility/AudioManager.h"
 
 // Represents the ball (the single most important object in a Pinball game!)
-class Ball: public Drawn
-{
+class Ball: public Drawn, public AudioManager
+        {
 private:
     const Vector2D InitialPosition,InitialVelocity;
     bool isActive,isMain,isUsedPortal=false,isUsedLane=false;
-    const double radius, BoostDuration=0.5;
+    const double radius, BoostDuration=0.5, ScalarVelocity=300.0;
     Vector2D center;  //The instantaneous center of the ball
     Vector2D velocity;  //The instantaneous velocity of the ball
     Vector2D Acceleration;

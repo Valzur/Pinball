@@ -2,12 +2,15 @@
 
 Vector2D CircleCollision(const Ball& ball,Vector2D position, double radius, double collision_time) {
     Vector2D Acceleration = {0, 0},Velocity;
-    double ScalarVelocity=VectorNorm(ball.getVelocity());
-    if (VectorDistance(ball.getCenter(), position) < radius + ball.getRadius()) {
-        Velocity=ball.getVelocity()-((ball.getVelocity())*(ball.getCenter()-position))/pow(VectorNorm(position - ball.getCenter()),2)*(ball.getCenter()-position);
-        Velocity=Velocity/VectorNorm(Velocity);
-        Acceleration=(Velocity)*ScalarVelocity/collision_time;
-    }
+
+        double ScalarVelocity = VectorNorm(ball.getVelocity());
+        if (VectorDistance(ball.getCenter(), position) < radius + ball.getRadius()) {
+            Velocity = ball.getVelocity() - (ball.getCenter() - position) *
+                    (DotProduct((ball.getVelocity()), (ball.getCenter() - position))) /
+                    pow(VectorNorm(position - ball.getCenter()), 2);
+            Velocity = Velocity / VectorNorm(Velocity);
+            Acceleration = Vector2D {-Velocity.y,Velocity.x} * ScalarVelocity / collision_time;
+        }
     return Acceleration;
 }
 

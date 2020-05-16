@@ -15,12 +15,13 @@ void AudioManager::PlayMusic(const string&) {
         cout << "Error, Can't load music file!" << endl;
     music.play();
     music.setLoop(true);
+    music.setVolume(30);
 }
 
 AudioManager::AudioManager(bool Playmusic, const string& AudioPath) {
 
     if(Playmusic) {
-        //PlayMusic(AudioPath);
+        PlayMusic(AudioPath);
     }
 
 }

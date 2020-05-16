@@ -1,7 +1,11 @@
 #include"ThrustBumper.h"
 
 ThrustBumper::ThrustBumper(Vector2D pos, double rad) : Bumper(pos, rad, BumperType::THRUST) {
-    setScorepoints(150);
+    if(buffer.loadFromFile("../Assets/SFX/Thrust.wav")){
+        sound.setBuffer(buffer);
+    }else{
+        std:: cout << "Unable to load Thrust.wav!" << std::endl;
+    }
 }
 
 void ThrustBumper::draw(Interface& interface) {
@@ -21,11 +25,12 @@ Vector2D ThrustBumper::collideWith(Ball& ball, double collision_time, Manager& m
         }
     }else{
         Hit=true;
-        manager.addScore(150);
         if(AllowHit){
-            manager.addScore(150);
+            ball.setVelocity(Acceleration*ThrustBumperBoost/collision_time);
+            sound.play();
+            manager.addScore(750);
             AllowHit=false;
         }
     }
-    return Acceleration;
+    return {0,0};
 }

@@ -7,9 +7,10 @@ using namespace std;
 using namespace sf;
 
 class AudioManager {
-private:
+protected:
     SoundBuffer buffer;
     Sound sound;
+private:
     Music music;
 public:
     AudioManager();

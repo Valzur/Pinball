@@ -6,18 +6,23 @@ Manager::Manager() {
 }
 
 void Manager::addScore(int score) {
-    Score+=score;
+    if(timer<=0){
+        AdditionalScore+=score;
+        timer = ControlTimer;
+    }
 }
 
 void Manager::deductLives(int Lives) {
     lives-=Lives;
 }
 
-int Manager::getLives() {
-    return lives;
+string Manager::getLives() {
+    return "Lives: " + to_string(lives);
 }
 
 void Manager::Updategame(Interface & interface) {
+    Score = Score + AdditionalScore;
+    AdditionalScore = 0;
     //Generate Text values
     scoreText="Score: " + to_string(Score);
     livesText="Lives: " + to_string(lives);
@@ -67,10 +72,15 @@ Manager::Manager(int Score, int lives) {
     this->lives=lives;
 }
 
-int Manager::getScore() {
-    return Score;
+string Manager::getScore() {
+    return "Score: " + to_string(Score);
 }
 
 void Manager::MultiplyScore(double Factor) {
     Score*=Factor;
+}
+
+void Manager::UpdateTimer(double Time) {
+    if(timer>0)
+        timer-=Time;
 }

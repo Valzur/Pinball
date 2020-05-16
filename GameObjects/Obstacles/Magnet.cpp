@@ -6,6 +6,11 @@ Magnet::Magnet(Vector2D Position, double Magnetradius, double radius):Position(P
     }else{
         sprite.setTexture(texture);
     }
+    if(buffer.loadFromFile("../Assets/SFX/Magnet.wav")){
+        sound.setBuffer(buffer);
+    }else{
+        std:: cout << "Unable to load Magnet.wav!" << std::endl;
+    }
 }
 
 void Magnet::draw(Interface &interface) {
@@ -13,20 +18,13 @@ void Magnet::draw(Interface &interface) {
 }
 
 Vector2D Magnet::collideWith(Ball &ball, double collision_time, Manager &manager) {
-    Vector2D Acceleration = { 0,0 }, velocity,farD,NewVelocity;
-    double ScalarVelocity = VectorNorm(ball.getVelocity()), distance = 250;
-    velocity = ball.getVelocity() ;
+    Vector2D Acceleration = { 0,0 },farD;
+    double ScalarVelocity = VectorNorm(ball.getVelocity());
     farD = VectorDirection( ball.getCenter(),Position);
-    int z = 1;
-    if (VectorDistance(ball.getCenter(), Position) <= 100 + ball.getRadius() + Magnetradius) {
-
-
-        NewVelocity = { -velocity.x + farD.x,-velocity.y + farD.y };//direction for acceleration
-
-        Acceleration = NewVelocity / VectorNorm(NewVelocity) * ScalarVelocity;   //made time=1s, we don't care very much for time in this case as it happens continously
+    if (VectorDistance(ball.getCenter(), Position) <= ball.getRadius() + Magnetradius) {
+        Acceleration = farD * ScalarVelocity * MagnetForce;
+        sound.play();
     }
-
-
 
     return Acceleration;
 }

@@ -1,7 +1,13 @@
 #include "Flipper.h"
 
 Flipper::Flipper(FlipperType type, Vector2D center, double length, double angle, double majorRadius, double minorRadius, double NormalAngle, double ExtendedAngle,double Velocity):
-    type(type), center(center), length(length), angle(angle), majorRadius(majorRadius), minorRadius(minorRadius),NormalAngle(NormalAngle),ExtendedAngle(ExtendedAngle), Velocity(Velocity){}
+    type(type), center(center), length(length), angle(angle), majorRadius(majorRadius), minorRadius(minorRadius),NormalAngle(NormalAngle),ExtendedAngle(ExtendedAngle), Velocity(Velocity){
+    if(buffer.loadFromFile("../Assets/SFX/Flipper.wav")){
+        sound.setBuffer(buffer);
+    }else{
+        std:: cout << "Unable to load Flipper.wav!" << std::endl;
+    }
+}
 
 Vector2D Flipper::collideWith(Ball & ball, double collision_time, Manager & manager)
 {
@@ -49,6 +55,13 @@ void Flipper::RotateFlipper(double a, double time){
 
 void Flipper::MoveFlipper(bool left, bool right, double delta_time) {
     //A little finicky, but its cleaner :')
+    if(!Left & left){
+        sound.play();
+    }
+    if(!Right & right){
+        sound.play();
+    }
+
     switch(type) {
         //Left
         //If clicked
@@ -67,4 +80,6 @@ void Flipper::MoveFlipper(bool left, bool right, double delta_time) {
             }
             break;
     }
+    Left = left;
+    Right = right;
 }

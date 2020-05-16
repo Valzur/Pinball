@@ -1,8 +1,8 @@
 BALL
 3
-CENTER: 550 600
+CENTER: 250 250
 RADIUS: 10
-VELOCITY: 0 -500
+VELOCITY: 0 -300
 MAIN: YES
 CENTER: 200 300
 RADIUS: 10
@@ -66,16 +66,16 @@ type 0
 position 350  530
 Radius 60
 type 0
-position 118 140
+position 120 440
 Radius 30
 type 2
 position  60  325
 Radius 40
 type 1
-position 680 325
+position 650 325
 Radius 40
 type 1
-position 580 230
+position 580 430
 Radius 25
 type 3
 PORTAL
@@ -84,10 +84,7 @@ POS1: 300 200
 POS2: 200 800
 RADIUS: 35
 MAGNET
-2
-POSITION: 200 200
-MAGNETRADIUS: 70
-RADIUS: 30
+1
 POSITION: 500 200
 MAGNETRADIUS: 70
 RADIUS: 30

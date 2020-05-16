@@ -21,7 +21,7 @@ private:
     double majorRadius;  // The radius of the rotation end
     double minorRadius;  // The radius of the other end
     double ImpulseMultiplier; //to be used to accelerate the collision if the flipper was moving at the time of collision.
-
+    bool Left=false,Right=false;
 public:
     // The angle should probably be removed from the constructor after adding the controls
     Flipper(FlipperType type, Vector2D center, double length, double angle, double majorRadius, double minorRadius, double NormalAngle, double ExtendedAngle,double Velocity);

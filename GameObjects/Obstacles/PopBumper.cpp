@@ -1,6 +1,12 @@
 #include "PopBumper.h"
 
-PopBumper::PopBumper(Vector2D pos, double rad) : Bumper(pos, rad,POP) {}
+PopBumper::PopBumper(Vector2D pos, double rad) : Bumper(pos, rad,POP) {
+    if(buffer.loadFromFile("../Assets/SFX/Bumper.wav")){
+        sound.setBuffer(buffer);
+    }else{
+        std:: cout << "Unable to load Bumper.wav!" << std::endl;
+    }
+}
 
 void PopBumper::draw(Interface &interface) {
     interface.drawPopBumper(GetPosition(),GetRadius(),Hit);
@@ -8,21 +14,28 @@ void PopBumper::draw(Interface &interface) {
 
 Vector2D PopBumper::collideWith(Ball &ball, double collision_time, Manager &manager) {
     Vector2D Acceleration={0,0};
-    Acceleration=CircleCollision(ball,GetPosition(),GetRadius(),collision_time);
+    if(AllowHit)
+        Acceleration = CircleCollision(ball,GetPosition(),GetRadius(),collision_time);
+
     if(Acceleration==Vector2D{0,0}){
-        if(Hit &(hitTimer>0))
-            hitTimer-=collision_time;
-        else {
-            hitTimer=FlashTimer;
-            Hit=false;
-            AllowHit=true;
-        }
+        AllowHit = true;
     }else{
-        Hit=true;
-        if(AllowHit){
-            manager.addScore(150);
-            AllowHit=false;
-        }
+        ball.setVelocity(Acceleration*collision_time);
+        Hit = true;
+        AllowHit = false;
     }
-    return Acceleration;
+
+    if(Hit &(hitTimer>0))
+        hitTimer-=collision_time;
+    else {
+        if(hitTimer<=0){
+            std::cout << "Added" << std::endl;
+            manager.addScore(400);
+            sound.play();
+        }
+
+        hitTimer=FlashTimer;
+        Hit=false;
+    }
+    return {0,0};
 }

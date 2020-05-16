@@ -6,6 +6,12 @@
 
 #IncludeRegexTransform: 
 
+../Utility/AudioManager.h
+iostream
+-
+SFML/Audio.hpp
+-
+
 ../libs/SFML-2.5.1/include/SFML/Audio.hpp
 SFML/System.hpp
 -
@@ -858,6 +864,76 @@ D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/SFML/Graphics.hpp
 SFML/Window.hpp
 D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/SFML/Window.hpp
 
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Game.cpp
+iostream
+-
+Game.h
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Game.h
+
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Game.h
+chrono
+-
+string
+-
+Interface.h
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Interface.h
+Defs.h
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Defs.h
+GameObjects/Ball.h
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Ball.h
+GameObjects/Flipper.h
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Flipper.h
+GameObjects/Obstacles/SpriteWalls.h
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/SpriteWalls.h
+GameObjects/Obstacles/Kicker.h
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/Kicker.h
+GameObjects/Obstacles/Bumper.h
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/Bumper.h
+GameObjects/Obstacles/Ramp.h
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/Ramp.h
+GameObjects/Manager.h
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Manager.h
+Utility/AudioManager.h
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Utility/AudioManager.h
+Utility/Configurable.h
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Utility/Configurable.h
+GameObjects/Obstacles/Portal.h
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/Portal.h
+GameObjects/Obstacles/Wall.h
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/Wall.h
+GameObjects/Obstacles/Gate.h
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/Gate.h
+GameObjects/Obstacles/Magnet.h
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/Magnet.h
+fstream
+-
+GameObjects/Obstacles/SpeedBooster.h
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/SpeedBooster.h
+GameObjects/Obstacles/VibraniumBumper.h
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/VibraniumBumper.h
+GameObjects/Obstacles/ThrustBumper.h
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/ThrustBumper.h
+GameObjects/Obstacles/PopBumper.h
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/PopBumper.h
+GameObjects/Obstacles/ScoreMultiplier.h
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/ScoreMultiplier.h
+GameObjects/Obstacles/Switch.h
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/Switch.h
+GameObjects/Obstacles/Collectable.h
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/Collectable.h
+GameObjects/Obstacles/Lane.h
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/Lane.h
+GameObjects/Obstacles/Ramp.h
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/Ramp.h
+GameObjects/Obstacles/ScoreMultiplier.h
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/ScoreMultiplier.h
+GameObjects/Obstacles/Bullseye.h
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/Bullseye.h
+
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Ball.cpp
+Ball.h
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Ball.h
+
 D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Ball.h
 Obstacles/Obstacle.h
 D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/Obstacle.h
@@ -867,6 +943,8 @@ iostream
 -
 ../Defs.h
 D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Defs.h
+../../Utility/AudioManager.h
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Utility/AudioManager.h
 
 D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Collidable.h
 Ball.h
@@ -878,6 +956,24 @@ D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Drawable
 ../Interface.h
 D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Interface.h
 
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Flipper.cpp
+Flipper.h
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Flipper.h
+
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Flipper.h
+Obstacles/Obstacle.h
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/Obstacle.h
+cmath
+-
+../Defs.h
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Defs.h
+../Utility/CollisionDetection.h
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Utility/CollisionDetection.h
+
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Manager.cpp
+Manager.h
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Manager.h
+
 D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Manager.h
 iostream
 -
@@ -886,6 +982,80 @@ D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Interface.h
 Ball.h
 D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Ball.h
 
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/Bullseye.cpp
+Bullseye.h
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/Bullseye.h
+
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/Bullseye.h
+Obstacle.h
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/Obstacle.h
+
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/Bumper.cpp
+Bumper.h
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/Bumper.h
+
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/Bumper.h
+iostream
+-
+Obstacle.h
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/Obstacle.h
+cmath
+-
+../Manager.h
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Manager.h
+../../Defs.h
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Defs.h
+../../Utility/CollisionDetection.h
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Utility/CollisionDetection.h
+
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/Collectable.cpp
+Collectable.h
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/Collectable.h
+
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/Collectable.h
+Obstacle.h
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/Obstacle.h
+../../Defs.h
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Defs.h
+../../Utility/CollisionDetection.h
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Utility/CollisionDetection.h
+
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/Gate.cpp
+Gate.h
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/Gate.h
+
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/Gate.h
+Obstacle.h
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/Obstacle.h
+
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/Kicker.cpp
+Kicker.h
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/Kicker.h
+
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/Kicker.h
+Obstacle.h
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/Obstacle.h
+
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/Lane.cpp
+Lane.h
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/Lane.h
+
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/Lane.h
+../../Utility/CollisionDetection.h
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Utility/CollisionDetection.h
+../../Defs.h
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Defs.h
+
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/Magnet.cpp
+Magnet.h
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/Magnet.h
+
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/Magnet.h
+Obstacle.h
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/Obstacle.h
+../../Utility/CollisionDetection.h
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Utility/CollisionDetection.h
+
 D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/Obstacle.h
 ../Drawable.h
 D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Drawable.h
@@ -893,6 +1063,62 @@ D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Drawable
 D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Collidable.h
 ../../Utility/AudioManager.h
 D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Utility/AudioManager.h
+
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/PopBumper.cpp
+PopBumper.h
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/PopBumper.h
+
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/PopBumper.h
+Bumper.h
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/Bumper.h
+
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/Portal.cpp
+Portal.h
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/Portal.h
+
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/Portal.h
+../../Utility/CollisionDetection.h
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Utility/CollisionDetection.h
+Obstacle.h
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/Obstacle.h
+
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/Ramp.cpp
+Ramp.h
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/Ramp.h
+
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/Ramp.h
+Obstacle.h
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/Obstacle.h
+
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/ScoreMultiplier.cpp
+ScoreMultiplier.h
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/ScoreMultiplier.h
+
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/ScoreMultiplier.h
+Bumper.h
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/Bumper.h
+../../Defs.h
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Defs.h
+
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/SpeedBooster.cpp
+SpeedBooster.h
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/SpeedBooster.h
+
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/SpeedBooster.h
+Obstacle.h
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/Obstacle.h
+../../Utility/CollisionDetection.h
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Utility/CollisionDetection.h
+
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/SpriteWalls.cpp
+SpriteWalls.h
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/SpriteWalls.h
+
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/SpriteWalls.h
+iostream
+-
+Obstacle.h
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/Obstacle.h
 
 D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/Switch.cpp
 Switch.h
@@ -914,9 +1140,31 @@ D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Defs.h
 ../../Utility/CollisionDetection.h
 D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Utility/CollisionDetection.h
 
-D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Interface.cpp
-Interface.h
-D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Interface.h
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/ThrustBumper.cpp
+ThrustBumper.h
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/ThrustBumper.h
+
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/ThrustBumper.h
+Bumper.h
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/Bumper.h
+../../Defs.h
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Defs.h
+
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/VibraniumBumper.cpp
+VibraniumBumper.h
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/VibraniumBumper.h
+
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/VibraniumBumper.h
+Bumper.h
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/Bumper.h
+
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/Wall.cpp
+Wall.h
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/Wall.h
+
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/Wall.h
+Obstacle.h
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/Obstacle.h
 
 D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Interface.h
 SFML/Window.hpp
@@ -934,9 +1182,65 @@ iostream
 SFML/Audio.hpp
 -
 
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Utility/CollisionDetection.cpp
+CollisionDetection.h
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Utility/CollisionDetection.h
+
 D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Utility/CollisionDetection.h
 ../Defs.h
 D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Defs.h
 ../GameObjects/Ball.h
 D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Ball.h
+
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Utility/Configurable.cpp
+Configurable.h
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Utility/Configurable.h
+
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Utility/Configurable.h
+fstream
+-
+AudioManager.h
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Utility/AudioManager.h
+../GameObjects/Ball.h
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Ball.h
+../GameObjects/Flipper.h
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Flipper.h
+../GameObjects/Manager.h
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Manager.h
+../GameObjects/Obstacles/Bumper.h
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/Bumper.h
+../GameObjects/Obstacles/Wall.h
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/Wall.h
+../GameObjects/Obstacles/PopBumper.h
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/PopBumper.h
+../GameObjects/Obstacles/Ramp.h
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/Ramp.h
+../GameObjects/Obstacles/Wall.h
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/Wall.h
+
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Utility/PixelPerfectCollision.cpp
+PixelPerfectCollision.h
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Utility/PixelPerfectCollision.h
+
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Utility/PixelPerfectCollision.h
+../GameObjects/Ball.h
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Ball.h
+cmath
+-
+
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Utility/PreGame.cpp
+PreGame.h
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Utility/PreGame.h
+
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Utility/PreGame.h
+list
+-
+Configurable.h
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Utility/Configurable.h
+
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/main.cpp
+Game.h
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Game.h
+iostream
+-
 
