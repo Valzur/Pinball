@@ -67,11 +67,10 @@ public:
     void drawGate(double length,double width,Vector2D Center,bool AllowUp=false);
     void drawLane(double Length, Vector2D Center, double Width);
     void drawBullseye(Vector2D Center,double Length, double Width, bool isVertical);
-    void drawRamp (bool is45, bool isLeft, double Diameter, Vector2D Center, double InclinationAngle, double setPositionX, double setPositionYRation);
     void drawPopBumper(Vector2D center, double radius,bool Hit);
     void drawThrustBumper(Vector2D center, double radius, bool Hit);
     void drawVibraniumBumper(Vector2D center, double radius,bool Hit);
-    void drawNewRamp(Vector2D Center, Vector2D Size, double Angle);
+    void drawRamp(Vector2D Center, Vector2D Size, double Angle);
 
     //Utility
     void drawFPS();

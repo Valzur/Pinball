@@ -332,31 +332,6 @@ void Interface::drawWall(bool isVertical, double Position)
         }
 }
 
-void Interface::drawRamp(bool is45, bool isLeft, double Diameter, Vector2D Size, double InclinationAngle, double setPositionX, double setPositionYRation){
-if(is45)
-{
-    sf::RectangleShape line(Size);
-    line.rotate(InclinationAngle);
-    line.setPosition(setPositionX, GAME_HEIGHT * setPositionYRation);
-    line.setFillColor(outlineColor);
-
-    if(!isLeft)
-    {
-        line.rotate(2*InclinationAngle);
-        line.setPosition(GAME_WIDTH-36.f, GAME_HEIGHT * setPositionYRation);
-        line.setFillColor(outlineColor);
-    }
-    window.draw(line);
-}
-else
-    {
-        sf::RectangleShape internalFrame(sf::Vector2f(10.f, GAME_HEIGHT));
-        internalFrame.setFillColor(outlineColor);
-        internalFrame.setPosition(GAME_WIDTH-20-Diameter,400.0f);
-    window.draw(internalFrame);
-}
-}
-
 void Interface::drawLeftKicker(double x1,double y1,double x2,double y2,double x3,double y3) {
     sf::ConvexShape SpeedBoaster;
     SpeedBoaster.setPointCount(3);
@@ -636,7 +611,7 @@ void Interface::drawVibraniumBumper(Vector2D center, double radius,bool Hit) {
     window.draw(Vibraniumsprite);
 }
 
-void Interface::drawNewRamp(Vector2D Center, Vector2D Size, double Angle) {
+void Interface::drawRamp(Vector2D Center, Vector2D Size, double Angle) {
     sf::RectangleShape Wall(Size);
 
     //Aesthetics

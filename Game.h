@@ -58,9 +58,6 @@ private:
     string Debug;
     string scoreText,livesText;
 
-
-    //Test
-    Ramp Test;
 public:
     Game();
     void readInterfaceInput();

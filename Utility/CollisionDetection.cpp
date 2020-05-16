@@ -37,23 +37,48 @@ bool InRange(double value, double max, double min)
     return value >= min && value <= max;
 }
 
-Vector2D LineCollision(Ball &ball, double Length, double Angle, Vector2D Center) {
-    Vector2D Velocity={0,0},DynamicCenter=Center;
+Vector2D RectangleCollision(Ball &ball, double Length, double Width, double Angle, Vector2D Center) {
+    Vector2D Velocity ={0,0}, DynamicCenter=Center, TDirection = {cos(Angle/180*PI),sin(Angle/180*PI)},
+    NDirection = {TDirection.y,-TDirection.x};
     int Radius=ball.getRadius(),NoOfIterations = Length/Radius;
     bool Signal = false;
     //Checking
     for (int i = 0; i < NoOfIterations; i++) {
-        DynamicCenter+= Vector2D {cos(Angle/180*PI),sin(Angle/180*PI)}*Radius;
-        if(BOCCollision(ball,DynamicCenter,Radius)){
-            Signal = true;
-            std::cout << "Signal" << std::endl;
+        Vector2D NormalCenter1,NormalCenter2;
+        double Distance1,Distance2;
+        //Increment in the x axis
+        DynamicCenter += TDirection * Radius;
+        //Increment in the y axis
+        NormalCenter1 = DynamicCenter + NDirection * Width/2.0;
+        NormalCenter2 = DynamicCenter - NDirection * Width/2.0;
+        //Check Distances
+        Distance1 = VectorDistance(NormalCenter1,ball.getCenter());
+        Distance2 = VectorDistance(NormalCenter2,ball.getCenter());
+
+        if( Distance1 < ball.getRadius() & Distance2 < ball.getRadius() ){
+            //It is close to both points
+            if( Distance1 < Distance2 ){
+                //Closer to point 1
+                Velocity = ball.getVelocity() - NDirection*DotProduct(ball.getVelocity(),NDirection)/DotProduct(NDirection,NDirection) * 2;
+                break;
+            }else{
+                //Closer to point 2
+                Velocity = ball.getVelocity() + NDirection*DotProduct(ball.getVelocity(),NDirection*-1)/DotProduct(NDirection*-1,NDirection*-1) * 2;
+                break;
+            }
+        } else if ( Distance1 < ball.getRadius() ){
+            //Closer to point 1
+            Velocity = ball.getVelocity() - NDirection*DotProduct(ball.getVelocity(),NDirection)/DotProduct(NDirection,NDirection) * 2;
+            break;
+        } else if ( Distance2 < ball.getRadius() ){
+            //Closer to point 2
+            Velocity = ball.getVelocity() + NDirection*DotProduct(ball.getVelocity(),NDirection*-1)/DotProduct(NDirection*-1,NDirection*-1) * 2;
             break;
         }
     }
-    if(Signal){
-        double ScalarVelocity = VectorNorm(ball.getVelocity());
+    if(Velocity!=Vector2D{0,0}){
+        Velocity = Velocity * VectorNorm(ball.getVelocity()) / VectorNorm(Velocity);
     }
-
     return Velocity;
 }
 

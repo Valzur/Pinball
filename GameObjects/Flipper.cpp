@@ -11,14 +11,14 @@ Flipper::Flipper(FlipperType type, Vector2D center, double length, double angle,
 
 Vector2D Flipper::collideWith(Ball & ball, double collision_time, Manager & manager)
 {
-    Vector2D Acceleration={0,0}, minorCenter;
+    Vector2D velocity={0,0}, Direction;
+    Direction =  Vector2D {cos(angle*180/PI),sin(angle*180/PI)}*length;
 
-    minorCenter=center+ Vector2D {cos(angle),sin(angle)}*length;
-
-    Acceleration+=CircleCollision(ball,center,majorRadius,collision_time);
-    Acceleration+=CircleCollision(ball,minorCenter,minorRadius,collision_time);
-
-    return Acceleration;
+    velocity = RectangleCollision(ball,length,minorRadius,angle,center);
+    if(velocity != Vector2D{0,0}){
+        ball.setVelocity(velocity*-ImpulseMultiplier);
+    }
+    return {0,0};
 }
 
 void Flipper::draw(Interface & interface)

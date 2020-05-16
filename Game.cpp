@@ -3,8 +3,7 @@
 
 #define GRAVITY 400.0f
 
-Game::Game(): manager(0,3), audioManager(true,("Audio/NEFFEX - Dangerous [Copyright Free].ogg")),
-Test({150,10},{400,800},45)
+Game::Game(): manager(0,3), audioManager(true,("Audio/NEFFEX - Dangerous [Copyright Free].ogg"))
 {
     last_frame = high_resolution_clock::now();
     exit = left = right =space = false;
@@ -29,11 +28,6 @@ void Game::simulate()
     last_frame = this_frame;
     double delta_time = time_span.count();  // Delta time in seconds
 
-    //Test
-    for (int i = 0; i < BallsNo; i++) {
-        Test.collideWith(*pBalls[i],delta_time,manager);
-    }
-
     //Update fps
     interface.setFPS("FPS: " + to_string(1.0/delta_time));
 
@@ -55,8 +49,6 @@ void Game::updateInterfaceOutput()
     if(!Lost) {
         //Load things
         interface.drawBackground();
-
-        interface.drawNewRamp({400,800},{150,10},45);
 
         //Pls
         manager.Updategame(interface);
@@ -524,33 +516,23 @@ void Game::ReadLanes(fstream &file) {
 }
 
 void Game::ReadRamps(fstream &file) {
-    bool is45,isLeft;
-    double Diameter,x,y,InclinationAngle;
+    double Angle;
     string Trash;
-    int RampsNo,Choice;
-    Vector2D Size;
+    int RampsNo;
+    Vector2D Size,Center;
 
     file >> RampsNo;
     for (int i = 0; i <RampsNo; i++) {
         file >> Trash;
-        file >> Choice;
-        is45 = FloatToBool(Choice);
-        file >> Trash;
-        file >> Choice;
-        isLeft = FloatToBool(Choice);
-        file >> Trash;
-        file >> Diameter;
-        file >> Trash;
         file >> Size.x;
         file >> Size.y;
         file >> Trash;
-        file >> InclinationAngle;
+        file >> Center.x;
+        file >> Center.y;
         file >> Trash;
-        file >> x;
-        file >> Trash;
-        file >> y;
+        file >> Angle;
 
-        AddObstacle( new Ramp(is45,isLeft,Diameter,Size,InclinationAngle, x,y));
+        AddObstacle( new Ramp(Size,Center,Angle));
         AddDrawable(pObstacles[ObstaclesNo-1]);
     }
 

@@ -1,24 +1,23 @@
 #include "Ramp.h"
 
 void Ramp::draw(Interface &interface) {
-    interface.drawRamp(is45, isLeft, Diameter, Size, Angle, x,setPositionYRation);
+    interface.drawRamp(Center,Size,Angle);
 }
 
-Ramp::Ramp(bool is45, bool isLeft, double Diameter,Vector2D Size,
-        double Angle, double x, double setPositionYRation){
-    this->is45=is45;
-    this->isLeft=isLeft;
-    this->Diameter=Diameter;
-    this->Size=Size;
-    this->Angle=Angle;
-    this->x=x;
-    this->setPositionYRation=setPositionYRation;
-}
 
 Vector2D Ramp::collideWith(Ball &ball, double collision_time, Manager &manager) {
-    if(setPositionYRation==0){
-        LineCollision(ball,Size.x,Angle,Center);
-    }
+        if(FramesTillNextCollision == 0){
+            Vector2D Velocity = RectangleCollision(ball,Size.x,Size.y,Angle,Center);
+            if(Velocity == Vector2D{0,0}){
+
+            } else {
+                ball.setVelocity({Velocity.x,Velocity.y});
+                FramesTillNextCollision = ControlFrames;
+            }
+        } else {
+            FramesTillNextCollision--;
+        }
+
     return{0,0};
 }
 

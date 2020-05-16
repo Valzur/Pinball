@@ -6,12 +6,6 @@
 
 #IncludeRegexTransform: 
 
-../Utility/AudioManager.h
-iostream
--
-SFML/Audio.hpp
--
-
 ../libs/SFML-2.5.1/include/SFML/Audio.hpp
 SFML/System.hpp
 -
@@ -886,6 +880,20 @@ D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Drawable
 ../Interface.h
 D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Interface.h
 
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Flipper.cpp
+Flipper.h
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Flipper.h
+
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Flipper.h
+Obstacles/Obstacle.h
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Obstacles/Obstacle.h
+cmath
+-
+../Defs.h
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Defs.h
+../Utility/CollisionDetection.h
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Utility/CollisionDetection.h
+
 D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/GameObjects/Manager.h
 iostream
 -
@@ -912,9 +920,11 @@ D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Defs.h
 iostream
 -
 
-D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Utility/CollisionDetection.cpp
-CollisionDetection.h
-D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Utility/CollisionDetection.h
+D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Utility/AudioManager.h
+iostream
+-
+SFML/Audio.hpp
+-
 
 D:/Zewail City/Year 3 Spring/C++/Project/Repository/Pinball/Utility/CollisionDetection.h
 ../Defs.h

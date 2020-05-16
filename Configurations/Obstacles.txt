@@ -1,8 +1,8 @@
 BALL
 3
-CENTER: 450 840
+CENTER: 430 710
 RADIUS: 10
-VELOCITY: 0 -300
+VELOCITY: 0 300
 MAIN: YES
 CENTER: 200 300
 RADIUS: 10
@@ -33,28 +33,13 @@ NormalAngle: -30
 ExtendedAngle: 50
 Velocity: 1000
 RAMP
-3
-is45: 1
-isLeft: 1
-Diameter: 400
-SIZE: 400.0 5.0
-InclinationAngle: 45.0
-x: 10.0
-setPositionYRation: 0.75
-is45: 1
-isLeft: 0
-Diameter: 400
-SIZE: 400.0 5.0
-InclinationAngle: 45.0
-x: 10.0
-setPositionYRation: 0.75
-is45: 0
-isLeft: 0
-Diameter: 20
-SIZE: 0 5.0
-InclinationAngle: 45.0
-x: 10.0
-setPositionYRation: 0.75
+2
+SIZE: 500 10
+CENTER: 280 1060
+ANGLE: 226
+SIZE: 500 10
+CENTER: 460 1010
+ANGLE: -47
 BUMPER
 7
 position 233 375

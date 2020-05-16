@@ -9,4 +9,4 @@
     bool BOCCollision(Ball& ball,Vector2D position,double radius);
     Vector2D Lcollision(const Ball& ball, Vector2D Position, double L, double W, double collision_time);
     bool InRange(double value, double max, double min);
-    Vector2D LineCollision(Ball& ball, double Length, double Angle, Vector2D Center);
+    Vector2D RectangleCollision(Ball& ball, double Length, double Width, double Angle, Vector2D Center);

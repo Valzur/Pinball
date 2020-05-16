@@ -55,3 +55,5 @@ bool FloatToBool(float number);
 #define ControlTimer 0.1
 #define ThrustBumperBoost 1.5
 #define PI M_PI
+#define ControlFrames 15
+#define VibraniumFlash 0.2
