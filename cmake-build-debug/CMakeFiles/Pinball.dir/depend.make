@@ -1532,6 +1532,7 @@ CMakeFiles/Pinball.dir/GameObjects/Obstacles/Ramp.cpp.obj: ../GameObjects/Obstac
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/Ramp.cpp.obj: ../GameObjects/Obstacles/Ramp.h
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/Ramp.cpp.obj: ../Interface.h
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/Ramp.cpp.obj: ../Utility/AudioManager.h
+CMakeFiles/Pinball.dir/GameObjects/Obstacles/Ramp.cpp.obj: ../Utility/CollisionDetection.h
 
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/ScoreMultiplier.cpp.obj: ../libs/SFML-2.5.1/include/SFML/Audio.hpp
 CMakeFiles/Pinball.dir/GameObjects/Obstacles/ScoreMultiplier.cpp.obj: ../libs/SFML-2.5.1/include/SFML/Audio/AlResource.hpp

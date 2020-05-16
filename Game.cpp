@@ -3,7 +3,8 @@
 
 #define GRAVITY 400.0f
 
-Game::Game(): manager(0,3), audioManager(true,("Audio/NEFFEX - Dangerous [Copyright Free].ogg"))
+Game::Game(): manager(0,3), audioManager(true,("Audio/NEFFEX - Dangerous [Copyright Free].ogg")),
+Test({150,10},{400,800},45)
 {
     last_frame = high_resolution_clock::now();
     exit = left = right =space = false;
@@ -16,6 +17,7 @@ void Game::readInterfaceInput()
 
 void Game::simulate()
 {
+
     //Load everything :"D
     if(!Loaded) {
         interface.LoadGraphics();
@@ -26,6 +28,11 @@ void Game::simulate()
     duration<double> time_span = duration_cast<duration<double>>(this_frame - last_frame);
     last_frame = this_frame;
     double delta_time = time_span.count();  // Delta time in seconds
+
+    //Test
+    for (int i = 0; i < BallsNo; i++) {
+        Test.collideWith(*pBalls[i],delta_time,manager);
+    }
 
     //Update fps
     interface.setFPS("FPS: " + to_string(1.0/delta_time));
@@ -49,6 +56,7 @@ void Game::updateInterfaceOutput()
         //Load things
         interface.drawBackground();
 
+        interface.drawNewRamp({400,800},{150,10},45);
 
         //Pls
         manager.Updategame(interface);

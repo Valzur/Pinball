@@ -52,5 +52,6 @@ bool FloatToBool(float number);
 #define LaneTimer 0.6
 #define MagnetForce 3.5
 #define PobBumperBoost 0.1
-#define ControlTimer 1
+#define ControlTimer 0.1
 #define ThrustBumperBoost 1.5
+#define PI M_PI

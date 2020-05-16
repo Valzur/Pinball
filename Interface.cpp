@@ -219,7 +219,7 @@ void Interface::drawBumper(Vector2D center, double radius, BumperType type,bool 
 void Interface::drawFPS() {
     text.setString(FPS);
     text.setCharacterSize(24);
-    text.setFillColor(sf::Color::Green);
+    text.setFillColor(textColor);
     text.setPosition(0,0);
     window.draw(text);
 }
@@ -333,7 +333,6 @@ void Interface::drawWall(bool isVertical, double Position)
 }
 
 void Interface::drawRamp(bool is45, bool isLeft, double Diameter, Vector2D Size, double InclinationAngle, double setPositionX, double setPositionYRation){
-
 if(is45)
 {
     sf::RectangleShape line(Size);
@@ -356,7 +355,6 @@ else
         internalFrame.setPosition(GAME_WIDTH-20-Diameter,400.0f);
     window.draw(internalFrame);
 }
-
 }
 
 void Interface::drawLeftKicker(double x1,double y1,double x2,double y2,double x3,double y3) {
@@ -636,4 +634,18 @@ void Interface::drawVibraniumBumper(Vector2D center, double radius,bool Hit) {
     Vibraniumsprite.setScale(0.4,0.4);
     Vibraniumsprite.setColor(sf::Color(255, 255, 255, 128));
     window.draw(Vibraniumsprite);
+}
+
+void Interface::drawNewRamp(Vector2D Center, Vector2D Size, double Angle) {
+    sf::RectangleShape Wall(Size);
+
+    //Aesthetics
+    Wall.setFillColor(outlineColor);
+
+    //Orientation
+    Wall.setOrigin(0,Size.y/2.0);
+    Wall.setPosition(Center);
+    Wall.setRotation(Angle);
+
+    window.draw(Wall);
 }

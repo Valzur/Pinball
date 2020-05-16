@@ -13,7 +13,7 @@ ScoreMultiplier::ScoreMultiplier(Vector2D pos, double rad) : Bumper(pos, rad, SC
 }
 	
 Vector2D ScoreMultiplier::collideWith(Ball & ball, double collision_time, Manager & manager){
-    Vector2D Acceleration= CircleCollision(ball,Center,Radius,collision_time);
+    Vector2D Acceleration = CircleCollision(ball,Center,Radius,collision_time);
 
     if(Acceleration==Vector2D{0,0}){
         if(Hit &(hitTimer>0))
@@ -24,11 +24,13 @@ Vector2D ScoreMultiplier::collideWith(Ball & ball, double collision_time, Manage
         }
     }else{
         Hit=true;
+        manager.addScore(400);
         manager.MultiplyScore(1.5);
         sound.play();
+        ball.setVelocity(Acceleration*collision_time);
     }
 
-    return Acceleration;
+    return {0,0};
 }
 
 void ScoreMultiplier::draw(Interface& interface) {

@@ -29,7 +29,6 @@ Vector2D PopBumper::collideWith(Ball &ball, double collision_time, Manager &mana
         hitTimer-=collision_time;
     else {
         if(hitTimer<=0){
-            std::cout << "Added" << std::endl;
             manager.addScore(400);
             sound.play();
         }

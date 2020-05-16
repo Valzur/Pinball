@@ -71,6 +71,7 @@ public:
     void drawPopBumper(Vector2D center, double radius,bool Hit);
     void drawThrustBumper(Vector2D center, double radius, bool Hit);
     void drawVibraniumBumper(Vector2D center, double radius,bool Hit);
+    void drawNewRamp(Vector2D Center, Vector2D Size, double Angle);
 
     //Utility
     void drawFPS();

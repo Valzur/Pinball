@@ -7,7 +7,6 @@ void Bullseye::draw(Interface &interface) {
 }
 
 Vector2D Bullseye::collideWith(Ball &ball, double collision_time, Manager &manager) {
-    Vector2D Acceleration{0,0};
     if(isVertical){
 
     }else {
@@ -37,5 +36,5 @@ Vector2D Bullseye::collideWith(Ball &ball, double collision_time, Manager &manag
             collidedLastFrame = false;
         }
     }
-    return Acceleration;
+    return {0,0};
 }
