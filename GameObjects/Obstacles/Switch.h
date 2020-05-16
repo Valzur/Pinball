@@ -5,13 +5,15 @@
 #include <cmath>
 #include "../Manager.h"
 #include "../../Defs.h"
+#include "../../Utility/CollisionDetection.h"
 
 class Switch : public Obstacle {
 private:
-	Vector2D position;
-	bool collidedLastFrame; //still need to implement how it's going to collide w ball
+	Vector2D Center;
+	double Length;
+	bool collidedLastFrame,Used=false,Direction= false;
 public:
-	Switch(Vector2D position);
+	explicit Switch(Vector2D Center,double Length);
 
 	void draw(Interface& interface)override;
     Vector2D collideWith(Ball& ball, double collision_time, Manager& manager) override;

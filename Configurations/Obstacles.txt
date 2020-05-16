@@ -1,8 +1,8 @@
 BALL
 3
-CENTER: 350 40
+CENTER: 550 600
 RADIUS: 10
-VELOCITY: -100 200
+VELOCITY: 0 -500
 MAIN: YES
 CENTER: 200 300
 RADIUS: 10
@@ -32,31 +32,28 @@ MinorRadius: 5
 NormalAngle: -30
 ExtendedAngle: 50
 Velocity: 1000
-INTERNALFRAME
+RAMP
 3
 is45: 1
 isLeft: 1
 Diameter: 400
-LineXCoordinate: 400.0
-LineYCoordinate: 5.0
+SIZE: 400.0 5.0
 InclinationAngle: 45.0
-setPositionX: 10.0
+x: 10.0
 setPositionYRation: 0.75
 is45: 1
 isLeft: 0
 Diameter: 400
-LineXCoordinate: 400.0
-LineYCoordinate: 5.0
+SIZE: 400.0 5.0
 InclinationAngle: 45.0
-setPositionX: 10.0
+x: 10.0
 setPositionYRation: 0.75
 is45: 0
 isLeft: 0
 Diameter: 20
-LineXCoordinate: 0
-LineYCoordinate: 5.0
+SIZE: 0 5.0
 InclinationAngle: 45.0
-setPositionX: 10.0
+x: 10.0
 setPositionYRation: 0.75
 BUMPER
 7
@@ -104,7 +101,8 @@ X3 25
 Y3 600
 SWITCH
 1
-position 580 165
+position 580 500
+Length: 90
 COLLECTABLE
 6
 CENTER: 50 50
@@ -134,9 +132,14 @@ CENTER: 320 100
 LENGTH: 60
 CENTER: 350 100
 LENGTH: 60
-RAMP
-1
-CENTER 200 200
+WALL
+3
+CENTER: 5 500
+isVertical: YES
+CENTER: 715 500
+isVertical: YES
+CENTER: 360 5
+isVertical: NO
 BULLSEYE
 1
 CENTER: 360 5

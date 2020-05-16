@@ -18,3 +18,18 @@ bool BICCollision(Ball &ball, Vector2D position, double radius) {
 
     return detected;
 }
+
+Vector2D Lcollision(const Ball& ball, Vector2D Position, double L, double W, double collision_time) {
+    Vector2D Acceleration = { 0,0 }, v;
+    bool isbetween = InRange(ball.getCenter().x, Position.x + L/2, Position.x-L/2);
+    if (isbetween && abs(ball.getCenter().y - Position.y) <= ball.getRadius()+W/2) {
+        Acceleration = { ball.getVelocity().x * -2,ball.getVelocity().y * -2 };
+        Acceleration = Acceleration / collision_time;
+    }
+    return Acceleration;
+
+}
+bool InRange(double value, double max, double min)
+{
+    return value >= min && value <= max;
+}

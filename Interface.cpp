@@ -121,28 +121,36 @@ void Interface::drawFlipper(FlipperType type, Vector2D center, double length, do
     window.draw(bottomLine);
 }
 
-void Interface::drawWall(double position, bool isVertical)
-{
+void Interface::drawWall(Vector2D Center, bool isVertical){
     if(isVertical) {
-        sf::Vertex line[] =
-                {
-                        sf::Vertex(sf::Vector2f(position, 0), outlineColor),
-                        sf::Vertex(sf::Vector2f(position, GAME_HEIGHT), outlineColor)
-                };
-        window.draw(line, 2, sf::Lines);
+        sf::RectangleShape Wall({10,GAME_HEIGHT});
+
+        //Origin
+        Wall.setOrigin({5,GAME_HEIGHT/2.0});
+
+        //Aesthetics
+        Wall.setFillColor(outlineColor);
+
+        //Position
+        Wall.setPosition(Center);
+
+        window.draw(Wall);
     }else{
-        sf::Vertex line[] =
-                {
-                        sf::Vertex(sf::Vector2f(0, position), outlineColor),
-                        sf::Vertex(sf::Vector2f(GAME_WIDTH, position), outlineColor)
-                };
-        window.draw(line, 2, sf::Lines);
+        sf::RectangleShape Wall({GAME_WIDTH,10});
+
+        //Origin
+        Wall.setOrigin({GAME_WIDTH/2.0,5});
+
+        //Aesthetics
+        Wall.setFillColor(outlineColor);
+
+        //Position
+        Wall.setPosition(Center);
+
+        window.draw(Wall);
     }
 }
 
-void Interface::drawNewWall(sf::Sprite sprite) {
-    window.draw(sprite);
-}
 
 void Interface::drawBumper(Vector2D center, double radius, BumperType type,bool Hit) {
     sf::CircleShape circle(radius);
@@ -170,10 +178,10 @@ void Interface::drawBumper(Vector2D center, double radius, BumperType type,bool 
         }case(BumperType::THRUST):{
             circle.setFillColor(sf::Color::Transparent);
             window.draw(circle);
-            Thurstsprite.setOrigin(Thurstsprite.getTexture()->getSize().x/2.0,Thurstsprite.getTexture()->getSize().y/2.0);
-            Thurstsprite.setPosition(center.x, center.y);
-            Thurstsprite.setScale(0.015, 0.015);
-            window.draw(Thurstsprite);
+            ThrustSprite.setOrigin(ThrustSprite.getTexture()->getSize().x/2.0,ThrustSprite.getTexture()->getSize().y/2.0);
+            ThrustSprite.setPosition(center.x, center.y);
+            ThrustSprite.setScale(0.015, 0.015);
+            window.draw(ThrustSprite);
             break;
         }case(BumperType::VIBRANIUM):{
             //drawing 2nd circle
@@ -284,10 +292,10 @@ void Interface::LoadGraphics() {
     }
 
     //Thrust
-    if(!Thursttexture.loadFromFile("../Assets/Sprites/Thurst.png")){
+    if(!ThrustTexture.loadFromFile("../Assets/Sprites/Thurst.png")){
         cout<< "Can't load ThrustBumper sprite! "<< endl;
     }else{
-        Thurstsprite.setTexture(Thursttexture);
+        ThrustSprite.setTexture(ThrustTexture);
     }
 
     //Thrust
@@ -324,13 +332,11 @@ void Interface::drawWall(bool isVertical, double Position)
         }
 }
 
-void Interface::drawRamp(bool is45, bool isLeft, double Diameter, double LineXCoordinate,
-                         double LineYCoordinate, double InclinationAngle, double setPositionX, double setPositionYRation)
-{
+void Interface::drawRamp(bool is45, bool isLeft, double Diameter, Vector2D Size, double InclinationAngle, double setPositionX, double setPositionYRation){
 
 if(is45)
 {
-    sf::RectangleShape line(sf::Vector2f(LineXCoordinate, LineYCoordinate));
+    sf::RectangleShape line(Size);
     line.rotate(InclinationAngle);
     line.setPosition(setPositionX, GAME_HEIGHT * setPositionYRation);
     line.setFillColor(outlineColor);
@@ -484,12 +490,15 @@ void Interface::drawSpeedBooster(double radius,Vector2D Center){
     window.draw(SpeedBoosterSprite);
 }
 
-void Interface::drawSwitch(Vector2D pos) {
-    sf::RectangleShape line(sf::Vector2f(90, 20));
-    line.setOrigin(45,10);
-    line.setPosition(pos.x, pos.y);
-    line.setFillColor(sf::Color::Cyan);
-    line.setRotation(45);
+void Interface::drawSwitch(Vector2D Center, double Length,bool Used) {
+    sf::RectangleShape line(sf::Vector2f(Length, 10));
+    line.setOrigin(Length,5);
+    line.setPosition(Center);
+    if(Used){
+        line.setFillColor(outlineColor);
+    }else{
+        line.setFillColor(RadiantColor);
+    }
     window.draw(line);
 }
 
@@ -523,18 +532,6 @@ void Interface::drawUIBackground() {
 
 sf::RenderWindow &Interface::GetWindow() {
     return window;
-}
-
-void Interface::drawRamp(Vector2D Center) {
-    RampSprite.setOrigin(RampSprite.getLocalBounds().width,RampSprite.getLocalBounds().height);
-    RampSprite.setPosition(Center);
-    window.draw(RampSprite);
-}
-
-void Interface::drawScoreMultiplier(Vector2D Center, double Radius) {
-    ScoreMsprite.setOrigin(ScoreMsprite.getLocalBounds().width/2.0,ScoreMsprite.getLocalBounds().height/2.0);
-    ScoreMsprite.setPosition(Center);
-    window.draw(ScoreMsprite);
 }
 
 void Interface::drawBullseye(Vector2D Center,double Length, double Width, bool isVertical) {
@@ -585,4 +582,52 @@ void Interface::drawBullseye(Vector2D Center,double Length, double Width, bool i
         window.draw(Expert);
         window.draw(Ace);
     }
+}
+
+void Interface::drawPopBumper(Vector2D center, double radius, bool Hit) {
+    sf::CircleShape circle(radius);
+    circle.setOrigin(radius, radius);
+    circle.setOutlineThickness(1.5 * outlineThickness);
+    circle.setOutlineColor(outlineColor);
+
+    circle.setPosition(center.x, center.y);
+    if (!Hit){
+        circle.setFillColor(RadiantColor);
+    }else{
+        circle.setFillColor(textColor);
+    }
+    window.draw(circle);
+    Bumpersprite.setOrigin(Bumpersprite.getTexture()->getSize().x/2.0,Bumpersprite.getTexture()->getSize().y/2.0);
+    Bumpersprite.setPosition(center.x , center.y);
+    Bumpersprite.setScale(2, 2);
+    window.draw(Bumpersprite);
+}
+
+void Interface::drawThrustBumper(Vector2D center, double radius, bool Hit) {
+    sf::CircleShape circle(radius);
+    ThrustSprite.setOrigin(ThrustSprite.getTexture()->getSize().x/2.0,ThrustSprite.getTexture()->getSize().y/2.0);
+    ThrustSprite.setPosition(center.x, center.y);
+    circle.setOrigin(radius,radius);
+    circle.setFillColor(sf::Color::Transparent);
+    circle.setOutlineThickness(1.5 * outlineThickness);
+    circle.setOutlineColor(outlineColor);
+    window.draw(circle);
+    ThrustSprite.setScale(0.015, 0.015);
+    window.draw(ThrustSprite);
+}
+
+void Interface::drawVibraniumBumper(Vector2D center, double radius,bool Hit) {
+    sf::CircleShape circle(radius);
+    circle.setOrigin(radius, radius);
+    circle.setPosition(center.x, center.y);
+    circle.setFillColor(sf::Color(8, 105, 114, 255));
+    circle.setOutlineThickness(1.3 * outlineThickness);
+    circle.setOutlineColor(sf::Color::Black);
+    window.draw(circle);
+
+    //drawing texture for 1st circle
+    Vibraniumsprite.setOrigin(Vibraniumsprite.getTexture()->getSize().x/2.0,Vibraniumsprite.getTexture()->getSize().y/2.0);
+    Vibraniumsprite.setPosition(center.x, center.y);
+    Vibraniumsprite.setScale(0.4,0.4);
+    window.draw(Vibraniumsprite);
 }

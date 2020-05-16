@@ -13,16 +13,21 @@ void Magnet::draw(Interface &interface) {
 }
 
 Vector2D Magnet::collideWith(Ball &ball, double collision_time, Manager &manager) {
-    Vector2D Acceleration={0,0};
-    if(VectorDistance(Position,ball.getCenter())<ball.getRadius()+Magnetradius){
-        if(VectorDistance(Position,ball.getCenter())<ball.getRadius()+radius){
-            //Collision.
+    Vector2D Acceleration = { 0,0 }, velocity,farD,NewVelocity;
+    double ScalarVelocity = VectorNorm(ball.getVelocity()), distance = 250;
+    velocity = ball.getVelocity() ;
+    farD = VectorDirection( ball.getCenter(),Position);
+    int z = 1;
+    if (VectorDistance(ball.getCenter(), Position) <= 100 + ball.getRadius() + Magnetradius) {
 
-        }else{
-            //Magnet effect.
 
-        }
+        NewVelocity = { -velocity.x + farD.x,-velocity.y + farD.y };//direction for acceleration
+
+        Acceleration = NewVelocity / VectorNorm(NewVelocity) * ScalarVelocity;   //made time=1s, we don't care very much for time in this case as it happens continously
     }
+
+
+
     return Acceleration;
 }
 

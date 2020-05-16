@@ -43,8 +43,6 @@ bool FloatToBool(float number);
 #define INITIAL_CENTER {600, 400}
 #define INITIAL_VELOCITY {-900, 600}
 
-
-
 //Making life easier <3
 
 #define SpeedBoosterAmount 2.5

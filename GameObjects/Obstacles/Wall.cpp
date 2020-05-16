@@ -1,45 +1,27 @@
-//
-// Created by anon on 4/10/20.
-//
-
 #include "Wall.h"
 
-Wall::Wall(bool isVertical, float Position)
-{
+Wall::Wall(bool isVertical, Vector2D Center):Center(Center),isVertical(isVertical){}
 
-}
-
-void Wall::draw(Interface &interface)
-{
-    interface.drawWall(isVertical, Position);
-
+void Wall::draw(Interface &interface){
+    interface.drawWall(Center, isVertical);
 }
 
 Vector2D Wall::collideWith(Ball &ball, double collision_time, Manager &manager)
 {
     if(isVertical) {
-        if (!collidedLastFrame && abs(Position - ball.getCenter().x) < ball.getRadius()) {
+        if (!collidedLastFrame && abs(Center.x - ball.getCenter().x) < ball.getRadius()) {
             collidedLastFrame = true;
-
-            if(ball.getCenter().x>GAME_WIDTH-ball.getRadius())
-                ball.setCenter({GAME_WIDTH-ball.getRadius(), ball.getCenter().y});
-
-            if(ball.getCenter().x<ball.getRadius())
-                ball.setCenter({0 + ball.getRadius(), ball.getCenter().y});
-
-            return Vector2D{ball.getVelocity().x * -1, 0} / collision_time;
+            ball.setVelocity({-ball.getVelocity().x,ball.getVelocity().y});
         } else {
             collidedLastFrame = false;
-            return Vector2D{0, 0};
         }
     }else{
-        if (!collidedLastFrame && abs(Position - ball.getCenter().y) < ball.getRadius()) {
+        if (!collidedLastFrame && abs(Center.y - ball.getCenter().y) < ball.getRadius()) {
             collidedLastFrame = true;
-
-            return Vector2D{0, ball.getVelocity().y * -1} / collision_time;
+            ball.setVelocity({ball.getVelocity().x,-ball.getVelocity().y});
         } else {
             collidedLastFrame = false;
-            return Vector2D{0, 0};
         }
     }
+    return Vector2D{0, 0};
 }

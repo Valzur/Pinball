@@ -3,7 +3,7 @@
 PopBumper::PopBumper(Vector2D pos, double rad) : Bumper(pos, rad,POP) {}
 
 void PopBumper::draw(Interface &interface) {
-    Bumper::draw(interface);
+    interface.drawPopBumper(GetPosition(),GetRadius(),Hit);
 }
 
 Vector2D PopBumper::collideWith(Ball &ball, double collision_time, Manager &manager) {
@@ -15,9 +15,14 @@ Vector2D PopBumper::collideWith(Ball &ball, double collision_time, Manager &mana
         else {
             hitTimer=FlashTimer;
             Hit=false;
+            AllowHit=true;
         }
     }else{
         Hit=true;
+        if(AllowHit){
+            manager.addScore(150);
+            AllowHit=false;
+        }
     }
     return Acceleration;
 }

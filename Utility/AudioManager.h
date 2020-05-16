@@ -12,6 +12,7 @@ private:
     Sound sound;
     Music music;
 public:
+    AudioManager();
     AudioManager(bool Playmusic,const string& AudioPath);
     void PlayMusic(const string& AudioPath);
     void PlaySound(const string& AudioPath);

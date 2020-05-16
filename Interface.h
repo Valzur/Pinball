@@ -33,8 +33,8 @@ private:
     sf::Texture Balltexture;
     sf::Sprite Ballsprite;
 
-    sf::Texture Bumpertexture,Thursttexture,Vibraniumtexture,ScoreMtexture;
-    sf::Sprite Bumpersprite,Thurstsprite,Vibraniumsprite,ScoreMsprite;
+    sf::Texture Bumpertexture,ThrustTexture,Vibraniumtexture,ScoreMtexture;
+    sf::Sprite Bumpersprite,ThrustSprite,Vibraniumsprite,ScoreMsprite;
 
     sf::Texture backgroundTexture;
     sf::Sprite backgroundSprite;
@@ -57,19 +57,20 @@ public:
 
     void drawBall(Vector2D center, double radius);  // Draws a ball
     void drawFlipper(FlipperType type, Vector2D center, double length, double angle, double majorRadius, double minor_radius);  // Draws a flipper
-    void drawWall(double position,bool isVertical);  // Draws a vertical Wall
-    void drawNewWall(sf::Sprite sprite);
+    void drawWall(Vector2D Center,bool isVertical);  // Draws a vertical Wall
     void drawBumper(Vector2D center, double radius, BumperType type,bool Hit=false);
     void drawPortals(Vector2D Pos1, Vector2D Pos2,double radius);
     void drawMagnet(Vector2D Position, double magnetRadius,double radius,sf::Sprite * sprite);
-    void drawSwitch(Vector2D pos);
+    void drawSwitch(Vector2D Center, double Length, bool Used);
     void drawCollectable(double radius,string L,Vector2D Center,bool Used);
     void drawSpeedBooster(double radius,Vector2D Center);
     void drawGate(double length,double width,Vector2D Center,bool AllowUp=false);
     void drawLane(double Length, Vector2D Center, double Width);
-    void drawRamp(Vector2D Center);
-    void drawScoreMultiplier(Vector2D Center, double Radius);
     void drawBullseye(Vector2D Center,double Length, double Width, bool isVertical);
+    void drawRamp (bool is45, bool isLeft, double Diameter, Vector2D Center, double InclinationAngle, double setPositionX, double setPositionYRation);
+    void drawPopBumper(Vector2D center, double radius,bool Hit);
+    void drawThrustBumper(Vector2D center, double radius, bool Hit);
+    void drawVibraniumBumper(Vector2D center, double radius,bool Hit);
 
     //Utility
     void drawFPS();
@@ -81,7 +82,6 @@ public:
 
     void drawWall(bool isVertical, double Position);
 
-    void drawRamp   (bool is45, bool isLeft, double Diameter, double LineXCoordinate, double LineYCoordinate, double InclinationAngle, double setPositionX, double setPositionYRation);
     void drawLeftKicker(double x1,double y1,double x2,double y2,double x3,double y3);
     void drawRightKicker(double x1,double y1,double x2,double y2,double x3,double y3);
 

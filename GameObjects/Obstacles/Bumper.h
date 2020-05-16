@@ -12,7 +12,7 @@ using namespace std;
 class Bumper : public Obstacle{
 protected:
     double hitTimer=FlashTimer;
-    bool Hit=false;
+    bool Hit=false,AllowHit=true;
 private:
     Vector2D position;
     double radius;
@@ -29,6 +29,6 @@ public:
     //Setters
     void setScorepoints(int x);
 
-    Vector2D collideWith(Ball& ball, double collision_time, Manager & manager) override;
-    void draw(Interface & interface) override;
+    Vector2D collideWith(Ball& ball, double collision_time, Manager & manager) override=0;
+    void draw(Interface & interface) override=0;
 };

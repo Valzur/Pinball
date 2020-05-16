@@ -24,3 +24,5 @@ AudioManager::AudioManager(bool Playmusic, const string& AudioPath) {
     }
 
 }
+
+AudioManager::AudioManager() = default;

@@ -83,7 +83,6 @@ public:
     void ReadWalls(fstream& file);
     void ReadPortals(fstream&file);
     void ReadMagnets(fstream&file);
-    void ReadInternalFrame(fstream& file);
     void ReadGates(fstream& file);
     void ReadKickers(fstream& file);
     void ReadSwitchs(fstream& file);
